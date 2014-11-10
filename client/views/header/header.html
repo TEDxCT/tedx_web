@@ -1,30 +1,52 @@
 <template name="header">
-    <div class="center aligned {{isActive}} header-wrapper">
-        <h1 class="huge center aligned ui header">
-            {{constant 'name'}}
+    <div class="header-wrapper">
+        <h1 class="huge ui header">
+            <!-- {{constant 'name'}} -->
+            <img src="/images/logos/white.png" class="logo">
             <div class="sub header">
-                by <a class="unstyled link" href="http://matteodem.github.io/meteor-boilerplate">@matteodem</a>
+                <!-- by <a class="unstyled link" href="http://matteodem.github.io/meteor-boilerplate">@matteodem</a> -->
             </div>
         </h1>
-        <button class="basic ui resize icon button"><i class="{{iconClass}} icon"></i></button>
+        <div class="round action-wrapper login">
+          <button class="show-login">
+            <i class="action-icon">
+              {{#if currentUser}}
+                <i class="icon-menu"></i>
+              {{else}}
+                <i class="icon-profile"></i>
+              {{/if}}
+            </i>
+            <i class="icon-close hidden"></i>
+          </button>
 
-        {{#if showLogin}}
-        <div class="login-wrapper {{animateClass}} animated">
-            {{#if currentUser}}
-            <div class="actions-wrapper">
-                {{#if currentUser.username}}
-                <div class="hello">Hi {{currentUser.username}}!</div>
-                {{/if}}
-                <div class="ui fluid purple log-out button">
-                    <i class="sign out icon"></i>
-                    Log out
-                </div>
-            </div>
-            {{else}}
-            {{> atForm }}
-            {{/if}}
+          <div class="login-wrapper">
+              {{#if currentUser}}
+              <div class="actions-wrapper">
+                  {{#if currentUser.username}}
+                  <div class="hello">Hi {{currentUser.username}}!</div>
+                  {{/if}}
+                  <div class="ui fluid purple log-out button">
+                      <i class="sign out icon"></i>
+                      Log out
+                  </div>
+              </div>
+              {{else}}
+                {{> atForm }}
+              {{/if}}
+          </div>
         </div>
-        {{/if}}
+    </div>
+    <div class="navigation">
+      <ul>
+        <li>Videos</li>
+        <li>
+          <div class="search">
+            <div class="icon">
+              <i class="icon-magnifier"></i>
+            </div>
+            <input type="text">
+          </div>
+        </li>
+      </ul>
     </div>
 </template>
-

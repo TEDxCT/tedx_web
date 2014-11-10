@@ -5,7 +5,6 @@
 
 standard-app-packages
 less
-jquery
 underscore
 accounts-password
 aldeed:collection2
@@ -21,4 +20,5 @@ browser-policy
 useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
+jquery
 
