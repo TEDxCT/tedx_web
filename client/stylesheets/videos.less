@@ -1,0 +1,159 @@
+article {
+  background: white;
+  background-size: cover;
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+article.new {
+  background: white;
+}
+
+article .video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.title {
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  width: 350px;
+  margin-left: -175px;
+  text-align: center;
+  z-index: 3;
+}
+.sub-title {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+  text-align: center;
+  z-index: 2;
+}
+.new-url {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+  text-align: center;
+  z-index: 2;
+}
+input[type="text"] {
+  color: #999;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+input[type="text"]:focus {
+  color: #666;
+}
+
+article .overlay {
+  position: absolute;
+  background-image: -o-linear-gradient(-89deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
+  background-image: -moz-linear-gradient(-89deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
+  background-image: -ms-linear-gradient(-89deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
+  background-image: linear-gradient(-179deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+
+button {
+
+}
+button:hover {
+  background: #269BC0;
+}
+button.save {
+  min-width: 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  min-height: 40px;
+  font-size: 18px;
+  outline: none;
+  background: #25ABD6;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+button.save:hover {
+  background: #35B8E1;
+  top: 19px;
+}
+button.save:active {
+  background: #269BC0;
+  top: 21px;
+}
+button.small {
+  font-size: 14px;
+  min-height: 30px;
+  min-width: 60px;
+}
+button.edit {
+  background: rgba(255,255,255,0);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+}
+button.edit:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+
+.hidden {
+
+}
+
+.toggle {
+  color: #B3B3B3;
+  font-size: 2em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+.menu {
+  background: white;
+  position: absolute;
+  right: -380px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  z-index: 999;
+  padding: 20px 30px;
+}
+.menu.expanded {
+  right: 0px;
+}
+
+.faces.small {
+  zoom: 0.8;
+}
+.faces.medium {
+  zoom: 1;
+}
+.faces.large {
+  zoom: 1.2;
+}

@@ -1,7 +1,40 @@
 <template name="videos">
     {{#each videos}}
-      <div class="video">
-        <div class="title">{{this.name}}></div>
-      </div>
+      {{> video this}}
     {{/each}}
+    {{#if currentUser}}
+      {{> newvideo}}
+    {{/if}}
+</template>
+
+<template name="video">
+  <article>
+    <iframe class="video" width="400" height="400" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
+    <button class="edit small">Edit</button>
+    <div class="title">{{this.name}}</div>
+    <div class="sub-title">{{this.description}}</div>
+    <div class="overlay"></div>
+  </article>
+</template>
+
+<template name="newvideo">
+  <article class="new">
+    <button class="save-video save">Save</button>
+    <input class="title new-title" type="text" placeholder="Video name">
+    <input class="sub-title new-sub-title" type="text" placeholder="Video description">
+    <!-- <input class="tags new-tags" type="text" placeholder="Technology, women, global"> -->
+    <input class="new-url" type="text" placeholder="Video URL">
+  </article>
+</template>
+
+<template name="menu">
+  <div class="toggle">
+    <i class="icon-menu"></i>
+  </div>
+  <div class="menu">
+    <h3>Zoom</h3>
+    <button class="zoom small">Small</button>
+    <button class="zoom medium">Medium</button>
+    <button class="zoom large">Large</button>
+  </div>
 </template>
