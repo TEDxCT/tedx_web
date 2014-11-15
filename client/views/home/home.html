@@ -1,13 +1,6 @@
 <template name="home">
     <div class="ui four column main-content features grid">
-        {{#each feature}}
-            <div class="center aligned column">
-                <a href="{{path}}" class="ui unstyled no-hover-styles no-underline link icon header">
-                    <span class="headline">{{text}}</span>
-                    <i class="{{color}} {{icon}} boilerplate-feature icon"></i>
-                </a>
-            </div>
-        {{/each}}
+        {{> videos}}
     </div>
 
     <!-- <div id="packages" class="main-content padding-wrapper">

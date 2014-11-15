@@ -59,14 +59,14 @@ header {
       right: 100px;
       top: 250px;
       transition: all 0.3s ease;
-      height: 80px;
+      min-height: 80px;
       width: 70px;
       overflow: hidden;
     }
     .action-wrapper.active {
       background-color: white;
       width: 400px;
-      height: 400px;
+      min-height: 400px;
       border-radius: 0px;
       box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
 
@@ -110,8 +110,13 @@ header {
     }
 
     .actions-wrapper {
-        max-width: @loginFormWidth / 2;
         margin: 0 auto;
+
+        .ui.button {
+          font-weight: 300;
+          margin-bottom: 10px;
+          text-transform: none;
+        }
     }
 
     .hello {

@@ -1,3 +1,3 @@
 Meteor.startup(function(){
-  AccountsTemplates.init();
+  AccountsTemplates.init({});
 });
