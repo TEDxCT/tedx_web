@@ -1,3 +1,5 @@
+@import 'variables';
+
 article {
   background: black;
   background-size: cover;
@@ -13,6 +15,18 @@ article.new {
   background: white;
 }
 
+article .actions {
+  background: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 55px;
+  z-index: 99;
+  padding: 0 20px 0 30px;
+  background-color: #50E3C2;
+  box-sizing: border-box;
+}
+
 article .video {
   position: absolute;
   top: 0px;
@@ -21,26 +35,21 @@ article .video {
 }
 
 .title {
-  color: white;
-  font-size: 28px;
-  font-weight: 600;
-  position: absolute;
-  top: 240px;
-  left: 50%;
-  width: 350px;
-  margin-left: -175px;
-  text-align: center;
-  z-index: 3;
+  color: rgb(107, 107, 107);;
+  font-size: 22px;
+  font-weight: 300;
+  width: 100%;
+  height:30px;
+  z-index: 0;
+  padding-top: 10px;
+  overflow: hidden;
 }
 .sub-title {
+  display: none;
   color: white;
   font-size: 15px;
-  position: absolute;
-  top: 318px;
-  left: 50%;
   width: 250px;
   height: 57px;
-  margin-left: -125px;
   text-align: center;
   z-index: 2;
   text-overflow: ellipsis;
@@ -49,11 +58,7 @@ article .video {
 .new-url {
   color: white;
   font-size: 18px;
-  position: absolute;
-  top: 360px;
-  left: 50%;
-  width: 250px;
-  margin-left: -125px;
+  width: 350px;  
   text-align: center;
   z-index: 2;
 }
