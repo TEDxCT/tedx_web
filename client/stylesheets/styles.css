@@ -41,7 +41,7 @@
 .icon-profile:before {
   content: "a";
 }
-.icon-close-bolc:before {
+.icon-close-bold:before {
   content: "b";
 }
 .icon-close:before {
@@ -50,73 +50,81 @@
 .icon-magnifier:before {
   content: "d";
 }
-.icon-link-2:before {
+.icon-link:before {
   content: "e";
 }
-.icon-pin-1:before {
+.icon-pin:before {
   content: "f";
 }
-.icon-bookmark-2:before {
+.icon-bookmark:before {
   content: "g";
 }
-.icon-tags-1:before {
+.icon-tags:before {
   content: "h";
 }
-.icon-heart-2:before {
+.icon-heart-o:before {
   content: "i";
 }
 .icon-camera-symbol-1:before {
   content: "j";
 }
-.icon-megaphone-2:before {
+.icon-notifications:before {
   content: "k";
 }
-.icon-plane-paper-1:before {
+.icon-email:before {
   content: "l";
 }
-.icon-profile-1:before {
+.icon-profile-2:before {
   content: "m";
 }
-.icon-id-7:before {
+.icon-profile-id:before {
   content: "n";
 }
-.icon-sign-new-1:before {
+.icon-new:before {
   content: "o";
 }
-.icon-sign-new-2:before {
+.icon-new-o:before {
   content: "p";
 }
-.icon-photo-1:before {
+.icon-photo:before {
   content: "q";
 }
-.icon-photos-1:before {
+.icon-photos:before {
   content: "r";
 }
-.icon-play-1:before {
+.icon-play:before {
   content: "s";
 }
 .icon-television:before {
   content: "t";
 }
-.icon-forward-1:before {
+.icon-next:before {
   content: "u";
 }
-.icon-backward-1:before {
+.icon-previous:before {
   content: "v";
 }
-.icon-pause-1:before {
+.icon-pause:before {
   content: "w";
 }
-.icon-notes-1:before {
+.icon-music:before {
   content: "x";
 }
 .icon-menu:before {
   content: "y";
 }
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+.icon-star:before {
+  content: "z";
+}
+.icon-star-o:before {
+  content: "A";
+}
+.icon-trophy:before {
+  content: "B";
+}
+.icon-qr-code:before {
+  content: "C";
+}
+.icon-cross:before {
+  content: "D";
 }

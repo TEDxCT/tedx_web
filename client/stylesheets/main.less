@@ -7,6 +7,10 @@
     Main Content
    ------------------- */
 
+*{
+  transition: all 0.8s ease;
+}
+
 html, body {
   height: 100%;
 }
@@ -66,7 +70,7 @@ footer {
 }
 
 footer p {
-  padding-top: 10px;  
+  padding-top: 10px;
   display: inline-block;
   color: #FFDFDA;
 }
@@ -79,4 +83,29 @@ footer p {
   background: #D0021B;
   height: 100px;
   width: 100%;
+}
+
+.form {
+  label {
+    display: block;
+    text-transform: UPPERCASE;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  input[type="text"] {
+    color: #999;
+    background: transparent;
+    border: 1px solid #f3f3f3;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    max-width: 340px;
+    margin: 5px 0 5px 0;
+    padding-left: 5px;
+
+    &:focus {
+      border-color: #666;
+      color: #666;
+    }
+  }
 }

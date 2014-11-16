@@ -10,12 +10,13 @@
 <template name="video">
   <article>
     <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
-    <button class="edit small">Edit</button>
+    {{#if currentUser}}<button class="edit small">Edit</button>{{/if}}
     <div class="actions">
       <div class="title">{{this.name}}</div>
       <div class="sub-title">{{this.description}}</div>
     </div>
     <div class="overlay"></div>
+    {{> editvideo this}}
   </article>
 </template>
 
@@ -38,5 +39,23 @@
     <button class="zoom small">Small</button>
     <button class="zoom medium">Medium</button>
     <button class="zoom large">Large</button>
+  </div>
+</template>
+
+<template name="editvideo">
+  <div class="edit-sheet">
+    <i class="icon-close close"></i>
+    <h3>EDIT VIDEO</h3>
+    <p>You can edit this video right here. Just remember your changes are only saved when you click 'save'.</p>
+    <div class="form">
+      <label>Name</label>
+      <input type="text" class="editable name" value="{{this.name}}" />
+      <label>Description</label>
+      <input type="text" class="editable description" value="{{this.description}}" />
+      <label>URL</label>
+      <input type="text" class="editable url" value="{{this.url}}" />
+      <button class="edit-video cancel">Cancel</button>
+      <button class="edit-video save">Save</button>
+    </div>
   </div>
 </template>
