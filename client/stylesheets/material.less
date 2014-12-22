@@ -80,6 +80,7 @@
     text-align: center;
     padding-top: 7px;
     font-weight: 400;
+    font-size: 16px;
     margin-left: 38px;
 
     &.active {
@@ -114,3 +115,30 @@
   }
 }
 
+.icon-button {
+  background: transparent;
+  color: white;
+  position: relative;
+  border: none;
+  padding-left: 7px;
+  padding-top: 7px;
+  min-width: 5px;
+  i {
+    font-size: 28px;
+  }
+
+  &:hover {
+    background: transparent;
+    color: #FFF46E;
+    :before {
+      content: "E";
+    }
+  }
+
+  &.favorited {
+    color: #FFF46E;
+    :before {
+      content: "E";
+    }
+  }
+}

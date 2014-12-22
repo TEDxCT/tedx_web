@@ -14,7 +14,11 @@
 <template name="video">
   <article>
     <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
-    {{#if currentUser}}<button class="edit small">Edit</button>{{/if}}
+    {{#if currentUser}}<button class="edit small">Edit</button>
+    <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
+      <i class="icon-star"></i>
+    </button>
+    {{/if}}
     <div class="actions">
       <div class="title">{{this.name}}</div>
       <div class="sub-title">{{this.description}}</div>

@@ -6,7 +6,7 @@ Template['videos'].helpers({
 
       if(someCursor.count() == 0)
       {
-          var search = ".*" + searchString + ".*";          
+          var search = ".*" + searchString + ".*";
           return videos.find({"name" : {$regex : search}});
       }
     }
@@ -14,6 +14,14 @@ Template['videos'].helpers({
   },
   "videosLoaded" : function () {
     return Session.get('videosLoaded');
+  },
+});
+
+Template['video'].helpers({
+  "favorited" : function() {
+    var videoFav = favorites.findOne({"doc":this._id});
+    if(videoFav) return true;
+    return false;
   }
 });
 
@@ -31,6 +39,18 @@ Template['video'].events({
     'click .edit': function(event, template) {
       $(template.find(".edit-sheet")).toggleClass("active");
     },
+    'click .favorite': function(event, template) {
+      var videoFav = favorites.findOne({"doc":this._id});
+      if(videoFav){
+        console.log("archiving");
+        favorites.update({"_id":videoFav._id}, {$set: {"archived":true}});
+      }
+      else {
+        var favorite = favorites.insert({"owner": Meteor.userId(), "type": "video", "doc": this._id});
+        console.log("Favorited");
+        console.dir(favorite);
+      }
+    }
 });
 
 Template['editvideo'].events({

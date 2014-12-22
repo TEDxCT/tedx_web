@@ -5,6 +5,17 @@ if (Meteor.isServer) {
     insert : function () {
       return true;
     },
+    update : function (doc) {
+      return true;
+    },
+    remove : function () {
+      return true;
+    }
+  });
+  favorites.allow({
+    insert : function () {
+      return true;
+    },
     update : function () {
       return true;
     },

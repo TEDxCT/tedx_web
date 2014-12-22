@@ -12,3 +12,7 @@ Template.toolbar.events({
     Session.set("search-term", template.find('#search_text').value);
   }
 });
+
+Meteor.subscribe('favorites', function onReady() {
+  Session.set('favoritesLoaded', true);
+});
