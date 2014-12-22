@@ -27,5 +27,8 @@ Template.header.events({
   },
   'click .log-out.button' : function () {
     Meteor.logout();
+  },
+  'keyup #search_text': function(event, template) {
+    Session.set("search-term", template.find('#search_text').value);
   }
 });
