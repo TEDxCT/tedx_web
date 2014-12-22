@@ -3,7 +3,7 @@
 .navbar, .navbar-default {
   background-color: @primaryBackgroundColor;
   color: #666;
-
+  border-bottom: 1px solid #f3f3f3;
   .navbar-brand {
     img {
       max-width: 200px;
@@ -56,6 +56,19 @@
       outline: none !important;
       background-color: #f1f1f1;
       color: #666;
+    }
+  }
+
+  .nav.navbar-nav li {
+    height: 72px;
+    min-width: 120px;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: 400;
+    margin-left: 38px;
+
+    &.active {
+      border-bottom: 3px solid #50E3C2;
     }
   }
 }
