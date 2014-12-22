@@ -3,20 +3,9 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-standard-app-packages
-less
-underscore
-accounts-password
-aldeed:collection2
+meteor-platform
 iron:router
-raix:handlebar-helpers
-nooitaf:semantic-ui-less
-audit-argument-checks
-fastclick
-zimme:iron-router-active
-manuelschoebel:ms-seo
-useraccounts:semantic-ui
-natestrauser:animate-css
-dburles:collection-helpers
-jquery
-accounts-google
+less
+fezvrasta:bootstrap-material-design
+accounts-ui
+accounts-password
