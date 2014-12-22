@@ -20,7 +20,7 @@
       <div class="sub-title">{{this.description}}</div>
     </div>
     <div class="overlay"></div>
-    {{> editvideo this}}
+    {{#if currentUser}}{{> editvideo this}}{{/if}}
   </article>
 </template>
 

@@ -1,0 +1,68 @@
+@import 'variables';
+
+.navbar, .navbar-default {
+  background-color: @primaryBackgroundColor;
+  color: #666;
+
+  .navbar-brand {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .navbar-form {
+    margin-top: 0px;
+  }
+
+  .btn:not(.btn-link):not(.btn-flat) {
+    color: #666;
+  }
+
+  .btn:hover:not(.btn-link):not(.btn-flat) {
+    color: #666;
+  }
+
+  .profile-nav a i{
+    font-size: 27px;
+  }
+
+  #login-buttons {
+    margin-top: 25px;
+    margin-right: 15px;
+
+    .accounts-dialog   {
+      border-radius: 0px;
+      padding: 20px;
+
+      input {
+        margin-bottom: 10px;
+      }
+
+      .login-button-form-submit {
+        margin-top: 15px;
+      }
+    }
+    .login-button.login-button-form-submit {
+      position: relative;
+      padding: 8px 30px;
+      border: 0;
+      margin: 10px 1px;
+      cursor: pointer;
+      border-radius: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.84);
+      transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none !important;
+      background-color: #f1f1f1;
+      color: #666;
+    }
+  }
+}
+
+.form label {
+  display: block;
+  text-transform: UPPERCASE;
+  font-weight: 500;
+  margin-top: 5px;
+}
