@@ -114,10 +114,11 @@ button.cancel:hover {
   background: #D14456;
 }
 
-button.small {
+button.btn-small {
   font-size: 14px;
   min-height: 30px;
   min-width: 60px;
+  margin-top: 0;
 }
 button.edit {
   background: rgba(255,255,255,0);
@@ -179,6 +180,23 @@ button.edit:hover {
   height: 390px;
   z-index: 999;
   box-sizing: border-box;
+
+  .sheet-content {
+    overflow: scroll;
+    height: 220px;
+  }
+  .sheet-actions {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: white;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
   &.active {
     bottom: 0px;

@@ -1,6 +1,6 @@
 <template name="feedback">
 
-  <button class="btn" id="open-modal">Feedback</button>
+  <a id="open-modal">Feedback</a>
   {{> modal}}
 
 </template>
@@ -8,13 +8,13 @@
 <template name="modal">
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="false">
-	 <div class="modal-header">                                                                                
-	  <a class="close" data-dismiss="modal">×</a>                                                             
-	  <h3>TEDxCapeTown would like your feedback on our new website!</h3>                                                                        
-	</div>                                                                                                    
-	<div class="modal-body" >    
-	    <div class="form">   
-            <label>Name</label>                                  
+	 <div class="modal-header">
+	  <a class="close" data-dismiss="modal">×</a>
+	  <h3>TEDxCapeTown would like your feedback on our new website!</h3>
+	</div>
+	<div class="modal-body" >
+	    <div class="form">
+            <label>Name</label>
 	        <input type="text"  placeholder="First name..." />
 	        <label></label>
 	        <input type="text"  placeholder="Last name..." />
@@ -24,11 +24,11 @@
 			<textarea rows="4"></textarea>
         </div>
 
-	</div>                                                                                                    
-	<div class="modal-footer">                                                                                
-	  <a href="#" class="btn btn-success">Call to action</a>                                                  
-	  <a href="#" class="btn" data-dismiss="modal">Close</a>                                                  
-	</div>  
+	</div>
+	<div class="modal-footer">
+	  <a href="#" class="btn btn-success">Call to action</a>
+	  <a href="#" class="btn" data-dismiss="modal">Close</a>
+	</div>
 </div><!-- /.modal -->
 </template>
 

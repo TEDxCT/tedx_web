@@ -4,6 +4,12 @@
   background-color: @primaryBackgroundColor;
   color: #666;
   border-bottom: 1px solid #f3f3f3;
+  .container-fluid {
+    .navbar-brand {
+      margin-left: 10px;
+      margin-top: 7px;
+    }
+  }
   .navbar-brand {
     img {
       max-width: 200px;
@@ -42,18 +48,33 @@
     color: #666;
   }
 
-  .nav.navbar-nav li.profile-nav  {
-    margin: 0;
-    min-width: 0;
+  .nav.navbar-nav {
 
-    a i{
-      font-size: 27px;
+    li.profile-nav  {
+      margin: inherit 0 0 0;
+      min-width: 0;
+    }
+
+    li.profile-nav-avatar {
+      margin: inherit 0 0 0;
+      min-width: 0;
+      padding-top: 4px;
+      a i{
+        font-size: 27px;
+      }
     }
   }
 
+
+  .nav.navbar-nav li.search-nav  {
+    margin: 0;
+    min-width: 0;
+    font-size: 20px;
+  }
+
   #login-buttons{
-    margin: 10px;
-    padding: 11px 8px 8px 8px;
+    margin: 0px;
+    padding: 15px 8px 8px 8px;
     font-family: @fontFace;
 
     a {
@@ -134,7 +155,7 @@
     padding-top: 7px;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 38px;
+    margin-left: 18px;
 
     &.active {
       border-bottom: 3px solid #50E3C2;
@@ -194,4 +215,8 @@
       content: "E";
     }
   }
+}
+
+.btn-primary.btn-flat:not(.btn-link) {
+  color: @primaryColor;
 }

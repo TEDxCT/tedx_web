@@ -14,7 +14,7 @@
 <template name="video">
   <article>
     <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
-    {{#if currentUser}}<button class="edit small">Edit</button>
+    {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
       <i class="icon-star"></i>
     </button>
@@ -33,15 +33,24 @@
     <div class="add-sheet sheet">
       <h3>ADD VIDEO</h3>
       <p>Add videos from this box. As soon as you save this video it will appear on the website.</p>
-      <div class="form">
-        <label>Name</label>
-        <input type="text" class="addible name" placeholder="Short and catchy..." />
-        <label>Description</label>
-        <input type="text" class="addible description" placeholder="More indepth info..." />
-        <label>URL</label>
-        <input type="text" class="addible url" placeholder="Youtube embed link.." />
-        <button class="add-video save">Add</button>
-    </div>
+      <div class="sheet-content">
+        <div class="form">
+          <label>Name</label>
+          <input type="text" class="addible name" placeholder="Short and catchy..." />
+          <label>Description</label>
+          <input type="text" class="addible description" placeholder="More indepth info..." />
+          <label>URL</label>
+          <input type="text" class="addible url" placeholder="Youtube embed link..." />
+          <label>Speaker Name</label>
+          <input type="text" class="addible url" placeholder="Annie Bell..." />
+          <label>Speaker Avatar</label>
+          <input type="text" class="addible url" placeholder="Annie Bell..." />
+
+          <div class="sheet-actions">
+            <button class="add-video save btn btn-flat btn-primary">Add</button>
+          </div>
+      </div>
+      </div>
   </div>
   </article>
 </template>
@@ -70,8 +79,8 @@
       <input type="text" class="editable description" value="{{this.description}}" />
       <label>URL</label>
       <input type="text" class="editable url" value="{{this.url}}" />
-      <button class="edit-video cancel">Cancel</button>
-      <button class="edit-video save">Save</button>
+      <button class="edit-video cancel btn btn-flat">Cancel</button>
+      <button class="edit-video save btn btn-primary btn-flat">Save</button>
     </div>
   </div>
 </template>
