@@ -16,3 +16,10 @@ Template.toolbar.events({
 Meteor.subscribe('favorites', function onReady() {
   Session.set('favoritesLoaded', true);
 });
+
+Template.basicLayout.created = function() {
+ Router.configure({
+  progressSpinner: false
+  });
+}
+
