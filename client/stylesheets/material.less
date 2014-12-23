@@ -42,8 +42,13 @@
     color: #666;
   }
 
-  .profile-nav a i{
-    font-size: 27px;
+  .nav.navbar-nav li.profile-nav  {
+    margin: 0;
+    min-width: 0;
+
+    a i{
+      font-size: 27px;
+    }
   }
 
   #login-buttons {
@@ -53,6 +58,8 @@
     .accounts-dialog   {
       border-radius: 0px;
       padding: 20px;
+      border: none;
+      margin-right: 35px;
 
       input {
         margin-bottom: 10px;
@@ -62,11 +69,29 @@
         margin-top: 15px;
       }
     }
+    .login-form {
+      label {
+        font-size: inherit;
+        font-family: @fontFace;
+        text-align: left;
+      }
+      input[type="email"], input[type="password"] {
+        border-radius: 0px;
+        border: 0;
+        border-bottom: 2px solid;
+        border-color: #D7D7D7;
+      }
+
+      .additional-link {
+        text-decoration: none;
+        color: @secondaryLinkColor;
+      }
+    }
     .login-button.login-button-form-submit {
       position: relative;
-      padding: 8px 30px;
+      padding: 8px 0;
       border: 0;
-      margin: 10px 1px;
+      margin: 10px 0px 10px 0;
       cursor: pointer;
       border-radius: 2px;
       text-transform: uppercase;
@@ -74,8 +99,10 @@
       color: rgba(255, 255, 255, 0.84);
       transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
       outline: none !important;
-      background-color: #f1f1f1;
-      color: #666;
+      background-color: transparent;
+      color: @primaryColor;
+      font-size: 16px;
+      text-align: right;
     }
   }
 
