@@ -15,14 +15,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Talks <span class="sr-only">(current)</span></a></li>
+          <li class="icon-nav active"><a href="/"><i class="icon-home-house-streamline"></i></a></li>
+          <li><a href="/">Talks <span class="sr-only">(current)</span></a></li>
           <li><a href="/">Events <span class="sr-only">(current)</span></a></li>
           <li><a href="/">About <span class="sr-only">(current)</span></a></li>
 
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="search-nav"><a href=""><i class="icon-magnifier"></i></a></li>
+          <li class="icon-nav"><a href=""><i class="icon-magnifier"></i></a></li>
           <li>{{> feedback}}</li>
           <li class="profile-nav-avatar"><a href="#"><i class="icon-profile-2"></i></a></li>
           <li class="profile-nav">{{> loginButtons align="right"}}</li>
@@ -35,12 +36,14 @@
 <template name="basicLayout">
   <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
-{{> toolbar}}
-  <div class="container-fluid">
-    {{> yield}}
-  </div>
+  {{> toolbar}}
+  {{> yield}}
 </template>
 
 <template name="home">
-  {{> videos}}
+  <img class="full-width banner" src="/images/banners/tedx.png">
+  <div class="container-fluid">
+  <h1>Top Videos</h1>
+  {{> videos videos}}
+  </div>
 </template>

@@ -1,5 +1,11 @@
 @import 'variables';
 
+
+.videos {
+  .video:first-child {
+    margin-left: 0;
+  }
+}
 article {
   background: black;
   background-size: cover;
@@ -17,14 +23,15 @@ article.new {
 }
 
 article .actions {
-  background-color: #50E3C2;
+  background-color: @secondaryColor;
   bottom: 0px;
   box-sizing: border-box;
   height: 55px;
-  padding: 0 20px 0 30px;
+  padding: 5px 20px 0 30px;
   position: absolute;
   z-index: 99;
   width: 100%;
+  font-weight: 300;
 }
 
 article .video {
@@ -36,10 +43,10 @@ article .video {
 
 .title {
   color: white;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   width: 100%;
-  height:45px;
+  height:40px;
   z-index: 0;
   padding-top: 10px;
   overflow: hidden;

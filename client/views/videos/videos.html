@@ -1,18 +1,20 @@
 <template name="videos">
     {{#if videosLoaded}}
+    <div class="videos">
       {{#each videos}}
         {{> video this}}
       {{/each}}
       {{#if currentUser}}
         {{> newvideo}}
       {{/if}}
+    </div>
     {{else}}
       <div class="loader">Loading...</div>
     {{/if}}
 </template>
 
 <template name="video">
-  <article>
+  <article class="video">
     <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
     {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
