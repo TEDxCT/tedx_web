@@ -22,6 +22,9 @@
     </button>
     {{/if}}
     <div class="actions">
+      <div class="avatar">
+        <img src="{{this.avatar}}">
+      </div>
       <div class="title">{{this.name}}</div>
       <div class="sub-title">{{this.description}}</div>
     </div>
@@ -44,9 +47,9 @@
           <label>URL</label>
           <input type="text" class="addible url" placeholder="Youtube embed link..." />
           <label>Speaker Name</label>
-          <input type="text" class="addible url" placeholder="Annie Bell..." />
+          <input type="text" class="addible speaker" placeholder="Annie Bell..." />
           <label>Speaker Avatar</label>
-          <input type="text" class="addible url" placeholder="Annie Bell..." />
+          <input type="text" class="addible avatar" placeholder="Annie Bell..." />
 
           <div class="sheet-actions">
             <button class="add-video save btn btn-flat btn-primary">Add</button>
@@ -74,15 +77,21 @@
     <i class="icon-close close"></i>
     <h3>EDIT VIDEO</h3>
     <p>You can edit this video right here. Just remember your changes are only saved when you click 'save'.</p>
-    <div class="form">
-      <label>Name</label>
-      <input type="text" class="editable name" value="{{this.name}}" />
-      <label>Description</label>
-      <input type="text" class="editable description" value="{{this.description}}" />
-      <label>URL</label>
-      <input type="text" class="editable url" value="{{this.url}}" />
-      <button class="edit-video cancel btn btn-flat">Cancel</button>
-      <button class="edit-video save btn btn-primary btn-flat">Save</button>
-    </div>
+    <div class="sheet-content">
+      <div class="form">
+        <label>Name</label>
+        <input type="text" class="editable name" value="{{this.name}}" />
+        <label>Description</label>
+        <input type="text" class="editable description" value="{{this.description}}" />
+        <label>URL</label>
+        <input type="text" class="editable url" value="{{this.url}}" />
+        <label>Speaker Name</label>
+        <input type="text" class="editable speaker" value="{{this.speaker}}"  />
+        <label>Speaker Avatar</label>
+        <input type="text" class="editable avatar" value="{{this.avatar}}" placeholder="Link to speaker image" />
+        <button class="edit-video cancel btn btn-flat">Cancel</button>
+        <button class="edit-video save btn btn-primary btn-flat">Save</button>
+      </div>
+      </div>
   </div>
 </template>

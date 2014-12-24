@@ -15,9 +15,6 @@ Template['videos'].helpers({
   "videosLoaded" : function () {
     return Session.get('videosLoaded');
   },
-});
-
-Template['video'].helpers({
   "favorited" : function() {
     var videoFav = favorites.findOne({"doc":this._id});
     if(videoFav) return true;
@@ -50,7 +47,7 @@ Template['video'].events({
         console.log("Favorited");
         console.dir(favorite);
       }
-    }
+    },
 });
 
 Template['editvideo'].events({
@@ -58,11 +55,14 @@ Template['editvideo'].events({
     $(template.find(".edit-sheet")).toggleClass("active");
   },
   'click .save': function(event, template) {
-    var name = $(template.find(".editable.name")).val();
-    check(name, String);
-    var description = $(template.find(".editable.description")).val();
-    var url = $(template.find(".editable.url")).val();
-    videos.update({"_id":this._id}, {$set: {"name":name, "description":description, "url": url}});
+    var updatedVideo = new Object();
+    updatedVideo.name = $(template.find(".editable.name")).val();
+    updatedVideo.description = $(template.find(".editable.description")).val();
+    updatedVideo.url = $(template.find(".editable.url")).val();
+    updatedVideo.speaker = $(template.find(".editable.speaker")).val();
+    updatedVideo.avatar = $(template.find(".editable.avatar")).val();
+    console.dir(updatedVideo);
+    videos.update({"_id":this._id}, {$set: updatedVideo});
     $(template.find(".edit-sheet")).toggleClass("active");
   },
   'click .edit-sheet .close': function(event, template) {
