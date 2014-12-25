@@ -45,12 +45,6 @@ article .actions {
       display: block;
     }
   }
-
-  button.save {
-    float: right;
-    padding: 0px 39px 10px 10px;
-    margin: 0;
-  }
 }
 
 article .video {
@@ -117,17 +111,6 @@ button {
 }
 button:hover {
   background: #269BC0;
-}
-button.cancel {
-  position: absolute;
-  bottom: 10px;
-  right: 120px;
-  border-color: #D14456;
-  color: #D14456;
-}
-button.cancel:hover {
-  color: white;
-  background: #D14456;
 }
 
 button.btn-small {
@@ -209,6 +192,12 @@ button.edit:hover {
     padding-top: 10px;
     background: white;
     border-top: 1px solid #f3f3f3;
+
+    .save, .cancel {
+      float: right;
+      padding: 0px 39px 10px 10px;
+      margin: 0;
+    }
   }
 
   input[type="text"] {
