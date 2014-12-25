@@ -23,7 +23,7 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="icon-nav"><a href=""><i class="icon-magnifier"></i></a></li>
+          <li class="icon-nav search"><a href=""><i class="icon-magnifier"></i></a></li>
           <li>{{> feedback}}</li>
           <li class="profile-nav-avatar"><a href="#"><i class="icon-profile-2"></i></a></li>
           <li class="profile-nav">{{> loginButtons align="right"}}</li>
@@ -39,6 +39,9 @@
   {{> toolbar}}
   {{> yield}}
   {{> footer}}
+  {{#if searching}}
+    {{> search}}
+  {{/if}}
 </template>
 
 <template name="home">

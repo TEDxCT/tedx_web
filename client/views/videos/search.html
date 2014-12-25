@@ -1,0 +1,19 @@
+<template name="search">
+<div class="overlay">
+  <input type="text" id="search_text" placeholder="Search...">
+  <i class="icon-close close"></i>
+  <div class="videoResults container">
+    {{> results videos}}
+  </div>
+
+
+</div>
+
+
+</template>
+
+<template name="results">
+ {{#each this}}
+        {{> video this}}
+      {{/each}}
+</template>

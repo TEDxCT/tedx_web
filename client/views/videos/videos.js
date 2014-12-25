@@ -1,16 +1,6 @@
 Template['videos'].helpers({
   "videos" : function() {
-    var searchString = Session.get("search-term");
-    if(searchString) {
-      var someCursor = videos.find({ name: searchString });
-
-      if(someCursor.count() == 0)
-      {
-          var search = ".*" + searchString + ".*";
-          return videos.find({"name" : {$regex : search}});
-      }
-    }
-    else return videos.find({});
+    return videos.find({});
   },
   "videosLoaded" : function () {
     return Session.get('videosLoaded');

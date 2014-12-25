@@ -8,9 +8,9 @@ Template.toolbar.events({
   'click .log-out.button' : function () {
     Meteor.logout();
   },
-  'keyup #search_text': function(event, template) {
-    Session.set("search-term", template.find('#search_text').value);
-  },
+  'click .search': function() {
+    Session.set("searching", true);
+  }
 });
 
 Template.toolbar.helpers({
@@ -31,5 +31,12 @@ Template.basicLayout.created = function() {
  Router.configure({
   progressSpinner: false
   });
+}
+
+Template.basicLayout.searching = function() {
+  if(Session.get("searching")) {
+    return true;
+  }
+  else return false;
 }
 
