@@ -1,9 +1,9 @@
 Meteor.publish('videos', function () {
-  return videos.find();
+  return videos.find({"archived": {$ne : true}});
 });
 
 Meteor.publish('topvideos', function () {
-  return videos.find();
+  return videos.find({"archived": {$ne : true}});
 });
 
 Meteor.publish('favorites', function () {

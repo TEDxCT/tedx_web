@@ -65,6 +65,10 @@ Template['editvideo'].events({
     videos.update({"_id":this._id}, {$set: updatedVideo});
     $(template.find(".edit-sheet")).toggleClass("active");
   },
+  'click .edit-sheet .archive': function(event, template) {
+   videos.update({"_id":this._id}, {$set: {"archived": true}});
+    $(template.find(".edit-sheet")).toggleClass("active");
+  },
   'click .edit-sheet .close': function(event, template) {
     $(template.find(".edit-sheet")).toggleClass("active");
   },
