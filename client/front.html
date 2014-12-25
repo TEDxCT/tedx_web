@@ -15,8 +15,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="icon-nav active"><a href="/"><i class="icon-home-house-streamline"></i></a></li>
-          <li><a href="/">Talks <span class="sr-only">(current)</span></a></li>
+          <li class="icon-nav {{ activeIfTemplateIs 'home' }}"><a href="/"><i class="icon-home-house-streamline"></i></a></li>
+          <li class="{{ activeIfTemplateIs 'talks' }}"><a href="{{ pathFor 'talks'}}" class="talks">Talks <span class="sr-only">(current)</span></a></li>
           <li><a href="/">Events <span class="sr-only">(current)</span></a></li>
           <li><a href="/">About <span class="sr-only">(current)</span></a></li>
 

@@ -37,6 +37,7 @@ iron:location@1.0.6
 iron:middleware-stack@1.0.6
 iron:router@1.0.6
 iron:url@1.0.6
+isotope:isotope@2.1.0_1
 jquery@1.0.2
 json@1.0.2
 launch-screen@1.0.1
@@ -56,6 +57,7 @@ oauth@1.1.3
 oauth2@1.1.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+ovcharik:favico@0.3.5
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
