@@ -14,12 +14,14 @@ Template.search.helpers({
   "videos" : function() {
     var searchString = Session.get("search-term");
     if(searchString) {
-      var someCursor = videos.find({ name: searchString });
+
+      var someCursor = videos.find({ $or: [ { name: searchString }, { speaker: searchString } ] });
       if(someCursor.count() == 0)
       {
           var search = ".*" + searchString + ".*";
-          return videos.find({"name" : {$regex : search}});
+          return videos.find({ $or: [ {"name" : {$regex : search}}, { speaker: {$regex : search} } ] });
       }
+      else return someCursor.fetch();
     }
     else return "";
   },

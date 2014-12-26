@@ -36,7 +36,7 @@ Template.addVideo.events({
   },
   'click .add-sheet-three .back' : function(event, template) {
     $(template.find(".add-sheet-three")).addClass("hide");
-    $(template.find(".add-sheet-two")).removeClass("hide");    
+    $(template.find(".add-sheet-two")).removeClass("hide");
     $(template.find(".add-sheet-three")).addClass("bounceInLeft");
   }
 })
@@ -48,6 +48,10 @@ Template.newvideo.events({
     check(name, String);
     video.description = $(template.find(".addible.description")).val();
     video.url = $(template.find(".addible.url")).val();
+    video.speaker = $(template.find(".addible.speaker")).val();
+    video.avatar = $(template.find(".addible.avatar")).val();
+    video.sections = $(template.find(".addible.sections")).val().split(',');
+    video.categories = $(template.find(".addible.categories")).val().split(',');
     videos.insert(video);
   }
 });
