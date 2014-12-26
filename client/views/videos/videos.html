@@ -1,12 +1,12 @@
 <template name="videos">
     {{#if videosLoaded}}
     <div class="videos">
+    {{#if currentUser}}
+        {{> newvideo}}
+      {{/if}}
       {{#each videos}}
         {{> video this}}
       {{/each}}
-      {{#if currentUser}}
-        {{> newvideo}}
-      {{/if}}
     </div>
     {{else}}
       <div class="loader">Loading...</div>

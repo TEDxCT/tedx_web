@@ -10,14 +10,15 @@ Template.toolbar.events({
   },
   'click .search': function() {
     Session.set("searching", true);
+  },
+  'click .feedback': function() {
+    Session.set("feedbacking", true);
   }
 });
 
 Template.toolbar.helpers({
   activeIfTemplateIs: function (template) {
       var currentRoute = Router.current();
-      console.log(currentRoute.lookupTemplate());
-      console.log(template);
       return currentRoute &&
         template.toLowerCase() === currentRoute.lookupTemplate().toLowerCase() ? 'active' : '';
     }
@@ -33,10 +34,18 @@ Template.basicLayout.created = function() {
   });
 }
 
-Template.basicLayout.searching = function() {
-  if(Session.get("searching")) {
-    return true;
-  }
-  else return false;
-}
+Template.basicLayout.helpers({
+  searching: function() {
+    if(Session.get("searching")) {
+      return true;
+    }
+    else return false;
+  },
+  feedbacking: function() {
+    if(Session.get("feedbacking")) {
+      return true;
+    }
+    else return false;
+  },
+});
 

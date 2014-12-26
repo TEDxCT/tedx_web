@@ -9,25 +9,47 @@
   background: linear-gradient(to bottom, rgba(245, 245, 245, 0.98) 0%, rgba(240, 240, 255, 0.96) 100%);
   z-index: 9999;
 
-  .close {
-    position: fixed;
-    display: block;
-    top: 20px;
-    right: 20px;
-    z-index: 10000;
-    color: #666;
-    opacity: 1;
 
-    &:hover {
-      opacity: 0.9;
-    }
-  }
 
   h3 {
     text-align: center;
     margin-bottom: 32px;
   }
 }
+
+.overlay-content {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  width: 100%;
+  text-align: center;
+
+  .sheet.form-sheet {
+    padding-top: 20px;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 10000;
+    top: 50px;
+  }
+}
+
+.close {
+    position: fixed;
+    display: block;
+    top: 20px;
+    right: 20px;
+    z-index: 10001;
+    color: #666;
+    opacity: 1;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 
 #search_text {
   width: 80%;

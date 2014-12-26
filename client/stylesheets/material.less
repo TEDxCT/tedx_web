@@ -134,18 +134,19 @@ h1 {
       }
     }
     .login-form {
-      label {
-        font-size: inherit;
-        font-family: @fontFace;
-        text-align: left;
-      }
-      input[type="email"], input[type="password"] {
-        border-radius: 0px;
-        border: 0;
-        border-bottom: 2px solid;
-        border-color: #D7D7D7;
-      }
+input[type="text"], input[type="email"], input[type="password"] {
+  border-radius: 0px;
+  border: 0;
+  border-bottom: 2px solid;
+  border-color: #D7D7D7;
+  font-weight: 300;
+}
 
+label {
+  font-size: inherit;
+  font-family: @fontFace;
+  text-align: left;
+}
       .additional-link {
         text-decoration: none;
         color: @secondaryLinkColor;
@@ -211,12 +212,12 @@ h1 {
   align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color:rgba(0,0,0,0.8);
-  color: rgb(255,255,255);
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0.98) 0%, rgba(240, 240, 255, 0.96) 100%);
+  color: @primaryTextColor;
 
 
   .modal-header {
-    color: rgb(255,255,255);
+
   }
 
 
@@ -256,4 +257,18 @@ h1 {
 
 .btn-primary.btn-flat:not(.btn-link) {
   color: @primaryColor;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  border-radius: 0px;
+  border: 0;
+  border-bottom: 2px solid;
+  border-color: #D7D7D7;
+  font-weight: 300;
+}
+
+label {
+  font-size: inherit;
+  font-family: @fontFace;
+  text-align: left;
 }

@@ -24,7 +24,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="icon-nav search"><a href=""><i class="icon-magnifier"></i></a></li>
-          <li>{{> feedback}}</li>
+          <li class="feedback"><a href="#feedback">Feedback</a></li>
           <li class="profile-nav-avatar"><a href="#"><i class="icon-profile-2"></i></a></li>
           <li class="profile-nav">{{> loginButtons align="right"}}</li>
         </ul>
@@ -37,10 +37,15 @@
   <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
   {{> toolbar}}
-  {{> yield}}
+  <div id="page" class="animated">
+    {{> yield}}
+  </div>
   {{> footer}}
   {{#if searching}}
     {{> search}}
+  {{/if}}
+  {{#if feedbacking}}
+    {{> feedback}}
   {{/if}}
 </template>
 

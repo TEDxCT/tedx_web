@@ -29,13 +29,10 @@ Template['video'].events({
     'click .favorite': function(event, template) {
       var videoFav = favorites.findOne({"doc":this._id});
       if(videoFav){
-        console.log("archiving");
         favorites.update({"_id":videoFav._id}, {$set: {"archived":true}});
       }
       else {
         var favorite = favorites.insert({"owner": Meteor.userId(), "type": "video", "doc": this._id});
-        console.log("Favorited");
-        console.dir(favorite);
       }
     },
 });
@@ -51,7 +48,6 @@ Template['editvideo'].events({
     updatedVideo.url = $(template.find(".editable.url")).val();
     updatedVideo.speaker = $(template.find(".editable.speaker")).val();
     updatedVideo.avatar = $(template.find(".editable.avatar")).val();
-    console.dir(updatedVideo);
     videos.update({"_id":this._id}, {$set: updatedVideo});
     $(template.find(".edit-sheet")).toggleClass("active");
   },

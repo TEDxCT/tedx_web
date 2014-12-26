@@ -1,6 +1,7 @@
 Template.search.events({
-    'click .search-close.close' : function() {
-        Session.set("searching", false);
+    'click .close' : function(event, template) {
+        $(template.find(".overlay")).addClass("fadeOutUp");
+        setTimeout(function(){Session.set("searching", false);}, 300);
         Session.set("search-term", "");
     },
     'keyup #search_text': function(event, template) {
