@@ -12,17 +12,47 @@ Template['videos'].helpers({
   }
 });
 
-Template['newvideo'].events({
-  'click .add-video': function(event, template) {
-    var name = $(template.find(".addible.name")).val();
+Template.addVideo.events({
+  'click .close' : function(event, template) {
+    $(template.find(".overlay")).addClass("fadeOutUp");
+    $(template.find(".overlay-content")).addClass("bounceOutUp");
+    setTimeout(function(){Session.set("addingvideo", false);}, 300);
+  },
+  'click .next' : function(event, template) {
+    $(template.find(".add-sheet")).addClass("hide");
+    $(template.find(".add-sheet-two")).removeClass("hide");
+    $(template.find(".add-sheet-two")).addClass("bounceInRight");
+  },
+  'click .add-sheet-two .next' : function(event, template) {
+    $(template.find(".add-sheet-three")).removeClass("hide");
+    $(template.find(".add-sheet")).addClass("hide");
+    $(template.find(".add-sheet-two")).addClass("hide");
+    $(template.find(".add-sheet-three")).addClass("bounceInRight");
+  },
+  'click .back' : function(event, template) {
+    $(template.find(".add-sheet-two")).removeClass("bounceInRight");
+    $(template.find(".add-sheet-two")).addClass("hide");
+    $(template.find(".add-sheet")).removeClass("hide");
+  },
+  'click .add-sheet-three .back' : function(event, template) {
+    $(template.find(".add-sheet-three")).addClass("hide");
+    $(template.find(".add-sheet-two")).removeClass("hide");    
+    $(template.find(".add-sheet-three")).addClass("bounceInLeft");
+  }
+})
+
+Template.newvideo.events({
+  'click .add-video.save': function(event, template) {
+    var video = new Object();
+    video.name = $(template.find(".addible.name")).val();
     check(name, String);
-    var description = $(template.find(".addible.description")).val();
-    var url = $(template.find(".addible.url")).val();
-    videos.insert({"name":name, "description":description, "url":url});
+    video.description = $(template.find(".addible.description")).val();
+    video.url = $(template.find(".addible.url")).val();
+    videos.insert(video);
   }
 });
 
-Template['video'].events({
+Template.video.events({
     'click .edit': function(event, template) {
       $(template.find(".edit-sheet")).toggleClass("active");
     },

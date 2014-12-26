@@ -1,9 +1,6 @@
 <template name="videos">
     {{#if videosLoaded}}
     <div class="videos">
-    {{#if currentUser}}
-        {{> newvideo}}
-      {{/if}}
       {{#each videos}}
         {{> video this}}
       {{/each}}
@@ -45,17 +42,44 @@
           <label>Description</label>
           <input type="text" class="addible description" placeholder="More indepth info..." />
           <label>URL</label>
-          <input type="text" class="addible url" placeholder="Youtube embed link..." />
-          <label>Speaker Name</label>
-          <input type="text" class="addible speaker" placeholder="Annie Bell..." />
-          <label>Speaker Avatar</label>
-          <input type="text" class="addible avatar" placeholder="Annie Bell..." />
-
+          <input type="text" class="addible url" placeholder="Youtube embed link..." />          
           <div class="sheet-actions">
-            <button class="add-video save btn btn-flat btn-primary">Add</button>
+            <button class="next btn btn-flat btn-primary">Next</button>
           </div>
       </div>
+    </div>
+  </div>
+  <div class="add-sheet-two sheet hide animated">
+    <h3>ADD SPEAKER</h3>
+    <p>Add videos from this box. As soon as you save this video it will appear on the website.</p>
+    <div class="sheet-content">
+      <div class="form">
+        <label>Speaker Name</label>
+        <input type="text" class="addible speaker" placeholder="Annie Bell..." />
+        <label>Speaker Avatar</label>
+        <input type="text" class="addible avatar" placeholder="Annie Bell..." />
+        <div class="sheet-actions">
+          <button class="next btn btn-flat btn-primary">Next</button>
+          <button class="back btn btn-flat">Back</button>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="add-sheet add-sheet-three sheet animated hide">
+    <h3>ADD META DATA</h3>
+    <p>Add a category to this video so that it will appear in the right places.</p>
+    <div class="sheet-content">
+      <div class="form">
+        <label>TEDx Chapter</label>
+        <input type="text" class="addible name" placeholder="Women, Kids..." />
+        <label>Categories</label>
+        <input type="text" class="addible description" placeholder="Events, Global..." />
+        <div class="sheet-actions">
+          <button class="add-video save btn btn-flat btn-primary">Save</button>
+          <button class="back btn btn-flat">Back</button>
+        </div>
+      </div>
+    </div>
   </div>
   </article>
 </template>

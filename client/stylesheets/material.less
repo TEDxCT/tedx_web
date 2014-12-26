@@ -17,6 +17,10 @@ h1 {
   background-color: @primaryBackgroundColor;
   color: #666;
 
+  .scrolled {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
   .container-fluid {
     .navbar-brand {
       margin-left: 0px;
@@ -82,6 +86,10 @@ h1 {
       padding-top: 4px;
       a i{
         font-size: 27px;
+      }
+
+      .caret {
+        vertical-align: text-top;
       }
     }
   }
@@ -195,9 +203,27 @@ label {
     font-size: 16px;
     margin-left: 18px;
 
+    a:hover {
+      color: @primaryColor;
+    }
     &.active {
       border-bottom: 3px solid #50E3C2;
     }
+  }
+}
+
+.dropdown.profile-nav-avatar.open .dropdown-menu li {
+  height: 40px;
+
+  &.dropdown-title {
+    text-transform: UPPERCASE;
+    font-size: 14px;
+  }
+
+  &.divider {
+    height: 10px;
+    background: transparent;
+    border-bottom: 1px solid #f3f3f3;
   }
 }
 

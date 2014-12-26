@@ -25,8 +25,22 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="icon-nav search"><a href=""><i class="icon-magnifier"></i></a></li>
           <li class="feedback"><a href="#feedback">Feedback</a></li>
-          <li class="profile-nav-avatar"><a href="#"><i class="icon-profile-2"></i></a></li>
-          <li class="profile-nav">{{> loginButtons align="right"}}</li>
+
+          {{#if currentUser}}
+          <li class="dropdown profile-nav-avatar">
+            <!-- <li class="profile-nav-avatar"><a href="#"></a></li>   -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="icon-profile-2"></i> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-title">Videos</li>
+              <li><a href="#">Manage categories</a></li>
+              <li class="add-video"><a href="#">Add video</a></li>
+              <li class="divider"></li>
+              <li id="logout"><a href="#">Logout</a></li>
+            </ul>
+          </li>
+          {{else}}
+            <li class="profile-nav">{{> loginButtons align="right"}}</li>
+          {{/if}}
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -47,6 +61,17 @@
   {{#if feedbacking}}
     {{> feedback}}
   {{/if}}
+  {{#if addingvideo}}
+    {{> addVideo}}
+  {{/if}}
+
+</template>
+
+<template name="addVideo">
+  {{> overlay}}
+  <div class="overlay-content animated bounceInUp">
+    {{> newvideo}}
+  </div>
 </template>
 
 <template name="home">

@@ -13,6 +13,12 @@ Template.toolbar.events({
   },
   'click .feedback': function() {
     Session.set("feedbacking", true);
+  },
+  'click .add-video': function() {
+    Session.set("addingvideo", true);
+  },
+  'click #logout': function() {
+    Meteor.logout();
   }
 });
 
@@ -30,8 +36,8 @@ Meteor.subscribe('favorites', function onReady() {
 
 Template.basicLayout.created = function() {
  Router.configure({
-  progressSpinner: false
-  });
+   progressSpinner: false
+ });
 }
 
 Template.basicLayout.helpers({
@@ -47,5 +53,10 @@ Template.basicLayout.helpers({
     }
     else return false;
   },
+  addingvideo: function() {
+    if(Session.get("addingvideo")) {
+      return true;
+    }
+    else return false;
+  }
 });
-
