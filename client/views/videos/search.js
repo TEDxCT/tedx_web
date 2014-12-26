@@ -1,6 +1,7 @@
 Template.search.events({
     'click .close' : function(event, template) {
         $(template.find(".overlay")).addClass("fadeOutUp");
+        $(template.find(".overlay-content")).addClass("bounceOutUp");
         setTimeout(function(){Session.set("searching", false);}, 300);
         Session.set("search-term", "");
     },
