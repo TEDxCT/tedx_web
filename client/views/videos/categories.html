@@ -1,0 +1,24 @@
+<template name="manageCategories">
+  <div class="container-fluid">
+    <h1><small><i class="icon-tags"></i></small> Manage Categories</h1>
+    {{#each categories}}
+      {{> category this}}
+    {{/each}}
+    <br>
+    <div class="category-form">
+      <input type="text" placeholder="Category name..." class="animated form-control typeahead addible name" autocomplete="off" spellcheck="off"
+    data-source="categorynames" />
+      <button class="btn btn-primary add-category">Add</button>
+    </div>
+  </div>
+</template>
+
+<template name="category">
+  <div class="category">
+    {{this.name}}
+    <!-- Admin -->
+    {{#if currentUser}}
+      <i class="icon-close archive"></i>
+    {{/if}}
+  </div>
+</template>
