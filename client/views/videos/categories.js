@@ -7,6 +7,23 @@ Template.manageCategories.helpers({
   },
 });
 
+Template.categories.helpers({
+  'categories': function() {
+    return categories.find({});
+  },
+});
+
+Template.category.events({
+  'click .category-selected': function(event, template) {
+    var categories = Session.get("categories");
+    if(categories) {
+      categories.push(this._id);
+      Session.set("categories", categories);
+    }
+    else Session.set("categories", [this._id]);
+  }
+})
+
 Template.manageCategories.events({
   'click .add-category': function(event, template) {
     var name = $(template.find(".addible.name"));
@@ -21,5 +38,5 @@ Template.manageCategories.events({
   },
   'click .archive': function(event, template) {
     categories.update({"_id":this._id}, {$set : {"archived": true}});
-  }
+  },
 });

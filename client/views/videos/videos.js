@@ -51,8 +51,9 @@ Template.newvideo.events({
     video.speaker = $(template.find(".addible.speaker")).val();
     video.avatar = $(template.find(".addible.avatar")).val();
     video.sections = $(template.find(".addible.sections")).val().split(',');
-    video.categories = $(template.find(".addible.categories")).val().split(',');
+    video.categories = Session.get("categories");
     videos.insert(video);
+    Session.set("categories", "");
   }
 });
 

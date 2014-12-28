@@ -16,9 +16,18 @@
 <template name="category">
   <div class="category">
     {{this.name}}
+    <input type="checkbox" class="category-selected" />
     <!-- Admin -->
     {{#if currentUser}}
       <i class="icon-close archive"></i>
     {{/if}}
   </div>
+</template>
+
+<template name="categories">
+    <div class="categories">
+    {{#each categories}}
+      {{> category this}}
+    {{/each}}
+    </div>
 </template>

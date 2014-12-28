@@ -1,3 +1,7 @@
+Meteor.subscribe('categories', function onReady() {
+  Session.set('categoriesLoaded', true);
+});
+
 Template.toolbar.events({
   // 'click .show-login' : function (event, template) {
   //   $(".login").toggleClass("active");
