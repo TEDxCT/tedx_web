@@ -2,13 +2,18 @@ Meteor.subscribe('categories', function onReady() {
   Session.set('categoriesLoaded', true);
 });
 
+Template.home.helpers({
+  "topvideos": function() {
+    var topConfig = config.findOne({"name":"top"});
+    check(topConfig, Object);
+    if(topConfig.tags) {
+      return videos.find({"categories": {$in: topConfig.tags}});
+    }
+    else return videos.find({});
+  }
+});
+
 Template.toolbar.events({
-  // 'click .show-login' : function (event, template) {
-  //   $(".login").toggleClass("active");
-  //   $(".login .action-icon").toggleClass("hidden");
-  //   $(".login .icon-close").toggleClass("hidden");
-  //   $(".header-wrapper").toggleClass("active");
-  // },
   'click .log-out.button' : function () {
     Meteor.logout();
   },

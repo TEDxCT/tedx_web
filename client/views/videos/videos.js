@@ -31,7 +31,7 @@ Template.editvideo.helpers({
     }
   },
   'allCategories': function() {
-    var videoCategories = this.categories;    
+    var videoCategories = this.categories;
     var index;
 
     if(videoCategories) {
@@ -40,6 +40,7 @@ Template.editvideo.helpers({
         return cats;
       }
     }
+    else return categories.find({});
 
   }
 })
@@ -76,6 +77,30 @@ Template.addVideo.events({
 })
 
 Template.newvideo.events({
+  'click .category-selected': function(event, template) {
+    var category = event.currentTarget.attributes.category.value;
+    var checkbox = $(template.find("." + category));
+    var categories = Session.get("categories");
+
+    if(checkbox.is(':checked')) {
+      if(categories) {
+        if(categories.indexOf(category)==-1) {
+          categories.push(category);
+          Session.set("categories", categories);
+        }
+      }
+      else Session.set("categories", [category]);
+    }
+    else {
+      if(categories) {
+        if(categories.indexOf(category)==-1) {
+          categories.pop(category);
+          Session.set("categories", categories);
+        }
+      }
+      else Session.set("categories", [category]);
+    }
+  },
   'click .add-video.save': function(event, template) {
     var video = new Object();
     video.name = $(template.find(".addible.name")).val();
@@ -137,7 +162,10 @@ Template['editvideo'].events({
     var checkbox = $(template.find("." + category));
 
     if(checkbox.is(':checked')) {
-      videos.update({"_id":template.data._id}, {$push: {"categories": category}});
+      // if(videos.update({"_id":template.data._id}).categories) {
+        videos.update({"_id":template.data._id}, {$push: {"categories": category}});
+      // }
+      // else videos.update({"_id":template.data._id}, {$set: {"categories": category}});
     }
     else {
       videos.update({"_id":template.data._id}, {$pull: {"categories": category}});

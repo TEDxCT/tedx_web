@@ -23,28 +23,7 @@ Template.categories.helpers({
 });
 
 Template.category.events({
-  'click .category-selected': function(event, template) {
-    var categories = Session.get("categories");
-    var checkbox = $(template.find("." + this._id));
-    if(checkbox.selected()) {
-      if(categories) {
-        if(categories.indexOf(this._id)==-1) {
-          categories.push(this._id);
-          Session.set("categories", categories);
-        }
-      }
-      else Session.set("categories", [this._id]);
-    }
-    else {
-      if(categories) {
-        if(categories.indexOf(this._id)==-1) {
-          categories.pop(this._id);
-          Session.set("categories", categories);
-        }
-      }
-      else Session.set("categories", [this._id]);
-    }
-  }
+  
 })
 
 Template.manageCategories.events({

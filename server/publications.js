@@ -6,8 +6,16 @@ Meteor.publish('categories', function () {
   return categories.find({"archived": {$ne : true}});
 });
 
+Meteor.publish('config', function () {
+  return config.find({});
+});
+
 Meteor.publish('topvideos', function () {
-  return videos.find({"archived": {$ne : true}});
+  var topConfig = config.find({"name":"top"});
+  if(topConfig.tags) {
+    return videos.find({"categories": {$in: topConfig.tags}, "archived": {$ne : true}});
+  }
+  else return videos.find({"archived": {$ne : true}});
 });
 
 Meteor.publish('favorites', function () {

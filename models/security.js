@@ -1,6 +1,17 @@
 // Collection2 already does schema checking
 // Add custom permission rules if needed
 if (Meteor.isServer) {
+  config.allow({
+    insert : function () {
+      return true;
+    },
+    update : function (doc) {
+      return true;
+    },
+    remove : function () {
+      return true;
+    }
+  });
   videos.allow({
     insert : function () {
       return true;

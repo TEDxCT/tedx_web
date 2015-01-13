@@ -1,7 +1,7 @@
 <template name="videos">
     {{#if videosLoaded}}
     <div class="videos">
-      {{#each videos}}
+      {{#each this}}
         {{> video this}}
       {{/each}}
     </div>
@@ -121,7 +121,7 @@
         {{#each allCategories}}
           {{> category this}}
         {{/each}}
-        
+
         <div class="sheet-actions">
           <button class="btn btn-flat archive pull-left"><i class="icon-document-box-1"></i></button>
           <button class="edit-video save btn btn-primary btn-flat">Save</button>

@@ -35,6 +35,9 @@
               <li><a href="{{ pathFor 'categories'}}">Manage categories</a></li>
               <li class="add-video"><a href="#">Add video</a></li>
               <li class="divider"></li>
+              <li class="dropdown-title">Site</li>
+              <li><a href="{{ pathFor 'tags'}}">Manage home page</a></li>
+              <li class="divider"></li>
               <li id="logout"><a href="#">Logout</a></li>
             </ul>
           </li>
@@ -82,7 +85,7 @@
   <img class="full-width banner" src="/images/banners/tedx.png">
   <div class="container-fluid">
   <h1>Top Videos</h1>
-  {{> videos videos}}
+  {{> videos topvideos}}
   </div>
 </template>
 
