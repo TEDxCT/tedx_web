@@ -12,6 +12,40 @@ Template['videos'].helpers({
   }
 });
 
+Template.addVideo.helpers({
+  'categories': function() {
+    return categories.find({});
+  },
+});
+
+Template.editvideo.helpers({
+  'videoCategories': function() {
+    var videoCategories = this.categories;
+    var index;
+
+    if(videoCategories) {
+      if (typeof videoCategories[0] != 'undefined') {
+        var cats = categories.find({"_id": {$in: videoCategories}});
+        return cats;
+      }
+    }
+  },
+  'allCategories': function() {
+    var videoCategories = this.categories;    
+    var index;
+
+    if(videoCategories) {
+      if (typeof videoCategories[0] != 'undefined') {
+        var cats = categories.find({"_id": {$not: {$in: videoCategories}}});
+        return cats;
+      }
+    }
+
+  }
+})
+
+
+
 Template.addVideo.events({
   'click .close' : function(event, template) {
     $(template.find(".overlay")).addClass("fadeOutUp");
@@ -83,8 +117,10 @@ Template['editvideo'].events({
     updatedVideo.url = $(template.find(".editable.url")).val();
     updatedVideo.speaker = $(template.find(".editable.speaker")).val();
     updatedVideo.avatar = $(template.find(".editable.avatar")).val();
+    updatedVideo.categories = Session.get("categories");
     videos.update({"_id":this._id}, {$set: updatedVideo});
     $(template.find(".edit-sheet")).toggleClass("active");
+    Session.set("categories", "");
   },
   'click .edit-sheet .archive': function(event, template) {
    videos.update({"_id":this._id}, {$set: {"archived": true}});
@@ -95,5 +131,16 @@ Template['editvideo'].events({
   },
   'click .edit-sheet .cancel': function(event, template) {
     $(template.find(".edit-sheet")).toggleClass("active");
+  },
+  'click .category-selected': function(event, template) {
+    var category = event.currentTarget.attributes.category.value;
+    var checkbox = $(template.find("." + category));
+
+    if(checkbox.is(':checked')) {
+      videos.update({"_id":template.data._id}, {$push: {"categories": category}});
+    }
+    else {
+      videos.update({"_id":template.data._id}, {$pull: {"categories": category}});
+    }
   }
 });

@@ -8,19 +8,42 @@ Template.manageCategories.helpers({
 });
 
 Template.categories.helpers({
-  'categories': function() {
-    return categories.find({});
+  'categories' : function() {
+    if(this[0]) {
+      return categories.find({"_id": {$in: this}});
+    }
+    else if(this!=false) {
+      return categories.find({});
+    }
+    return false;
   },
+  'allCategories': function() {
+    return categories.find({});
+  }
 });
 
 Template.category.events({
   'click .category-selected': function(event, template) {
     var categories = Session.get("categories");
-    if(categories) {
-      categories.push(this._id);
-      Session.set("categories", categories);
+    var checkbox = $(template.find("." + this._id));
+    if(checkbox.selected()) {
+      if(categories) {
+        if(categories.indexOf(this._id)==-1) {
+          categories.push(this._id);
+          Session.set("categories", categories);
+        }
+      }
+      else Session.set("categories", [this._id]);
     }
-    else Session.set("categories", [this._id]);
+    else {
+      if(categories) {
+        if(categories.indexOf(this._id)==-1) {
+          categories.pop(this._id);
+          Session.set("categories", categories);
+        }
+      }
+      else Session.set("categories", [this._id]);
+    }
   }
 })
 

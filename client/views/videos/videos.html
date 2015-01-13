@@ -113,6 +113,15 @@
         <input type="text" class="editable speaker" value="{{this.speaker}}"  />
         <label>Speaker Avatar</label>
         <input type="text" class="editable avatar" value="{{this.avatar}}" placeholder="Link to speaker image" />
+        <label>Categories</label>
+        {{#each videoCategories}}
+          {{> selectedcategory this}}
+        {{/each}}
+        <label>Add categories</label>
+        {{#each allCategories}}
+          {{> category this}}
+        {{/each}}
+        
         <div class="sheet-actions">
           <button class="btn btn-flat archive pull-left"><i class="icon-document-box-1"></i></button>
           <button class="edit-video save btn btn-primary btn-flat">Save</button>
