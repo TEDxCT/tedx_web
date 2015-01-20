@@ -9,12 +9,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="/images/black.png" /></a>
+        <a class="navbar-brand" href="/"><img src="/images/black.png" /></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
+          <li class="dropdown chapter-nav">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="">All chapters</a></li>
+              <li class="dropdown-help"><p>Select a chapter to see content
+                specific to this chapter:</p></li>
+              {{#each chapters}}
+              <li class="{{activeIfChapterIs this.name}}"><a href="">{{this.name}}</a></li>
+              {{/each}}
+
+            </ul>
+          </li>
           <li class="icon-nav {{ activeIfTemplateIs 'home' }}"><a href="/"><i class="icon-home-house-streamline"></i></a></li>
           <li class="{{ activeIfTemplateIs 'talks' }}"><a href="{{ pathFor 'talks'}}" class="talks">Talks <span class="sr-only">(current)</span></a></li>
           <li><a href="/">Events <span class="sr-only">(current)</span></a></li>
@@ -28,7 +40,6 @@
 
           {{#if currentUser}}
           <li class="dropdown profile-nav-avatar">
-            <!-- <li class="profile-nav-avatar"><a href="#"></a></li>   -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="icon-profile-2"></i> <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-title">Videos</li>
@@ -37,6 +48,7 @@
               <li class="divider"></li>
               <li class="dropdown-title">Site</li>
               <li><a href="{{ pathFor 'tags'}}">Manage home page</a></li>
+              <li><a href="{{ pathFor 'chapters'}}">Manage chapters</a></li>
               <li class="divider"></li>
               <li id="logout"><a href="#">Logout</a></li>
             </ul>
@@ -51,7 +63,7 @@
 </template>
 
 <template name="basicLayout">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
   <link rel="icon"
@@ -82,7 +94,7 @@
 </template>
 
 <template name="home">
-  <img class="full-width banner" src="/images/banners/tedx.png">
+  <img class="full-width banner animated fadeIn" src="/images/banners/tedx.png">
   <div class="container-fluid">
   <h1>Top Videos</h1>
   {{> videos topvideos}}

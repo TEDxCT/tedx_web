@@ -1,16 +1,16 @@
 <template name="manageCategories">
-  <div class="container-fluid">
+  <page>
     <h1><small><i class="icon-tags"></i></small> Manage Categories</h1>
     {{#each categories}}
       {{> category this}}
     {{/each}}
     <br>
-    <div class="category-form">
+    <div class="form category-form">
       <input type="text" placeholder="Category name..." class="animated form-control typeahead addible name" autocomplete="off" spellcheck="off"
     data-source="categorynames" />
       <button class="btn btn-primary add-category">Add</button>
     </div>
-  </div>
+  </page>
 </template>
 
 <template name="category">

@@ -1,11 +1,14 @@
 <template name="tags">
+  <page>
     <h1>Home page video tags</h1>
     <p>Your home page is configured to show videos from a selection of categories.</p>
     {{#each configCategories}}
+    <p>Videos with these categories will show:</p>
     {{> selectedcategory this}}
     {{/each}}
     <p>Select any additional categories you'd like to show on the front page</p>
     {{#each allCategories}}
       {{> category this}}
     {{/each}}
+  </page>
 </template>

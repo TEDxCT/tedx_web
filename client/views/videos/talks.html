@@ -1,7 +1,58 @@
 <template name="talks">
-  <img class="full-width banner" src="/images/banners/talks.jpg">
-  <div class="container-fluid">
-  <h1>Latest Videos</h1>
-  {{> videos allvideos}}
+  <img class="full-width banner animated fadeIn" src="/images/banners/talks.jpg">
+  <div class="filters">
+    <nav class="animated bounceInDown navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="icon-nav "><a href="/"><i class="icon-filter"></i></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapter <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-title">TEDxCT Chapters</li>
+                <li><a href="{{ pathFor 'categories'}}">Manage categories</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href=""><input type="checkbox" class="filter-category"> Women</a></li>
+                <li><a href="{{ pathFor 'categories'}}">Technology</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Social <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-title">TEDxCT Chapters</li>
+                <li><a href="{{ pathFor 'categories'}}">Manage categories</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="icon-nav search"><a href=""><i class="icon-magnifier"></i></a></li>
+            {{#if currentUser}}
+              <li class="favorites"><a href="#feedback"><i class="icon-star"></i> My Favorites</a></li>
+            {{/if}}
+            <li class="feedback"><a href="#feedback">Share</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <div class="container-fluid talks">
+    {{> videos allvideos}}
   </div>
 </template>

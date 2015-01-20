@@ -11,7 +11,7 @@
 </template>
 
 <template name="video">
-  <article class="video">
+  <article class="video animated bounceInUp">
     <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
     {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">

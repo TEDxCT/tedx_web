@@ -1,0 +1,73 @@
+<template name="chapters">
+  <page>
+    <h1>TEDx Cape Town Chapters</h1>
+    <p>Visitors to this website can choose between chapters so that they can see content most relevant to themselves.</p>
+    <p>Chapters represent the top most hierarchy on the website. Videos, speakers and events will fall into a chapter or into the overarching TEDx Cape Town chapter.</p>
+    {{#each chapters}}
+      {{> chaptertile this}}
+    {{/each}}
+    <br>
+    {{> newchapter}}
+  </page>
+</template>
+
+<template name="chaptertile">
+  <article class="chapter animated bounceInUp">
+    {{#if currentUser}}
+      <button class="edit btn-small btn">Edit</button>
+    {{/if}}
+      <div class="cover" style="background: url({{this.cover_image_url}}); background-size: cover; background-position: 50%"></div>
+      <div class="title">{{this.name}}</div>
+      <div class="description">{{this.description}}</div>
+    {{#if currentUser}}{{> editchapter this}}{{/if}}
+  </article>
+</template>
+
+<template name="editchapter">
+  <div class="edit-sheet toggle-sheet sheet">
+    <i class="icon-close close"></i>
+    <h3>EDIT CHAPTER</h3>
+    <p>You can edit this chapter right here. Just remember your changes are only saved when you click 'save'.</p>
+    <div class="sheet-content">
+      <div class="form">
+        <label>Name</label>
+        <input type="text" class="editable name" placeholder="Short and catchy..." value="{{this.name}}" />
+        <label>Description</label>
+        <input type="text" class="editable description" placeholder="More indepth info..." value="{{this.description}}" />
+        <label>Logo Name</label>
+        <p>The tag that will appear next to TEDx on the logo</p>
+        <input type="text" class="editable logo_name" placeholder="Women..." value="{{this.logoname}}" />
+        <label>Cover Photo</label>
+        <p>This image should represent the chapter</p>
+        <input type="text" class="editable cover-image-url" placeholder="URL to site cover"  value="{{this.cover_image_url}}" />
+        <div class="sheet-actions">
+          <button class="btn btn-flat archive pull-left"><i class="icon-document-box-1"></i></button>
+          <button class="edit-video save btn btn-primary btn-flat">Save</button>
+          <button class="edit-video cancel btn btn-flat">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="newchapter">
+      <h3>Add a chapter</h3>
+      <p>Add a new chapter from this box. As soon as you save this chapter it will appear on the website.</p>
+      <div class="sheet-content">
+        <div class="form">
+          <label>Name</label>
+          <input type="text" class="addible name" placeholder="Short and catchy..." />
+          <label>Description</label>
+          <input type="text" class="addible description" placeholder="More indepth info..." />
+          <label>Logo Name</label>
+          <p>The tag that will appear next to TEDx on the logo</p>
+          <input type="text" class="addible logo_name" placeholder="Women..." />
+          <label>Cover Photo</label>
+          <p>This image should represent the chapter</p>
+          <input type="text" class="addible cover_image_url" placeholder="URL to site cover" />
+        </div>
+      </div>
+
+      <button class="btn btn-primary add-chapter">Add chapter</button>
+</template>

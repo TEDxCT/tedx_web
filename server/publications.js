@@ -10,6 +10,10 @@ Meteor.publish('config', function () {
   return config.find({});
 });
 
+Meteor.publish('chapters', function () {
+  return chapters.find({});
+});
+
 Meteor.publish('topvideos', function () {
   var topConfig = config.find({"name":"top"});
   if(topConfig.tags) {

@@ -22,30 +22,30 @@ Template.editvideo.helpers({
   'videoCategories': function() {
     var videoCategories = this.categories;
     var index;
-
     if(videoCategories) {
-      if (typeof videoCategories[0] != 'undefined') {
-        var cats = categories.find({"_id": {$in: videoCategories}});
-        return cats;
+      if(videoCategories.length>0) {
+        if (typeof videoCategories[0] != 'undefined') {
+          var cats = categories.find({"_id": {$in: videoCategories}});
+          return cats;
+        }
       }
     }
   },
   'allCategories': function() {
     var videoCategories = this.categories;
     var index;
-
     if(videoCategories) {
-      if (typeof videoCategories[0] != 'undefined') {
-        var cats = categories.find({"_id": {$not: {$in: videoCategories}}});
-        return cats;
+      if(videoCategories.length>0) {
+        if (typeof videoCategories[0] != 'undefined') {
+          var cats = categories.find({"_id": {$not: {$in: videoCategories}}});
+          return cats;
+        }
       }
+      else return categories.find({});
     }
-    else return categories.find({});
 
   }
-})
-
-
+});
 
 Template.addVideo.events({
   'click .close' : function(event, template) {

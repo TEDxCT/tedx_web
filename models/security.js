@@ -12,6 +12,17 @@ if (Meteor.isServer) {
       return true;
     }
   });
+  chapters.allow({
+    insert : function () {
+      return true;
+    },
+    update : function (doc) {
+      return true;
+    },
+    remove : function () {
+      return true;
+    }
+  });
   videos.allow({
     insert : function () {
       return true;

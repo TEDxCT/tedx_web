@@ -2,6 +2,14 @@ Meteor.subscribe('categories', function onReady() {
   Session.set('categoriesLoaded', true);
 });
 
+Meteor.subscribe('config', function onReady() {
+  Session.set('configLoaded', true);
+});
+
+Meteor.subscribe('chapters', function onReady() {
+  Session.set('chapters', true);
+});
+
 Template.home.helpers({
   "topvideos": function() {
     var topConfig = config.findOne({"name":"top"});
@@ -36,6 +44,13 @@ Template.toolbar.helpers({
       var currentRoute = Router.current();
       return currentRoute &&
         template.toLowerCase() === currentRoute.lookupTemplate().toLowerCase() ? 'active' : '';
+    },
+    'chapters': function() {
+      console.log
+      return chapters.find({});
+    },
+    activeIfChapterIs: function (template, chapterMenuItem) {
+      console.log(chapterMenuItem);
     }
 })
 
