@@ -29,3 +29,7 @@ Meteor.publish('favorites', function () {
     return favorites.find({"owner":this.userId, "archived": null});
   }
 });
+
+Meteor.publish('speakers', function () {
+  return speakers.find({});
+});

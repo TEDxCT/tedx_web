@@ -3,4 +3,15 @@
    <h1>Apply to be a speaker</h1>
    <p>Apply to be a speaker at the TEDx Cape Town 2015 event. We will contact you to arrange a time to meet within 2 weeks.</p>
  </page>
+ <div class="container">
+	  {{#autoForm collection="speakers" id="insertSpeakerForm" type="insert" template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9" resetOnSuccess=false}}
+    <fieldset>
+      <legend>Apply here</legend>
+             {{> afQuickField name="contact" options="auto"}}
+
+    </fieldset>
+        <button class="btn btn-primary btn-back">Back</button>
+    	<button type="submit" class="btn btn-primary">Save</button>
+  {{/autoForm}}
+	</div>
 </template>
