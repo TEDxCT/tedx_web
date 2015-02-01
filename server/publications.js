@@ -7,11 +7,11 @@ Meteor.publish('categories', function () {
 });
 
 Meteor.publish('config', function () {
-  return config.find({});
+  return config.find({"archived": {$ne : true}});
 });
 
 Meteor.publish('chapters', function () {
-  return chapters.find({});
+  return chapters.find({"archived": {$ne : true}});
 });
 
 Meteor.publish('topvideos', function () {

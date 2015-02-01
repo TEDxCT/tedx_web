@@ -36,6 +36,9 @@ Template.toolbar.events({
   },
   'click #logout': function() {
     Meteor.logout();
+  },
+  'click .chapterMenuItem': function() {
+    Session.set("chapter", true);
   }
 });
 
@@ -46,11 +49,16 @@ Template.toolbar.helpers({
         template.toLowerCase() === currentRoute.lookupTemplate().toLowerCase() ? 'active' : '';
     },
     'chapters': function() {
-      console.log
       return chapters.find({});
     },
     activeIfChapterIs: function (template, chapterMenuItem) {
       console.log(chapterMenuItem);
+    },
+    chapter: function() {
+      if(Session.get("chapter")) {
+        return true;
+      }
+      else return false;
     }
 })
 
@@ -82,5 +90,5 @@ Template.basicLayout.helpers({
       return true;
     }
     else return false;
-  }
+  },
 });
