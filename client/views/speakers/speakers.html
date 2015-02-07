@@ -1,23 +1,33 @@
 <template name="register">
- <page>
-   <h1>Apply to be a speaker</h1>
-   <p>Apply to be a speaker at the TEDx Cape Town 2015 event. We will contact you to arrange a time to meet within 2 weeks.</p>
+ <page class="application">
+  <img src="/images/logo.png" class="pull-left logo" >
+  <div class="clearfix"></div>
+  <div class="content">
+   <h3>TEDxCapeTown 2015</h3>
+   <h1>( Open { Access ) Control }</h1>
+   <h4>Aug 16 - 17</h4>
+   <p>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxCapeTown, where x = independently organized TED event.</p>
+   </div>
+   <div class="cta">
+     <div class="circle blue animated bounceInLeft"></div>
+     <div class="circle yellow animated bounceInRight"></div>
+     <div class="circle red">
+       APPLY TO
+       <strong>SPEAK</strong>
 
-   <a href="/speakers/register/apply" class="btn btn-primary">Apply</a>
-   <a href="/speakers/register/nominate" class="btn btn-primary">Nominate</a>
- </page>     
+     </div>
+    </div>
+ </page>  
 </template>
 
 <template name="nomination">
    <page>
-
-  {{#autoForm collection="speakers" id="insertSpeakerNomination" type="insert" template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9" resetOnSuccess=false}}
+	  {{#autoForm collection="speakers" id="insertSpeakerForm" type="insert" template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9" resetOnSuccess=false}}
     <fieldset>
       <legend>Nominate a Speaker</legend>
         {{> afQuickField name="speakerNomination" options="auto"}}
 
     </fieldset>
-        <button class="btn btn-primary btn-back">Back</button>
       <button type="submit" class="btn btn-primary">Save</button>
   {{/autoForm}}
   </page>

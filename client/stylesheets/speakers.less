@@ -1,0 +1,64 @@
+page.application {
+	.logo {
+		width: 200px;
+	}
+
+	.content {
+		h4 {
+		martin-top: 20px;
+		}
+		p {
+			margin-top: 40px;
+			display: inline-block;
+			max-width: 500px;
+		}
+	}
+}
+
+.cta {
+	position: relative;
+	width: 150px;
+	margin: 20px auto;
+	&:hover {
+    	width: 160px;
+    }
+
+    text-align: center;
+
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;    
+}
+
+.circle {
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;		
+	position: absolute;
+	top: 0px;	
+	text-align: center;
+	padding-top: 50px;
+	color: #fff;
+	cursor: pointer;
+
+	strong {
+		display: block;
+		font-size: 20px;
+	}
+
+	&.blue {		
+		right: 8px;
+		opacity: 0.48;
+		background: #4A90E2;		
+	}
+	&.yellow {		
+		left: 5px;
+		opacity: 0.48;
+		background: #F8E71C;		
+	}
+	&.red {		
+		left: 0;		
+		background: rgba(255,35,0,0.76);		
+	}
+}

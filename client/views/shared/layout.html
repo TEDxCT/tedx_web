@@ -1,0 +1,31 @@
+<template name="basicLayout">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
+  <meta name="fragment" content="!">
+  <link rel="icon"
+      type="image/png"
+      href="/favicons.png">
+  {{> toolbar}}
+  <div id="page" class="animated">
+    {{> yield}}
+  </div>
+  {{> footer}}
+  {{#if searching}}
+    {{> search}}
+  {{/if}}
+  {{#if feedbacking}}
+    {{> feedback}}
+  {{/if}}
+  {{#if addingvideo}}
+    {{> addVideo}}
+  {{/if}}
+</template>
+
+<template name="singlePage">
+  <div class="singlePage">
+    <div class="content">
+      {{> yield }}
+    </div>
+  </div>
+</template>
