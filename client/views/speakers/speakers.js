@@ -5,15 +5,24 @@ Template.register.events({
 
 });
 
-Template.nomination.events({
-	'submit' : function() {
-		Router.go('speakers.register.complete');
+SimpleSchema.debug = true;
+
+
+
+AutoForm.hooks({
+  insertSpeakerApplicationForm: {
+    	onSuccess: function(operation, result, template) {	
+			Router.go('speakers.register.complete');
+		},
 	}
 });
 
 
-Template.application.events({
-	'submit' : function() {
-		Router.go('speakers.register.complete');
+AutoForm.hooks({
+  insertSpeakerNominationForm: {
+    	onSuccess: function(operation, result, template) {
+			Router.go('speakers.register.complete');
+		},
 	}
 });
+

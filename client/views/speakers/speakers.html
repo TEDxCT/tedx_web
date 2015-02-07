@@ -57,13 +57,14 @@
     <fieldset>
       <legend>Apply to be a Speaker</legend>
 
-<div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
+      <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
         <label class="control-label">{{afFieldLabelText name='firstName'}}</label>
         {{> afFieldInput name='firstName'}}
         {{#if afFieldIsInvalid name='firstName'}}
         <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
         {{/if}}
-      </div>      {{>afQuickField name="lastName" options="auto"}}
+      </div>      
+      {{>afQuickField name="lastName" options="auto"}}
 
       {{#each afFieldNames name="speakerApplication"}}
         {{> afQuickField name=this options="auto"}}
