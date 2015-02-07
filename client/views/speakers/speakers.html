@@ -26,8 +26,23 @@
 	  {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="insert"}}
     <fieldset>
       <legend>Nominate a Speaker</legend>
-        {{> afQuickField name="speakerNomination" options="auto"}}
-
+      <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
+        <label class="control-label">Speaker First Name</label>
+        {{> afFieldInput name='firstName'}}
+        {{#if afFieldIsInvalid name='firstName'}}
+        <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
+        {{/if}}
+      </div>
+      <div class="form-group {{#if afFieldIsInvalid name='lastName'}}has-error{{/if}}">
+        <label class="control-label">Speaker Last Name</label>
+        {{> afFieldInput name='lastName'}}
+        {{#if afFieldIsInvalid name='lastName'}}
+        <span class="help-block">{{{afFieldMessage name='lastName'}}}</span>
+        {{/if}}
+      </div>
+      {{#each afFieldNames name="speakerNomination"}}
+        {{> afQuickField name=this options="auto"}}
+      {{/each}}
     </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>
   {{/autoForm}}
@@ -41,7 +56,18 @@
     {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
     <fieldset>
       <legend>Apply to be a Speaker</legend>
-        {{> afQuickField name="speakerApplication" options="auto"}}
+
+<div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
+        <label class="control-label">{{afFieldLabelText name='firstName'}}</label>
+        {{> afFieldInput name='firstName'}}
+        {{#if afFieldIsInvalid name='firstName'}}
+        <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
+        {{/if}}
+      </div>      {{>afQuickField name="lastName" options="auto"}}
+
+      {{#each afFieldNames name="speakerApplication"}}
+        {{> afQuickField name=this options="auto"}}
+      {{/each}}
 
     </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>

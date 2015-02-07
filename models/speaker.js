@@ -93,23 +93,23 @@ gender: {
 SpeakerNominationSchema = new SimpleSchema({
 nominatorFirstName: {
     type: String,
-    label: "Nominator First Name",
+    label: "Your First Name",
     optional: false
   },
   nominatorLastName: {
     type: String,
-    label: "Nominator Last Name",
+    label: "Your Last Name",
     optional: false
   },
   nominatorEmail: {
     type: String,
-    label: "Nominator Email Address",
+    label: "Your Email Address",
     optional: false
   },
   speakerContact: {
     type: String, 
     label: "Please provide contact details/information for the speaker you want to nominate. This could be an e-mail address, a cellphone number, a website, or a social media account",
-optional: false
+    optional: false
   },
   speakerIdea: {
     type: String,
@@ -132,7 +132,7 @@ SpeakerSchema = new SimpleSchema({
   },
   speakerApplication: {
     type: SpeakerApplicationSchema,
-    label: "Speaker Application",
+    label: "",
   },
   speakerNomination: {
     type: SpeakerNominationSchema,
