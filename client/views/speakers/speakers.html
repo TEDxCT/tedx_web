@@ -23,9 +23,14 @@
 
 <template name="nomination">
    <page>
-	  {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="insert"}}
-    <fieldset>
-      <legend>Nominate a Speaker</legend>
+    <ul class="navigation">
+      <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
+      <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
+      <li class="active">Nominate</li>
+    </ul>        
+    <p>Awesome news. We're glad you've decided to <strong>nominate someone</strong> to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept the application.</p>    
+    {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="insert"}}
+    <fieldset>      
       <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
         <label class="control-label">Speaker First Name</label>
         {{> afFieldInput name='firstName'}}
@@ -53,10 +58,14 @@
 
 <template name="application">
     <page>
+    <ul class="navigation">
+      <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
+      <li class="active">Apply to speak</li>
+      <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+    </ul>
+    <p>Awesome news. We're glad you've decided to apply to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept your application.</p>    
     {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
-    <fieldset>
-      <legend>Apply to be a Speaker</legend>
-
+    <fieldset>      
       <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
         <label class="control-label">{{afFieldLabelText name='firstName'}}</label>
         {{> afFieldInput name='firstName'}}

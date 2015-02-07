@@ -1,3 +1,5 @@
+@import 'variables';
+
 .singlePage {
 	.logo {
 		width: 200px;
@@ -13,6 +15,29 @@
 			display: inline-block;
 			max-width: 500px;
 		}
+	}
+
+	ul.navigation {
+		display: block;
+		list-style: none;
+		padding-left: none;
+		margin-bottom: 0;	
+
+		li {
+			display: inline-block;
+			font-size: 18px;
+			padding: 0 20px 5px 20px;
+			color: #6F6F6F;
+
+			a {
+				color: inherit;
+			}
+
+			&.active {
+				border-bottom: 1px solid @secondaryColor;
+				color: @secondaryColor;				
+			}
+		}		
 	}
 }
 
