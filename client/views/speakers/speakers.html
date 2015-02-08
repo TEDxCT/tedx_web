@@ -35,14 +35,14 @@
         <label class="control-label">Speaker First Name</label>
         {{> afFieldInput name='firstName'}}
         {{#if afFieldIsInvalid name='firstName'}}
-        <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
+          <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
         {{/if}}
       </div>
       <div class="form-group {{#if afFieldIsInvalid name='lastName'}}has-error{{/if}}">
         <label class="control-label">Speaker Last Name</label>
         {{> afFieldInput name='lastName'}}
         {{#if afFieldIsInvalid name='lastName'}}
-        <span class="help-block">{{{afFieldMessage name='lastName'}}}</span>
+          <span class="help-block">{{{afFieldMessage name='lastName'}}}</span>
         {{/if}}
       </div>
       {{#each afFieldNames name="speakerNomination"}}
@@ -66,13 +66,7 @@
     <p>Awesome news. We're glad you've decided to apply to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept your application.</p>    
     {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
     <fieldset>      
-      <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
-        <label class="control-label">{{afFieldLabelText name='firstName'}}</label>
-        {{> afFieldInput name='firstName'}}
-        {{#if afFieldIsInvalid name='firstName'}}
-        <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
-        {{/if}}
-      </div>      
+      {{>afQuickField name="firstName" options="auto"}}
       {{>afQuickField name="lastName" options="auto"}}
 
       {{#each afFieldNames name="speakerApplication"}}
@@ -91,6 +85,11 @@
 
 <template name="complete">
   <page>
+    <ul class="navigation">
+      <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
+      <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
+      <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+    </ul>
     <h1>Thank you</h1>
     <p>Your application will be considered and we will get back to you as soon as we can</p>
   </page>
