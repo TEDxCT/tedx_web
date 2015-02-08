@@ -76,7 +76,11 @@
       {{>afQuickField name="lastName" options="auto"}}
 
       {{#each afFieldNames name="speakerApplication"}}
-        {{> afQuickField name=this options="auto"}}
+        {{#if isEqual this "speakerApplication.cellphone"}}
+          {{> afFormGroup name=this type="text" }}
+        {{else}}
+          {{> afQuickField name=this options="auto"}}
+        {{/if}}
       {{/each}}
 
     </fieldset>
