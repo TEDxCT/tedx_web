@@ -8,7 +8,7 @@ email: {
     type: String,
     label: "Email Address",
     optional: false
-  },
+},
 cellphone: {
   type: Number,
   label: "Cellphone Number",
@@ -21,7 +21,7 @@ TEDProfileURL: {
 },
 TEDTalks: {
   type: String,
-  label: "The TED talk/s that designed your thinking",
+  label: "The TED talk/s that inspire you",
   optional: false,
 },
 moreInfo: {
@@ -139,7 +139,5 @@ SpeakerSchema = new SimpleSchema({
     optional: true,
   }
 });
-
-
 
 speakers.attachSchema(SpeakerSchema);
