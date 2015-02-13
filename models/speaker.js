@@ -132,11 +132,11 @@ SpeakerSchema = new SimpleSchema({
   },
   speakerApplication: {
     type: SpeakerApplicationSchema,
-    optional: true
+    optional: false
   },
   speakerNomination: {
     type: SpeakerNominationSchema,
-    optional: true,
+    optional: false,
   }
 });
 
