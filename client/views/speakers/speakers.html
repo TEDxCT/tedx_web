@@ -28,23 +28,10 @@
       <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
       <li class="active">Nominate</li>
     </ul>        
-    <p>Awesome news. We're glad you've decided to <strong>nominate someone</strong> to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept the application.</p>    
+    <p>Awesome news. We're glad you've decided to <strong>nominate someone</strong> to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept the application.</p>
+
     {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="insert"}}
     <fieldset>      
-      <div class="form-group {{#if afFieldIsInvalid name='firstName'}}has-error{{/if}}">
-        <label class="control-label">Speaker First Name</label>
-        {{> afFieldInput name='firstName'}}
-        {{#if afFieldIsInvalid name='firstName'}}
-          <span class="help-block">{{{afFieldMessage name='firstName'}}}</span>
-        {{/if}}
-      </div>
-      <div class="form-group {{#if afFieldIsInvalid name='lastName'}}has-error{{/if}}">
-        <label class="control-label">Speaker Last Name</label>
-        {{> afFieldInput name='lastName'}}
-        {{#if afFieldIsInvalid name='lastName'}}
-          <span class="help-block">{{{afFieldMessage name='lastName'}}}</span>
-        {{/if}}
-      </div>
       {{#each afFieldNames name="speakerNomination"}}
         {{> afQuickField name=this options="auto"}}
       {{/each}}
@@ -63,12 +50,10 @@
       <li class="active">Apply to speak</li>
       <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
     </ul>
-    <p>Awesome news. We're glad you've decided to apply to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept your application.</p>    
+    <p>Awesome news. We're glad you've decided to apply to speak at TEDxCapeTown 2015. We just need to collect a few details from you so that we can begin. We will contact you to let you know if we accept your application.</p>   
+     
     {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
     <fieldset>      
-      {{>afQuickField name="firstName" options="auto"}}
-      {{>afQuickField name="lastName" options="auto"}}
-
       {{#each afFieldNames name="speakerApplication"}}
         {{#if isEqual this "speakerApplication.cellphone"}}
           {{> afFormGroup name=this type="text" }}

@@ -1,4 +1,14 @@
 SpeakerApplicationSchema = new SimpleSchema({
+  firstName: {
+    type: String,
+    label: "First Name",
+    optional: false
+  },
+  lastName: {
+    type: String,
+    label: "Last Name",
+    optional: false
+  },
 preferredName: {
     type: String,
     label: "Preferred Name",
@@ -91,6 +101,16 @@ gender: {
 
 
 SpeakerNominationSchema = new SimpleSchema({
+  speakerFirstName: {
+    type: String,
+    label: "Speaker First Name",
+    optional: false
+  },
+speakerLastName: {
+    type: String,
+    label: "Speaker Last Name",
+    optional: false
+  },
 nominatorFirstName: {
     type: String,
     label: "Your First Name",
@@ -120,23 +140,13 @@ nominatorFirstName: {
 
 
 SpeakerSchema = new SimpleSchema({
-  firstName: {
-    type: String,
-    label: "First Name",
-    optional: false
-  },
-  lastName: {
-    type: String,
-    label: "Last Name",
-    optional: false
-  },
   speakerApplication: {
     type: SpeakerApplicationSchema,
-    optional: false
+    optional: true
   },
   speakerNomination: {
     type: SpeakerNominationSchema,
-    optional: false,
+    optional: true,
   }
 });
 
