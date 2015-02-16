@@ -22,6 +22,7 @@
 </template>
 
 <template name="nomination">
+  {{setSpeakerRegistrationType "nomination"}}
    <page>
     <ul class="navigation">
       <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
@@ -44,6 +45,7 @@
 
 
 <template name="application">
+  {{setSpeakerRegistrationType "application"}}
     <page>
     <ul class="navigation">
       <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>

@@ -140,13 +140,62 @@ nominatorFirstName: {
 
 
 SpeakerSchema = new SimpleSchema({
+  createdAt: {
+    type: Date,
+      autoValue: function() {
+        if (this.isInsert) {
+          return new Date;
+        } else if (this.isUpsert) {
+          return {$setOnInsert: new Date};
+        } else {
+          this.unset();
+        }
+      }
+  },
+  // Force value to be current date (on server) upon update
+  // and don't allow it to be set upon insert.
+  updatedAt: {
+    type: Date,
+    autoValue: function() {
+      if (this.isUpdate) {
+        return new Date();
+      }
+    },
+    denyInsert: true,
+    optional: true
+  },
   speakerApplication: {
     type: SpeakerApplicationSchema,
-    optional: true
+    optional: true,
+    custom: function () {
+      if (Meteor.isClient) {
+        var type = Session.get("speakerRegistrationType");
+        var isApplicationType = type === "application";
+        if (!isApplicationType) {
+          return;
+        }
+        if (isApplicationType && !this.isSet && (!this.operator || (this.value === null || this.value === ""))) {
+          console.log("Application required");
+          return "required";
+        }
+      }
+    }
   },
   speakerNomination: {
     type: SpeakerNominationSchema,
     optional: true,
+    custom: function () {
+      if (Meteor.isClient) {
+        var type = Session.get("speakerRegistrationType");
+        var isNominationType = type === "nomination";
+        if (!isNominationType) {
+          return;
+        }
+        if (isNominationType && !this.isSet && (!this.operator || (this.value === null || this.value === ""))) {
+          return "required";
+        }
+      }
+    }
   }
 });
 
