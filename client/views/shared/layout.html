@@ -1,5 +1,5 @@
 <template name="basicLayout">
-  {{> metaDate}}
+  {{> metaData}}
   {{> toolbar}}
   <div id="page" class="animated">
     {{> yield}}
@@ -17,6 +17,7 @@
 </template>
 
 <template name="singlePage">
+  {{> metaData}}
   <div class="singlePage  animated bounceInUp">
     <div class="content">
     <img src="/images/logo.png" class="pull-left logo" >
