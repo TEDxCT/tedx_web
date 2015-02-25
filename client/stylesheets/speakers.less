@@ -11,9 +11,10 @@
 		martin-top: 20px;
 		}
 		p {
-			margin-top: 40px;
-			display: inline-block;
+			margin: 40px auto 0 auto;
+			display: block;
 			max-width: 500px;
+			font-size: 18px;
 		}
 	}
 
@@ -21,7 +22,7 @@
 		display: block;
 		list-style: none;
 		padding-left: none;
-		margin-bottom: 0;	
+		margin-bottom: 0;
 
 		li {
 			display: inline-block;
@@ -35,9 +36,9 @@
 
 			&.active {
 				border-bottom: 1px solid @secondaryColor;
-				color: @secondaryColor;				
+				color: @secondaryColor;
 			}
-		}		
+		}
 	}
 }
 
@@ -55,7 +56,7 @@
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;    
+    transition: all 0.5s ease-out;
 }
 
 .nominate {
@@ -65,9 +66,9 @@
 .circle {
 	border-radius: 100%;
 	width: 150px;
-	height: 150px;		
+	height: 150px;
 	position: absolute;
-	top: 0px;	
+	top: 0px;
 	text-align: center;
 	padding-top: 50px;
 	color: #fff;
@@ -78,18 +79,49 @@
 		font-size: 20px;
 	}
 
-	&.blue {		
+	&.blue {
 		right: 8px;
 		opacity: 0.48;
-		background: #4A90E2;		
+		background: #4A90E2;
 	}
-	&.yellow {		
+	&.yellow {
 		left: 5px;
 		opacity: 0.48;
-		background: #F8E71C;		
+		background: #F8E71C;
 	}
-	&.red {		
-		left: 0;		
-		background: rgba(255,35,0,0.76);		
+	&.red {
+		left: 0;
+		background: rgba(255,35,0,0.76);
 	}
+}
+
+a.speaker {
+	color: inherit;
+	&:hover {
+		text-decoration: none;
+		color: @primaryTextColor;
+	}
+}
+.speaker {
+	p {
+		display:block;
+	}
+	.tile {
+		border: 1px solid @secondaryColor;
+		padding: 15px;
+		width: 250px;
+		font-size: 16px;
+		font-weight: 400;
+
+		i {
+			font-size: 23px;
+		}
+	}
+
+	p.info {
+		font-size: 18px;
+		text-align: left;
+		line-height: 35px;
+	}
+
 }

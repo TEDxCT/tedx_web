@@ -23,13 +23,18 @@ Meteor.publish('topvideos', function () {
 });
 
 Meteor.publish('favorites', function () {
-  // console.log(videos.find({"owner":this.userId, "archived": { $ne: true } }))
-  // return videos.find({"owner":this.userId, "archived": { $ne: true } });
   if(this.userId) {
     return favorites.find({"owner":this.userId, "archived": null});
   }
 });
 
 Meteor.publish('speakers', function () {
-  return speakers.find({});
+  // var currentUser = Meteor.users.findOne({"_id": this.userId});
+  //
+  // if(currentUser.emails[0].verified==true) {
+    return speakers.find({});
+  // }
+  // else if(currentUser.services.google.verified_email==true) {
+  //   return speakers.find({});
+  // }
 });
