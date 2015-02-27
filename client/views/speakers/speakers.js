@@ -37,7 +37,7 @@ Template.speakers.helpers({
 		return speakers.find({"speakerApplication": {$exists: false}});
 	},
 	'nominated': function() {
-		return speakers.find({"speakerApplication": {$exists: false}});
+		return speakers.find({"speakerNomination": {$exists: true}});
 	},
 	'applied': function() {
 		return speakers.find({"speakerApplication": {$exists: true}});
@@ -50,13 +50,19 @@ Template.appliedSpeaker.helpers({
 	},
 });
 
+Template.nominatedSpeaker.helpers({
+	'speakerdata': function() {
+		return this.speakerNomination;
+	},
+});
+
 Template.speaker.helpers({
 	'gender': function() {
-		if(this.speakerApplication=="male"){
-			return "he";
+		if(this.speakerApplication.gender=="male"){
+			return "He";
 		}
 		else if(this.speakerApplication.gender=="female") {
-			return "she";
+			return "She";
 		}
 		else if(this.speakerApplication.gender=="other") {
 			return this.speakerApplication.firstName;

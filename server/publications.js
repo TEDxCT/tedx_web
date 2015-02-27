@@ -29,12 +29,12 @@ Meteor.publish('favorites', function () {
 });
 
 Meteor.publish('speakers', function () {
-  // var currentUser = Meteor.users.findOne({"_id": this.userId});
-  //
-  // if(currentUser.emails[0].verified==true) {
+  var currentUser = Meteor.users.findOne({"_id": this.userId});
+
+  if(currentUser.emails[0].verified==true) {
     return speakers.find({});
-  // }
-  // else if(currentUser.services.google.verified_email==true) {
-  //   return speakers.find({});
-  // }
+  }
+  else if(currentUser.services.google.verified_email==true) {
+    return speakers.find({});
+  }
 });

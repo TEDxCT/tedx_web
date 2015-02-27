@@ -5,9 +5,9 @@ accounts-oauth@1.1.3
 accounts-password@1.0.6
 accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
-aldeed:autoform@3.2.0
-aldeed:collection2@2.3.1
-aldeed:simple-schema@1.0.3
+aldeed:autoform@4.2.2
+aldeed:collection2@2.3.2
+aldeed:simple-schema@1.3.0
 application-configuration@1.0.4
 autoupdate@1.1.5
 base64@1.0.2
@@ -51,11 +51,14 @@ localstorage@1.0.2
 logging@1.0.6
 meteor@1.1.4
 meteor-platform@1.2.1
+meteorhacks:kadira@2.19.6
+meteorhacks:meteorx@1.3.1
 minifiers@1.1.3
 minimongo@1.0.6
 mobile-status-bar@1.0.2
+momentjs:moment@2.8.4
 mongo@1.0.11
-mrt:moment@2.6.0
+mongo-livedata@1.0.7
 multiply:iron-router-progress@1.0.1
 natestrauser:animate-css@3.1.2
 npm-bcrypt@0.7.7
@@ -69,7 +72,7 @@ reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
 routepolicy@1.0.4
-sergeyt:typeahead@0.10.5_10
+sergeyt:typeahead@0.10.5_12
 service-configuration@1.0.3
 session@1.0.5
 sha@1.0.2

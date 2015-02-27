@@ -117,7 +117,7 @@
     {{/each}}
     <h1>Nominated</h1>
     {{#each nominated}}
-      {{> speakerTile this}}
+      {{> nominatedSpeaker this}}
     {{/each}}
   </page>
 </template>
@@ -130,6 +130,14 @@
   {{/with}}
 </a>
 </template>
+<template name="nominatedSpeaker">
+  <a href="/speaker/nomination/{{this._id}}" class="speaker">
+  {{#with speakerdata}}
+    {{> speakerTile this}}
+  {{/with}}
+</a>
+</template>
+
 
 <template name="speakerTile">
     <div class="speaker tile">
@@ -153,7 +161,7 @@
     <div class="speaker">
       <h1>Meet {{this.speakerApplication.firstName}}. </h1>
       <p>{{this.speakerApplication.firstName}} would like to be a speaker at this years TEDxCapeTown event. {{gender}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.speakerApplication.firstName}} {{this.speakerApplication.lastName}} would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
-      <p>You can find out more about them <a href="{{this.speakerApplication.TEDProfileURL}}">here</a>.</p>
+      <p>You can find out more about them <a href="http://{{this.speakerApplication.TEDProfileURL}}" target="_blank">here</a>.</p>
       <p class="info">
         First name:<strong> {{this.speakerApplication.firstName}} </strong><br />
         Last name:<strong> {{this.speakerApplication.lastName}} </strong><br />
