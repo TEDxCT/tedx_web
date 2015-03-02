@@ -133,7 +133,7 @@
 <template name="nominatedSpeaker">
   <a href="/speaker/nomination/{{this._id}}" class="speaker">
   {{#with speakerdata}}
-    {{> speakerTile this}}
+    {{> nomineeTile this}}
   {{/with}}
 </a>
 </template>
@@ -144,6 +144,15 @@
       <i class="icon-profile-id"></i>
       <div class="name">
         {{this.firstName}} {{this.lastName}}
+      </div>
+    </div>
+</template>
+
+<template name="nomineeTile">
+    <div class="speaker tile">
+      <i class="icon-profile-id"></i>
+      <div class="name">
+        {{this.speakerFirstName}} {{this.speakerLastName}}
       </div>
     </div>
 </template>
@@ -178,6 +187,34 @@
         Race:<strong> {{this.speakerApplication.race}} </strong><br />
         Created At:<strong> {{this.createdAt}} </strong><br />
       </p>
+    </div>
+  </page>
+
+</template>
+
+<template name="nominee">
+  <ul class="navigation">
+    <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
+    <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
+    <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+    {{#if currentUser}}
+      <li class="active"><a href="{{ pathFor 'speakers.manage'}}"> Manage speakers</a></li>
+    {{/if}}
+  </ul>
+  <page>
+    <div class="speaker">
+        <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.speakerNomination.speakerFirstName}}</h1>
+        <p class="info">
+          First name:<strong> {{this.speakerNomination.speakerFirstName}}</strong><br />
+          Last name:<strong> {{this.speakerNomination.speakerLastName}}</strong><br />
+          Idea worth spreading:<strong> {{this.speakerNomination.speakerIdea}} </strong><br />
+          Contact details:<strong> {{this.speakerNomination.speakerContact}} </strong><br />
+          Nominated By:<strong> {{this.speakerNomination.nominatorFirstName}} {{this.speakerNomination.nominatorLastName}}</strong><br />
+          Nominator's email:<strong>
+            <a href="mailto:{{this.speakerApplication.email}}">{{this.speakerNomination.nominatorEmail}}</a> </strong><br />
+        
+
+        </p>
     </div>
   </page>
 

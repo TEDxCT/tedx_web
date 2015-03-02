@@ -101,7 +101,7 @@ gender: {
 
 
 SpeakerNominationSchema = new SimpleSchema({
-  speakerFirstName: {
+speakerFirstName: {
     type: String,
     label: "Speaker First Name",
     optional: false
