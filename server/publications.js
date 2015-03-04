@@ -30,11 +30,10 @@ Meteor.publish('favorites', function () {
 
 Meteor.publish('speakers', function () {
   var currentUser = Meteor.users.findOne({"_id": this.userId});
-  console.dir(currentUser);
+
   if(currentUser!=undefined) {
     if(currentUser.emails[0].verified==true) {
       return speakers.find({});
     }
   }
-
 });
