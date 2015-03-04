@@ -39,11 +39,6 @@ moreInfo: {
   label: "Where can we find out more about you?",
   optional: true,
 },
-ideaWorthSpreading: {
-  type: String,
-  label: "What is your idea worth spreading?",
-  optional: false,
-},
 gender: {
     type: String,
     optional: true,
@@ -95,7 +90,15 @@ gender: {
       ];
     }
   }
-}
+},
+ideaWorthSpreading: {
+  type: String,
+  label: "What is your idea worth spreading?",
+  optional: false,
+  autoform: {
+    rows: 3,
+  }
+},
 });
 
 
@@ -135,6 +138,9 @@ nominatorFirstName: {
     type: String,
     label: "What is this speakers' idea? and why is it worth spreading?",
     optional: false,
+    autoform: {
+      rows: 3,
+    },
   }
 });
 
