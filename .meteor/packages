@@ -10,8 +10,6 @@ fezvrasta:bootstrap-material-design
 accounts-ui
 accounts-password
 multiply:iron-router-progress
-accounts-google
-accounts-facebook
 isotope:isotope
 natestrauser:animate-css
 jquery-waypoints

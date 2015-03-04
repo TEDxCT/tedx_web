@@ -1,7 +1,4 @@
 accounts-base@1.1.3
-accounts-facebook@1.0.3
-accounts-google@1.0.3
-accounts-oauth@1.1.3
 accounts-password@1.0.6
 accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
@@ -22,12 +19,10 @@ ddp@1.0.14
 deps@1.0.6
 ejson@1.0.5
 email@1.0.5
-facebook@1.1.3
 fastclick@1.0.2
 fezvrasta:bootstrap-material-design@0.2.1
 follower-livedata@1.0.3
 geojson-utils@1.0.2
-google@1.1.4
 html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.10
@@ -62,8 +57,6 @@ mongo-livedata@1.0.7
 multiply:iron-router-progress@1.0.1
 natestrauser:animate-css@3.1.2
 npm-bcrypt@0.7.7
-oauth@1.1.3
-oauth2@1.1.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
 random@1.0.2
