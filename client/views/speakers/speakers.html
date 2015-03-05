@@ -43,6 +43,9 @@
 
     {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="insert"}}
     <fieldset>
+      {{> afQuickField name="firstName" options="auto" label="Speaker first name"}}
+      {{> afQuickField name="lastName" options="auto" label= "Speaker last name"}}
+
       {{#each afFieldNames name="speakerNomination"}}
         {{> afQuickField name=this options="auto"}}
       {{/each}}
@@ -70,6 +73,9 @@
 
     {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
     <fieldset>
+      {{> afQuickField name="firstName" options="auto"}}
+      {{> afQuickField name="lastName" options="auto"}}
+
       {{#each afFieldNames name="speakerApplication"}}
         {{#if isEqual this "speakerApplication.cellphone"}}
           {{> afFormGroup name=this type="text" }}
@@ -133,7 +139,7 @@
 <template name="nominatedSpeaker">
   <a href="/speaker/nomination/{{this._id}}" class="speaker">
   {{#with speakerdata}}
-    {{> nomineeTile this}}
+    {{> speakerTile this}}
   {{/with}}
 </a>
 </template>
@@ -148,14 +154,14 @@
     </div>
 </template>
 
-<template name="nomineeTile">
+<!-- <template name="nomineeTile">
     <div class="speaker tile">
       <i class="icon-profile-id"></i>
       <div class="name">
         {{this.speakerFirstName}} {{this.speakerLastName}}
       </div>
     </div>
-</template>
+</template> -->
 
 <template name="speaker">
   <ul class="navigation">
@@ -168,12 +174,12 @@
   </ul>
   <page>
     <div class="speaker">
-      <h1>Meet {{this.speakerApplication.firstName}}. </h1>
-      <p>{{this.speakerApplication.firstName}} would like to be a speaker at this years TEDxCapeTown event. {{gender}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.speakerApplication.firstName}} {{this.speakerApplication.lastName}} would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
+      <h1>Meet {{this.firstName}}. </h1>
+      <p>{{this.firstName}} {{this.lastName}} would like to be a speaker at this years TEDxCapeTown event. {{this.firstName}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.firstName}}  would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
       <p>You can find out more about them <a href="http://{{this.speakerApplication.TEDProfileURL}}" target="_blank">here</a>.</p>
       <p class="info">
-        First name:<strong> {{this.speakerApplication.firstName}} </strong><br />
-        Last name:<strong> {{this.speakerApplication.lastName}} </strong><br />
+        First name:<strong> {{this.firstName}} </strong><br />
+        Last name:<strong> {{this.lastName}} </strong><br />
         Preferred name:<strong> {{this.speakerApplication.preferredName}} </strong><br />
         Email:<strong>
           <a href="mailto:{{this.speakerApplication.email}}">{{this.speakerApplication.email}}</a> </strong><br />
@@ -203,10 +209,10 @@
   </ul>
   <page>
     <div class="speaker">
-        <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.speakerNomination.speakerFirstName}}</h1>
+        <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}</h1>
         <p class="info">
-          First name:<strong> {{this.speakerNomination.speakerFirstName}}</strong><br />
-          Last name:<strong> {{this.speakerNomination.speakerLastName}}</strong><br />
+          First name:<strong> {{this.firstName}}</strong><br />
+          Last name:<strong> {{this.lastName}}</strong><br />
           Idea worth spreading:<strong> {{this.speakerNomination.speakerIdea}} </strong><br />
           Contact details:<strong> {{this.speakerNomination.speakerContact}} </strong><br />
           Nominated By:<strong> {{this.speakerNomination.nominatorFirstName}} {{this.speakerNomination.nominatorLastName}}</strong><br />

@@ -42,13 +42,15 @@ Template.speakers.helpers({
 
 Template.appliedSpeaker.helpers({
 	'speakerdata': function() {
-		return this.speakerApplication;
+		// return this.speakerApplication;
+		return this;
 	},
 });
 
 Template.nominatedSpeaker.helpers({
 	'speakerdata': function() {
-		return this.speakerNomination;
+		// return this.speakerNomination;
+		return this;
 	},
 });
 

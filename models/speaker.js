@@ -1,14 +1,4 @@
 SpeakerApplicationSchema = new SimpleSchema({
-  firstName: {
-    type: String,
-    label: "First Name",
-    optional: false
-  },
-  lastName: {
-    type: String,
-    label: "Last Name",
-    optional: false
-  },
 preferredName: {
     type: String,
     label: "Preferred Name",
@@ -104,16 +94,16 @@ ideaWorthSpreading: {
 
 
 SpeakerNominationSchema = new SimpleSchema({
-speakerFirstName: {
-    type: String,
-    label: "Speaker First Name",
-    optional: false
-  },
-speakerLastName: {
-    type: String,
-    label: "Speaker Last Name",
-    optional: false
-  },
+// speakerFirstName: {
+//     type: String,
+//     label: "Speaker First Name",
+//     optional: false
+//   },
+// speakerLastName: {
+//     type: String,
+//     label: "Speaker Last Name",
+//     optional: false
+//   },
 nominatorFirstName: {
     type: String,
     label: "Your First Name",
@@ -146,6 +136,16 @@ nominatorFirstName: {
 
 
 SpeakerSchema = new SimpleSchema({
+  firstName: {
+    type: String,
+    label: "First Name",
+    optional: false
+  },
+  lastName: {
+    type: String,
+    label: "Last Name",
+    optional: false
+  },
   createdAt: {
     type: Date,
       autoValue: function() {
