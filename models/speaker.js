@@ -10,9 +10,10 @@ email: {
     optional: false
 },
 cellphone: {
-  type: Number,
-  label: "Cellphone Number",
-  optional: true
+  type: String,
+  optional: true,
+  label: "Contact Number",
+  regEx: /^[0-9]{10}$/
 },
 TEDProfileURL: {
   type: String,
