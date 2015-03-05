@@ -96,6 +96,9 @@
       <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
       <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
       <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+      {{#if userIsVerified}}
+        <li><a href="{{ pathFor 'speakers.manage'}}"> Manage speakers</a></li>
+      {{/if}}
     </ul>
     <h1>Thank you</h1>
     <p>Your application will be considered and we will get back to you as soon as we can</p>
