@@ -1,3 +1,5 @@
+@import 'variables';
+
 .dropdown {
 
   &.chapter-nav.open .dropdown-menu {
@@ -25,4 +27,58 @@
   left: 0;
   top: 0;
   z-index: 1030;
+}
+
+
+.adminMenu {
+  font-weight: 500;
+  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10000;
+
+  .menuToggle {
+    background: @primaryColor;
+    color: white;
+    padding: 12px 15px 12px 25px;
+    width: 200px;
+
+    i {
+      position: relative;
+      top: 3px;
+      padding-right: 6px;
+
+      &.dropDownArrow {
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        content: "5";
+
+        &.active {
+          content: "6";
+        }
+      }
+    }
+  }
+
+  .dropDown {
+    background: white;
+    display: none;
+    position: relative;
+    min-height: 300px;
+    width: 200px;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 10px 0px;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
 }

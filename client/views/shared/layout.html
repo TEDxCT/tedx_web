@@ -18,7 +18,11 @@
 
 <template name="singlePage">
   {{> metaData}}
-  <div class="loginButtons">{{> loginButtons}}</div>
+  {{#if currentUser}}
+    {{> adminMenu}}
+  {{else}}
+    <div class="loginButtons">{{> loginButtons}}</div>
+  {{/if}}
   <div class="singlePage  animated bounceInUp">
     <div class="content">
     <img src="/images/logo.png" class="pull-left logo" >
@@ -31,10 +35,29 @@
 
 <template name="metaData">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
     <meta name="fragment" content="!">
     <link rel="icon"
         type="image/png"
         href="/favicons.png">
+</template>
+
+<template name="adminMenu">
+  <nav class="adminMenu animated fadeIn">
+      <div class="menuToggle">
+        <i class="icon-setting-gear"> </i>Manage <i class="icon-arrow-65 dropDownArrow"></i>
+      </div>
+      <div class="dropDown animated fadeInUp">
+        <ul>
+          {{#if userIsVerified}}
+            <li><a href="/manage/speakers">Speakers</a></li>
+            <li><a href="/manage/categories">Categories</a></li>
+          {{else}}
+          <p>You need to verify your email address before you can administer this website.</p>
+            <li><a class="resendVerificationEmail">Resend verification email</a></li>
+          {{/if}}
+          <li><a class="logout">Logout</a></li>
+        </ul>
+      </div>
+  </nav>
 </template>
