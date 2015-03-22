@@ -7,8 +7,14 @@ Template.singlePage.events({
 Template.adminMenu.events({
 	'click .menuToggle': function(event, template) {
 		var dropDown = template.$(".dropDown");
-		if(dropDown.hasClass("active")) dropDown.removeClass("active");
-		else dropDown.addClass("active");
+		if(dropDown.hasClass("active")) {
+			template.$(".dropDownArrow").removeClass("active");
+			dropDown.removeClass("active");
+		}
+		else {
+			dropDown.addClass("active");
+			template.$(".dropDownArrow").addClass("active");
+		}
 	},
 	'click .logout': function(even, template) {
 		Meteor.logout();
