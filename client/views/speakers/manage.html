@@ -69,7 +69,11 @@
   </ul>
   <page>
     <div class="speaker">
-      <h1>Meet {{this.firstName}}. </h1>
+      <h1>Meet {{this.firstName}}.  
+            {{#if userIsVerified}}
+              <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+            {{/if}}
+      </h1>
       <p>{{this.firstName}} {{this.lastName}} would like to be a speaker at this years TEDxCapeTown event. {{this.firstName}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.firstName}}  would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
       <p>You can find out more about them <a href="http://{{this.speakerApplication.TEDProfileURL}}" target="_blank">here</a>.</p>
       <p class="info">
@@ -112,7 +116,11 @@
   </ul>
   <page>
     <div class="speaker">
-        <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}</h1>
+        <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}} 
+          {{#if userIsVerified}}
+              <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+            {{/if}}
+        </h1>
         <p class="info">
           First name:<strong> {{this.firstName}}</strong><br />
           Last name:<strong> {{this.lastName}}</strong><br />
