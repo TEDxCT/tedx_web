@@ -48,6 +48,9 @@
       {{#each afFieldNames name="speakerNomination"}}
         {{> afQuickField name=this options="auto"}}
       {{/each}}
+
+      {{> afQuickField name="categories" options="auto"}}
+
     </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>
   {{/autoForm}}
@@ -80,6 +83,9 @@
           {{> afQuickField name=this options="auto"}}
         {{/if}}
       {{/each}}
+
+      {{> afQuickField name="categories" options="auto"}}
+
     </fieldset>
     <button type="submit" class="btn btn-primary">Submit</button>
     {{/autoForm}}

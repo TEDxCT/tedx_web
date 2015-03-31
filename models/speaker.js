@@ -203,6 +203,28 @@ SpeakerSchema = new SimpleSchema({
         }
       }
     }
+  },
+  categories: {
+    type: [String],
+    label: "Please choose categories this talk may fall under",
+    optional: true,
+    autoform: {
+      type: "select-checkbox",
+      options: function () {
+        var cat = categories.find();
+        var ret = [];
+        // for (var i = 0; i < cate.length; i++) {
+        //    objects[i] = {name: etc};
+        // }
+        var count = 0;
+        cat.forEach(function(item) {
+            ret[count] = {label: item.name, value: item._id};
+            count++;
+        });
+        console.log(ret);
+        return ret;
+      }
+    }
   }
 });
 

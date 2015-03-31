@@ -28,6 +28,10 @@ Handlebars.registerHelper('setSpeakerRegistrationType', function (type) {
       Session.set("speakerRegistrationType", type);
 });
 
+Handlebars.registerHelper('categoryName', function (identifier) {
+	return categories.findOne({'_id' : identifier}, {'_id' : 0 , 'name' : 1}).name;
+});
+
 Template.speakers.helpers({
 	'speakers': function() {
 		return speakers.find({"speakerApplication": {$exists: false}});

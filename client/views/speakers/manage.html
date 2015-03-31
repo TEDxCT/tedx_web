@@ -87,6 +87,14 @@
         Age Group:<strong> {{this.speakerApplication.ageGroup}} </strong><br />
         Race:<strong> {{this.speakerApplication.race}} </strong><br />
         Created At:<strong> {{this.createdAt}} </strong><br />
+        Categories:<strong> 
+          <ul>
+            {{#each this.categories}} 
+              <li>{{categoryName this}}</li>
+            {{/each}}
+          </ul>
+        </strong>
+
       </p>
     </div>
   </page>
@@ -113,6 +121,8 @@
           Nominated By:<strong> {{this.speakerNomination.nominatorFirstName}} {{this.speakerNomination.nominatorLastName}}</strong><br />
           Nominator's email:<strong>
             <a href="mailto:{{this.speakerApplication.email}}">{{this.speakerNomination.nominatorEmail}}</a> </strong><br />
+                    Categories:<strong>{{this.categories}}</strong>
+
 
 
         </p>
