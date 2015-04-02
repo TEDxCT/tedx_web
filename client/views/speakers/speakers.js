@@ -102,6 +102,16 @@ Template.nominee.helpers({
 	}
 });
 
+Template.speakerTile.helpers({
+	'voted': function() {
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			return true;
+		}
+		return false
+	}
+})
+
 Template.speaker.helpers({
 	'gender': function() {
 		if(this.speakerApplication.gender=="male"){

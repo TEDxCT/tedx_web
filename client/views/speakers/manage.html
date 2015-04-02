@@ -41,7 +41,7 @@
 
 
 <template name="speakerTile">
-    <div class="speaker tile">
+    <div class="speaker tile {{#if voted}}voted{{/if}}">
       <i class="icon-profile-id"></i>
       <div class="name">
         {{this.firstName}} {{this.lastName}}
