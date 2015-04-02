@@ -61,13 +61,15 @@
         </ul>
       </div>
       <div class="tasks">
-        You have a new task.
+        {{#if taskRemaining}}You have a new task.{{/if}}
         <ul>
           <li>
             {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers</li>
         </ul>
+        {{#if taskRemaining}}
         <small>Look through the speakers. Choose three and vote for them.</small>
         <hr>
+        {{/if}}
         <p>Votes left <strong>{{votes}}</strong></p>
       </div>
   </nav>
