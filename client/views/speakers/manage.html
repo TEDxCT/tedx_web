@@ -81,7 +81,8 @@
     <div class="speaker">
       <h1>Meet {{this.firstName}}.  
             {{#if userIsVerified}}
-              <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+              {{this.id}}
+              <!-- <a href="{{ pathFor 'speakers.register.apply' speakerId=this.id}}" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a> -->
             {{/if}}
       </h1>
       <p>{{this.firstName}} {{this.lastName}} would like to be a speaker at this years TEDxCapeTown event. {{this.firstName}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.firstName}}  would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
@@ -138,7 +139,7 @@
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}} 
           {{#if userIsVerified}}
-              <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+              <!-- <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a> -->
             {{/if}}
         </h1>
         <p class="info">
