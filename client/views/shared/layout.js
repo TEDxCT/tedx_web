@@ -35,7 +35,7 @@ Template.adminMenu.events({
 	'click .resendVerificationEmail': function(event, template) {
 		Meteor.call('resendVerificationEmail', function (error, result) {
 			if(error) FlashMessages.sendError("There was an error sending the verfication message.");
-			else FlashMessages.sendSuccess("Great! Sending verification email!");
+			else FlashMessages.sendSuccess("Great! Sending... Check your email.");
 		} );
 	}
 });
