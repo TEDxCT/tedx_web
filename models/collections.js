@@ -4,3 +4,4 @@ categories = new Mongo.Collection('categories');
 config = new Mongo.Collection('config');
 chapters = new Mongo.Collection('chapters');
 speakers = new Mongo.Collection('speakers');
+votes = new Mongo.Collection('votes');

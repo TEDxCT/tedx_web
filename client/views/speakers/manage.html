@@ -41,7 +41,7 @@
 
 
 <template name="speakerTile">
-    <div class="speaker tile">
+    <div class="speaker tile {{#if voted}}voted{{/if}}">
       <i class="icon-profile-id"></i>
       <div class="name">
         {{this.firstName}} {{this.lastName}}
@@ -68,6 +68,16 @@
     {{/if}}
   </ul>
   <page>
+    <div class="vote {{#if voted}}voted{{/if}}">
+      <div class="title">
+        {{#if voted}}
+          Voted
+        {{else}}
+          Vote
+        {{/if}}
+      </div>
+      <i class="icon-hand-like-2"></i>
+    </div>
     <div class="speaker">
       <h1>Meet {{this.firstName}}.  
             {{#if userIsVerified}}
@@ -91,9 +101,9 @@
         Age Group:<strong> {{this.speakerApplication.ageGroup}} </strong><br />
         Race:<strong> {{this.speakerApplication.race}} </strong><br />
         Created At:<strong> {{this.createdAt}} </strong><br />
-        Categories:<strong> 
+        Categories:<strong>
           <ul>
-            {{#each this.categories}} 
+            {{#each this.categories}}
               <li>{{categoryName this}}</li>
             {{/each}}
           </ul>
@@ -115,6 +125,16 @@
     {{/if}}
   </ul>
   <page>
+    <div class="vote {{#if voted}}voted{{/if}}">
+      <div class="title">
+        {{#if voted}}
+          Voted
+        {{else}}
+          Vote
+        {{/if}}
+      </div>
+      <i class="icon-hand-like-2"></i>
+    </div>
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}} 
           {{#if userIsVerified}}

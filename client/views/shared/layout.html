@@ -17,6 +17,7 @@
 </template>
 
 <template name="singlePage">
+  {{> flashMessages}}
   {{> metaData}}
   {{#if currentUser}}
     {{> adminMenu}}
@@ -36,6 +37,7 @@
 <template name="metaData">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
+    <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
     <meta name="fragment" content="!">
     <link rel="icon"
         type="image/png"
@@ -47,7 +49,7 @@
       <div class="menuToggle">
         <i class="icon-setting-gear"> </i>Manage <i class="icon-arrow-65 dropDownArrow"></i>
       </div>
-      <div class="dropDown animated fadeInUp">
+      <div class="dropDown animated fadeInRight">
         <ul>
           {{#if userIsVerified}}
             <li><a href="/manage/speakers">Speakers</a></li>
@@ -58,6 +60,21 @@
           {{/if}}
           <li><a class="logout">Logout</a></li>
         </ul>
+      </div>
+      <div class="tasks">
+        {{#if taskRemaining}}You have a new task.{{/if}}
+        <ul>
+          <li class="voteLink">
+            {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers
+          </li>
+        </ul>
+        {{#if taskRemaining}}
+        <small>Look through the speakers. Choose three and vote for them.</small>
+        {{else}}
+          <small><strong>Tip:</strong> You can "unvote" for a speaker by selecting the vote button again.</small>
+        {{/if}}
+        <hr>
+        <p>Votes left <strong>{{votes}}</strong></p>
       </div>
   </nav>
 </template>

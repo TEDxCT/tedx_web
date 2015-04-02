@@ -1,5 +1,38 @@
 @import 'variables';
 
+.vote {
+	background: #F3f3f3;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	left: 5px;
+	width: 150px;
+	text-align: left;
+
+	&.voted {
+		background: #50e3c2;
+	}
+
+	.title {
+		padding-left: 10px;
+		color: #666;
+		display: inline-block;
+		width: 50px;
+		text-align: left;
+		margin-top:0px;
+	}
+
+	i {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 24px;
+		font-weight: 600;
+		color: #666;
+	}
+}
+
 .singlePage {
 	.logo {
 		width: 200px;
@@ -115,6 +148,11 @@ a.speaker {
 		height: 107px;
 		vertical-align: top;
 		width: 250px;
+
+		&.voted {
+			background: @secondaryColor;
+			color: white;
+		}
 
 		i {
 			font-size: 23px;
