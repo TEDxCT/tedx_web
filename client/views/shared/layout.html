@@ -17,6 +17,7 @@
 </template>
 
 <template name="singlePage">
+  {{> flashMessages}}
   {{> metaData}}
   {{#if currentUser}}
     {{> adminMenu}}

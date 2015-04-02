@@ -60,11 +60,17 @@ Template.nominatedSpeaker.helpers({
 
 Template.speaker.events({
 	'click .vote': function() {
-		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
-		if(vote) {
-			Meteor.call("removeVote", vote._id);
+		var voteCount = votes.find({"user": Meteor.userId()}).count();
+		console.log(voteCount);
+		if(voteCount==3) {
+			FlashMessages.sendError("You may only vote for three speakers.");
+		} else {
+			var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+			if(vote) {
+				Meteor.call("removeVote", vote._id);
+			}
+			else votes.insert({"speaker": this._id, "user": Meteor.userId()})
 		}
-		else votes.insert({"speaker": this._id, "user": Meteor.userId()})
 	}
 })
 
