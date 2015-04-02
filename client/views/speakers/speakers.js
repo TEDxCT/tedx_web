@@ -60,19 +60,47 @@ Template.nominatedSpeaker.helpers({
 
 Template.speaker.events({
 	'click .vote': function() {
-		var voteCount = votes.find({"user": Meteor.userId()}).count();
-		console.log(voteCount);
-		if(voteCount==3) {
-			FlashMessages.sendError("You may only vote for three speakers.");
-		} else {
-			var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
-			if(vote) {
-				Meteor.call("removeVote", vote._id);
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			Meteor.call("removeVote", vote._id);
+		}
+		else {
+			var voteCount = votes.find({"user": Meteor.userId()}).count();
+			if(voteCount==3) {
+				FlashMessages.sendError("You may only vote for three speakers.");
+			} else {
+				votes.insert({"speaker": this._id, "user": Meteor.userId()})
 			}
-			else votes.insert({"speaker": this._id, "user": Meteor.userId()})
 		}
 	}
 })
+
+Template.nominee.events({
+	'click .vote': function() {
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			Meteor.call("removeVote", vote._id);
+		}
+		else {
+			var voteCount = votes.find({"user": Meteor.userId()}).count();
+			if(voteCount==3) {
+				FlashMessages.sendError("You may only vote for three speakers.");
+			} else {
+				votes.insert({"speaker": this._id, "user": Meteor.userId()})
+			}
+		}
+	}
+})
+
+Template.nominee.helpers({
+	'voted': function() {
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			return true;
+		}
+		return false
+	}
+});
 
 Template.speaker.helpers({
 	'gender': function() {

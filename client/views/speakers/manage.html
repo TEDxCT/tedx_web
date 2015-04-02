@@ -121,6 +121,16 @@
     {{/if}}
   </ul>
   <page>
+    <div class="vote {{#if voted}}voted{{/if}}">
+      <div class="title">
+        {{#if voted}}
+          Voted
+        {{else}}
+          Vote
+        {{/if}}
+      </div>
+      <i class="icon-hand-like-2"></i>
+    </div>
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}</h1>
         <p class="info">

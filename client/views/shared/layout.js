@@ -26,6 +26,9 @@ Template.adminMenu.events({
 			template.$(".dropDownArrow").addClass("active");
 		}
 	},
+	'click .voteLink': function() {
+		Router.go("manage.speakers");
+	},
 	'click .logout': function(even, template) {
 		Meteor.logout();
 	},
