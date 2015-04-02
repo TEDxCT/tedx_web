@@ -70,8 +70,10 @@
         </ul>
         {{#if taskRemaining}}
         <small>Look through the speakers. Choose three and vote for them.</small>
-        <hr>
+        {{else}}
+          <small><strong>Tip:</strong> You can "unvote" for a speaker by selecting the vote button again.</small>
         {{/if}}
+        <hr>
         <p>Votes left <strong>{{votes}}</strong></p>
       </div>
   </nav>
