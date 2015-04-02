@@ -89,6 +89,9 @@ Template.nominee.events({
 				votes.insert({"speaker": this._id, "user": Meteor.userId()})
 			}
 		}
+	},
+	'click .mdi-editor-mode-edit' : function(){
+		
 	}
 })
 

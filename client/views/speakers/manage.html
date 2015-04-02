@@ -139,7 +139,7 @@
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}} 
           {{#if userIsVerified}}
-              <!-- <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a> -->
+              <a href="/speaker/edit/nominee/{{this._id}}" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
             {{/if}}
         </h1>
         <p class="info">
@@ -155,7 +155,65 @@
 
 
         </p>
+
+       
+
+     
+
+
     </div>
   </page>
 
+</template>
+
+<template name="edit_speaker_application">
+
+  {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="update" doc=this}}
+    <fieldset>
+      {{> afQuickField name="firstName" options="auto"}}
+      {{> afQuickField name="lastName" options="auto"}}
+
+      {{#each afFieldNames name="speakerApplication"}}
+        {{#if isEqual this "speakerApplication.cellphone"}}
+          {{> afFormGroup name=this type="text" }}
+        {{else}}
+          {{> afQuickField name=this options="auto"}}
+        {{/if}}
+      {{/each}}
+
+      <!-- {{> afQuickField name="categories" options="auto"}} -->
+
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {{/autoForm}}
+</template>
+
+<template name="edit_speaker_nominee">
+   <ul class="navigation">
+    <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
+    <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
+    <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+    {{#if userIsVerified}}
+      <li class="active"><a href="{{ pathFor 'manage.speakers'}}"> Manage speakers</a></li>
+    {{/if}}
+  </ul>
+  <page>
+    <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}} </h1>
+
+   {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="update" doc=this}}
+    <fieldset>
+      {{> afQuickField name="firstName" options="auto" label="Speaker first name"}}
+      {{> afQuickField name="lastName" options="auto" label= "Speaker last name"}}
+
+      {{#each afFieldNames name="speakerNomination"}}
+        {{> afQuickField name=this options="auto"}}
+      {{/each}}
+       <!-- {{> afQuickField name="categories" options="auto"}} -->
+
+    </fieldset>
+      <button type="submit" class="btn btn-primary">Update</button>
+      <button type="cancel" class="btn btn-primary">Cancel</button>
+
+  {{/autoForm}}
+</page>
 </template>
