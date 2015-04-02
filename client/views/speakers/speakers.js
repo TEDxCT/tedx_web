@@ -58,6 +58,16 @@ Template.nominatedSpeaker.helpers({
 	},
 });
 
+Template.speaker.events({
+	'click .vote': function() {
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			Meteor.call("removeVote", vote._id);
+		}
+		else votes.insert({"speaker": this._id, "user": Meteor.userId()})
+	}
+})
+
 Template.speaker.helpers({
 	'gender': function() {
 		if(this.speakerApplication.gender=="male"){
@@ -70,4 +80,11 @@ Template.speaker.helpers({
 			return this.speakerApplication.firstName;
 		}
 	},
+	'voted': function() {
+		var vote = votes.findOne({"speaker": this._id, "user": Meteor.userId()});
+		if(vote) {
+			return true;
+		}
+		return false
+	}
 });

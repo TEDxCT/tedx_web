@@ -12,6 +12,17 @@ if (Meteor.isServer) {
       return true;
     }
   });
+  votes.allow({
+    insert : function () {
+      return true;
+    },
+    update : function (doc) {
+      return true;
+    },
+    remove : function () {
+      return true;
+    }
+  });
   chapters.allow({
     insert : function () {
       return true;

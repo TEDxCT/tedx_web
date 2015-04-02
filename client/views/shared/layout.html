@@ -36,6 +36,7 @@
 <template name="metaData">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
+    <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
     <meta name="fragment" content="!">
     <link rel="icon"
         type="image/png"
@@ -58,6 +59,16 @@
           {{/if}}
           <li><a class="logout">Logout</a></li>
         </ul>
+      </div>
+      <div class="tasks">
+        You have a new task.
+        <ul>
+          <li>
+            {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers</li>
+        </ul>
+        <small>Look through the speakers. Choose three and vote for them.</small>
+        <hr>
+        <p>Votes left <strong>{{votes}}</strong></p>
       </div>
   </nav>
 </template>

@@ -2,6 +2,10 @@ Meteor.publish('videos', function () {
   return videos.find({"archived": {$ne : true}});
 });
 
+Meteor.publish('votes', function () {
+  return votes.find({});
+});
+
 Meteor.publish('categories', function () {
   return categories.find({"archived": {$ne : true}});
 });

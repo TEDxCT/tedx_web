@@ -4,6 +4,16 @@ Template.singlePage.events({
 	}
 });
 
+Template.adminMenu.helpers({
+	'votes': function() {
+		return 3 - votes.find({"user":Meteor.userId()}).count();
+	},
+	'taskRemaining': function() {
+		if(votes.find({"user":Meteor.userId()}).count()==3) return false;
+		return true;
+	}
+})
+
 Template.adminMenu.events({
 	'click .menuToggle': function(event, template) {
 		var dropDown = template.$(".dropDown");

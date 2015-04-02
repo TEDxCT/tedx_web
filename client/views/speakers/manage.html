@@ -68,6 +68,16 @@
     {{/if}}
   </ul>
   <page>
+    <div class="vote {{#if voted}}voted{{/if}}">
+      <div class="title">
+        {{#if voted}}
+          Voted
+        {{else}}
+          Vote
+        {{/if}}
+      </div>
+      <i class="icon-hand-like-2"></i>
+    </div>
     <div class="speaker">
       <h1>Meet {{this.firstName}}. </h1>
       <p>{{this.firstName}} {{this.lastName}} would like to be a speaker at this years TEDxCapeTown event. {{this.firstName}} is between the ages {{this.speakerApplication.ageGroup}}. {{this.firstName}}  would like to talk about '{{this.speakerApplication.ideaWorthSpreading}}'.</p>
@@ -87,9 +97,9 @@
         Age Group:<strong> {{this.speakerApplication.ageGroup}} </strong><br />
         Race:<strong> {{this.speakerApplication.race}} </strong><br />
         Created At:<strong> {{this.createdAt}} </strong><br />
-        Categories:<strong> 
+        Categories:<strong>
           <ul>
-            {{#each this.categories}} 
+            {{#each this.categories}}
               <li>{{categoryName this}}</li>
             {{/each}}
           </ul>
