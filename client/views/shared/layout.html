@@ -62,19 +62,28 @@
         </ul>
       </div>
       <div class="tasks">
-        {{#if taskRemaining}}You have a new task.{{/if}}
+        {{#if userIsVerified}}
+          {{#if taskRemaining}}You have a new task.{{/if}}
+          <ul>
+            <li class="voteLink">
+              {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers
+            </li>
+          </ul>
+          {{#if taskRemaining}}
+          <small>Look through the speakers. Choose three and vote for them.</small>
+          {{else}}
+            <small><strong>Tip:</strong> You can "unvote" for a speaker by selecting the vote button again.</small>
+          {{/if}}
+          <hr>
+          <p>Votes left <strong>{{votes}}</strong></p>
+        {{else}}
         <ul>
-          <li class="voteLink">
-            {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers
+          <li class="resendVerificationEmail">
+            <i class="icon-full-moon"></i> Click here to verify your email
           </li>
         </ul>
-        {{#if taskRemaining}}
-        <small>Look through the speakers. Choose three and vote for them.</small>
-        {{else}}
-          <small><strong>Tip:</strong> You can "unvote" for a speaker by selecting the vote button again.</small>
-        {{/if}}
-        <hr>
-        <p>Votes left <strong>{{votes}}</strong></p>
+        <small>Without verifying your email we cannot let you access any admin functionality.</small>
+         {{/if}}
       </div>
   </nav>
 </template>
