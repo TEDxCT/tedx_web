@@ -12,17 +12,20 @@ AutoForm.hooks({
     	onSuccess: function(operation, result, template) {
 			Router.go('speakers.register.complete');
 		},
-	}
-});
-
-
-AutoForm.hooks({
-  insertSpeakerNominationForm: {
+	},
+	updateSpeakerApplicationForm: {
+    	onSuccess: function(operation, result, template) {
+			// Router.go('speakers.register.complete');
+			FlashMessages.sendSuccess("Update successfull");
+		},
+	},
+	insertSpeakerNominationForm: {
     	onSuccess: function(operation, result, template) {
 			Router.go('speakers.register.complete');
 		},
 	}
 });
+
 
 Handlebars.registerHelper('setSpeakerRegistrationType', function (type) {
       Session.set("speakerRegistrationType", type);
@@ -90,9 +93,6 @@ Template.nominee.events({
 			}
 		}
 	},
-	'click .mdi-editor-mode-edit' : function(){
-		
-	}
 })
 
 Template.nominee.helpers({
@@ -135,3 +135,13 @@ Template.speaker.helpers({
 		return false
 	}
 });
+
+Template.edit_speaker_nominee.events({
+	'click .btn-cancel': function() {
+		Router.go('speaker.nomination.apply');
+	}
+})
+
+Template.edit_speaker_application.events({
+	
+})

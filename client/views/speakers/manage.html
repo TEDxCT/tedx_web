@@ -68,7 +68,7 @@
   <div class="speaker">
     <h1>Meet {{this.firstName}}.
       {{#if userIsVerified}}
-        <a href="/speaker/edit/application/{{this._id}}" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+        <a href="/speaker/application/{{this._id}}/edit" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
       {{/if}}
     </h1>
     <p>
@@ -127,7 +127,7 @@
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}
           {{#if userIsVerified}}
-            <a href="/speaker/edit/nominee/{{this._id}}" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+            <a href="/speaker/nomination/{{this._id}}/edit" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
           {{/if}}
         </h1>
         <p class="info">
@@ -155,9 +155,9 @@
         <li class="active"><a href="{{ pathFor 'manage.speakers'}}"> Manage speakers</a></li>
       {{/if}}
     </ul>
-     <h1>Updating speaker application for {{this.firstName}}.</h1>
+     <h1><b>Updating</b> speaker application for {{this.firstName}}.</h1>
 
-    {{#autoForm collection="speakers" id="insertSpeakerApplicationForm" type="insert"}}
+    {{#autoForm collection="speakers" id="updateSpeakerApplicationForm" type="update" doc=this}}
     <fieldset>
       {{> afQuickField name="firstName" options="auto"}}
       {{> afQuickField name="lastName" options="auto"}}
@@ -174,7 +174,7 @@
 
     </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="cancel" class="btn btn-primary">Cancel</button>
+      <button type="cancel" class="btn btn-primary btn-cancel">Cancel</button>
     {{/autoForm}}
   </page>
 </template>
@@ -189,9 +189,9 @@
     {{/if}}
   </ul>
   <page>
-    <h1>Updating speaker nomination for {{this.firstName}} </h1>
+    <h1><b>Updating</b> speaker nomination for {{this.firstName}} </h1>
 
-   {{#autoForm collection="speakers" id="insertSpeakerNominationForm" type="update" doc=this}}
+   {{#autoForm collection="speakers" id="updateSpeakerApplicationForm" type="update" doc=this}}
     <fieldset>
       {{> afQuickField name="firstName" options="auto" label="Speaker first name"}}
       {{> afQuickField name="lastName" options="auto" label= "Speaker last name"}}
@@ -203,7 +203,7 @@
 
     </fieldset>
       <button type="submit" class="btn btn-primary">Update</button>
-      <button type="cancel" class="btn btn-primary">Cancel</button>
+      <button type="cancel" class="btn btn-primary btn-cancel">Cancel</button>
 
   {{/autoForm}}
 </page>
