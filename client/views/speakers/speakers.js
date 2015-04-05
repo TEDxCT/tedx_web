@@ -15,7 +15,6 @@ AutoForm.hooks({
 		onError: function(formType, error) {
 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
 		},
-
 	},
 	updateSpeakerApplicationForm: {
     	onSuccess: function(operation, result, template) {
@@ -157,10 +156,15 @@ Template.speaker.helpers({
 
 Template.edit_speaker_nominee.events({
 	'click .btn-cancel': function() {
-		Router.go('speaker.nomination.apply');
+		console.log(this._id);
+		Router.go('/speaker/nomination/' + this._id);
 	}
 })
 
 Template.edit_speaker_application.events({
-	
+		'click .btn-cancel': function() {
+		console.log(this._id);
+
+		Router.go('/speaker/application/' + this._id);
+	}
 })
