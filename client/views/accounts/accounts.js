@@ -20,6 +20,31 @@ Template.login.events({
   }
 })
 
+Template.createUser.events({
+  'click .createUser': function(event, template) {
+    var options = new Object();
+    options.email = template.$(".email").val();
+    options.password = template.$(".password").val();
+    options.profile = new Object();
+    options.profile.firstName = template.$(".firstName").val();
+    options.profile.lastName = template.$(".lastName").val();
+    options.profile.subscribedToUpdates = template.$(".subscribe").is(":checked");
+    createNewAccount(options);
+  },
+  'keypress input.password': function (event, template) {
+    if (event.which === 13) {
+      var options = new Object();
+      options.email = template.$(".email").val();
+      options.password = template.$(".password").val();
+      options.profile = new Object();
+      options.profile.firstName = template.$(".firstName").val();
+      options.profile.lastName = template.$(".lastName").val();
+      options.profile.subscribedToUpdates = template.$(".subscribe").is(":checked");
+      createNewAccount(options);
+    }
+  }
+})
+
 function loginWithPassword(email, password) {
   if(email.val()!="") {
     Meteor.loginWithPassword(email.val(), password.val(), function(error) {
@@ -32,4 +57,29 @@ function loginWithPassword(email, password) {
   else {
     $(".help-block").removeClass("hidden");
   }
+}
+
+function createNewAccount(options) {
+  if(options.firstName!="") {
+    $(".help-block.error-first-name").addClass("hidden");
+    if(options.email!="") {
+      $(".help-block.error-email").addClass("hidden");
+      if(options.password!="") {
+        $(".help-block.error-password").addClass("hidden");
+        Accounts.createUser(options, function(error) {
+          if(error) {
+            FlashMessages.sendError("There was an error creating your account, please check al fields are complete and correct.");
+          }
+          else Router.go("/");
+        });
+      }
+      else {
+        $(".help-block.error-password").removeClass("hidden");
+      }
+    }
+    else {
+      $(".help-block.error-email").removeClass("hidden");
+    }
+  } else $(".help-block.error-first-name").removeClass("hidden");
+
 }
