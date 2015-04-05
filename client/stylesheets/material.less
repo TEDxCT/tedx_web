@@ -12,6 +12,23 @@ h1 {
   padding-left: 25px;
 }
 
+.btn {
+  font-size: 16px;
+}
+
+.btn-secondary {
+  color: @primaryColor;
+
+  &:hover {
+    background: @primaryColor;
+    color: @primaryFontColor;
+  }
+}
+
+a.link {
+  text-decoration: underline;
+}
+
 .navbar, .navbar-default {
   background-color: @primaryBackgroundColor;
   color: #666;
@@ -289,8 +306,13 @@ label {
   }
 }
 
+.btn {
+  border: 0;
+}
+
 .btn-primary.btn-flat:not(.btn-link) {
   color: @primaryColor;
+  border: 0;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {

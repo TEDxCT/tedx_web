@@ -1,3 +1,5 @@
+@import 'variables';
+
 #login-dropdown-list {
   position: absolute;
   top: -1px;
@@ -21,5 +23,13 @@ z-index: 999;
 }
 
 a {
-  
+  color: @primaryTextColor;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  box-shadow: none;
+}
+
+.help-block.error {
+  color: @secondaryColor;
 }
