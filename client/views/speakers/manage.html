@@ -68,7 +68,7 @@
   <div class="speaker">
     <h1>Meet {{this.firstName}}.
       {{#if userIsVerified}}
-        <a href="/speaker/application/{{this._id}}/edit" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+        <a href="/speaker/application/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a>
       {{/if}}
     </h1>
     <p>
@@ -127,7 +127,7 @@
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}
           {{#if userIsVerified}}
-            <a href="/speaker/nomination/{{this._id}}/edit" class="btn btn-primary btn-fab btn-raised mdi-editor-mode-edit"></a>
+            <a href="/speaker/nomination/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a>
           {{/if}}
         </h1>
         <p class="info">
