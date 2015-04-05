@@ -12,18 +12,37 @@ AutoForm.hooks({
     	onSuccess: function(operation, result, template) {
 			Router.go('speakers.register.complete');
 		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+		},
+
 	},
 	updateSpeakerApplicationForm: {
     	onSuccess: function(operation, result, template) {
 			// Router.go('speakers.register.complete');
-			FlashMessages.sendSuccess("Update successfull");
+			FlashMessages.sendSuccess("Update successful");
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
 		},
 	},
 	insertSpeakerNominationForm: {
     	onSuccess: function(operation, result, template) {
 			Router.go('speakers.register.complete');
 		},
-	}
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+		},
+	},
+	updateSpeakerNominationForm: {
+    	onSuccess: function(operation, result, template) {
+			// Router.go('speakers.register.complete');
+			FlashMessages.sendSuccess("Update successful");
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your nomination. Please see below for errors.");
+		},
+	},
 });
 
 
