@@ -6,7 +6,6 @@
 meteor-platform
 iron:router
 less
-fezvrasta:bootstrap-material-design
 accounts-ui
 accounts-password
 multiply:iron-router-progress
@@ -19,3 +18,4 @@ aldeed:collection2
 aldeed:autoform
 meteorhacks:kadira
 mrt:flash-messages
+twbs:bootstrap
