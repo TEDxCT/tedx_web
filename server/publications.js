@@ -41,3 +41,20 @@ Meteor.publish('speakers', function () {
     }
   }
 });
+
+// Meteor.users.allow({
+//     update: function(userId, docs, fields, modifier) {
+//         return true;
+//         }
+// });
+
+Meteor.publish("allUsers", function () {
+  var currentUser = Meteor.users.findOne({"_id": this.userId});
+
+  if(currentUser!=undefined) {
+    if(currentUser.emails[0].verified==true) {
+      return Meteor.users.find();
+    }
+  }
+
+  });

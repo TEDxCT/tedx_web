@@ -221,7 +221,6 @@ SpeakerSchema = new SimpleSchema({
             ret[count] = {label: item.name, value: item._id};
             count++;
         });
-        console.log(ret);
         return ret;
       }
     }
