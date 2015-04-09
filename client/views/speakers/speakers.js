@@ -178,6 +178,11 @@ Handlebars.registerHelper('votesForSpeaker', function(speakerId) {
     return voteCount;
 });
 
+Handlebars.registerHelper('totalNumberOfVotes', function() {
+	var voteCount = votes.find().count();
+    return voteCount;
+});
+
 Template.speakers.helpers({
 	'speakers': function() {
 		return speakers.find({"speakerApplication": {$exists: false}});
