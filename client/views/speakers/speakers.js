@@ -53,17 +53,7 @@ Handlebars.registerHelper('categoryName', function (identifier) {
 	return categories.findOne({'_id' : identifier}, {'_id' : 0 , 'name' : 1}).name;
 });
 
-Template.speakers.helpers({
-	'speakers': function() {
-		return speakers.find({"speakerApplication": {$exists: false}});
-	},
-	'nominated': function() {
-		return speakers.find({"speakerNomination": {$exists: true}});
-	},
-	'applied': function() {
-		return speakers.find({"speakerApplication": {$exists: true}});
-	},
-});
+
 
 Template.appliedSpeaker.helpers({
 	'speakerdata': function() {
@@ -168,3 +158,28 @@ Template.edit_speaker_application.events({
 		Router.go('/speaker/application/' + this._id);
 	}
 })
+
+
+Handlebars.registerHelper('allSpeakers', function() {
+	var s = speakers.find();
+    return s;
+});
+
+Handlebars.registerHelper('nominated', function() {
+		return speakers.find({"speakerNomination": {$exists: true}});
+});
+
+Handlebars.registerHelper('applied', function() {
+		return speakers.find({"speakerApplication": {$exists: true}});
+});
+
+Handlebars.registerHelper('votesForSpeaker', function(speakerId) {
+			var voteCount = votes.find({"speaker":speakerId}).count();
+    return voteCount;
+});
+
+Template.speakers.helpers({
+	'speakers': function() {
+		return speakers.find({"speakerApplication": {$exists: false}});
+	},
+});

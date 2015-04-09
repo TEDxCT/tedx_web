@@ -215,3 +215,44 @@
 
 </page>
 </template>
+
+<template name="votes">
+  <page>
+    <h1>Votes for Applied</h1>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Number of Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each applied}}
+        <tr>
+          <td><a href="/speaker/application/{{this._id}}">{{this.firstName}} {{this.lastName}}</a></td>
+          <td>{{votesForSpeaker this._id}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+
+  <h1>Votes for Nominated</h1>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Number of Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each nominated}}
+        <tr>
+          <td><a href="/speaker/nomination/{{this._id}}">{{this.firstName}} {{this.lastName}}</a></td>
+          <td>{{votesForSpeaker this._id}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</page>
+</template>
