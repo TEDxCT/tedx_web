@@ -68,7 +68,7 @@
   <div class="speaker">
     <h1>Meet {{this.firstName}}.
       {{#if userIsVerified}}
-        <a href="/speaker/application/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a>
+        <!-- <a href="/speaker/application/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a> -->
       {{/if}}
     </h1>
     <p>
@@ -127,7 +127,7 @@
     <div class="speaker">
         <h1>{{this.speakerNomination.nominatorFirstName}} would like to nominate {{this.firstName}}
           {{#if userIsVerified}}
-            <a href="/speaker/nomination/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a>
+            <!-- <a href="/speaker/nomination/{{this._id}}/edit" class="btn btn-circle btn-raised ripple-effect btn-primary "><span class="icon-pencil-2"></span></a> -->
           {{/if}}
         </h1>
         <p class="info">
@@ -219,8 +219,9 @@
 <template name="votes">
   <page>
     <h1>A total of {{totalNumberOfVotes}} votes have been cast</h1>
+    <button class="btn btn-primary" id="count_votes_btn">Refresh</button>
     <h2>Votes for Applied</h2>
-    <table class="table" id="applied">
+    <table class="table">
     <thead>
       <tr>
         <th>Name</th>
@@ -228,10 +229,10 @@
       </tr>
     </thead>
     <tbody>
-      {{#each applied}}
+      {{#each applied_ordered}}
         <tr>
           <td><a href="/speaker/application/{{this._id}}">{{this.firstName}} {{this.lastName}}</a></td>
-          <td>{{votesForSpeaker this._id}}</td>
+          <td>{{this.numberOfVotes}}</td>
         </tr>
       {{/each}}
     </tbody>
@@ -239,7 +240,7 @@
 
 
   <h2>Votes for Nominated</h2>
-    <table class="table" id="nominated">
+    <table class="table">
     <thead>
       <tr>
         <th>Name</th>
@@ -247,10 +248,10 @@
       </tr>
     </thead>
     <tbody>
-      {{#each nominated}}
+      {{#each nominated_ordered}}
         <tr>
           <td><a href="/speaker/nomination/{{this._id}}">{{this.firstName}} {{this.lastName}}</a></td>
-          <td>{{votesForSpeaker this._id}}</td>
+          <td>{{this.numberOfVotes}}</td>
         </tr>
       {{/each}}
     </tbody>

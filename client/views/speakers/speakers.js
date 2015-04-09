@@ -1,3 +1,6 @@
+
+
+
 Template.register.events({
 	'click .cta' : function() {
 		Router.go('speakers.register.apply');
@@ -44,6 +47,25 @@ AutoForm.hooks({
 	},
 });
 
+function votesForSpeaker(speakerId) {
+	var voteCount = votes.find({"speaker":speakerId}).count();
+	console.log(speakerId);
+	console.log(voteCount);
+    return voteCount;
+db
+}
+
+Template.votes.events({
+	'click #count_votes_btn' : function() {
+		var items = speakers.find().fetch();
+		  items.forEach(function(s) {
+		  	 var count =  votesForSpeaker(s._id);
+          	 speakers.update(s._id, {$set: {numberOfVotes: count}});
+
+		  })
+
+	}
+})
 Template.votes.rendered = function() {
 	$('#applied').dataTable({
     "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
@@ -52,13 +74,13 @@ Template.votes.rendered = function() {
         "sLengthMenu": "_MENU_ records per page"
     }
 	});
-	$('#nominated').dataTable({
-    "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
-    , "sPaginationType": "bootstrap"
-    , "oLanguage": {
-        "sLengthMenu": "_MENU_ records per page"
-    }
-	});
+	// $('#nominated').dataTable({
+ //    "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
+ //    , "sPaginationType": "bootstrap"
+ //    , "oLanguage": {
+ //        "sLengthMenu": "_MENU_ records per page"
+ //    }
+	// });
 }
 
 
@@ -190,9 +212,12 @@ Handlebars.registerHelper('applied', function() {
 		return speakers.find({"speakerApplication": {$exists: true}});
 });
 
-Handlebars.registerHelper('votesForSpeaker', function(speakerId) {
-			var voteCount = votes.find({"speaker":speakerId}).count();
-    return voteCount;
+Handlebars.registerHelper('nominated_ordered', function() {
+		return speakers.find({"speakerNomination": {$exists: true}}, {sort: {'numberOfVotes': -1}});
+});
+
+Handlebars.registerHelper('applied_ordered', function() {
+		return speakers.find({"speakerApplication": {$exists: true}}, {sort: {'numberOfVotes': -1}});
 });
 
 Handlebars.registerHelper('totalNumberOfVotes', function() {

@@ -224,6 +224,15 @@ SpeakerSchema = new SimpleSchema({
         return ret;
       }
     }
+  },
+  numberOfVotes: {
+    type: Number,
+    defaultValue: 0,
+    optional: true,
+    autoform: {
+      type: "hidden",
+      label: false
+    },
   }
 });
 
