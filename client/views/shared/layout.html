@@ -17,14 +17,29 @@
 </template>
 
 <template name="default">
+  {{#if currentUser}}
+    {{> adminMenu}}
+  {{/if}}
+  {{> metaData}}
   <div class="background"></div>
   <div class="page">
-    <section class="top {{color}}">
-      <div class="branding"></div>
-      <div class="nav"></div>
-      <div class="profile"></div>
+    <section class="top {{color}} padded">
+      <div class="branding">
+        <img src="/images/logo_white.png" class="logo" >
+      </div>
+      <div class="nav-links">
+        <div class="link">Talks</div>
+        <div class="link">Events</div>
+        <div class="link">About</div>
+      </div>
+      <div class="search">
+        <i class="icon-magnifier"></i>
+      </div>
+      <div class="profile">
+
+      </div>
     </section>
-    {{> yeild}}
+    {{> yield}}
   </div>
 </template>
 
@@ -73,9 +88,10 @@
           <li><a class="logout">Logout</a></li>
         </ul>
       </div>
+      {{#if taskRemaining}}
       <div class="tasks">
         {{#if userIsVerified}}
-          {{#if taskRemaining}}You have a new task.{{/if}}
+          You have a new task.
           <ul>
             <li class="voteLink">
               {{#if taskRemaining}}<i class="icon-full-moon"></i>{{else}}<i class="icon-check-circle-2"></i>{{/if}} Vote for 3 speakers
@@ -97,5 +113,6 @@
         <small>Without verifying your email we cannot let you access any admin functionality.</small>
          {{/if}}
       </div>
+      {{/if}}
   </nav>
 </template>

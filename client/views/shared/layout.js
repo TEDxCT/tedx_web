@@ -39,3 +39,9 @@ Template.adminMenu.events({
 		} );
 	}
 });
+
+Template.default.helpers({
+	"color": function() {
+		return "red";
+	}
+})

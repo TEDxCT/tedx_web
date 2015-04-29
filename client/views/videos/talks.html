@@ -3,18 +3,6 @@
   <div class="filters">
     <nav class="animated bounceInDown navbar navbar-default" role="navigation">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="icon-nav "><a href="/"><i class="icon-filter"></i></a></li>
             <li class="dropdown">
@@ -40,15 +28,13 @@
             </li>
           </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li class="icon-nav search"><a href=""><i class="icon-magnifier"></i></a></li>
+          <ul class="nav navbar-nav navbar-right">            
             {{#if currentUser}}
               <li class="favorites"><a href="#feedback"><i class="icon-star"></i> My Favorites</a></li>
             {{/if}}
             <li class="feedback"><a href="#feedback">Share</a></li>
 
           </ul>
-        </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
   </div>
