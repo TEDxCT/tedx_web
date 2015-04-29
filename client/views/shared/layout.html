@@ -16,6 +16,18 @@
   {{/if}}
 </template>
 
+<template name="default">
+  <div class="background"></div>
+  <div class="page">
+    <section class="top {{color}}">
+      <div class="branding"></div>
+      <div class="nav"></div>
+      <div class="profile"></div>
+    </section>
+    {{> yeild}}
+  </div>
+</template>
+
 <template name="singlePage">
   {{> flashMessages}}
   {{> metaData}}
@@ -24,7 +36,7 @@
   {{else}}
     <div class="loginButtons">{{> loginButtons}}</div>
   {{/if}}
-  <div class="singlePage  animated bounceInUp">
+  <div class="singlePage animated bounceInUp">
     <div class="content">
     <img src="/images/logo.png" class="pull-left logo" >
   <div class="clearfix"></div>
