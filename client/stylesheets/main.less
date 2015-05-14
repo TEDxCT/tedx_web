@@ -1,6 +1,6 @@
 @import 'variables';
 
-body {  
+body {
   font-family: @fontFace;
   font-weight: 300;
   background: #F1F1F1;
@@ -18,8 +18,12 @@ body {
   width: 100%;
 }
 
-.banner {
+.align-left {
+  text-align: left;
+}
 
+.no-space {
+  margin: 0px;
 }
 
 #iron-router-progress {
@@ -53,6 +57,14 @@ h3 {
 hr {
   &.extra-space-top {
     margin-top: 40px;
+  }
+
+  &.space {
+    border: none;
+  }
+
+  &.red {
+    border-color: @secondaryColor;
   }
 
   &.dashed {
