@@ -61,8 +61,8 @@ html, body {
 	z-index: 1;
 	position: relative;
 	top: 5vh;
-	height: 95vh;
-	box-shadow: 22px 23px 43px 0px rgba(0,0,0,0.31);
+	min-height: 95vh;
+	box-shadow: 22px 23px 43px 0px rgba(0,0,0,0.31);	
 }
 
 .branding {
@@ -104,6 +104,23 @@ html, body {
 			background: white;
 			color: @secondaryColor;
 		}
+	}
+}
+
+.featured-cta {
+	background-color: @lightGray;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-bottom: 3px solid @secondaryColor;
+
+	&:hover {
+		color: white;
+		background-color: @secondaryColor;
+	}
+
+	.cta-caret {
+		position: relative;
+		top: 32px;
 	}
 }
 
@@ -150,6 +167,10 @@ section {
 		.link {
 			color: inherit;
 		}
+	}
+
+	&.text-page {
+		width: 70%;
 	}
 }
 

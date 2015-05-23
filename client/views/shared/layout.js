@@ -48,7 +48,7 @@ Template.default.helpers({
 
 Template.default.events({
 	'click .link.home': function() {
-		Router.go("home");
+		Router.go("/");
 	},
 	'click .link.talks': function() {
 		Router.go("talks");
