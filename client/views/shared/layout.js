@@ -45,3 +45,21 @@ Template.default.helpers({
 		return "red";
 	}
 })
+
+Template.default.events({
+	'click .link.home': function() {
+		Router.go("home");
+	},
+	'click .link.talks': function() {
+		Router.go("talks");
+	},
+	'click .link.events': function() {
+		Router.go("events");
+	},
+	'click .link.about': function() {
+		Router.go("about");
+	},
+	'click .link.updates': function() {
+		Router.go("updates");
+	},
+})

@@ -1,7 +1,7 @@
 <template name="toolbar">
   <div class="toolbar">
     {{#if chapter}}
-    {{> chapterbar}}
+      {{> chapterbar}}
     {{/if}}
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
@@ -74,7 +74,7 @@
 </template>
 
 <template name="home">
-  <img class="full-width banner animated fadeIn" src="/images/banners/tedx.png">
+  <img class="full-width banner black animated fadeIn" src="/images/banners/homepage.png">
   <div class="container-fluid">
   <h1>Top Videos</h1>
   {{> videos topvideos}}
