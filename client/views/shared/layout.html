@@ -19,6 +19,8 @@
 <template name="default">
   {{#if currentUser}}
     {{> adminMenu}}
+  {{else}}
+    <div class="loginButtons">{{> loginButtons}}</div>
   {{/if}}
   {{> metaData}}
   <div class="background"></div>

@@ -12,7 +12,7 @@
 
 <template name="video">
   <article class="video animated bounceInUp">
-    <iframe class="video" width="390" height="390" src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" width="390" height="390" src="http://www.youtube.com/embed/{{this.value}}" frameborder="0" allowfullscreen></iframe>
     {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
       <i class="icon-star"></i>
@@ -108,7 +108,7 @@
         <label>Description</label>
         <input type="text" class="editable description" value="{{this.description}}" />
         <label>URL</label>
-        <input type="text" class="editable url" value="{{this.url}}" />
+        <input type="text" class="editable url" value="{{this.embed_url}}" />
         <label>Speaker Name</label>
         <input type="text" class="editable speaker" value="{{this.speaker}}"  />
         <label>Speaker Avatar</label>
