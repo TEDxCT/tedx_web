@@ -7,6 +7,16 @@ if [ ! $1 ]; then
 fi
 env=$1
 
+if [ $env != "local" ]; then
+	echo "";
+else 
+	echo "local"
+	host=127.0.0.1:3001
+	mongo_db=meteor
+	user="ted"
+	pass="ted"
+fi;
+
 if [ $env != "staging" ]; then
 	echo "";
 else 
@@ -26,8 +36,9 @@ else
 fi;
 
 
+
 perl -pi -e 's/field_video_description/description/g' videos.json
-perl -pi -e 's/field_video_title/name/g' videos.json
+# perl -pi -e 's/title/name/g' videos.json
 perl -pi -e 's/field_video_embed/embed_url/g' videos.json
 perl -pi -e 's/field_video_value/value/g' videos.json
 perl -pi -e 's/field_video_provider/provider/g' videos.json
@@ -35,6 +46,7 @@ perl -pi -e 's/field_video_data/data/g' videos.json
 perl -pi -e 's/field_video_duration/duration/g' videos.json
 perl -pi -e 's/field_video_value/value/g' videos.json
 
+mongo $host/$mongo_db -u $user -p $pass --eval "db.videos.drop()"
 
 mongoimport -h $host -d $mongo_db -c videos -u $user -p $pass --file videos.json --jsonArray
 

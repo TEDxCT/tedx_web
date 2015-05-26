@@ -8,10 +8,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:194;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/oMcx_Ja_Hmo/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/oMcx_Ja_Hmo\";s:4:\"size\";s:4:\"1080\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-oMcx_Ja_Hmo.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-oMcx_Ja_Hmo_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-oMcx_Ja_Hmo_0.jpg\";s:8:\"filesize\";i:16156;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928348;s:3:\"fid\";s:3:\"105\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": "water:sewer:power:food",
+    "field_video_title": "water:sewer:power:food",
     "description": null,
     "duration": 194,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "water:sewer:power:food"
   },
   {
     "vid": 64,
@@ -22,10 +23,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:197;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/QE4f3KuP47E/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/QE4f3KuP47E\";s:4:\"size\";s:4:\"1103\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-QE4f3KuP47E.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-QE4f3KuP47E_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-QE4f3KuP47E_0.jpg\";s:8:\"filesize\";i:5965;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:3:\"102\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": "Improving The Future Of Wireless Co",
+    "field_video_title": "Improving The Future Of Wireless Co",
     "description": null,
     "duration": 197,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Improving The Future Of Wireless Communications"
   },
   {
     "vid": 65,
@@ -36,10 +38,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:239;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/j_IPLDQME3I/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/j_IPLDQME3I\";s:4:\"size\";s:4:\"1095\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-j_IPLDQME3I.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-j_IPLDQME3I_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-j_IPLDQME3I_0.jpg\";s:8:\"filesize\";i:8259;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:3:\"101\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": "A Water-Well Inspired Approach To P",
+    "field_video_title": "A Water-Well Inspired Approach To P",
     "description": null,
     "duration": 239,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "A Water-Well Inspired Approach To Power In Rural Areas"
   },
   {
     "vid": 66,
@@ -50,10 +53,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:224;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/XurpzMGRRnU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/XurpzMGRRnU\";s:4:\"size\";s:4:\"1108\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-XurpzMGRRnU.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-XurpzMGRRnU_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-XurpzMGRRnU_0.jpg\";s:8:\"filesize\";i:11828;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:3:\"100\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 224,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "10 Nifty Things YOU Can Do With Nanotechnology"
   },
   {
     "vid": 67,
@@ -64,10 +68,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:230;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/xuhG59PRn0Y/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/xuhG59PRn0Y\";s:4:\"size\";s:3:\"974\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-xuhG59PRn0Y.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-xuhG59PRn0Y_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-xuhG59PRn0Y_0.jpg\";s:8:\"filesize\";i:7040;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:2:\"99\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 230,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Socially Orientated Approaches To Conservation"
   },
   {
     "vid": 68,
@@ -78,10 +83,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:358;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/F9DeLsqh1aY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/F9DeLsqh1aY\";s:4:\"size\";s:4:\"1102\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-F9DeLsqh1aY.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-F9DeLsqh1aY_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-F9DeLsqh1aY_0.jpg\";s:8:\"filesize\";i:13638;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:2:\"98\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 358,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "A New Generation of Wealth"
   },
   {
     "vid": 69,
@@ -92,10 +98,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:317;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/kRR7fYXhvEY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/kRR7fYXhvEY\";s:4:\"size\";s:4:\"1094\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-kRR7fYXhvEY.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-kRR7fYXhvEY_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-kRR7fYXhvEY_0.jpg\";s:8:\"filesize\";i:12536;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:2:\"97\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 317,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The Wilderness Experience"
   },
   {
     "vid": 70,
@@ -106,10 +113,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:219;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/fedfRr2SBgs/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/fedfRr2SBgs\";s:4:\"size\";s:3:\"962\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-fedfRr2SBgs.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-fedfRr2SBgs_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-fedfRr2SBgs_0.jpg\";s:8:\"filesize\";i:7316;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:2:\"96\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 219,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Musings of a Water Maverick"
   },
   {
     "vid": 71,
@@ -120,10 +128,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:431;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Ls-h5ZUfnz4/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Ls-h5ZUfnz4\";s:4:\"size\";s:3:\"980\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-Ls-h5ZUfnz4.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-Ls-h5ZUfnz4_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-Ls-h5ZUfnz4_0.jpg\";s:8:\"filesize\";i:9587;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928345;s:3:\"fid\";s:2:\"95\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 431,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Hemp: Educate Innovate Cultivate"
   },
   {
     "vid": 72,
@@ -134,10 +143,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:430;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/OFtdsYBoexM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/OFtdsYBoexM\";s:4:\"size\";s:4:\"1089\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-OFtdsYBoexM.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-OFtdsYBoexM_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-OFtdsYBoexM_0.jpg\";s:8:\"filesize\";s:5:\"16427\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1306928345\";s:3:\"fid\";s:2:\"94\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 430,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Mirror Mirror On The Wall: Who Is The Me Of Them All?"
   },
   {
     "vid": 73,
@@ -148,10 +158,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:437;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/iyc8eofxdfs/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/iyc8eofxdfs\";s:4:\"size\";s:3:\"957\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-iyc8eofxdfs.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-iyc8eofxdfs_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-iyc8eofxdfs_0.jpg\";s:8:\"filesize\";s:5:\"12169\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1306928345\";s:3:\"fid\";s:2:\"93\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 437,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Jump University"
   },
   {
     "vid": 74,
@@ -162,10 +173,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:564;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/nhYkMlTO4bU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/nhYkMlTO4bU\";s:4:\"size\";s:4:\"1110\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-nhYkMlTO4bU.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-nhYkMlTO4bU_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-nhYkMlTO4bU_0.jpg\";s:8:\"filesize\";i:13244;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928344;s:3:\"fid\";s:2:\"92\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 564,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Media Freedom in Africa: An Ideal Worth Living For"
   },
   {
     "vid": 75,
@@ -176,10 +188,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:651;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/a3ux0fc6EWk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/a3ux0fc6EWk\";s:4:\"size\";s:3:\"978\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-a3ux0fc6EWk.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-a3ux0fc6EWk_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-a3ux0fc6EWk_0.jpg\";s:8:\"filesize\";i:11086;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928344;s:3:\"fid\";s:2:\"91\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 651,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Playing to Change the World"
   },
   {
     "vid": 76,
@@ -190,10 +203,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:241;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/86-Cu-mBEYo/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/86-Cu-mBEYo\";s:4:\"size\";s:3:\"981\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-86-Cu-mBEYo.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-86-Cu-mBEYo_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-86-Cu-mBEYo_0.jpg\";s:8:\"filesize\";s:5:\"11622\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1306928344\";s:3:\"fid\";s:2:\"90\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 241,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "For Love of Water"
   },
   {
     "vid": 77,
@@ -204,10 +218,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:916;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/0JNxI-bLNKU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/0JNxI-bLNKU\";s:4:\"size\";s:3:\"966\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-0JNxI-bLNKU.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-0JNxI-bLNKU_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-0JNxI-bLNKU_0.jpg\";s:8:\"filesize\";i:9571;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928344;s:3:\"fid\";s:2:\"89\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 916,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Share the Vision, Dream and Future Realities of Broadband and Biometrics"
   },
   {
     "vid": 78,
@@ -218,10 +233,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:773;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/AiM5zUz-n0I/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/AiM5zUz-n0I\";s:4:\"size\";s:3:\"976\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-AiM5zUz-n0I.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-AiM5zUz-n0I_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-AiM5zUz-n0I_0.jpg\";s:8:\"filesize\";i:10383;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928344;s:3:\"fid\";s:2:\"88\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 773,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Making the Invisible Visible"
   },
   {
     "vid": 80,
@@ -232,10 +248,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:870;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/tRVgcf7f0Yc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/tRVgcf7f0Yc\";s:4:\"size\";s:4:\"1084\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-tRVgcf7f0Yc.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-tRVgcf7f0Yc_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-tRVgcf7f0Yc_0.jpg\";s:8:\"filesize\";i:16765;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"87\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 870,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Loop de Loop"
   },
   {
     "vid": 81,
@@ -246,10 +263,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:887;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/z6WIHqxhJ0g/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/z6WIHqxhJ0g\";s:4:\"size\";s:4:\"1070\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-z6WIHqxhJ0g.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-z6WIHqxhJ0g_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-z6WIHqxhJ0g_0.jpg\";s:8:\"filesize\";i:10090;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"86\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 887,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Genius of Water"
   },
   {
     "vid": 82,
@@ -260,10 +278,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:621;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/mrY51NPSGLc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/mrY51NPSGLc\";s:4:\"size\";s:3:\"979\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-mrY51NPSGLc.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-mrY51NPSGLc_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-mrY51NPSGLc_0.jpg\";s:8:\"filesize\";i:8532;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"85\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 621,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The River"
   },
   {
     "vid": 83,
@@ -274,10 +293,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:816;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/r8T7FYTiXKI/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/r8T7FYTiXKI\";s:4:\"size\";s:3:\"973\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-r8T7FYTiXKI.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-r8T7FYTiXKI_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-r8T7FYTiXKI_0.jpg\";s:8:\"filesize\";i:11749;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"84\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 816,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Going With The Flow"
   },
   {
     "vid": 84,
@@ -288,10 +308,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1170;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/AFmMTPiHiS8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/AFmMTPiHiS8\";s:4:\"size\";s:3:\"958\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-AFmMTPiHiS8.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-AFmMTPiHiS8_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-AFmMTPiHiS8_0.jpg\";s:8:\"filesize\";s:5:\"13519\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1306928343\";s:3:\"fid\";s:2:\"83\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1170,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "A Victim Of Circus Time"
   },
   {
     "vid": 85,
@@ -302,10 +323,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:797;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Z9022ydUiRg/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Z9022ydUiRg\";s:4:\"size\";s:4:\"1068\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-Z9022ydUiRg.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-Z9022ydUiRg_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-Z9022ydUiRg_0.jpg\";s:8:\"filesize\";i:12402;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"82\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 797,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Reclaiming Camissa"
   },
   {
     "vid": 86,
@@ -316,10 +338,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:809;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/lWsqSRos1LY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/lWsqSRos1LY\";s:4:\"size\";s:4:\"1109\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-lWsqSRos1LY.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-lWsqSRos1LY_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-lWsqSRos1LY_0.jpg\";s:8:\"filesize\";i:10048;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"81\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 809,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Be bold and mighty forces will come to your aid"
   },
   {
     "vid": 87,
@@ -330,10 +353,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1218;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/g5_DSKF-AMI/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/g5_DSKF-AMI\";s:4:\"size\";s:4:\"1082\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-g5_DSKF-AMI.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-g5_DSKF-AMI_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-g5_DSKF-AMI_0.jpg\";s:8:\"filesize\";i:14067;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"80\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1218,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Reinventing Uncivilisation"
   },
   {
     "vid": 88,
@@ -344,10 +368,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:984;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/7kfj3j85Wfk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/7kfj3j85Wfk\";s:4:\"size\";s:3:\"973\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-7kfj3j85Wfk.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-7kfj3j85Wfk_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-7kfj3j85Wfk_0.jpg\";s:8:\"filesize\";i:21422;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"79\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 984,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Redesigning the Perception of Beauty"
   },
   {
     "vid": 89,
@@ -358,10 +383,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1432;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/jvnjOUWk4js/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/jvnjOUWk4js\";s:4:\"size\";s:3:\"964\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-jvnjOUWk4js.jpg\";s:8:\"filepath\";s:53:\"sites/default/files/emvideo-youtube-jvnjOUWk4js_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:53:\"sites/default/files/emvideo-youtube-jvnjOUWk4js_0.jpg\";s:8:\"filesize\";i:8955;s:6:\"status\";i:1;s:9:\"timestamp\";i:1306928343;s:3:\"fid\";s:2:\"78\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1432,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Moving Sushi"
   },
   {
     "vid": 136,
@@ -372,10 +398,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:357;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/grTxHm7a2Pg/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/grTxHm7a2Pg\";s:4:\"size\";s:4:\"1045\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-grTxHm7a2Pg.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-grTxHm7a2Pg.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-grTxHm7a2Pg.jpg\";s:8:\"filesize\";i:15582;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323095056;s:3:\"fid\";s:3:\"227\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 357,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Phakama Pyoos"
   },
   {
     "vid": 137,
@@ -386,10 +413,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:967;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/hzV_QmxU-No/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/hzV_QmxU-No\";s:4:\"size\";s:4:\"1139\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-hzV_QmxU-No.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-hzV_QmxU-No.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-hzV_QmxU-No.jpg\";s:8:\"filesize\";i:10502;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323095013;s:3:\"fid\";s:3:\"226\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 967,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Nathan Roberts"
   },
   {
     "vid": 138,
@@ -400,10 +428,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:725;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/WcxMBYjVt8k/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/WcxMBYjVt8k\";s:4:\"size\";s:4:\"1153\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-WcxMBYjVt8k.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-WcxMBYjVt8k.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-WcxMBYjVt8k.jpg\";s:8:\"filesize\";i:10716;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323094891;s:3:\"fid\";s:3:\"221\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 725,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Mokena Makeka"
   },
   {
     "vid": 139,
@@ -414,10 +443,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:428;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/OQSSVxP3aFw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/OQSSVxP3aFw\";s:4:\"size\";s:4:\"1143\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-OQSSVxP3aFw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-OQSSVxP3aFw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-OQSSVxP3aFw.jpg\";s:8:\"filesize\";i:12496;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323095010;s:3:\"fid\";s:3:\"225\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 428,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Ntombiza Lingani"
   },
   {
     "vid": 140,
@@ -428,10 +458,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:549;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/ngpR1vixBKQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/ngpR1vixBKQ\";s:4:\"size\";s:4:\"1132\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-ngpR1vixBKQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ngpR1vixBKQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ngpR1vixBKQ.jpg\";s:8:\"filesize\";i:12437;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323094996;s:3:\"fid\";s:3:\"224\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 549,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Simphiwe Mahlanyana"
   },
   {
     "vid": 142,
@@ -442,10 +473,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:57;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/V0t0Dh_zXcg/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/V0t0Dh_zXcg\";s:4:\"size\";s:4:\"1132\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-V0t0Dh_zXcg.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-V0t0Dh_zXcg.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-V0t0Dh_zXcg.jpg\";s:8:\"filesize\";i:20070;s:6:\"status\";i:1;s:9:\"timestamp\";i:1323094989;s:3:\"fid\";s:3:\"223\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 57,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "TEDxCapeTown in a nutshell"
   },
   {
     "vid": 143,
@@ -456,10 +488,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:750;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/MB_ClJ60Dzw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/MB_ClJ60Dzw\";s:4:\"size\";s:4:\"1122\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"1\";s:8:\"filename\";s:31:\"emvideo-youtube-MB_ClJ60Dzw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-MB_ClJ60Dzw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-MB_ClJ60Dzw.jpg\";s:8:\"filesize\";s:5:\"19680\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1323094983\";s:3:\"fid\";s:3:\"222\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 750,
-    "field_alt_title_value": "Behind the Scenes"
+    "field_alt_title_value": "Behind the Scenes",
+    "name": "TEDxCapeTown in a nutshell - long version (607MB)"
   },
   {
     "vid": 168,
@@ -470,10 +503,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:678;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/IUhoaswdB9A/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/IUhoaswdB9A\";s:4:\"size\";s:4:\"1138\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-IUhoaswdB9A.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-IUhoaswdB9A.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-IUhoaswdB9A.jpg\";s:8:\"filesize\";i:14661;s:6:\"status\";i:1;s:9:\"timestamp\";i:1330610765;s:3:\"fid\";s:3:\"258\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 678,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Inspiring Ourselves to Inspire Others to Inspire Change"
   },
   {
     "vid": 187,
@@ -484,10 +518,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:76;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/ybYI9VbtOvo/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/ybYI9VbtOvo\";s:4:\"size\";s:4:\"1162\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:2:\"14\";s:8:\"filename\";s:31:\"emvideo-youtube-ybYI9VbtOvo.jpg\";s:8:\"filepath\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-ybYI9VbtOvo_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-ybYI9VbtOvo_0.jpg\";s:8:\"filesize\";i:12137;s:6:\"status\";i:1;s:9:\"timestamp\";i:1427456290;s:3:\"fid\";s:4:\"1054\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 76,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "TED and TEDx explained"
   },
   {
     "vid": 200,
@@ -498,10 +533,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:375;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/COhsHGMRpuk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/COhsHGMRpuk\";s:4:\"size\";s:4:\"1159\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-COhsHGMRpuk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-COhsHGMRpuk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-COhsHGMRpuk.jpg\";s:8:\"filesize\";i:17569;s:6:\"status\";i:1;s:9:\"timestamp\";i:1335601227;s:3:\"fid\";s:3:\"327\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 375,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "TEDxSeaPoint speakers talk about the WHY - recorded by Pick n Pay & If Not Why Not media"
   },
   {
     "vid": 196,
@@ -512,10 +548,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:134;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/xfNH_2oufO4/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/xfNH_2oufO4\";s:4:\"size\";s:4:\"1151\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-xfNH_2oufO4.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-xfNH_2oufO4.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-xfNH_2oufO4.jpg\";s:8:\"filesize\";i:15273;s:6:\"status\";i:1;s:9:\"timestamp\";i:1333780480;s:3:\"fid\";s:3:\"320\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 134,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Why TEDxMfuleni?"
   },
   {
     "vid": 209,
@@ -526,10 +563,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:702;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/iX77NZttLKo/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/iX77NZttLKo\";s:4:\"size\";s:4:\"1144\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-iX77NZttLKo.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-iX77NZttLKo.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-iX77NZttLKo.jpg\";s:8:\"filesize\";s:5:\"11591\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1336891220\";s:3:\"fid\";s:3:\"333\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 702,
-    "field_alt_title_value": "Introduction"
+    "field_alt_title_value": "Introduction",
+    "name": "Food Security"
   },
   {
     "vid": 280,
@@ -540,10 +578,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:438;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/gkLliz6ziJ4/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/gkLliz6ziJ4\";s:4:\"size\";s:4:\"1209\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-gkLliz6ziJ4.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-gkLliz6ziJ4.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-gkLliz6ziJ4.jpg\";s:8:\"filesize\";i:21676;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340084491;s:3:\"fid\";s:3:\"441\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 438,
-    "field_alt_title_value": "Soli Philander - What My Children Taught Me"
+    "field_alt_title_value": "Soli Philander - What My Children Taught Me",
+    "name": "Soli Philander - What My Children Taught Me"
   },
   {
     "vid": 281,
@@ -554,10 +593,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:344;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/LqyHwD9iInA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/LqyHwD9iInA\";s:4:\"size\";s:4:\"1201\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-LqyHwD9iInA.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LqyHwD9iInA.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LqyHwD9iInA.jpg\";s:8:\"filesize\";i:11925;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340084589;s:3:\"fid\";s:3:\"442\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 344,
-    "field_alt_title_value": "Xola Sdiki - The Power of Peers"
+    "field_alt_title_value": "Xola Sdiki - The Power of Peers",
+    "name": "Xola Sdiki - The Power of Peers"
   },
   {
     "vid": 282,
@@ -568,10 +608,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:460;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/2mNPhPPn_xU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/2mNPhPPn_xU\";s:4:\"size\";s:4:\"1200\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-2mNPhPPn_xU.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-2mNPhPPn_xU.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-2mNPhPPn_xU.jpg\";s:8:\"filesize\";i:11031;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340084630;s:3:\"fid\";s:3:\"443\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 460,
-    "field_alt_title_value": "Dr Mamphela Ramphele - Rising to our Citizens\' Responsibility"
+    "field_alt_title_value": "Dr Mamphela Ramphele - Rising to our Citizens\' Responsibility",
+    "name": "Dr Mamphela Ramphele - Rising to our Citizens\' Responsibility"
   },
   {
     "vid": 283,
@@ -582,10 +623,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:311;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/hQcJUpwZ_-U/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/hQcJUpwZ_-U\";s:4:\"size\";s:4:\"1205\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-hQcJUpwZ_-U.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-hQcJUpwZ_-U.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-hQcJUpwZ_-U.jpg\";s:8:\"filesize\";i:10016;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340084679;s:3:\"fid\";s:3:\"444\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 311,
-    "field_alt_title_value": "Malinga Nopote - Excellence Through Trust"
+    "field_alt_title_value": "Malinga Nopote - Excellence Through Trust",
+    "name": "Malinga Nopote - Excellence Through Trust"
   },
   {
     "vid": 284,
@@ -596,10 +638,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:356;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/6R3-jWgX9TM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/6R3-jWgX9TM\";s:4:\"size\";s:4:\"1204\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-6R3-jWgX9TM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-6R3-jWgX9TM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-6R3-jWgX9TM.jpg\";s:8:\"filesize\";i:11757;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340084752;s:3:\"fid\";s:3:\"445\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 356,
-    "field_alt_title_value": "Christoph Hagspihl - Graduates in the Township"
+    "field_alt_title_value": "Christoph Hagspihl - Graduates in the Township",
+    "name": "Christoph Hagspihl - Graduates in the Township"
   },
   {
     "vid": 292,
@@ -610,10 +653,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:602;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Lo7L5MRNtj8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Lo7L5MRNtj8\";s:4:\"size\";s:4:\"1218\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-Lo7L5MRNtj8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Lo7L5MRNtj8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Lo7L5MRNtj8.jpg\";s:8:\"filesize\";i:11585;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700374;s:3:\"fid\";s:3:\"477\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 602,
-    "field_alt_title_value": "Samantha Beningfield - A one for one life "
+    "field_alt_title_value": "Samantha Beningfield - A one for one life ",
+    "name": "Samantha Beningfield - A one for one life "
   },
   {
     "vid": 293,
@@ -624,10 +668,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:411;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/TKUd77I0b84/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/TKUd77I0b84\";s:4:\"size\";s:4:\"1220\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-TKUd77I0b84.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-TKUd77I0b84.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-TKUd77I0b84.jpg\";s:8:\"filesize\";i:11049;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700423;s:3:\"fid\";s:3:\"478\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 411,
-    "field_alt_title_value": "Thabiso Mkosi - Mental Apartheid "
+    "field_alt_title_value": "Thabiso Mkosi - Mental Apartheid ",
+    "name": "Thabiso Mkosi - Mental Apartheid "
   },
   {
     "vid": 294,
@@ -638,10 +683,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:433;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/684vvTrD73o/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/684vvTrD73o\";s:4:\"size\";s:4:\"1219\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-684vvTrD73o.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-684vvTrD73o.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-684vvTrD73o.jpg\";s:8:\"filesize\";i:10057;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700473;s:3:\"fid\";s:3:\"479\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 433,
-    "field_alt_title_value": "Litha Maqungo - Connecting for Change "
+    "field_alt_title_value": "Litha Maqungo - Connecting for Change ",
+    "name": "Litha Maqungo - Connecting for Change "
   },
   {
     "vid": 295,
@@ -652,10 +698,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:510;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/KK92GAft4-I/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/KK92GAft4-I\";s:4:\"size\";s:4:\"1217\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-KK92GAft4-I.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-KK92GAft4-I.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-KK92GAft4-I.jpg\";s:8:\"filesize\";i:13340;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700513;s:3:\"fid\";s:3:\"480\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 510,
-    "field_alt_title_value": "Nicola Soekoe - My relationship status with Africa "
+    "field_alt_title_value": "Nicola Soekoe - My relationship status with Africa ",
+    "name": "Nicola Soekoe - My relationship status with Africa "
   },
   {
     "vid": 296,
@@ -666,10 +713,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:591;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4puT2LqXx7M/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4puT2LqXx7M\";s:4:\"size\";s:4:\"1220\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-4puT2LqXx7M.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4puT2LqXx7M.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4puT2LqXx7M.jpg\";s:8:\"filesize\";i:8148;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700557;s:3:\"fid\";s:3:\"481\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 591,
-    "field_alt_title_value": "TEDxYouth@CapeTown - Harriet Stockwell - a social approach to sustainabi... "
+    "field_alt_title_value": "TEDxYouth@CapeTown - Harriet Stockwell - a social approach to sustainabi... ",
+    "name": "Harriet Stockwell - a social approach to sustainabi... "
   },
   {
     "vid": 297,
@@ -680,10 +728,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:508;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/CPRL2ZL1Zy8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/CPRL2ZL1Zy8\";s:4:\"size\";s:4:\"1223\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-CPRL2ZL1Zy8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CPRL2ZL1Zy8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CPRL2ZL1Zy8.jpg\";s:8:\"filesize\";i:9485;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700598;s:3:\"fid\";s:3:\"482\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 508,
-    "field_alt_title_value": "TEDxYouth@CapeTown - Dayaan Salie - Africa, In Me? "
+    "field_alt_title_value": "TEDxYouth@CapeTown - Dayaan Salie - Africa, In Me? ",
+    "name": "Dayaan Salie - Africa, In Me? "
   },
   {
     "vid": 298,
@@ -694,10 +743,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:211;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Rg53j1q0MYQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Rg53j1q0MYQ\";s:4:\"size\";s:4:\"1215\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-Rg53j1q0MYQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Rg53j1q0MYQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Rg53j1q0MYQ.jpg\";s:8:\"filesize\";i:10542;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700649;s:3:\"fid\";s:3:\"483\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 211,
-    "field_alt_title_value": "TEDxYouth@CapeTown - Lungile Ludidi - Africa "
+    "field_alt_title_value": "TEDxYouth@CapeTown - Lungile Ludidi - Africa ",
+    "name": "Lungile Ludidi - Africa "
   },
   {
     "vid": 299,
@@ -708,10 +758,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:443;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/UUujtqlcB4w/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/UUujtqlcB4w\";s:4:\"size\";s:4:\"1221\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-UUujtqlcB4w.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-UUujtqlcB4w.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-UUujtqlcB4w.jpg\";s:8:\"filesize\";i:9973;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340700693;s:3:\"fid\";s:3:\"484\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 443,
-    "field_alt_title_value": "TEDxYouth@CapeTown - Henko Roukema - AIMing beyond boundaries "
+    "field_alt_title_value": "TEDxYouth@CapeTown - Henko Roukema - AIMing beyond boundaries ",
+    "name": "Henko Roukema - AIMing beyond boundaries "
   },
   {
     "vid": 301,
@@ -722,10 +773,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:578;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/wAjLebsS_S0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/wAjLebsS_S0\";s:4:\"size\";s:4:\"1219\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-wAjLebsS_S0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wAjLebsS_S0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wAjLebsS_S0.jpg\";s:8:\"filesize\";i:11810;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340738811;s:3:\"fid\";s:3:\"486\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 578,
-    "field_alt_title_value": "Murray Gibbon - Building successful school partnerships"
+    "field_alt_title_value": "Murray Gibbon - Building successful school partnerships",
+    "name": "Murray Gibbon - Building successful school partnerships"
   },
   {
     "vid": 302,
@@ -736,10 +788,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:394;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/UiAYDA4BLHM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/UiAYDA4BLHM\";s:4:\"size\";s:4:\"1221\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-UiAYDA4BLHM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-UiAYDA4BLHM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-UiAYDA4BLHM.jpg\";s:8:\"filesize\";i:11833;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340738961;s:3:\"fid\";s:3:\"487\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 394,
-    "field_alt_title_value": "Phadiela Cooper - No excuses, just success"
+    "field_alt_title_value": "Phadiela Cooper - No excuses, just success",
+    "name": "Phadiela Cooper - No excuses, just success"
   },
   {
     "vid": 303,
@@ -750,10 +803,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:826;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/3H4R5NHcspQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/3H4R5NHcspQ\";s:4:\"size\";s:4:\"1218\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-3H4R5NHcspQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-3H4R5NHcspQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-3H4R5NHcspQ.jpg\";s:8:\"filesize\";i:13797;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739333;s:3:\"fid\";s:3:\"488\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 826,
-    "field_alt_title_value": "Steve Sherman - The global classroom, live from South Africa"
+    "field_alt_title_value": "Steve Sherman - The global classroom, live from South Africa",
+    "name": "Steve Sherman - The global classroom, live from South Africa"
   },
   {
     "vid": 304,
@@ -764,10 +818,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:700;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/_-0jxHl6wK8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/_-0jxHl6wK8\";s:4:\"size\";s:4:\"1219\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-_-0jxHl6wK8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-_-0jxHl6wK8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-_-0jxHl6wK8.jpg\";s:8:\"filesize\";i:10856;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739583;s:3:\"fid\";s:3:\"489\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 700,
-    "field_alt_title_value": "Laura Czerniewicz - SA needs open education"
+    "field_alt_title_value": "Laura Czerniewicz - SA needs open education",
+    "name": "Laura Czerniewicz - SA needs open education"
   },
   {
     "vid": 305,
@@ -778,10 +833,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:685;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/6BVUvuX_6EE/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/6BVUvuX_6EE\";s:4:\"size\";s:4:\"1222\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-6BVUvuX_6EE.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-6BVUvuX_6EE.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-6BVUvuX_6EE.jpg\";s:8:\"filesize\";i:12292;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739645;s:3:\"fid\";s:3:\"490\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 685,
-    "field_alt_title_value": "Jos Dirkx  - Girls, Football and Learning"
+    "field_alt_title_value": "Jos Dirkx  - Girls, Football and Learning",
+    "name": "Jos Dirkx  - Girls, Football and Learning"
   },
   {
     "vid": 306,
@@ -792,10 +848,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:854;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/xn_Z6UkwNiM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/xn_Z6UkwNiM\";s:4:\"size\";s:4:\"1220\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-xn_Z6UkwNiM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-xn_Z6UkwNiM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-xn_Z6UkwNiM.jpg\";s:8:\"filesize\";s:4:\"9816\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1340739721\";s:3:\"fid\";s:3:\"491\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 854,
-    "field_alt_title_value": "Craig Charnock - Language learning - bridge to a better world"
+    "field_alt_title_value": "Craig Charnock - Language learning - bridge to a better world",
+    "name": "Quite a White Ou - Language learning - bridge to a better world"
   },
   {
     "vid": 307,
@@ -806,10 +863,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:662;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/8SPxr8OdaPY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/8SPxr8OdaPY\";s:4:\"size\";s:4:\"1220\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-8SPxr8OdaPY.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-8SPxr8OdaPY.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-8SPxr8OdaPY.jpg\";s:8:\"filesize\";i:10105;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739832;s:3:\"fid\";s:3:\"492\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 662,
-    "field_alt_title_value": "Louise Van Rhyn - Life-changing partnerships between school principals and business leaders"
+    "field_alt_title_value": "Louise Van Rhyn - Life-changing partnerships between school principals and business leaders",
+    "name": "Louise Van Rhyn - Life-changing partnerships between school principals and business leaders"
   },
   {
     "vid": 308,
@@ -820,10 +878,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:754;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/wPBCabWaFrk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/wPBCabWaFrk\";s:4:\"size\";s:4:\"1221\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-wPBCabWaFrk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wPBCabWaFrk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wPBCabWaFrk.jpg\";s:8:\"filesize\";i:10758;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739896;s:3:\"fid\";s:3:\"493\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 754,
-    "field_alt_title_value": "Rich Mulholland - Escaping educational legacide"
+    "field_alt_title_value": "Rich Mulholland - Escaping educational legacide",
+    "name": "Rich Mulholland - Escaping educational legacide"
   },
   {
     "vid": 309,
@@ -834,10 +893,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:725;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/dYWLfPmnJSI/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/dYWLfPmnJSI\";s:4:\"size\";s:4:\"1219\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-dYWLfPmnJSI.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-dYWLfPmnJSI.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-dYWLfPmnJSI.jpg\";s:8:\"filesize\";i:13039;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739945;s:3:\"fid\";s:3:\"494\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 725,
-    "field_alt_title_value": "Tim Noakes - The mindset to succeed"
+    "field_alt_title_value": "Tim Noakes - The mindset to succeed",
+    "name": "Tim Noakes - The mindset to succeed"
   },
   {
     "vid": 310,
@@ -848,10 +908,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:784;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/j_rk1LwtzGo/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/j_rk1LwtzGo\";s:4:\"size\";s:4:\"1220\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-j_rk1LwtzGo.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-j_rk1LwtzGo.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-j_rk1LwtzGo.jpg\";s:8:\"filesize\";i:9455;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340739994;s:3:\"fid\";s:3:\"495\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 784,
-    "field_alt_title_value": "John Gilmour - Education for the whole person"
+    "field_alt_title_value": "John Gilmour - Education for the whole person",
+    "name": "John Gilmour - Education for the whole person"
   },
   {
     "vid": 311,
@@ -862,10 +923,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:730;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/y93LvWqMnMk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/y93LvWqMnMk\";s:4:\"size\";s:4:\"1221\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-y93LvWqMnMk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-y93LvWqMnMk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-y93LvWqMnMk.jpg\";s:8:\"filesize\";i:11142;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340740055;s:3:\"fid\";s:3:\"496\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 730,
-    "field_alt_title_value": "Leigh Meinert - The Soul of Education"
+    "field_alt_title_value": "Leigh Meinert - The Soul of Education",
+    "name": "Leigh Meinert - The Soul of Education"
   },
   {
     "vid": 312,
@@ -876,10 +938,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:393;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/L3PFXYYYt3g/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/L3PFXYYYt3g\";s:4:\"size\";s:4:\"1225\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-L3PFXYYYt3g.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-L3PFXYYYt3g.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-L3PFXYYYt3g.jpg\";s:8:\"filesize\";i:10856;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340740111;s:3:\"fid\";s:3:\"497\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 393,
-    "field_alt_title_value": "Sam Paddock - What if Mothers Taught the World?"
+    "field_alt_title_value": "Sam Paddock - What if Mothers Taught the World?",
+    "name": "Sam Paddock - What if Mothers Taught the World?"
   },
   {
     "vid": 313,
@@ -890,10 +953,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:821;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/v2UsRsCkkeM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/v2UsRsCkkeM\";s:4:\"size\";s:4:\"1219\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-v2UsRsCkkeM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-v2UsRsCkkeM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-v2UsRsCkkeM.jpg\";s:8:\"filesize\";i:10365;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340740204;s:3:\"fid\";s:3:\"498\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 821,
-    "field_alt_title_value": "Ian Scott - Failing the majority: The need for higher education to face reality"
+    "field_alt_title_value": "Ian Scott - Failing the majority: The need for higher education to face reality",
+    "name": "Ian Scott - Failing the majority: The need for higher education to face reality"
   },
   {
     "vid": 315,
@@ -904,10 +968,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:838;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/YP_k_VPNvGQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/YP_k_VPNvGQ\";s:4:\"size\";s:4:\"1222\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-YP_k_VPNvGQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-YP_k_VPNvGQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-YP_k_VPNvGQ.jpg\";s:8:\"filesize\";i:13519;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340796367;s:3:\"fid\";s:3:\"500\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 838,
-    "field_alt_title_value": "TEDxCapeTownED - Brent van Rensburg - Your Failures Are Our Superstars"
+    "field_alt_title_value": "TEDxCapeTownED - Brent van Rensburg - Your Failures Are Our Superstars",
+    "name": "Brent van Rensburg - Your Failures Are Our Superstars"
   },
   {
     "vid": 316,
@@ -918,10 +983,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:370;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/TdIyid8_VE0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/TdIyid8_VE0\";s:4:\"size\";s:4:\"1218\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-TdIyid8_VE0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-TdIyid8_VE0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-TdIyid8_VE0.jpg\";s:8:\"filesize\";i:13756;s:6:\"status\";i:1;s:9:\"timestamp\";i:1340951018;s:3:\"fid\";s:3:\"502\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 370,
-    "field_alt_title_value": "TEDxYouth@CapeTown - Emile Engel - A playful look at Social Innovation"
+    "field_alt_title_value": "TEDxYouth@CapeTown - Emile Engel - A playful look at Social Innovation",
+    "name": "Emile Engel - A playful look at Social Innovation"
   },
   {
     "vid": 348,
@@ -932,10 +998,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:292;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/0A_-LHf58j0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/0A_-LHf58j0\";s:4:\"size\";s:4:\"1230\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:2:\"14\";s:8:\"filename\";s:31:\"emvideo-youtube-0A_-LHf58j0.jpg\";s:8:\"filepath\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-0A_-LHf58j0_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-0A_-LHf58j0_0.jpg\";s:8:\"filesize\";i:10717;s:6:\"status\";i:1;s:9:\"timestamp\";i:1427456295;s:3:\"fid\";s:4:\"1055\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 292,
-    "field_alt_title_value": "IfNotWhyNot films behind the scenes"
+    "field_alt_title_value": "IfNotWhyNot films behind the scenes",
+    "name": "TEDxCapeTown 2012: What We Play Is Life"
   },
   {
     "vid": 355,
@@ -946,10 +1013,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:654;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/F_fgsXmc-6o/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/F_fgsXmc-6o\";s:4:\"size\";s:4:\"1185\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-h4HkrLQcZ2I.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-h4HkrLQcZ2I.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-h4HkrLQcZ2I.jpg\";s:8:\"filesize\";s:4:\"9502\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346004556\";s:3:\"fid\";s:3:\"656\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 654,
-    "field_alt_title_value": "TEDxCapeTown - Ulrike Rivett - Trusting the water we drink "
+    "field_alt_title_value": "TEDxCapeTown - Ulrike Rivett - Trusting the water we drink ",
+    "name": "Ulrike Rivett - Trusting the water we drink "
   },
   {
     "vid": 356,
@@ -960,10 +1028,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:239;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/1JtfHKQyfPk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/1JtfHKQyfPk\";s:4:\"size\";s:4:\"1189\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-lORBHUJ_Vqo.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-lORBHUJ_Vqo.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-lORBHUJ_Vqo.jpg\";s:8:\"filesize\";s:4:\"9927\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346004608\";s:3:\"fid\";s:3:\"657\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 239,
-    "field_alt_title_value": "TEDxCapeTown - Winslow Schalkwyk - What We Play Is Life "
+    "field_alt_title_value": "TEDxCapeTown - Winslow Schalkwyk - What We Play Is Life ",
+    "name": "Winslow Schalkwyk - What We Play Is Life "
   },
   {
     "vid": 357,
@@ -974,10 +1043,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:729;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/vF9nuxB66Dc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/vF9nuxB66Dc\";s:4:\"size\";s:4:\"1186\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-pgBdirLXWhM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-pgBdirLXWhM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-pgBdirLXWhM.jpg\";s:8:\"filesize\";s:5:\"13832\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346004673\";s:3:\"fid\";s:3:\"658\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 729,
-    "field_alt_title_value": "TEDxCapeTown - Warren Nilsson - Sustaining Social Change "
+    "field_alt_title_value": "TEDxCapeTown - Warren Nilsson - Sustaining Social Change ",
+    "name": "Warren Nilsson - Sustaining Social Change "
   },
   {
     "vid": 358,
@@ -988,10 +1058,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:901;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4lzs5wpLkeA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4lzs5wpLkeA\";s:4:\"size\";s:4:\"1181\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-97q1YCXmM9c.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-97q1YCXmM9c.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-97q1YCXmM9c.jpg\";s:8:\"filesize\";s:5:\"13185\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346004813\";s:3:\"fid\";s:3:\"659\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 901,
-    "field_alt_title_value": "TEDxCapeTown - Tim Noakes - Challenging Beliefs"
+    "field_alt_title_value": "TEDxCapeTown - Tim Noakes - Challenging Beliefs",
+    "name": "Tim Noakes - Challenging Beliefs"
   },
   {
     "vid": 359,
@@ -1002,10 +1073,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:747;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/o0hk3BO-Ox4/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/o0hk3BO-Ox4\";s:4:\"size\";s:4:\"1184\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-H0CaazzqkZ0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-H0CaazzqkZ0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-H0CaazzqkZ0.jpg\";s:8:\"filesize\";s:5:\"14203\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346004942\";s:3:\"fid\";s:3:\"660\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 747,
-    "field_alt_title_value": "TEDxCapeTown - Sue Harrison - Integrating bioprocesses "
+    "field_alt_title_value": "TEDxCapeTown - Sue Harrison - Integrating bioprocesses ",
+    "name": "Sue Harrison - Integrating bioprocesses"
   },
   {
     "vid": 360,
@@ -1016,10 +1088,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:795;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/gOI1W7Bc9pA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/gOI1W7Bc9pA\";s:4:\"size\";s:4:\"1188\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-3SA7rgGkuxM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-3SA7rgGkuxM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-3SA7rgGkuxM.jpg\";s:8:\"filesize\";s:4:\"9755\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005058\";s:3:\"fid\";s:3:\"661\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 795,
-    "field_alt_title_value": "TEDxCapeTown - Shannon Royden Turner - Redefining assets"
+    "field_alt_title_value": "TEDxCapeTown - Shannon Royden Turner - Redefining assets",
+    "name": "Shannon Royden Turner - Redefining assets"
   },
   {
     "vid": 361,
@@ -1030,10 +1103,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:987;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/gP-kHs4TF_g/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/gP-kHs4TF_g\";s:4:\"size\";s:4:\"1188\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-LXYRdtZCFew.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LXYRdtZCFew.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LXYRdtZCFew.jpg\";s:8:\"filesize\";s:5:\"10283\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005339\";s:3:\"fid\";s:3:\"662\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 987,
-    "field_alt_title_value": "TEDxCapeTown - Richard Marshall - The electronic music scene in South Africa"
+    "field_alt_title_value": "TEDxCapeTown - Richard Marshall - The electronic music scene in South Africa",
+    "name": "Richard Marshall - The electronic music scene in South Africa"
   },
   {
     "vid": 362,
@@ -1044,10 +1118,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:986;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/H_tKO1JfECA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/H_tKO1JfECA\";s:4:\"size\";s:4:\"1156\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-ke93lDT7JDg.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ke93lDT7JDg.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ke93lDT7JDg.jpg\";s:8:\"filesize\";s:5:\"19096\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005382\";s:3:\"fid\";s:3:\"663\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 986,
-    "field_alt_title_value": "TEDxCapeTown - Peter Greenwall - Learning from Failure"
+    "field_alt_title_value": "TEDxCapeTown - Peter Greenwall - Learning from Failure",
+    "name": "Peter Greenwall - Learning from Failure"
   },
   {
     "vid": 363,
@@ -1058,10 +1133,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:775;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/jzjwvKsYDgE/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/jzjwvKsYDgE\";s:4:\"size\";s:4:\"1188\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-L78LDgW5NSQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-L78LDgW5NSQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-L78LDgW5NSQ.jpg\";s:8:\"filesize\";s:5:\"14679\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005528\";s:3:\"fid\";s:3:\"664\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 775,
-    "field_alt_title_value": "TEDxCapeTown - Monique Schiess - Practising imagining"
+    "field_alt_title_value": "TEDxCapeTown - Monique Schiess - Practising imagining",
+    "name": "Monique Schiess - Practising imagining"
   },
   {
     "vid": 364,
@@ -1072,10 +1148,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:741;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/7b4AY8ECu8U/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/7b4AY8ECu8U\";s:4:\"size\";s:4:\"1158\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-eJCpvGA06a8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-eJCpvGA06a8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-eJCpvGA06a8.jpg\";s:8:\"filesize\";s:4:\"9202\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005645\";s:3:\"fid\";s:3:\"665\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 741,
-    "field_alt_title_value": "TEDxCapeTown - Mbali Vilakazi - Poetry is the Process"
+    "field_alt_title_value": "TEDxCapeTown - Mbali Vilakazi - Poetry is the Process",
+    "name": "TEDxCapeTown - Mbali Vilakazi - Poetry is the Process"
   },
   {
     "vid": 365,
@@ -1086,10 +1163,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:832;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/5yZp6DOVdRc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/5yZp6DOVdRc\";s:4:\"size\";s:4:\"1190\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-BWakTCi0Q_0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-BWakTCi0Q_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-BWakTCi0Q_0.jpg\";s:8:\"filesize\";s:5:\"13755\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346005949\";s:3:\"fid\";s:3:\"666\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 832,
-    "field_alt_title_value": "TEDxCapeTown - Martin Tai Lyhne Jensen - Hitchhiking open technology towards local ingenuity"
+    "field_alt_title_value": "TEDxCapeTown - Martin Tai Lyhne Jensen - Hitchhiking open technology towards local ingenuity",
+    "name": "Martin Tai Lyhne Jensen - Hitchhiking open technology towards local ingenuity"
   },
   {
     "vid": 366,
@@ -1100,10 +1178,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1079;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/BBCoTJBrFjc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/BBCoTJBrFjc\";s:4:\"size\";s:4:\"1190\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-kpweTMUVPKg.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-kpweTMUVPKg.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-kpweTMUVPKg.jpg\";s:8:\"filesize\";s:4:\"8831\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346006134\";s:3:\"fid\";s:3:\"667\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1079,
-    "field_alt_title_value": "TEDxCapeTown - Louise van Rhyn - Changing The Course Of Education"
+    "field_alt_title_value": "TEDxCapeTown - Louise van Rhyn - Changing The Course Of Education",
+    "name": "Louise van Rhyn - Changing The Course Of Education"
   },
   {
     "vid": 367,
@@ -1114,10 +1193,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:820;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/CZmrpAFPeRc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/CZmrpAFPeRc\";s:4:\"size\";s:4:\"1181\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-49mgyM5yyjM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-49mgyM5yyjM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-49mgyM5yyjM.jpg\";s:8:\"filesize\";s:4:\"7222\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346006402\";s:3:\"fid\";s:3:\"668\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 820,
-    "field_alt_title_value": "TEDxCapeTown - Lauren Gillis - Redefining Philanthropy"
+    "field_alt_title_value": "TEDxCapeTown - Lauren Gillis - Redefining Philanthropy",
+    "name": "Lauren Gillis - Redefining Philanthropy"
   },
   {
     "vid": 368,
@@ -1128,10 +1208,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:843;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/oDiWA6b_5CE/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/oDiWA6b_5CE\";s:4:\"size\";s:4:\"1188\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-wu-Ds9vFXBU.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wu-Ds9vFXBU.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wu-Ds9vFXBU.jpg\";s:8:\"filesize\";s:4:\"9194\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346006548\";s:3:\"fid\";s:3:\"669\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 843,
-    "field_alt_title_value": "TEDxCapeTown - Justin R Melville - Rethinking the Music Industry"
+    "field_alt_title_value": "TEDxCapeTown - Justin R Melville - Rethinking the Music Industry",
+    "name": "Justin R Melville - Rethinking the Music Industry"
   },
   {
     "vid": 369,
@@ -1142,10 +1223,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:976;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/le2KirFk_Dk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/le2KirFk_Dk\";s:4:\"size\";s:4:\"1172\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-_6quThOKfWM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-_6quThOKfWM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-_6quThOKfWM.jpg\";s:8:\"filesize\";s:5:\"13945\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346006840\";s:3:\"fid\";s:3:\"670\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 976,
-    "field_alt_title_value": "TEDxCapeTown - Lara Foot - Rewriting the plot of our lives"
+    "field_alt_title_value": "TEDxCapeTown - Lara Foot - Rewriting the plot of our lives",
+    "name": "Lara Foot - Rewriting the plot of our lives"
   },
   {
     "vid": 370,
@@ -1156,10 +1238,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:0;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/anmktfGYw8k/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/anmktfGYw8k\";s:4:\"size\";s:4:\"1139\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-qzThQVbKIac.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-qzThQVbKIac.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-qzThQVbKIac.jpg\";s:8:\"filesize\";s:5:\"11937\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346006897\";s:3:\"fid\";s:3:\"671\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 0,
-    "field_alt_title_value": "TEDxCapeTown - Helene Smit - Uncovering the unconscious"
+    "field_alt_title_value": "TEDxCapeTown - Helene Smit - Uncovering the unconscious",
+    "name": "Helene Smit - Uncovering the unconscious"
   },
   {
     "vid": 371,
@@ -1170,10 +1253,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:733;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/guguDSwcRpk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/guguDSwcRpk\";s:4:\"size\";s:4:\"1182\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-GAxY6SuomqA.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-GAxY6SuomqA.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-GAxY6SuomqA.jpg\";s:8:\"filesize\";s:4:\"8963\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346007083\";s:3:\"fid\";s:3:\"672\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 733,
-    "field_alt_title_value": "TEDxCapeTown - Chris Loker - Creating sustainable finance"
+    "field_alt_title_value": "TEDxCapeTown - Chris Loker - Creating sustainable finance",
+    "name": "Chris Loker - Creating sustainable finance"
   },
   {
     "vid": 372,
@@ -1184,10 +1268,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:0;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/MaB_SwMawW0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/MaB_SwMawW0\";s:4:\"size\";s:4:\"1158\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-gOYP66MMy3o.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-gOYP66MMy3o.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-gOYP66MMy3o.jpg\";s:8:\"filesize\";s:5:\"13009\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1346007160\";s:3:\"fid\";s:3:\"673\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 0,
-    "field_alt_title_value": "TEDxCapeTown - Alan Knott Craig - The power of anonymity "
+    "field_alt_title_value": "TEDxCapeTown - Alan Knott Craig - The power of anonymity ",
+    "name": "Alan Knott Craig - The power of anonymity"
   },
   {
     "vid": 374,
@@ -1198,10 +1283,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:0;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/ShConxKauDw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/ShConxKauDw\";s:4:\"size\";s:4:\"1179\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-ShConxKauDw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ShConxKauDw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-ShConxKauDw.jpg\";s:8:\"filesize\";i:18833;s:6:\"status\";i:1;s:9:\"timestamp\";i:1346692558;s:3:\"fid\";s:3:\"677\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 0,
-    "field_alt_title_value": "TEDxCapeTown - Roderick Lim Banda - African Software Factories"
+    "field_alt_title_value": "TEDxCapeTown - Roderick Lim Banda - African Software Factories",
+    "name": "Roderick Lim Banda - African Software Factories"
   },
   {
     "vid": 381,
@@ -1212,10 +1298,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:494;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/EffiZOT_u8I/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/EffiZOT_u8I\";s:4:\"size\";s:4:\"1191\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-EffiZOT_u8I.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-EffiZOT_u8I.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-EffiZOT_u8I.jpg\";s:8:\"filesize\";i:10159;s:6:\"status\";i:1;s:9:\"timestamp\";i:1348681206;s:3:\"fid\";s:3:\"685\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 494,
-    "field_alt_title_value": "Every book within walking distance of every home: Arthur Attwell at TEDxCapeTown"
+    "field_alt_title_value": "Every book within walking distance of every home: Arthur Attwell at TEDxCapeTown",
+    "name": "Every book within walking distance of every home: Arthur Attwell"
   },
   {
     "vid": 396,
@@ -1226,10 +1313,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:723;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/-Wm2feVnlGk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/-Wm2feVnlGk\";s:4:\"size\";s:4:\"1202\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube--Wm2feVnlGk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube--Wm2feVnlGk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube--Wm2feVnlGk.jpg\";s:8:\"filesize\";i:10265;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352466149;s:3:\"fid\";s:3:\"710\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 723,
-    "field_alt_title_value": "Dreaming of open streets: Marcela Guerrero Casas at TEDxCapeTown City2.0"
+    "field_alt_title_value": "Dreaming of open streets: Marcela Guerrero Casas at TEDxCapeTown City2.0",
+    "name": "Dreaming of open streets: Marcela Guerrero Casas"
   },
   {
     "vid": 397,
@@ -1240,10 +1328,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:668;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/-JzpTTWaN5o/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/-JzpTTWaN5o\";s:4:\"size\";s:4:\"1200\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube--JzpTTWaN5o.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube--JzpTTWaN5o.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube--JzpTTWaN5o.jpg\";s:8:\"filesize\";i:9597;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352546867;s:3:\"fid\";s:3:\"711\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 668,
-    "field_alt_title_value": "Adding vocabulary to the city\'s story: Richard Palmer at TEDxCapeTown City2.0 "
+    "field_alt_title_value": "Adding vocabulary to the city\'s story: Richard Palmer at TEDxCapeTown City2.0 ",
+    "name": "Adding vocabulary to the city\'s story: Richard Palmer"
   },
   {
     "vid": 398,
@@ -1254,10 +1343,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:530;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/d21v2_c5iBM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/d21v2_c5iBM\";s:4:\"size\";s:4:\"1202\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-d21v2_c5iBM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-d21v2_c5iBM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-d21v2_c5iBM.jpg\";s:8:\"filesize\";i:8347;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352792597;s:3:\"fid\";s:3:\"712\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 530,
-    "field_alt_title_value": "Against All Odds: Janine van Rooy, aka BlaqPearl at TEDxCapeTown City2.0"
+    "field_alt_title_value": "Against All Odds: Janine van Rooy, aka BlaqPearl at TEDxCapeTown City2.0",
+    "name": "Against All Odds: Janine van Rooy, aka BlaqPearl"
   },
   {
     "vid": 399,
@@ -1268,10 +1358,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:778;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/dxcv1AZ31ZY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/dxcv1AZ31ZY\";s:4:\"size\";s:4:\"1203\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-dxcv1AZ31ZY.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-dxcv1AZ31ZY.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-dxcv1AZ31ZY.jpg\";s:8:\"filesize\";s:5:\"10561\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1352793023\";s:3:\"fid\";s:3:\"713\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 778,
-    "field_alt_title_value": "Music and Cities: Trenton and Free Radical at TEDxCapeTown City2.0"
+    "field_alt_title_value": "Music and Cities: Trenton and Free Radical at TEDxCapeTown City2.0",
+    "name": "Music and Cities: Trenton and Free Radical"
   },
   {
     "vid": 400,
@@ -1282,10 +1373,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:846;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/FRBQuS3lOhs/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/FRBQuS3lOhs\";s:4:\"size\";s:4:\"1203\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-FRBQuS3lOhs.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-FRBQuS3lOhs.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-FRBQuS3lOhs.jpg\";s:8:\"filesize\";i:14173;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352793370;s:3:\"fid\";s:3:\"714\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 846,
-    "field_alt_title_value": "Collaboration for a 24 hour city: designing social cohesion: Jodi Allemeier at TEDxCapeTown City2.0"
+    "field_alt_title_value": "Collaboration for a 24 hour city: designing social cohesion: Jodi Allemeier at TEDxCapeTown City2.0",
+    "name": "Collaboration for a 24 hour city: designing social cohesion: Jodi Allemeier"
   },
   {
     "vid": 401,
@@ -1296,10 +1388,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:671;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/f83GGj_q6oM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/f83GGj_q6oM\";s:4:\"size\";s:4:\"1203\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-f83GGj_q6oM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-f83GGj_q6oM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-f83GGj_q6oM.jpg\";s:8:\"filesize\";i:12001;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352793415;s:3:\"fid\";s:3:\"715\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 671,
-    "field_alt_title_value": "Designing a city from the bottom up: Jared Sacks and Nobanzi Dlodlo at TEDxCapeTown City2.0"
+    "field_alt_title_value": "Designing a city from the bottom up: Jared Sacks and Nobanzi Dlodlo at TEDxCapeTown City2.0",
+    "name": "Designing a city from the bottom up: Jared Sacks and Nobanzi Dlodlo"
   },
   {
     "vid": 402,
@@ -1310,10 +1403,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:668;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/SrTJBjqbYoM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/SrTJBjqbYoM\";s:4:\"size\";s:4:\"1202\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-SrTJBjqbYoM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SrTJBjqbYoM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SrTJBjqbYoM.jpg\";s:8:\"filesize\";i:12305;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352819310;s:3:\"fid\";s:3:\"716\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 668,
-    "field_alt_title_value": "We art change: Mak1one at TEDxCapeTown City2.0"
+    "field_alt_title_value": "We art change: Mak1one at TEDxCapeTown City2.0",
+    "name": "We art change: Mak1one"
   },
   {
     "vid": 403,
@@ -1324,10 +1418,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:651;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/9eBEYCKdnsE/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/9eBEYCKdnsE\";s:4:\"size\";s:4:\"1199\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"4\";s:8:\"filename\";s:31:\"emvideo-youtube-9eBEYCKdnsE.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-9eBEYCKdnsE.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-9eBEYCKdnsE.jpg\";s:8:\"filesize\";i:8754;s:6:\"status\";i:1;s:9:\"timestamp\";i:1352819352;s:3:\"fid\";s:3:\"717\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 651,
-    "field_alt_title_value": "What does design thinking mean for cities? Richard Perez at TEDxCapeTown City2.0"
+    "field_alt_title_value": "What does design thinking mean for cities? Richard Perez at TEDxCapeTown City2.0",
+    "name": "What does design thinking mean for cities? Richard Perez"
   },
   {
     "vid": 478,
@@ -1338,10 +1433,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:608;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/SopFDmbznws/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/SopFDmbznws\";s:4:\"size\";s:4:\"4604\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-SopFDmbznws.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SopFDmbznws.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SopFDmbznws.jpg\";s:8:\"filesize\";i:19381;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378454569;s:3:\"fid\";s:3:\"856\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 608,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Living at the forefront of incompetence"
   },
   {
     "vid": 479,
@@ -1352,10 +1448,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1089;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Xb16jGtqCNc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Xb16jGtqCNc\";s:4:\"size\";s:4:\"4609\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-Xb16jGtqCNc.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Xb16jGtqCNc.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Xb16jGtqCNc.jpg\";s:8:\"filesize\";s:5:\"11938\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1378454629\";s:3:\"fid\";s:3:\"857\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1089,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The Irrationality of Believing"
   },
   {
     "vid": 480,
@@ -1366,10 +1463,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:993;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/75LfMlG-NQk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/75LfMlG-NQk\";s:4:\"size\";s:4:\"4594\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-75LfMlG-NQk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-75LfMlG-NQk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-75LfMlG-NQk.jpg\";s:8:\"filesize\";i:27371;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378454690;s:3:\"fid\";s:3:\"858\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 993,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "eKhaya - an affordable informal housing solution"
   },
   {
     "vid": 481,
@@ -1380,10 +1478,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:833;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/HefQeamGHwk/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/HefQeamGHwk\";s:4:\"size\";s:4:\"4591\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-HefQeamGHwk.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-HefQeamGHwk.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-HefQeamGHwk.jpg\";s:8:\"filesize\";i:27138;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378454750;s:3:\"fid\";s:3:\"859\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 833,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Exploring the universe, looking outward and inward"
   },
   {
     "vid": 482,
@@ -1394,10 +1493,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:947;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/CFovd_uyVYM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/CFovd_uyVYM\";s:4:\"size\";s:4:\"4594\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-CFovd_uyVYM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CFovd_uyVYM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CFovd_uyVYM.jpg\";s:8:\"filesize\";s:5:\"19730\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1378454829\";s:3:\"fid\";s:3:\"860\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 947,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The World of Win-Win Economics: Breaking Down Boundaries, Stepping Over Borders & Building Communities"
   },
   {
     "vid": 483,
@@ -1408,10 +1508,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1007;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/vXw85GRx3Gw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/vXw85GRx3Gw\";s:4:\"size\";s:4:\"4575\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-vXw85GRx3Gw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-vXw85GRx3Gw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-vXw85GRx3Gw.jpg\";s:8:\"filesize\";i:19011;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378454880;s:3:\"fid\";s:3:\"861\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1007,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Looking for the optimal diet for us and the environment"
   },
   {
     "vid": 484,
@@ -1422,10 +1523,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:487;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/pWOG-n-MY2s/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/pWOG-n-MY2s\";s:4:\"size\";s:4:\"4595\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-pWOG-n-MY2s.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-pWOG-n-MY2s.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-pWOG-n-MY2s.jpg\";s:8:\"filesize\";s:5:\"32715\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1378454931\";s:3:\"fid\";s:3:\"862\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 487,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Radical Innovation Imagination"
   },
   {
     "vid": 485,
@@ -1436,10 +1538,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:778;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/CyKmpyYy14k/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/CyKmpyYy14k\";s:4:\"size\";s:4:\"4599\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-CyKmpyYy14k.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CyKmpyYy14k.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-CyKmpyYy14k.jpg\";s:8:\"filesize\";i:25607;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378454970;s:3:\"fid\";s:3:\"863\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 778,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The Less You Own, the More You Have"
   },
   {
     "vid": 486,
@@ -1450,10 +1553,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1385;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/O6Z5SW6Y7fw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/O6Z5SW6Y7fw\";s:4:\"size\";s:4:\"4615\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-O6Z5SW6Y7fw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-O6Z5SW6Y7fw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-O6Z5SW6Y7fw.jpg\";s:8:\"filesize\";i:14288;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378455012;s:3:\"fid\";s:3:\"864\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1385,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Wherever you go, go with your heart"
   },
   {
     "vid": 487,
@@ -1464,10 +1568,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:860;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/AlN9O6DgpAc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/AlN9O6DgpAc\";s:4:\"size\";s:4:\"4593\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-AlN9O6DgpAc.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-AlN9O6DgpAc.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-AlN9O6DgpAc.jpg\";s:8:\"filesize\";i:24080;s:6:\"status\";i:1;s:9:\"timestamp\";i:1378491724;s:3:\"fid\";s:3:\"865\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 860,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Laughing is a serious matter - stand up comedienne in South Africa:"
   },
   {
     "vid": 488,
@@ -1478,10 +1583,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:0;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/rJqv988QiFw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/rJqv988QiFw\";s:4:\"size\";s:4:\"4488\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-rJqv988QiFw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-rJqv988QiFw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-rJqv988QiFw.jpg\";s:8:\"filesize\";i:26526;s:6:\"status\";i:1;s:9:\"timestamp\";i:1379264767;s:3:\"fid\";s:3:\"866\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 0,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The Nature of Humanity"
   },
   {
     "vid": 489,
@@ -1492,10 +1598,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:0;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/wMBqpgrHiN8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/wMBqpgrHiN8\";s:4:\"size\";s:4:\"4489\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-wMBqpgrHiN8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wMBqpgrHiN8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-wMBqpgrHiN8.jpg\";s:8:\"filesize\";i:23274;s:6:\"status\";i:1;s:9:\"timestamp\";i:1379265138;s:3:\"fid\";s:3:\"867\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 0,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Whispers of Wisdom"
   },
   {
     "vid": 490,
@@ -1506,10 +1613,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:855;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/2wKwpnwPVdQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/2wKwpnwPVdQ\";s:4:\"size\";s:4:\"4479\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-2wKwpnwPVdQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-2wKwpnwPVdQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-2wKwpnwPVdQ.jpg\";s:8:\"filesize\";i:16131;s:6:\"status\";i:1;s:9:\"timestamp\";i:1379265545;s:3:\"fid\";s:3:\"868\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 855,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Using mobiles to rekindle learning"
   },
   {
     "vid": 491,
@@ -1520,10 +1628,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:922;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/5V8ucQrP0j8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/5V8ucQrP0j8\";s:4:\"size\";s:4:\"4478\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-5V8ucQrP0j8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-5V8ucQrP0j8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-5V8ucQrP0j8.jpg\";s:8:\"filesize\";s:5:\"22584\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1379265606\";s:3:\"fid\";s:3:\"869\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 922,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Vain Aid"
   },
   {
     "vid": 492,
@@ -1534,10 +1643,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1179;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Xdlx-FJNW2U/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Xdlx-FJNW2U\";s:4:\"size\";s:4:\"4516\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-Xdlx-FJNW2U.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Xdlx-FJNW2U.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Xdlx-FJNW2U.jpg\";s:8:\"filesize\";i:13317;s:6:\"status\";i:1;s:9:\"timestamp\";i:1380001620;s:3:\"fid\";s:3:\"870\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1179,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "How the hell did that happen"
   },
   {
     "vid": 493,
@@ -1548,10 +1658,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:680;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/LBSXl5E8R8E/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/LBSXl5E8R8E\";s:4:\"size\";s:4:\"4517\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-LBSXl5E8R8E.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LBSXl5E8R8E.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LBSXl5E8R8E.jpg\";s:8:\"filesize\";s:5:\"27733\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1380001769\";s:3:\"fid\";s:3:\"871\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 680,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Mandelaesque Approach to Community Building"
   },
   {
     "vid": 494,
@@ -1562,10 +1673,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1053;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4zJn4gxCx3c/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4zJn4gxCx3c\";s:4:\"size\";s:4:\"4526\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-4zJn4gxCx3c.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4zJn4gxCx3c.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4zJn4gxCx3c.jpg\";s:8:\"filesize\";i:14981;s:6:\"status\";i:1;s:9:\"timestamp\";i:1380002272;s:3:\"fid\";s:3:\"872\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1053,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Scary bananas: How environmental exaggeration harms emerging economies"
   },
   {
     "vid": 495,
@@ -1576,10 +1688,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:804;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/nhL1S2_zejc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/nhL1S2_zejc\";s:4:\"size\";s:4:\"4514\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-nhL1S2_zejc.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-nhL1S2_zejc.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-nhL1S2_zejc.jpg\";s:8:\"filesize\";i:7459;s:6:\"status\";i:1;s:9:\"timestamp\";i:1380002552;s:3:\"fid\";s:3:\"873\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 804,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Transforming healthcare through need driven design: Riaan Conradie at TEDxCapeTown"
   },
   {
     "vid": 496,
@@ -1590,10 +1703,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:733;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/EeJmsvNE8NM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/EeJmsvNE8NM\";s:4:\"size\";s:4:\"4542\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-EeJmsvNE8NM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-EeJmsvNE8NM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-EeJmsvNE8NM.jpg\";s:8:\"filesize\";i:24008;s:6:\"status\";i:1;s:9:\"timestamp\";i:1381262770;s:3:\"fid\";s:3:\"874\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 733,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Improvised story telling"
   },
   {
     "vid": 498,
@@ -1604,10 +1718,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:642;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/DFl8bUirmgs/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/DFl8bUirmgs\";s:4:\"size\";s:4:\"4498\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-DFl8bUirmgs.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-DFl8bUirmgs.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-DFl8bUirmgs.jpg\";s:8:\"filesize\";i:27127;s:6:\"status\";i:1;s:9:\"timestamp\";i:1381583415;s:3:\"fid\";s:3:\"877\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 642,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Love sandwhich"
   },
   {
     "vid": 507,
@@ -1618,10 +1733,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:551;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/XXNM08FPZWY/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/XXNM08FPZWY\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-XXNM08FPZWY.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-XXNM08FPZWY.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-XXNM08FPZWY.jpg\";s:8:\"filesize\";i:12607;s:6:\"status\";i:1;s:9:\"timestamp\";i:1391672405;s:3:\"fid\";s:3:\"890\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 551,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Reinventing Challenge"
   },
   {
     "vid": 508,
@@ -1632,10 +1748,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:608;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/NY8RLLbD_8g/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/NY8RLLbD_8g\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-NY8RLLbD_8g.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-NY8RLLbD_8g.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-NY8RLLbD_8g.jpg\";s:8:\"filesize\";i:15388;s:6:\"status\";i:1;s:9:\"timestamp\";i:1391672468;s:3:\"fid\";s:3:\"891\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 608,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "You throw like a girl! Telling stories about women in sport"
   },
   {
     "vid": 509,
@@ -1646,10 +1763,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:615;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4IfYL2LKzug/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4IfYL2LKzug\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-4IfYL2LKzug.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4IfYL2LKzug.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4IfYL2LKzug.jpg\";s:8:\"filesize\";i:11299;s:6:\"status\";i:1;s:9:\"timestamp\";i:1391672525;s:3:\"fid\";s:3:\"892\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 615,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Learning from teenagers"
   },
   {
     "vid": 510,
@@ -1660,10 +1778,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:564;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/JQ0SEZyU8XI/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/JQ0SEZyU8XI\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-JQ0SEZyU8XI.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-JQ0SEZyU8XI.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-JQ0SEZyU8XI.jpg\";s:8:\"filesize\";i:11977;s:6:\"status\";i:1;s:9:\"timestamp\";i:1391672576;s:3:\"fid\";s:3:\"893\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 564,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "What are you going to do about it? Write a poem?"
   },
   {
     "vid": 511,
@@ -1674,10 +1793,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:647;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/NGjIXK618Xw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/NGjIXK618Xw\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-NGjIXK618Xw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-NGjIXK618Xw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-NGjIXK618Xw.jpg\";s:8:\"filesize\";i:14162;s:6:\"status\";i:1;s:9:\"timestamp\";i:1391672624;s:3:\"fid\";s:3:\"894\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 647,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "1000 days: Laying the groundwork for our future"
   },
   {
     "vid": 580,
@@ -1688,10 +1808,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:646;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/POxfKCQywkA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/POxfKCQywkA\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-POxfKCQywkA.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-POxfKCQywkA.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-POxfKCQywkA.jpg\";s:8:\"filesize\";i:9769;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199430;s:3:\"fid\";s:3:\"978\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 646,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "From idealist to environmental pragmatist"
   },
   {
     "vid": 581,
@@ -1702,10 +1823,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:841;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/PFw0lGzPbB0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/PFw0lGzPbB0\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-PFw0lGzPbB0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-PFw0lGzPbB0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-PFw0lGzPbB0.jpg\";s:8:\"filesize\";i:8688;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199488;s:3:\"fid\";s:3:\"979\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 841,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Getting Un-stuck"
   },
   {
     "vid": 582,
@@ -1716,10 +1838,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:901;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4NGRw71RBOU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4NGRw71RBOU\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-4NGRw71RBOU.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4NGRw71RBOU.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-4NGRw71RBOU.jpg\";s:8:\"filesize\";i:11873;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199549;s:3:\"fid\";s:3:\"980\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 901,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Real man. Real dad."
   },
   {
     "vid": 583,
@@ -1730,10 +1853,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:698;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/IP4hD3p1jgA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/IP4hD3p1jgA\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-IP4hD3p1jgA.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-IP4hD3p1jgA.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-IP4hD3p1jgA.jpg\";s:8:\"filesize\";i:11361;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199587;s:3:\"fid\";s:3:\"981\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 698,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The joy of giving"
   },
   {
     "vid": 584,
@@ -1744,10 +1868,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:708;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/Roi1-3V2frQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/Roi1-3V2frQ\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-Roi1-3V2frQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Roi1-3V2frQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-Roi1-3V2frQ.jpg\";s:8:\"filesize\";i:11679;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199621;s:3:\"fid\";s:3:\"982\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 708,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Design for the world you want"
   },
   {
     "vid": 585,
@@ -1758,10 +1883,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1158;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/LyXolOKqaBc/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/LyXolOKqaBc\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-LyXolOKqaBc.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LyXolOKqaBc.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-LyXolOKqaBc.jpg\";s:8:\"filesize\";i:11181;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199671;s:3:\"fid\";s:3:\"983\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1158,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "How we create content"
   },
   {
     "vid": 586,
@@ -1772,10 +1898,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:849;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/m-7ozuI1tt8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/m-7ozuI1tt8\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-m-7ozuI1tt8.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-m-7ozuI1tt8.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-m-7ozuI1tt8.jpg\";s:8:\"filesize\";i:9109;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199748;s:3:\"fid\";s:3:\"984\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 849,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Leveraging mobile devises to improve healthcare"
   },
   {
     "vid": 587,
@@ -1786,10 +1913,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:821;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/mKKxtjvJKb4/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/mKKxtjvJKb4\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-mKKxtjvJKb4.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-mKKxtjvJKb4.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-mKKxtjvJKb4.jpg\";s:8:\"filesize\";i:8935;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199790;s:3:\"fid\";s:3:\"985\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 821,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Egg cups and heart disease"
   },
   {
     "vid": 588,
@@ -1800,10 +1928,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:228;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/SlEOFt01SFQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/SlEOFt01SFQ\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-SlEOFt01SFQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SlEOFt01SFQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-SlEOFt01SFQ.jpg\";s:8:\"filesize\";i:13215;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199824;s:3:\"fid\";s:3:\"986\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 228,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Following my heart, to live my dream"
   },
   {
     "vid": 589,
@@ -1814,10 +1943,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:722;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/HlPpcx7Pg0M/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/HlPpcx7Pg0M\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-HlPpcx7Pg0M.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-HlPpcx7Pg0M.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-HlPpcx7Pg0M.jpg\";s:8:\"filesize\";i:12795;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199855;s:3:\"fid\";s:3:\"987\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 722,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Open Source Urban Design"
   },
   {
     "vid": 590,
@@ -1828,10 +1958,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:579;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/cUJNe0Ripog/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/cUJNe0Ripog\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-cUJNe0Ripog.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-cUJNe0Ripog.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-cUJNe0Ripog.jpg\";s:8:\"filesize\";i:9643;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410199922;s:3:\"fid\";s:3:\"988\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 579,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "The power of small ideas: In praise of the side-project."
   },
   {
     "vid": 591,
@@ -1842,10 +1973,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:597;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/cVzH74nNUxU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/cVzH74nNUxU\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-cVzH74nNUxU.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-cVzH74nNUxU.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-cVzH74nNUxU.jpg\";s:8:\"filesize\";i:15545;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410203136;s:3:\"fid\";s:3:\"989\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 597,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "“A capella” performance"
   },
   {
     "vid": 592,
@@ -1856,10 +1988,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:979;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/0hHyRxSeV_I/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/0hHyRxSeV_I\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-0hHyRxSeV_I.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-0hHyRxSeV_I.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-0hHyRxSeV_I.jpg\";s:8:\"filesize\";s:5:\"13837\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1410203227\";s:3:\"fid\";s:3:\"990\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 979,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Magnolias and matches"
   },
   {
     "vid": 593,
@@ -1870,10 +2003,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:552;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/lv1mP60YrQM/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/lv1mP60YrQM\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-lv1mP60YrQM.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-lv1mP60YrQM.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-lv1mP60YrQM.jpg\";s:8:\"filesize\";s:5:\"12281\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1410379788\";s:3:\"fid\";s:3:\"991\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 552,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Fire Glow Interactive Flow "
   },
   {
     "vid": 594,
@@ -1884,10 +2018,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:939;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/VsGfcJjectQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/VsGfcJjectQ\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-VsGfcJjectQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-VsGfcJjectQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-VsGfcJjectQ.jpg\";s:8:\"filesize\";s:4:\"8025\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1410379972\";s:3:\"fid\";s:3:\"992\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 939,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "A moment of closed circle, a moment of real harmony"
   },
   {
     "vid": 595,
@@ -1898,10 +2033,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:901;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/4NGRw71RBOU/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/4NGRw71RBOU\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-4NGRw71RBOU.jpg\";s:8:\"filepath\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-4NGRw71RBOU_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-4NGRw71RBOU_0.jpg\";s:8:\"filesize\";i:11873;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410380107;s:3:\"fid\";s:3:\"993\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 901,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Real man. Real dad."
   },
   {
     "vid": 596,
@@ -1912,10 +2048,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:1019;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/waUfFVv7aKA/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/waUfFVv7aKA\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-waUfFVv7aKA.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-waUfFVv7aKA.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-waUfFVv7aKA.jpg\";s:8:\"filesize\";i:10312;s:6:\"status\";i:1;s:9:\"timestamp\";i:1410380203;s:3:\"fid\";s:3:\"994\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 1019,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Meet biofarming"
   },
   {
     "vid": 597,
@@ -1926,10 +2063,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:849;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/m-7ozuI1tt8/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/m-7ozuI1tt8\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-m-7ozuI1tt8.jpg\";s:8:\"filepath\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-m-7ozuI1tt8_0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:65:\"sites/default/files/videothumbs/emvideo-youtube-m-7ozuI1tt8_0.jpg\";s:8:\"filesize\";s:4:\"9109\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1410380293\";s:3:\"fid\";s:3:\"995\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 849,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Leveraging mobile devices to improve healthcare"
   },
   {
     "vid": 598,
@@ -1940,10 +2078,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:733;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/1CAR385wH98/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/1CAR385wH98\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-1CAR385wH98.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-1CAR385wH98.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-1CAR385wH98.jpg\";s:8:\"filesize\";s:4:\"9070\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1410380394\";s:3:\"fid\";s:3:\"996\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 733,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Designing a better country"
   },
   {
     "vid": 616,
@@ -1954,10 +2093,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:689;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/5C-kExNFr6c/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/5C-kExNFr6c\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-5C-kExNFr6c.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-5C-kExNFr6c.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-5C-kExNFr6c.jpg\";s:8:\"filesize\";s:5:\"18456\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1422865411\";s:3:\"fid\";s:4:\"1017\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 689,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Trusting Your Authenticity"
   },
   {
     "vid": 617,
@@ -1968,10 +2108,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:736;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/I6V_N0gXOx0/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/I6V_N0gXOx0\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-I6V_N0gXOx0.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-I6V_N0gXOx0.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-I6V_N0gXOx0.jpg\";s:8:\"filesize\";i:23458;s:6:\"status\";i:1;s:9:\"timestamp\";i:1422865486;s:3:\"fid\";s:4:\"1018\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 736,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Micro-franchising: A solution to South Africa\'s unemployment"
   },
   {
     "vid": 618,
@@ -1982,10 +2123,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:659;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/e5LRPY_lmmw/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/e5LRPY_lmmw\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-e5LRPY_lmmw.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-e5LRPY_lmmw.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-e5LRPY_lmmw.jpg\";s:8:\"filesize\";s:5:\"22044\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1422865569\";s:3:\"fid\";s:4:\"1019\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 659,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Voices from within: Poems for her"
   },
   {
     "vid": 619,
@@ -1996,10 +2138,11 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:894;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/J_n_jtQQeTE/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/J_n_jtQQeTE\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-J_n_jtQQeTE.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-J_n_jtQQeTE.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-J_n_jtQQeTE.jpg\";s:8:\"filesize\";s:5:\"23712\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1422865636\";s:3:\"fid\";s:4:\"1020\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 894,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Magical otherness"
   },
   {
     "vid": 620,
@@ -2010,9 +2153,10 @@
     "data": "a:7:{s:20:\"emvideo_data_version\";i:5;s:23:\"emvideo_youtube_version\";i:5;s:8:\"duration\";i:711;s:8:\"playlist\";i:0;s:9:\"thumbnail\";a:1:{s:3:\"url\";s:43:\"http://img.youtube.com/vi/9TFVZ4LZ3VQ/0.jpg\";}s:5:\"flash\";a:3:{s:3:\"url\";s:32:\"http://youtube.com/v/9TFVZ4LZ3VQ\";s:4:\"size\";s:1:\"0\";s:4:\"mime\";s:29:\"application/x-shockwave-flash\";}s:7:\"emthumb\";a:10:{s:3:\"uid\";s:1:\"6\";s:8:\"filename\";s:31:\"emvideo-youtube-9TFVZ4LZ3VQ.jpg\";s:8:\"filepath\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-9TFVZ4LZ3VQ.jpg\";s:8:\"filemime\";s:10:\"image/jpeg\";s:6:\"source\";s:30:\"emthumb_fetch_remote_thumbnail\";s:11:\"destination\";s:63:\"sites/default/files/videothumbs/emvideo-youtube-9TFVZ4LZ3VQ.jpg\";s:8:\"filesize\";s:5:\"24472\";s:6:\"status\";s:1:\"1\";s:9:\"timestamp\";s:10:\"1422865691\";s:3:\"fid\";s:4:\"1021\";}}",
     "field_video_status": 1,
     "field_video_version": 5,
-    "name": null,
+    "field_video_title": null,
     "description": null,
     "duration": 711,
-    "field_alt_title_value": null
+    "field_alt_title_value": null,
+    "name": "Fathers in caregiving: Strengthening Relationships"
   }
 ]
