@@ -62,4 +62,7 @@ Template.default.events({
 	'click .link.updates': function() {
 		Router.go("updates");
 	},
+	'click .link.profile': function() {
+		Router.go("login");
+	},
 })

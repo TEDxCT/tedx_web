@@ -5,15 +5,85 @@
     <hr class="extra-space-top dashed">
     <form>
       <div class="form-group">
-        <label for="exampleInputEmail1">Talk YouTube URL</label>
-        <input type="text" class="form-control email" placeholder="https://www.youtube.com/2ejhdx">
-        <span class="help-block">Find your link below the video on YouTube. <a href="Help" class="link">Where is this?</a></span>
+        <label for="titleText">Talk Title</label>
+        <input type="text" class="form-control titleText" placeholder="Talk title...">
       </div>
-      <button type="button" class="btn btn-primary login">Import from YouTube</button>
-      <p>
-        Or, <a href="" class="link">manual entry</a>
-      </p>
+      <div class="form-group">
+        <label for="speakerText">Speaker</label>
+        <input type="text" class="form-control speakerText" placeholder="Speaker name...">
+      </div>
+      <div class="form-group">
+        <label for="categoryText">Category</label>
+        <input type="text" class="form-control categoryText" placeholder="Category name...">
+      </div>
+      <div class="form-group">
+        <label for="videoId">Talk YouTube URL</label>
+        <input type="text" class="form-control videoId" placeholder="Video ID...">
+        <span class="help-block">Find the ID in the url for the video on YouTube.</span>
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Talk Description</label>
+        <textarea class="form-control talkDescription"></textarea>
+        <span class="help-block">Even a short description aids SEO for this website.</span>
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Talk?</label>
+        <p>Published talks will appear in the "watch" section of the website and will be searchable.</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary import">Import from YouTube</button>
     </form>
   </div>
+</template>
 
+<template name="editTalk">
+  <div class="container-fluid">
+    <h1>Edit <i>{{this.title}}</i><br /><small> by <i>{{this.speaker}}</i></small></h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="titleText">Talk Title</label>
+        <input type="text" class="form-control titleText" placeholder="Talk title..." value="{{this.title}}">
+      </div>
+      <div class="form-group">
+        <label for="speakerText">Speaker</label>
+        <input type="text" class="form-control speakerText" placeholder="Speaker name..." value="{{this.speaker}}">
+      </div>
+      <div class="form-group">
+        <label for="categoryText">Category</label>
+        <input type="text" class="form-control categoryText" placeholder="Category name..." value="{{this.category}}">
+      </div>
+      <div class="form-group">
+        <label for="videoId">Talk YouTube ID</label>
+        <input type="text" class="form-control videoId" placeholder="Video ID..." value="{{this.videoId}}">
+        <span class="help-block">Find the ID in the url for the video on YouTube. <a href="Help" class="link">Where is this?</a></span>
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Talk Description</label>
+        <textarea class="form-control talkDescription">{{this.description}}</textarea>
+        <span class="help-block">Even a short description aids SEO for this website.</span>
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Talk?</label>
+        <p>Published talks will appear in the "watch" section of the website and will be searchable.</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-secondary cancel">Cancel</button>
+      <button type="button" class="btn btn-primary update">Update</button>
+    </form>
+  </div>
 </template>

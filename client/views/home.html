@@ -1,51 +1,53 @@
 <template name="home">
   <img class="full-width banner black animated fadeIn" src="/images/banners/homepage.png">
   <div class="container-fluid">
+    <hr class="space">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="featured-cta">
+          <div class="row">
+            <div class="col-md-10">
+              <h4>TEDx2015</h4>
+              <p>Tickets coming soon. See more information about this.</p>
+            </div>
+            <div class="col-md-2">
+              <i class="icon-arrow-68 cta-caret"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="featured-cta">
+          <div class="row">
+            <div class="col-md-10">
+              <h4>Get Updates</h4>
+              <p>Never miss another update. Sign up for our exciting newsletter.</p>
+            </div>
+            <div class="col-md-2">
+              <i class="icon-arrow-68 cta-caret"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="featured-cta link sponsor">
+          <div class="row">
+            <div class="col-md-10">
+              <h4>Sponsor Us</h4>
+              <p>Connect with a highly motivated, passionate audience.</p>
+            </div>
+            <div class="col-md-2">
+              <i class="icon-arrow-68 cta-caret"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="dashed">
   <h1>Featured Talks</h1>
-  {{> videos featuredvideos}}
+  {{> videos featuredTalks}}
   <hr class="dashed">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="featured-cta">
-        <div class="row">
-          <div class="col-md-10">
-            <h4>TEDx2015</h4>
-            <p>Tickets coming soon. See more information about this.</p>
-          </div>
-          <div class="col-md-2">
-            <i class="icon-arrow-68 cta-caret"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="featured-cta">
-        <div class="row">
-          <div class="col-md-10">
-            <h4>Get Updates</h4>
-            <p>Never miss another update. Sign up for our exciting newsletter.</p>
-          </div>
-          <div class="col-md-2">
-            <i class="icon-arrow-68 cta-caret"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="featured-cta link sponsor">
-        <div class="row">
-          <div class="col-md-10">
-            <h4>Sponsor Us</h4>
-            <p>Connect with a highly motivated, passionate audience.</p>
-          </div>
-          <div class="col-md-2">
-            <i class="icon-arrow-68 cta-caret"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="dashed">
+
   <h1>Upcoming Events</h1>
   {{> videos featuredvideos}}
   </div>

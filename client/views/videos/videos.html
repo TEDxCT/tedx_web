@@ -1,10 +1,23 @@
 <template name="videos">
     {{#if videosLoaded}}
-    <div class="videos">
-      {{#each this}}
-        {{> video this}}
-      {{/each}}
-    </div>
+    <div id="theGrid" class="main animated fadeIn">
+          <section class="grid">
+            {{#each this}}
+            <a class="talk-tile" href="/talk/{{this._id}}" >
+              <div class="top">
+                <span class="tile-category">{{this.category}}</span>
+                <h2 class="tile-title title--preview">{{this.title}}</h2>
+              </div>
+              <div class="play">
+                <img src="/images/play_triangle.png">
+              </div>
+              <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
+
+              </div> -->
+            </a>
+            {{/each}}
+          </section>
+        </div>
     {{else}}
       <div class="loader">Loading...</div>
     {{/if}}
@@ -12,7 +25,7 @@
 
 <template name="video">
   <article class="video animated bounceInUp">
-    <iframe class="video" width="390" height="390" src="http://www.youtube.com/embed/{{this.value}}" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" width="390" height="390" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}" frameborder="0" allowfullscreen></iframe>
     {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
       <i class="icon-star"></i>
@@ -30,60 +43,6 @@
   </article>
 </template>
 
-<template name="newvideo">
-  <article class="new">
-    <div class="add-sheet sheet">
-      <h3>ADD VIDEO</h3>
-      <p>Add videos from this box. As soon as you save this video it will appear on the website.</p>
-      <div class="sheet-content">
-        <div class="form">
-          <label>Name</label>
-          <input type="text" class="addible name" placeholder="Short and catchy..." />
-          <label>Description</label>
-          <input type="text" class="addible description" placeholder="More indepth info..." />
-          <label>URL</label>
-          <input type="text" class="addible url" placeholder="Youtube embed link..." />
-          <div class="sheet-actions">
-            <button class="next btn btn-flat btn-primary">Next</button>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="add-sheet-two sheet hide animated">
-    <h3>ADD SPEAKER</h3>
-    <p>Add videos from this box. As soon as you save this video it will appear on the website.</p>
-    <div class="sheet-content">
-      <div class="form">
-        <label>Speaker Name</label>
-        <input type="text" class="addible speaker" placeholder="Annie Bell..." />
-        <label>Speaker Avatar</label>
-        <input type="text" class="addible avatar" placeholder="Annie Bell..." />
-        <div class="sheet-actions">
-          <button class="next btn btn-flat btn-primary">Next</button>
-          <button class="back btn btn-flat">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="add-sheet add-sheet-three sheet animated hide">
-    <h3>ADD META DATA</h3>
-    <p>Add a category to this video so that it will appear in the right places.</p>
-    <div class="sheet-content">
-      <div class="form">
-        <label>TEDx Chapter</label>
-        <input type="text" class="addible sections" placeholder="Women, Kids..." />
-        <label>Categories</label>
-        {{> categories}}
-        <div class="sheet-actions">
-          <button class="add-video save btn btn-flat btn-primary">Save</button>
-          <button class="back btn btn-flat">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </article>
-</template>
-
 <template name="menu">
   <div class="toggle">
     <i class="icon-menu"></i>
@@ -93,41 +52,5 @@
     <button class="zoom small">Small</button>
     <button class="zoom medium">Medium</button>
     <button class="zoom large">Large</button>
-  </div>
-</template>
-
-<template name="editvideo">
-  <div class="edit-sheet toggle-sheet sheet">
-    <i class="icon-close close"></i>
-    <h3>EDIT VIDEO</h3>
-    <p>You can edit this video right here. Just remember your changes are only saved when you click 'save'.</p>
-    <div class="sheet-content">
-      <div class="form">
-        <label>Name</label>
-        <input type="text" class="editable name" value="{{this.name}}" />
-        <label>Description</label>
-        <input type="text" class="editable description" value="{{this.description}}" />
-        <label>URL</label>
-        <input type="text" class="editable url" value="{{this.embed_url}}" />
-        <label>Speaker Name</label>
-        <input type="text" class="editable speaker" value="{{this.speaker}}"  />
-        <label>Speaker Avatar</label>
-        <input type="text" class="editable avatar" value="{{this.avatar}}" placeholder="Link to speaker image" />
-        <label>Categories</label>
-        {{#each videoCategories}}
-          {{> selectedcategory this}}
-        {{/each}}
-        <label>Add categories</label>
-        {{#each allCategories}}
-          {{> category this}}
-        {{/each}}
-
-        <div class="sheet-actions">
-          <button class="btn btn-flat archive pull-left"><i class="icon-document-box-1"></i></button>
-          <button class="edit-video save btn btn-primary btn-flat">Save</button>
-          <button class="edit-video cancel btn btn-flat">Cancel</button>
-        </div>
-      </div>
-      </div>
   </div>
 </template>

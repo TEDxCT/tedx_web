@@ -1,6 +1,6 @@
 @import 'variables';
 
-article {
+article.talk {
   background: black;
   background-size: cover;
   display: inline-block;
@@ -12,11 +12,11 @@ article {
   height: 390px;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
-article.new {
+article.talk.new {
   background: white;
 }
 
-article .actions {
+article.talk .actions {
   background-color: @secondaryColor;
   bottom: 0px;
   box-sizing: border-box;
@@ -41,7 +41,7 @@ article .actions {
   }
 }
 
-article .video {
+article.talk .video {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -80,7 +80,7 @@ article .video {
   z-index: 2;
 }
 
-article .overlay {
+article.talk .overlay {
   position: absolute;
   background-image: -o-linear-gradient(-89deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
   background-image: -moz-linear-gradient(-89deg, rgba(38,38,38,0.00) 33%, rgba(0,0,0,0.7) 100%);
@@ -254,4 +254,8 @@ button.edit:hover {
 
 .container-fluid.talks {
   margin: 0px 10px;
+}
+
+.talk__content {
+  position: relative;
 }

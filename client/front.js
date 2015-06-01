@@ -21,46 +21,6 @@ Template.home.helpers({
   }
 });
 
-Template.toolbar.events({
-  'click .log-out.button' : function () {
-    Meteor.logout();
-  },
-  'click .search': function() {
-    Session.set("searching", true);
-  },
-  'click .feedback': function() {
-    Session.set("feedbacking", true);
-  },
-  'click .add-video': function() {
-    Session.set("addingvideo", true);
-  },
-  'click #logout': function() {
-    Meteor.logout();
-  },
-  'click .chapterMenuItem': function() {
-    Session.set("chapter", true);
-  }
-});
-
-Template.toolbar.helpers({
-  activeIfTemplateIs: function (template) {
-      var currentRoute = Router.current();
-      return currentRoute &&
-        template.toLowerCase() === currentRoute.lookupTemplate().toLowerCase() ? 'active' : '';
-    },
-    'chapters': function() {
-      return chapters.find({});
-    },
-    activeIfChapterIs: function (template, chapterMenuItem) {
-      console.log(chapterMenuItem);
-    },
-    chapter: function() {
-      if(Session.get("chapter")) {
-        return true;
-      }
-      else return false;
-    }
-})
 
 Meteor.subscribe('favorites', function onReady() {
   Session.set('favoritesLoaded', true);
@@ -105,4 +65,3 @@ Handlebars.registerHelper('userIsVerified', function(){
   }
 
 });
-

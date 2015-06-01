@@ -3,3 +3,9 @@ Template.home.events({
     Router.go("/page/sponsor");
   }
 })
+
+Template.home.helpers({
+  'featuredTalks': function() {
+    return videos.find({});
+  }
+})

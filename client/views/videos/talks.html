@@ -1,7 +1,7 @@
 <template name="talks">
   <!-- <img class="full-width banner animated fadeIn" src="/images/banners/talks.jpg"> -->
   <div class="filters">
-    <nav class="animated bounceInDown navbar navbar-default" role="navigation">
+    <nav class="animated fadeIn navbar navbar-default" role="navigation">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
             <li class="icon-nav "><a href="/"><i class="icon-filter"></i></a></li>
@@ -41,4 +41,51 @@
   <div class="container-fluid talks">
     {{> videos allvideos}}
   </div>
+</template>
+
+<template name="talk">
+  <article class="talk__content content__item content__item--show animated fadeInUp">
+    <div class="back-button back">
+      <i class="icon-thumbnails-1"></i>
+      <span class="text">
+        Back to talks
+      </span>
+    </div>
+    {{#if currentUser}}
+    <ul class="toolbar">
+      <li>
+        <a href="/talk/edit/{{this._id}}" class="edit">
+          <i class="icon-pencil-2"></i>
+          Edit
+        </a>
+      </li>
+      <li>
+        <a href="#" class="delete">
+          <i class="icon-bin-2"></i>
+          Delete
+        </a>
+      </li>
+    </ul>
+    {{/if}}
+    <span class="tile-category category--full">{{this.category}}</span>
+    <h2 class="tile-title title--full">{{this.title}}</h2>
+    <div class="meta meta--full">
+      <!-- <img class="meta__avatar" src="img/authors/1.png" alt="author01" /> -->
+      <span class="meta__author">{{this.speaker}}</span>
+    </div>
+    <hr class="space extra-space-top">
+    <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <hr class="space">
+    <ul class="share-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&text=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&via=tedxcapetown" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Twitter.png"></a></li>
+      <li><a href="https://plus.google.com/share?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Google+.png"></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/Pinterest.png"></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&title=&summary=&source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/LinkedIn.png"></a></li>
+      <li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Email.png"></a></li>
+    </ul>
+    <hr class="space extra-space-top">
+    <hr class="dashed">
+    {{#markdown}}{{this.description}}{{/markdown}}
+  </article>
 </template>

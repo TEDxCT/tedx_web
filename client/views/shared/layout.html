@@ -30,17 +30,24 @@
         <img src="/images/logo_white.png" class="logo link home" >
       </div>
       <div class="nav-links">
-        <div class="link talks">Talks</div>
+        <div class="link talks">Watch</div>
         <div class="link events">Events</div>
-        <div class="link about">About</div>
-        <div class="link updates"><i class="icon-megaphone-1-1"></i></div>
+        <div class="link about">Connect</div>
+        <div class="link updates">Blog</div>
+        <div class="link search">
+          <i class="icon-magnifier"></i>
+        </div>
+        {{#if currentUser}}
+        <div class="link profile">
+          <i class="icon-profile"></i>
+        </div>
+        {{else}}
+        <div class="link profile login">
+          <i class="icon-profile"></i> Login
+        </div>
+        {{/if}}
       </div>
-      <div class="search">
-        <i class="icon-magnifier"></i>
-      </div>
-      <div class="profile">
 
-      </div>
     </section>
     {{> yield}}
     {{> footer}}
@@ -70,7 +77,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,100,400' rel='stylesheet' type='text/css'>
     <link href="https://fontastic.s3.amazonaws.com/KMscZPbco5cxLZSpmnpaA7/icons.css" rel="stylesheet">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <meta name="fragment" content="!">    
+    <meta name="fragment" content="!">
 </template>
 
 <template name="adminMenu">
@@ -83,6 +90,7 @@
           {{#if userIsVerified}}
             <li><a href="/manage/speakers">Speakers</a></li>
             <li><a href="/manage/categories">Categories</a></li>
+            <li><a href="/manage/talks/new">Add Talk</a></li>
           {{else}}
           <p>You need to verify your email address before you can administer this website.</p>
             <li><a class="resendVerificationEmail">Resend verification email</a></li>
