@@ -38,15 +38,20 @@ fi;
 # mysql -u [user] -p[pass] -e "[mysql commands]"
 # mysql -h "https://arya.texo.co.za:2083" -u "carla" "333" "tedxcape_drup" < "videos.sql"
 
-# perl -pi -e 's/field_video_description/description/g' videos.json
-# perl -pi -e 's/title/name/title/g' videos.json
-# perl -pi -e 's/field_video_embed/url/g' videos.json
-# perl -pi -e 's/field_video_provider/provider/g' videos.json
-# perl -pi -e 's/field_video_data/data/g' videos.json
-# perl -pi -e 's/field_video_duration/duration/g' videos.json
-# perl -pi -e 's/field_video_value/videoId/g' videos.json
-# perl -pi -e 's/\"{/{/g' videos.json
-perl -pi -e 's/"published": 1/"published": true/g' videos.json
+# perl -pi -e "s/field_video_description/description/g" videos.json
+# perl -pi -e "s/title/name/title/g" videos.json
+# perl -pi -e "s/field_video_embed/url/g" videos.json
+# perl -pi -e "s/field_video_provider/provider/g" videos.json
+# perl -pi -e "s/field_video_data/data/g" videos.json
+# perl -pi -e "s/field_video_duration/duration/g" videos.json
+# perl -pi -e "s/field_video_value/videoId/g" videos.json
+# perl -pi -e "s/\{/{/g" videos.json
+perl -pi -e "s/\"published\": 1/\"published\": true/g" videos.json
+
+# perl -pi -e "s/name:/\"name\":/g" videos.json
+
+# perl -pi -e "s/name:/\"name\":/g" videos.json
+# perl -pi -e "s/webURLs:/\"webURLs\":/g" videos.json
 
 
 mongo $host/$mongo_db -u $user -p $pass --eval "db.videos.drop()"
