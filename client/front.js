@@ -65,3 +65,7 @@ Handlebars.registerHelper('userIsVerified', function(){
   }
 
 });
+
+Handlebars.registerHelper('formatId', function(data) {
+    return (data && data._str) || data;
+});

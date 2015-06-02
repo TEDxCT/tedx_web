@@ -3,7 +3,7 @@
     <div id="theGrid" class="main animated fadeIn">
           <section class="grid">
             {{#each this}}
-            <a class="talk-tile" href="/talk/{{this._id}}" >
+            <a class="talk-tile" href="/talk/{{formatId this._id}}" >
               <div class="top">
                 <span class="tile-category">{{this.category}}</span>
                 <h2 class="tile-title title--preview">{{this.title}}</h2>

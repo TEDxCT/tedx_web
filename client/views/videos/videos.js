@@ -9,7 +9,7 @@ Template['videos'].helpers({
     var videoFav = favorites.findOne({"doc":this._id});
     if(videoFav) return true;
     return false;
-  }
+  },
 });
 
 Template.videos.events({
