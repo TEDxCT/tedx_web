@@ -69,3 +69,12 @@ Handlebars.registerHelper('userIsVerified', function(){
 Handlebars.registerHelper('formatId', function(data) {
     return (data && data._str) || data;
 });
+
+Handlebars.registerHelper('objectsWithIndex', function(objects) {
+
+  for(var i = 0; i<objects.length; i++) {
+      objects[i].index = i;
+  }
+
+  return objects;
+});
