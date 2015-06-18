@@ -63,9 +63,52 @@ Template.editTalk.events({
 
 Template.tagTalk.events({
   'click .update': function() {
-    var level = $(".level");
+    var industry = [];
+    $('.industry input:checked').each(function() {
+      industry.push($(this).attr('value'));
+    });
+
+    var level = [];
+    $('.level input:checked').each(function() {
+      level.push($(this).attr('value'));
+    });
+
+    var subject = [];
+    $('.subject input:checked').each(function() {
+      subject.push($(this).attr('value'));
+    });
+
+    var talk = this;
+
+    categories = new Object()
+    categories.levels = level;
+    categories.subjects = subject;
+    categories.industries = industry;
+    videos.update(this._id, {$set: {categories: categories}});
+    Router.go("/talk/" + this._id);
+
   },
   'click .cancel': function() {
     Router.go("/talk/" + this._id);
   }
 })
+
+
+Template.tagTalk.rendered = function() {
+  var levels = this.data.categories.levels;
+  $(levels).each(function(){
+    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+  });
+
+  var subjects = this.data.categories.subjects;
+  $(subjects).each(function(){
+    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+
+  });
+
+  var industries = this.data.categories.industries;
+  $(industries).each(function(){
+    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+  });
+
+}
