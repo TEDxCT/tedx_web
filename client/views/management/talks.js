@@ -19,18 +19,23 @@ Template.editTalk.events({
     talk.title = $(".titleText").val();
 
     var speaker = this.speaker;
+    if (this.speaker == "" || this.speaker == undefined) {
+      speaker = new Object();
+    }
     speaker.name = $(".speakerText").val();
     var webURLs = [];
-    for (i=0; i<speaker.webURLs.length; i++) {
-      var webURL = Object();
-      webURL.title = $(".urlTitle_" + i).val()
-      webURL.url = $(".url_" + i).val()
-      if (webURL.title != "" && webURL.url != "") {
-        webURLs.push(webURL);
+    if (speaker.webURLs != undefined) {
+      for (i=0; i<speaker.webURLs.length; i++) {
+        var webURL = Object();
+        webURL.title = $(".urlTitle_" + i).val()
+        webURL.url = $(".url_" + i).val()
+        if (webURL.title != "" && webURL.url != "") {
+          webURLs.push(webURL);
+        }
       }
+      speaker.webURLs = webURLs;
     }
 
-    speaker.webURLs = webURLs;
     talk.speaker = speaker;
     talk.videoId = $(".videoId").val();
     talk.category = $(".categoryText").val();
