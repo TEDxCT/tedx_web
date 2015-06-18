@@ -124,16 +124,17 @@
         <iframe width="100%" height="250" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="col-md-5">
-        <h1>Tag <i>{{this.title}}</i><br /><small> by <i>{{this.speaker}}</i></small></h1>
+        <h1>Tag <i>{{this.title}}</i><br /><small> by <i>{{this.speaker.name}}</i></small></h1>
       </div>
     </div>
     <hr class="extra-space-top dashed">
+    <form class="tagForm">
     <h2>Categories</h2>
     <p>Select as many categories as required to add context and meaning to this video. If you need to add a category please contact the meta data team.</p>
     <div class="row stages">
       <div class="col-md-6 stage first-stage">
         <h4>Level<br><small>Choose a level</small></h4>
-        <ul class="tags-manager tags-layout-list">
+        <ul class="tags-manager tags-layout-list level">
           <li class="tag"><input type="checkbox"> Planetary</li>
           <li class="tag"><input type="checkbox"> Global</li>
           <li class="tag"><input type="checkbox"> Continental</li>
@@ -148,7 +149,7 @@
       </div>
       <div class="col-md-6 last-stage">
         <h4>Subject Level<br><small>Choose a subject</small></h4>
-        <ul class="tags-manager tags-layout-list">
+        <ul class="tags-manager tags-layout-list subject">
           <li class="tag"><input type="checkbox"> Political</li>
           <li class="tag"><input type="checkbox"> Legal</li>
           <li class="tag"><input type="checkbox"> Physiological/Biological</li>
@@ -162,7 +163,7 @@
       </div>
     </div>
       <h4>Industry</h4>
-      <ul class="tags-manager tags-layout-grid">
+      <ul class="tags-manager tags-layout-grid industry">
         <li class="tag"><input type="checkbox"> Arts & Culture</li>
         <li class="tag"><input type="checkbox"> Engineering</li>
         <li class="tag"><input type="checkbox"> Education</li>
@@ -192,6 +193,9 @@
         <li class="tag"><input type="checkbox"> Research</li>
         <li class="tag"><input type="checkbox"> Food & Beverage</li>
       </ul>
-
+      <button type="button" class="btn btn-secondary cancel">Cancel</button>
+      <button type="button" class="btn btn-primary update">Update</button>
+    </form>
   </div>
+
 </template>

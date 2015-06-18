@@ -59,3 +59,13 @@ Template.editTalk.events({
     Router.go("/talk/" + this._id);
   }
 })
+
+
+Template.tagTalk.events({
+  'click .update': function() {
+    var level = $(".level");
+  },
+  'click .cancel': function() {
+    Router.go("/talk/" + this._id);
+  }
+})
