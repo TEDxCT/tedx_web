@@ -186,3 +186,45 @@ section {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2600', endColorstr='#f84c2e', GradientType=1 );
 	}
 }
+
+.row.stages {
+	border: 1px solid @secondaryColor;
+	margin: 0;
+
+	ul {
+		list-style: none;
+
+		.li {
+
+		}
+	}
+
+	.first-stage {
+		background-color: @lightGray;
+		border-right: 1px dashed @secondaryColor;
+
+		&:after {
+		  content: '';
+		  position: absolute;
+		  top: 40%;
+		  right: -22px;
+		  border-right: 11px solid transparent;
+		  border-left:  11px solid @secondaryColor;
+		  border-top: 11px solid transparent;
+			border-bottom: 11px solid transparent;
+		}
+	}
+	.last-stage {
+		border: none;
+	}
+}
+
+.tags-manager {
+	&.tags-layout-grid {
+		li {
+			display: inline-block;
+			width: 300px;
+			padding-bottom: 10px;
+		}
+	}
+}

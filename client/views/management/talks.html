@@ -87,3 +87,83 @@
     </form>
   </div>
 </template>
+
+<template name="tagTalk">
+  <div class="container-fluid">
+    <hr class="space extra-space-top">
+    <div class="row">
+      <div class="col-md-5">
+        <iframe width="100%" height="250" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-5">
+        <h1>Tag <i>{{this.title}}</i><br /><small> by <i>{{this.speaker}}</i></small></h1>
+      </div>
+    </div>
+    <hr class="extra-space-top dashed">
+    <h2>Categories</h2>
+    <p>Select as many categories as required to add context and meaning to this video. If you need to add a category please contact the meta data team.</p>
+    <div class="row stages">
+      <div class="col-md-6 stage first-stage">
+        <h4>Level<br><small>Choose a level</small></h4>
+        <ul class="tags-manager tags-layout-list">
+          <li class="tag"><input type="checkbox"> Planetary</li>
+          <li class="tag"><input type="checkbox"> Global</li>
+          <li class="tag"><input type="checkbox"> Continental</li>
+          <li class="tag"><input type="checkbox"> Regional</li>
+          <li class="tag"><input type="checkbox"> National</li>
+          <li class="tag"><input type="checkbox"> Institutional</li>
+          <li class="tag"><input type="checkbox"> Organisational</li>
+          <li class="tag"><input type="checkbox"> Group</li>
+          <li class="tag"><input type="checkbox"> Individual</li>
+          <li class="tag"><input type="checkbox"> Cellular</li>
+        </ul>
+      </div>
+      <div class="col-md-6 last-stage">
+        <h4>Subject Level<br><small>Choose a subject</small></h4>
+        <ul class="tags-manager tags-layout-list">
+          <li class="tag"><input type="checkbox"> Political</li>
+          <li class="tag"><input type="checkbox"> Legal</li>
+          <li class="tag"><input type="checkbox"> Physiological/Biological</li>
+          <li class="tag"><input type="checkbox"> Psychological</li>
+          <li class="tag"><input type="checkbox"> Economic</li>
+          <li class="tag"><input type="checkbox"> Cultural</li>
+          <li class="tag"><input type="checkbox"> Social</li>
+          <li class="tag"><input type="checkbox"> Environmental</li>
+          <li class="tag"><input type="checkbox"> Technological</li>
+        </ul>
+      </div>
+    </div>
+      <h4>Industry</h4>
+      <ul class="tags-manager tags-layout-grid">
+        <li class="tag"><input type="checkbox"> Arts & Culture</li>
+        <li class="tag"><input type="checkbox"> Engineering</li>
+        <li class="tag"><input type="checkbox"> Education</li>
+        <li class="tag"><input type="checkbox"> Health Care</li>
+        <li class="tag"><input type="checkbox"> Sports</li>
+        <li class="tag"><input type="checkbox"> Financial</li>
+        <li class="tag"><input type="checkbox"> Travel</li>
+        <li class="tag"><input type="checkbox"> Public Service</li>
+        <li class="tag"><input type="checkbox"> Agriculture</li>
+        <li class="tag"><input type="checkbox"> Advertising & Communications</li>
+        <li class="tag"><input type="checkbox"> Space Travel</li>
+        <li class="tag"><input type="checkbox"> Legal</li>
+        <li class="tag"><input type="checkbox"> Manufacturing</li>
+        <li class="tag"><input type="checkbox"> Retail</li>
+        <li class="tag"><input type="checkbox"> Automotive</li>
+        <li class="tag"><input type="checkbox"> Broadcasting/Publishing</li>
+        <li class="tag"><input type="checkbox"> Biotechnology</li>
+        <li class="tag"><input type="checkbox"> Chemical</li>
+        <li class="tag"><input type="checkbox"> Technology</li>
+        <li class="tag"><input type="checkbox"> Real Estate</li>
+        <li class="tag"><input type="checkbox"> Cosmetics</li>
+        <li class="tag"><input type="checkbox"> Defense</li>
+        <li class="tag"><input type="checkbox"> Telecommunications</li>
+        <li class="tag"><input type="checkbox"> Energy</li>
+        <li class="tag"><input type="checkbox"> Entertainment & Leisure</li>
+        <li class="tag"><input type="checkbox"> Transportation</li>
+        <li class="tag"><input type="checkbox"> Research</li>
+        <li class="tag"><input type="checkbox"> Food & Beverage</li>
+      </ul>
+
+  </div>
+</template>
