@@ -88,7 +88,7 @@ function createNewAccount(options) {
         $(".help-block.error-password").addClass("hidden");
         Accounts.createUser(options, function(error) {
           if(error) {
-            FlashMessages.sendError("There was an error creating your account, please check al fields are complete and correct.");
+            FlashMessages.sendError("There was an error creating your account, please check all fields are complete and correct.");
           }
           else Router.go("/");
         });
