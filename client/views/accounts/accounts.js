@@ -27,6 +27,19 @@ Template.manage.helpers({
   }
 });
 
+Template.manage.events({
+	'click .logout': function(even, template) {
+		Meteor.logout();
+    Router.go("/login");
+	},
+	'click .resendVerificationEmail': function(event, template) {
+		Meteor.call('resendVerificationEmail', function (error, result) {
+			if(error) FlashMessages.sendError("There was an error sending the verfication message.");
+			else FlashMessages.sendSuccess("Great! Sending... Check your email.");
+		} );
+	}
+});
+
 Template.createUser.events({
   'click .createUser': function(event, template) {
     var options = new Object();
