@@ -43,8 +43,8 @@ Template.adminMenu.events({
 Template.default.helpers({
 	"color": function() {
 		return "red";
-	}
-})
+	},
+});
 
 Template.default.events({
 	'click .link.home': function() {
@@ -62,7 +62,10 @@ Template.default.events({
 	'click .link.updates': function() {
 		Router.go("updates");
 	},
-	'click .link.profile': function() {
+	'click .link.profile.login': function() {
 		Router.go("login");
+	},
+	'click .link.profile.manage': function() {
+		Router.go("manage");
 	},
 })

@@ -20,6 +20,13 @@ Template.login.events({
   }
 })
 
+Template.manage.helpers({
+	"username": function() {
+		var user = Meteor.user();
+    return user.emails[0].address;
+  }
+});
+
 Template.createUser.events({
   'click .createUser': function(event, template) {
     var options = new Object();
