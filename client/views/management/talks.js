@@ -18,11 +18,9 @@ Template.editTalk.events({
     var talk = new Object();
     talk.title = $(".titleText").val();
 
-    var speaker = this.speaker;
-    if (this.speaker == "" || this.speaker == undefined) {
-      speaker = new Object();
-    }
+    var speaker = new Object();
     speaker.name = $(".speakerText").val();
+
     var webURLs = [];
     if (speaker.webURLs != undefined) {
       for (i=0; i<speaker.webURLs.length; i++) {
@@ -50,9 +48,12 @@ Template.editTalk.events({
     var newURL = new Object();
     newURL.url = "";
     newURL.title = "";
+    if(talk.speaker.webURLs==undefined) {
+      talk.speaker.webURLs = [];
+    }
     newURL.index = talk.speaker.webURLs.length
     talk.speaker.webURLs.push(newURL);
-    videos.update(this._id, {$set: talk})
+    // videos.update({"_id":this._id}, {$set: talk})
     return false;
   },
   'click .cancel': function() {
@@ -93,22 +94,42 @@ Template.tagTalk.events({
   }
 })
 
+Template.registerHelper("isCategoryChecked", function (categoryType, categoryValue) {
+  if(this.categories) {
+      Session.set("thingy", this);
+      var talk = this;
+      if(this.categories[categoryType].indexOf(categoryValue)>-1) {
+        return true;
+      }
+      else {
+        return false;
+      }
+  }
+});
 
-Template.tagTalk.rendered = function() {
-  var levels = this.data.categories.levels;
-  $(levels).each(function(){
-    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
-  });
 
-  var subjects = this.data.categories.subjects;
-  $(subjects).each(function(){
-    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
-
-  });
-
-  var industries = this.data.categories.industries;
-  $(industries).each(function(){
-    var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
-  });
-
-}
+// Template.tagTalk.rendered = function() {
+//   // console.log("Levels");
+//   // console.dir(this);
+//   var levels = this.data.categories.levels;
+//
+//   $(levels).each(function(){
+//     // console.log("Level");
+//     // // console.log(level);
+//     // console.log("This");
+//     // console.log(this)
+//     var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+//   });
+//
+//   var subjects = this.data.categories.subjects;
+//   $(subjects).each(function(){
+//     var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+//
+//   });
+//
+//   var industries = this.data.categories.industries;
+//   $(industries).each(function(){
+//     var checkbox = $(":checkbox[value=" + this + "]").prop("checked", true);
+//   });
+//
+// }

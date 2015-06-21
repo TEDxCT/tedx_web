@@ -71,10 +71,9 @@ Handlebars.registerHelper('formatId', function(data) {
 });
 
 Handlebars.registerHelper('objectsWithIndex', function(objects) {
-
+  // check(objects, Array);
   for(var i = 0; i<objects.length; i++) {
       objects[i].index = i;
   }
-
   return objects;
 });
