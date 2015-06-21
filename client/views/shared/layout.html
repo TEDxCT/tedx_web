@@ -18,7 +18,7 @@
 
 <template name="default">
   {{#if currentUser}}
-    {{> adminMenu}}  
+    {{> adminMenu}}
   {{/if}}
   {{> metaData}}
   <div class="background"></div>
@@ -36,7 +36,7 @@
           <i class="icon-magnifier"></i>
         </div>
         {{#if currentUser}}
-        <div class="link profile">
+        <div class="link profile manage">
           <i class="icon-profile"></i>
         </div>
         {{else}}
