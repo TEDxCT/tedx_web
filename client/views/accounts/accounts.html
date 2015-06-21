@@ -36,6 +36,17 @@
   </div>
   <div class="container-fluid centered">
     <h1>What would you like to do?</h1>
+    <ul>
+      {{#if userIsVerified}}
+        <li><a href="/manage/speakers">Speakers</a></li>
+        <li><a href="/manage/categories">Categories</a></li>
+        <li><a href="/manage/talks/new">Add Talk</a></li>
+      {{else}}
+      <p>You need to verify your email address before you can administer this website.</p>
+        <li><a class="resendVerificationEmail">Resend verification email</a></li>
+      {{/if}}
+      <li><a class="logout">Logout</a></li>
+    </ul>
     <button type="button" class="btn btn-primary logout">Log Out</button>
 </div>
 </template>
