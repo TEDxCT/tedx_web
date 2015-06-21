@@ -33,21 +33,42 @@
 <template name="manage">
   <div class="container-fluid red centered">
     <h1>Logged in as {{username}}</h1>
+    <button type="button" class="btn btn-secondary logout">Log Out</button>
+    <br/>
   </div>
+
   <div class="container-fluid centered">
+    {{#if userIsVerified}}
     <h1>What would you like to do?</h1>
-    <ul>
-      {{#if userIsVerified}}
-        <li><a href="/manage/speakers">Speakers</a></li>
-        <li><a href="/manage/categories">Categories</a></li>
-        <li><a href="/manage/talks/new">Add Talk</a></li>
+    <div class="row">
+        <div class=".col-xs-6 col-md-4">
+          <div class="manage_tile">
+            <i class="icon-profile"></i>
+            <div><a href="/manage/speakers">Manage Speakers</a></div>
+          </div>
+        </div>
+        <div class=".col-xs-6 col-md-4">
+          <div class="manage_tile">
+            <i class="icon-business-chart-2"></i>
+            <div><a href="/manage/categories">Analyse Categories</a></div>
+            </div>
+          </div>
+        <div class=".col-xs-6 col-md-4">
+          <div class="manage_tile">
+            <i class="icon-profile"></i>
+            <div><a href="/manage/talks/new">Add Talk</a></div>
+          </div>
+        </div>
+      </div>
       {{else}}
-      <p>You need to verify your email address before you can administer this website.</p>
-        <li><a class="resendVerificationEmail">Resend verification email</a></li>
+      <h1>You need to verify your email address before you can administer this website.</h1>
+        <div>
+          <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
+        </div>
+
       {{/if}}
-      <li><a class="logout">Logout</a></li>
-    </ul>
-    <button type="button" class="btn btn-primary logout">Log Out</button>
+      <br/>
+
 </div>
 </template>
 
