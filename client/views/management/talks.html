@@ -135,63 +135,63 @@
       <div class="col-md-6 stage first-stage">
         <h4>Level<br><small>Choose a level</small></h4>
         <ul class="tags-manager tags-layout-list level">
-          <li class="tag"><input type="checkbox" value="planetary"> Planetary</li>
-          <li class="tag"><input type="checkbox" value="global"> Global</li>
-          <li class="tag"><input type="checkbox" value="continental"> Continental</li>
-          <li class="tag"><input type="checkbox" value="regional"> Regional</li>
-          <li class="tag"><input type="checkbox" value="national"> National</li>
-          <li class="tag"><input type="checkbox" value="institutional"> Institutional</li>
-          <li class="tag"><input type="checkbox" value="organisational"> Organisational</li>
-          <li class="tag"><input type="checkbox" value="group"> Group</li>
-          <li class="tag"><input type="checkbox" value="individual"> Individual</li>
-          <li class="tag"><input type="checkbox" value="cellular"> Cellular</li>
+          <li class="tag"><input type="checkbox" value="planetary" checked="{{isCategoryChecked 'levels' 'planetary'}}"> Planetary</li>
+          <li class="tag"><input type="checkbox" value="global" checked="{{isCategoryChecked 'levels' 'global'}}"> Global</li>
+          <li class="tag"><input type="checkbox" value="continental" checked="{{isCategoryChecked 'levels' 'continental'}}"> Continental</li>
+          <li class="tag"><input type="checkbox" value="regional" checked="{{isCategoryChecked 'levels' 'regional'}}"> Regional</li>
+          <li class="tag"><input type="checkbox" value="national" checked="{{isCategoryChecked 'levels' 'national'}}"> National</li>
+          <li class="tag"><input type="checkbox" value="institutional" checked="{{isCategoryChecked 'levels' 'institutional'}}"> Institutional</li>
+          <li class="tag"><input type="checkbox" value="organisational" checked="{{isCategoryChecked 'levels' 'organisational'}}"> Organisational</li>
+          <li class="tag"><input type="checkbox" value="group" checked="{{isCategoryChecked 'levels' 'group'}}"> Group</li>
+          <li class="tag"><input type="checkbox" value="individual" checked="{{isCategoryChecked 'levels' 'individual'}}"> Individual</li>
+          <li class="tag"><input type="checkbox" value="cellular" checked="{{isCategoryChecked 'levels' 'cellular'}}"> Cellular</li>
         </ul>
       </div>
       <div class="col-md-6 last-stage">
         <h4>Subject Level<br><small>Choose a subject</small></h4>
         <ul class="tags-manager tags-layout-list subject">
-          <li class="tag"><input type="checkbox" value="political"> Political</li>
-          <li class="tag"><input type="checkbox" value="legal"> Legal</li>
-          <li class="tag"><input type="checkbox" value="physiological_biological"> Physiological/Biological</li>
-          <li class="tag"><input type="checkbox" value="psychological"> Psychological</li>
-          <li class="tag"><input type="checkbox" value="economic"> Economic</li>
-          <li class="tag"><input type="checkbox" value="cultural"> Cultural</li>
-          <li class="tag"><input type="checkbox" value="social"> Social</li>
-          <li class="tag"><input type="checkbox" value="environmental"> Environmental</li>
-          <li class="tag"><input type="checkbox" value="technological"> Technological</li>
+          <li class="tag"><input type="checkbox" value="political" checked="{{isCategoryChecked 'subjects' 'political'}}"> Political</li>
+          <li class="tag"><input type="checkbox" value="legal" checked="{{isCategoryChecked 'subjects' 'legal'}}"> Legal</li>
+          <li class="tag"><input type="checkbox" value="physiological_biological" checked="{{isCategoryChecked 'subjects' 'physiological_biological'}}"> Physiological/Biological</li>
+          <li class="tag"><input type="checkbox" value="psychological" checked="{{isCategoryChecked 'subjects' 'psychological'}}"> Psychological</li>
+          <li class="tag"><input type="checkbox" value="economic" checked="{{isCategoryChecked 'subjects' 'economic'}}"> Economic</li>
+          <li class="tag"><input type="checkbox" value="cultural" checked="{{isCategoryChecked 'subjects' 'cultural'}}"> Cultural</li>
+          <li class="tag"><input type="checkbox" value="social" checked="{{isCategoryChecked 'subjects' 'social'}}"> Social</li>
+          <li class="tag"><input type="checkbox" value="environmental" checked="{{isCategoryChecked 'subjects' 'environmental'}}"> Environmental</li>
+          <li class="tag"><input type="checkbox" value="technological" checked="{{isCategoryChecked 'subjects' 'technological'}}"> Technological</li>
         </ul>
       </div>
     </div>
       <h4>Industry</h4>
       <ul class="tags-manager tags-layout-grid industry">
-        <li class="tag"><input type="checkbox" value="arts_and_culture"> Arts & Culture</li>
-        <li class="tag"><input type="checkbox" value="engineering"> Engineering</li>
-        <li class="tag"><input type="checkbox" value="education"> Education</li>
-        <li class="tag"><input type="checkbox" value="health_care"> Health Care</li>
-        <li class="tag"><input type="checkbox" value="sports"> Sports</li>
-        <li class="tag"><input type="checkbox" value="financial"> Financial</li>
-        <li class="tag"><input type="checkbox" value="travel"> Travel</li>
-        <li class="tag"><input type="checkbox" value="public_service"> Public Service</li>
-        <li class="tag"><input type="checkbox" value="agriculture"> Agriculture</li>
-        <li class="tag"><input type="checkbox" value="advertising"> Advertising & Communications</li>
-        <li class="tag"><input type="checkbox" value="space_travel"> Space Travel</li>
-        <li class="tag"><input type="checkbox" value="legal"> Legal</li>
-        <li class="tag"><input type="checkbox" value="manufacturing"> Manufacturing</li>
-        <li class="tag"><input type="checkbox" value="retail"> Retail</li>
-        <li class="tag"><input type="checkbox" value="automative"> Automotive</li>
-        <li class="tag"><input type="checkbox" value="broadcasting_publishing"> Broadcasting/Publishing</li>
-        <li class="tag"><input type="checkbox" value="biotechnology"> Biotechnology</li>
-        <li class="tag"><input type="checkbox" value="chemical"> Chemical</li>
-        <li class="tag"><input type="checkbox" value="technology"> Technology</li>
-        <li class="tag"><input type="checkbox" value="real_estate"> Real Estate</li>
-        <li class="tag"><input type="checkbox" value="cosmetics"> Cosmetics</li>
-        <li class="tag"><input type="checkbox" value="defense"> Defense</li>
-        <li class="tag"><input type="checkbox" value="telecommunications"> Telecommunications</li>
-        <li class="tag"><input type="checkbox" value="energy"> Energy</li>
-        <li class="tag"><input type="checkbox" value="entertainment"> Entertainment & Leisure</li>
-        <li class="tag"><input type="checkbox" value="transportation"> Transportation</li>
-        <li class="tag"><input type="checkbox" value="research"> Research</li>
-        <li class="tag"><input type="checkbox" value="food_and_beverage"> Food & Beverage</li>
+        <li class="tag"><input type="checkbox" value="arts_and_culture" checked="{{isCategoryChecked 'industries' 'arts_and_culture'}}"> Arts & Culture</li>
+        <li class="tag"><input type="checkbox" value="engineering" checked="{{isCategoryChecked 'industries' 'engineering'}}"> Engineering</li>
+        <li class="tag"><input type="checkbox" value="education" checked="{{isCategoryChecked 'industries' 'education'}}"> Education</li>
+        <li class="tag"><input type="checkbox" value="health_care" checked="{{isCategoryChecked 'industries' 'health_care'}}"> Health Care</li>
+        <li class="tag"><input type="checkbox" value="sports" checked="{{isCategoryChecked 'industries' 'sports'}}"> Sports</li>
+        <li class="tag"><input type="checkbox" value="financial" checked="{{isCategoryChecked 'industries' 'financial'}}"> Financial</li>
+        <li class="tag"><input type="checkbox" value="travel" checked="{{isCategoryChecked 'industries' 'travel'}}"> Travel</li>
+        <li class="tag"><input type="checkbox" value="public_service" checked="{{isCategoryChecked 'industries' 'public_service'}}"> Public Service</li>
+        <li class="tag"><input type="checkbox" value="agriculture" checked="{{isCategoryChecked 'industries' 'agriculture'}}"> Agriculture</li>
+        <li class="tag"><input type="checkbox" value="advertising" checked="{{isCategoryChecked 'industries' 'advertising'}}"> Advertising & Communications</li>
+        <li class="tag"><input type="checkbox" value="space_travel" checked="{{isCategoryChecked 'industries' 'space_travel'}}"> Space Travel</li>
+        <li class="tag"><input type="checkbox" value="legal" checked="{{isCategoryChecked 'industries' 'legal'}}"> Legal</li>
+        <li class="tag"><input type="checkbox" value="manufacturing" checked="{{isCategoryChecked 'industries' 'manufacturing'}}"> Manufacturing</li>
+        <li class="tag"><input type="checkbox" value="retail" checked="{{isCategoryChecked 'industries' 'retail'}}"> Retail</li>
+        <li class="tag"><input type="checkbox" value="automative" checked="{{isCategoryChecked 'industries' 'automative'}}"> Automotive</li>
+        <li class="tag"><input type="checkbox" value="broadcasting_publishing" checked="{{isCategoryChecked 'industries' 'broadcasting_publishing'}}"> Broadcasting/Publishing</li>
+        <li class="tag"><input type="checkbox" value="biotechnology" checked="{{isCategoryChecked 'industries' 'biotechnology'}}"> Biotechnology</li>
+        <li class="tag"><input type="checkbox" value="chemical" checked="{{isCategoryChecked 'industries' 'chemical'}}"> Chemical</li>
+        <li class="tag"><input type="checkbox" value="technology" checked="{{isCategoryChecked 'industries' 'technology'}}"> Technology</li>
+        <li class="tag"><input type="checkbox" value="real_estate" checked="{{isCategoryChecked 'industries' 'real_estate'}}"> Real Estate</li>
+        <li class="tag"><input type="checkbox" value="cosmetics" checked="{{isCategoryChecked 'industries' 'cosmetics'}}"> Cosmetics</li>
+        <li class="tag"><input type="checkbox" value="defense" checked="{{isCategoryChecked 'industries' 'defense'}}"> Defense</li>
+        <li class="tag"><input type="checkbox" value="telecommunications" checked="{{isCategoryChecked 'industries' 'telecommunications'}}"> Telecommunications</li>
+        <li class="tag"><input type="checkbox" value="energy" checked="{{isCategoryChecked 'industries' 'energy'}}"> Energy</li>
+        <li class="tag"><input type="checkbox" value="entertainment" checked="{{isCategoryChecked 'industries' 'entertainment'}}"> Entertainment & Leisure</li>
+        <li class="tag"><input type="checkbox" value="transportation" checked="{{isCategoryChecked 'industries' 'transportation'}}"> Transportation</li>
+        <li class="tag"><input type="checkbox" value="research" checked="{{isCategoryChecked 'industries' 'research'}}"> Research</li>
+        <li class="tag"><input type="checkbox" value="food_and_beverage" checked="{{isCategoryChecked 'industries' 'food_and_beverage'}}"> Food & Beverage</li>
       </ul>
       <button type="button" class="btn btn-secondary cancel">Cancel</button>
       <button type="button" class="btn btn-primary update">Update</button>
