@@ -1,4 +1,4 @@
-Template['videos'].helpers({
+Template.watch.helpers({
   "videos" : function() {
     return videos.find({});
   },
@@ -12,7 +12,7 @@ Template['videos'].helpers({
   },
 });
 
-Template.videos.events({
+Template.watch.events({
   'click .talk': function(event, template) {
     Router.go("talk");
   },

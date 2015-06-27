@@ -50,8 +50,8 @@ Template.default.events({
 	'click .link.home': function() {
 		Router.go("/");
 	},
-	'click .link.talks': function() {
-		Router.go("talks");
+	'click .link.watch': function() {
+		Router.go("watch");
 	},
 	'click .link.events': function() {
 		Router.go("events");

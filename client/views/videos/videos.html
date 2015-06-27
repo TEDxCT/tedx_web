@@ -1,30 +1,26 @@
 <template name="videos">
-    {{#if videosLoaded}}
-    <div id="theGrid" class="main animated fadeIn">
-          <section class="grid">
-            {{#each this}}
-            <a class="talk-tile" href="/talk/{{formatId this._id}}" >
-              <div class="top">
-                <span class="tile-category">{{this.category}}</span>
-                <h2 class="tile-title title--preview">{{this.title}}</h2>
-              </div>
-              <div class="play">
-                <img src="/images/play_triangle.png">
-              </div>
-              <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
+  <div id="theGrid" class="main animated fadeIn">
+        <section class="grid">
+          {{#each this}}
+          <a class="talk-tile" href="/talk/{{formatId this._id}}" >
+            <div class="top">
+              <span class="tile-category">{{this.category}}</span>
+              <h2 class="tile-title title--preview">{{this.title}}</h2>
+            </div>
+            <div class="play">
+              <img src="/images/play_triangle.png">
+            </div>
+            <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
 
-              </div> -->
-            </a>
-            {{/each}}
-          </section>
-        </div>
-    {{else}}
-      <div class="loader">Loading...</div>
-    {{/if}}
+            </div> -->
+          </a>
+          {{/each}}
+        </section>
+      </div>
 </template>
 
 <template name="video">
-  <article class="video animated bounceInUp">
+  <article class="video animated fadeIn">
     <iframe class="video" width="390" height="390" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}" frameborder="0" allowfullscreen></iframe>
     {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
     <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">

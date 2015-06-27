@@ -44,12 +44,14 @@
 </template>
 
 <template name="talk">
-  <article class="talk__content content__item content__item--show animated fadeInUp">
+  <article class="talk__content content__item content__item--show animated fadeIn">
     <div class="back-button back">
-      <i class="icon-thumbnails-1"></i>
-      <span class="text">
-        Back to talks
-      </span>
+      <a href="{{pathFor route='watch'}}">
+        <i class="icon-thumbnails-1"></i>
+        <span class="text">
+          Back to talks
+        </span>
+      </a>
     </div>
     {{#if currentUser}}
     <ul class="toolbar">
