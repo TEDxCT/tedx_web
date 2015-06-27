@@ -30,6 +30,7 @@ foldor:bootstrap-3@3.2.0-1
 fortawesome:fontawesome@4.3.0
 geojson-utils@1.0.3
 gwendall:body-events@0.1.6
+handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -72,6 +73,7 @@ mrt:datatables-bootstrap3@0.1.0
 mrt:flash-messages@1.0.0
 multiply:iron-router-progress@1.0.1
 natestrauser:animate-css@3.2.6
+natestrauser:filepicker-plus@1.2.3
 npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3

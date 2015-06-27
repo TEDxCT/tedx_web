@@ -13,5 +13,12 @@ Template.editArticle.events({
   'click .onoffswitch-checkbox': function() {
     console.log("Publishing article");
     posts.update({"_id": this._id}, {$set: {"published":  $("#publishSwitch").is(":checked")}});
+  },
+  'click .upload': function() {
+    var self = this;
+    filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
+      console.log(Blob);
+      posts.update({"_id": self._id}, {$set: {"cover": Blob.url}});
+    });
   }
 })
