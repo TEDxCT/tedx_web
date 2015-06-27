@@ -60,7 +60,7 @@ Template.default.events({
 		Router.go("about");
 	},
 	'click .link.news': function() {
-		Router.go("news");
+		Router.go("posts");
 	},
 	'click .link.profile.login': function() {
 		Router.go("login");

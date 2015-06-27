@@ -3,14 +3,18 @@
     <h1>Choose a type for your post</h1>
     <hr class="extra-space-top dashed">
     <div class="row postTypeSelector">
-      <div class="col-md-3 postType">
-        <i class="icon-text-wrapping-2"></i>
-        <h4>Article</h4>
-      </div>
-      <div class="col-md-3 postType">
-        <i class="icon-megaphone-1"></i>
-        <h4>Announcement</h4>
-      </div>
+
+        <div class="col-md-3 postType article">
+          <i class="icon-text-wrapping-2"></i>
+          <h4>Article</h4>
+        </div>
+
+
+        <div class="col-md-3 postType">
+          <i class="icon-megaphone-1"></i>
+          <h4>Announcement</h4>
+        </div>
+
       <div class="col-md-3 postType">
         <i class="icon-icomoon"></i>
         <h4>Social (Coming soon)</h4>
@@ -23,9 +27,30 @@
   </div>
 </template>
 
-<template name="articleTile">
-  <div class="tile article">
-    <h3 class="title">{{this.title}}</h3>
-    <p>{{this.summary}}</p>
+<template name="editArticle">
+  <div class="container-fluid">
+    <h1>{{> editableText collection="posts" field="title"}}</h1>
+    <hr class="dashed">
+    {{> editableText collection="posts" trustHtml=true textarea=true field="body" wysiwyg=true}}
+    <hr class="dashed">
+    <div class="form-group">
+      <label for="descriptionText">Publish Article?</label>
+      <p>Published artciles will appear in the "news" section of the website and will be searchable.</p>
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+        <label class="onoffswitch-label" for="publishSwitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+    </div>
+    <hr class="dashed">
+
+  </div>
+</template>
+
+<template name="newAnnouncement">
+  <div class="container-fluid">
+    <h1>New Announcement</h1>
   </div>
 </template>
