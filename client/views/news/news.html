@@ -1,0 +1,23 @@
+<template name="news">
+  <div class="container-fluid">
+    {{#if userIsVerified}}
+      <button>New Post</buton>
+    {{/if}}
+    <h4>Latest News</h4>
+    {{> articleTile mostRecent}}
+    {{#each latest}}
+      {{> articleTile this}}
+    {{/each}}
+    <h4>Interesting Reads</h4>
+    {{#each interesting}}
+      {{> articleTile this}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="articleTile">
+  <div class="tile article">
+    <h3 class="title">{{this.title}}</h3>
+    <p>{{this.summary}}</p>
+  </div>
+</template>

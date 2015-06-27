@@ -1,0 +1,31 @@
+<template name="newPost">
+  <div class="container-fluid">
+    <h1>Choose a type for your post</h1>
+    <hr class="extra-space-top dashed">
+    <div class="row postTypeSelector">
+      <div class="col-md-3 postType">
+        <i class="icon-text-wrapping-2"></i>
+        <h4>Article</h4>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-megaphone-1"></i>
+        <h4>Announcement</h4>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-icomoon"></i>
+        <h4>Social (Coming soon)</h4>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-photo"></i>
+        <h4>Image (Coming soon)</h4>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="articleTile">
+  <div class="tile article">
+    <h3 class="title">{{this.title}}</h3>
+    <p>{{this.summary}}</p>
+  </div>
+</template>
