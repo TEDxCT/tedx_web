@@ -56,13 +56,13 @@
     {{#if currentUser}}
     <ul class="toolbar">
       <li>
-        <a href="/talk/tag/{{formatId this._id}}" class="tag">
+        <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
           <i class="icon-tags"></i>
           Tag
         </a>
       </li>
       <li>
-        <a href="/talk/edit/{{formatId this._id}}" class="edit">
+        <a href="{{pathFor route='talks.edit' data=talk}}" class="edit">
           <i class="icon-pencil-2"></i>
           Edit
         </a>

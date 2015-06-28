@@ -8,6 +8,11 @@ Template.talk.helpers({
   "datatest": function() {
     console.dir(this);
     return "adasd";
+  },
+  'talk': function() {
+    var modifiedVideoObject = this;
+    modifiedVideoObject._id = formattedId(this._id);
+    return modifiedVideoObject;
   }
 });
 
