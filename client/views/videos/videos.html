@@ -2,41 +2,10 @@
   <div id="theGrid" class="main animated fadeIn">
         <section class="grid">
           {{#each this}}
-          <a class="talk-tile" href="/talk/{{formatId this._id}}" >
-            <div class="top">
-              <span class="tile-category">{{this.category}}</span>
-              <h2 class="tile-title title--preview">{{this.title}}</h2>
-            </div>
-            <div class="play">
-              <img src="/images/play_triangle.png">
-            </div>
-            <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
-
-            </div> -->
-          </a>
+            {{> talkTile this}}
           {{/each}}
         </section>
       </div>
-</template>
-
-<template name="video">
-  <article class="video animated fadeIn">
-    <iframe class="video" width="390" height="390" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}" frameborder="0" allowfullscreen></iframe>
-    {{#if currentUser}}<button class="edit btn-small btn">Edit</button>
-    <button class="favorite icon-button {{#if favorited}}favorited{{/if}}">
-      <i class="icon-star"></i>
-    </button>
-    {{/if}}
-    <div class="actions">
-      <div class="avatar">
-        <img src="{{this.avatar}}">
-      </div>
-      <div class="title">{{this.name}}</div>
-      <div class="sub-title">{{this.description}}</div>
-    </div>
-    <div class="overlay"></div>
-    {{#if currentUser}}{{> editvideo this}}{{/if}}
-  </article>
 </template>
 
 <template name="menu">
@@ -49,4 +18,19 @@
     <button class="zoom medium">Medium</button>
     <button class="zoom large">Large</button>
   </div>
+</template>
+
+<template name="talkTile">
+  <a class="talk-tile" href="{{pathFor route='talks.show' data=videoId}}" >    
+    <div class="top">
+      <span class="tile-category">{{this.category}}</span>
+      <h2 class="tile-title title--preview">{{this.title}}</h2>
+    </div>
+    <div class="play">
+      <img src="/images/play_triangle.png">
+    </div>
+    <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
+
+    </div> -->
+  </a>
 </template>

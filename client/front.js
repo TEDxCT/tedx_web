@@ -65,6 +65,10 @@ Handlebars.registerHelper('formatId', function(data) {
     return (data && data._str) || data;
 });
 
+formattedId = function(data) {
+  return (data && data._str) || data;
+}
+
 Handlebars.registerHelper('objectsWithIndex', function(objects) {
   // check(objects, Array);
   for(var i = 0; i<objects.length; i++) {
