@@ -1,0 +1,117 @@
+<template name="editor">
+  <div class="container-fluid">
+    {{#if layoutIs 'article'}}
+      <h3>{{this.title}}</h3>
+    {{/if}}
+  {{#each this.sections}}
+    {{> Template.dynamic template=this.type data=this}}
+    <hr class="dashed" />
+  {{/each}}
+  {{> chooseSection}}
+  {{> actions}}
+  </div>
+</template>
+
+<template name="actions">
+  <div class="full-width-bottom-bar">
+    <div class="toast animated bounceInUp cancelPrompt hidden">
+      <i class="icon-bubble-attention-2"></i>
+      <h3>Did you mean to do that?</h3>
+      <p>It won’t be possible to get back any content you have not saved.</p>
+      <ul class="actions">
+        <li class="action back">No, don’t do anything!</li>
+        <li class="action primary cancelApproved">Yes! Cancel my changes</li>
+      </ul>
+    </div>
+    <div class="toast animated bounceInUp deletePrompt hidden">
+      <i class="icon-bubble-attention-2"></i>
+      <h3>Did you mean to do that?</h3>
+      <p>It won’t be possible to get back any content you have not saved.</p>
+      <ul class="actions">
+        <li class="action back">No, don’t do anything!</li>
+        <li class="action primary deleteApproved">Yes! Delete this post</li>
+      </ul>
+    </div>
+    <div class="editor-actions">
+      <ul class="pull-left">
+        <li class="action warning delete"><i class="icon-document-box-1"></i> Delete</li>
+      </ul>
+      <ul class="pull-right">
+        <li class="action cancel"><i class="icon-arrow-67-1"></i> Back</li>
+        <li class="action primary save">
+          {{#if saved}}<i class="icon-check-1" ></i> Saved{{else}}<i class="icon-save"></i> Save{{/if}}</li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="text">
+  <div class="row">
+    <div class="col-md-11">
+      <section class="text padded forSaving editable">
+          {{{this.content}}}
+      </section>
+    </div>
+    <div class="col-md-1">
+      <i class="icon-cross remove"></i>
+    </div>
+  </div>
+
+</template>
+
+<template name="image">
+  <section class="image forSaving">
+    <img src="{{this.source}}" class="full-width upload" unique={{unique}}>
+  </section>
+</template>
+
+<template name="chooseSection">
+  <div class="container-fluid">
+    {{#if saved}}
+    <h1>Add a section to this page</h1>
+    <hr class="extra-space-top dashed">
+    <div class="row postTypeSelector">
+      <div class="col-md-3 sectionType text">
+        <i class="icon-text-wrapping-2"></i>
+        <h4>Text</h4>
+        <p>Adds a text based section to your page. This includes tables, headings and paragraphs.</p>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-photo"></i>
+        <h4>Image</h4>
+        <p>Adds a section with one or more images to your post.</p>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-bubble-chat-1"></i>
+        <h4>Quote (Coming soon)</h4>
+        <p>Adds a section with nice big text and space for a author.</p>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-ticket-1"></i>
+        <h4>Event (Coming soon)</h4>
+        <p>Insert an event either past or present to this page.</p>
+      </div>
+    </div>
+    <div class="row postTypeSelector">
+      <div class="col-md-3 postType article">
+        <i class="icon-camera-symbol-1"></i>
+        <h4>Talk (Coming soon)</h4>
+        <p>Let users watch a talk right from your page.</p>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-profile"></i>
+        <h4>Speaker (Coming soon)</h4>
+        <p>Add a speakers profile to your page.</p>
+      </div>
+      <div class="col-md-3 postType">
+
+      </div>
+      <div class="col-md-3 postType">
+
+      </div>
+    </div>
+    {{else}}
+      <p>Save your changes before you can add another section</p>
+    {{/if}}
+  </div>
+</template>

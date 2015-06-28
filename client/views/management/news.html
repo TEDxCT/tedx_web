@@ -39,7 +39,7 @@
   </div>
 </template>
 
-<template name="editArticle">
+<!-- <template name="editArticle">
   <div class="container-fluid">
     <h1>{{> editableText collection="posts" field="title"}}</h1>
     <hr class="dashed">
@@ -63,8 +63,11 @@
       <button class="upload btn">Add image</button>
     </div>
     <hr class="dashed">
-
   </div>
+</template> -->
+
+<template name="editArticle">
+  {{> editor this layout='article'}}
 </template>
 
 <template name="newAnnouncement">

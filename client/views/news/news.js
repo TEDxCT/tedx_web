@@ -13,14 +13,14 @@ Template.news.helpers({
 Template.articleTile.helpers({
   'summary': function() {
     if((this.summary==undefined)||(this.summary=="")) {
-      return this.body.substring(0,200) + "...";
+      // return this.body.substring(0,200) + "...";
     }
     return this.summary;
   }
 });
 
 Template.showArticle.events({
-  'click .delete': function() {    
+  'click .delete': function() {
     posts.update({"_id": this._id}, {$set: {"archive":  true}});
     Router.go("/News");
   }
