@@ -1,27 +1,61 @@
 <template name="newPost">
   <div class="container-fluid">
+      <div class="pageHeader">
+        <div class="back-button back">
+          <a href="{{pathFor route='posts'}}" class="noLink">
+            <i class="icon-thumbnails-1"></i>
+            <span class="text">
+              Back to news
+            </span>
+          </a>
+        </div>
+      {{#if currentUser}}
+      <ul class="toolbar">
+        <li>
+          <a href="/talk/tag/{{formatId this._id}}" class="tag">
+            <i class="icon-tags"></i>
+            Tag
+          </a>
+        </li>
+        <li>
+          <a href="{{pathFor route='posts.edit.article' data=this}}" class="edit">
+            <i class="icon-pencil-2"></i>
+            Edit
+          </a>
+        </li>
+        <li>
+          <a href="#" class="delete">
+            <i class="icon-bin-2"></i>
+            Delete
+          </a>
+        </li>
+      </ul>
+      {{/if}}
+    </div>
+</div>
+  <div class="container-fluid">
     <h1>Choose a type for your post</h1>
     <hr class="extra-space-top dashed">
     <div class="row postTypeSelector">
-
-        <div class="col-md-3 postType article">
-          <i class="icon-text-wrapping-2"></i>
-          <h4>Article</h4>
-        </div>
-
-
-        <div class="col-md-3 postType">
-          <i class="icon-megaphone-1"></i>
-          <h4>Announcement</h4>
-        </div>
-
+      <div class="col-md-3 postType article">
+        <i class="icon-text-wrapping-2"></i>
+        <h4>Article</h4>
+        <p>For news, stories or general updates that require text, video, images and other media.</p>
+      </div>
+      <div class="col-md-3 postType">
+        <i class="icon-megaphone-1"></i>
+        <h4>Announcement</h4>
+        <p>For quick updates that are limited to 400 text characters.</p>
+      </div>
       <div class="col-md-3 postType">
         <i class="icon-icomoon"></i>
         <h4>Social (Coming soon)</h4>
+        <p>For connecting social media posts to the news section.</p>
       </div>
       <div class="col-md-3 postType">
         <i class="icon-photo"></i>
         <h4>Image (Coming soon)</h4>
+        <p>For updates that contain one or more images.</p>
       </div>
     </div>
   </div>
