@@ -18,10 +18,10 @@ isAdminUser = function() {
   return false;
 }
 
-trackPageView = function() {
+trackPageView = function(page_type, page_name) {
   var mixpixel = new Object();
-  mixpixel.page_type = 'normal';
-  mixpixel.page_name = 'watch';
+  mixpixel.page_type = page_type;
+  mixpixel.page_name = page_name;
   mixpixel.user_type = userType();
   mixpanel.track('View', mixpixel);
 }

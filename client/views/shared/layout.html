@@ -30,7 +30,9 @@
         <img src="/images/logo_white.png" class="logo link home" >
       </div>
       <div class="nav-links">
-        <div class="link watch">Watch</div>
+        <div class="link watch">
+          <a href="{{pathFor route='watch'}}">Watch</a>
+        </div>
         <div class="link events">Events</div>
         <div class="link about">Connect</div>
         <div class="link news">News</div>
@@ -38,9 +40,11 @@
           <i class="icon-magnifier"></i>
         </div>
         {{#if currentUser}}
-        <div class="link profile manage">
-          <i class="icon-profile"></i>
-        </div>
+        <a href="{{pathFor route='admin'}}" class="noLink">
+          <div class="link profile manage">
+            <i class="icon-profile"></i>
+          </div>
+        </a>
         {{else}}
         <div class="link profile login">
           <i class="icon-profile"></i> Login
