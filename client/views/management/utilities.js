@@ -21,8 +21,27 @@ Template.editor.helpers({
   'saved': function() {
     if(Session.get("unsavedChanges")==undefined) return true;
     else return !Session.get("unsavedChanges");
+  },
+  'modifiedThis': function() {
+    // Return a modified data object with edtiable set to true
+    var modifiedThis = this;
+    modifiedThis.editable = true;
+    return modifiedThis;
   }
 });
+
+Template.viewer.helpers({
+  'layoutIs': function(layoutType) {
+    if(layoutType==this.type) return true;
+    else return false;
+  },
+  'modifiedThis': function() {
+    // Return a modified data object with edtiable set to false
+    var modifiedThis = this;
+    modifiedThis.edtiable = false;
+    return modifiedThis;
+  }
+})
 
 Template.text.events({
   'click .editable': function(event, template) {
@@ -96,6 +115,8 @@ Template.actions.events({
     });
     Session.set("unsavedChanges", false);
     posts.update({"_id": this._id}, {$set: {"sections":  formattedSections}});
+
+    saveTemplateSpecificData(this, template);
     // Router.go("posts.show", this);
   },
   // Making sure any unsaved changes don't get thrown away
@@ -132,3 +153,20 @@ Template.actions.events({
     Router.go("posts");
   },
 });
+
+function saveTemplateSpecificData(doc, template) {
+  console.log(doc);
+  var templateFields = new Object();
+
+  if(doc.type="article") {
+    templateFields.title = $(".title")[0].innerText;
+    templateFields.summary = $(".summary")[0].innerText;
+  }
+
+  var published = $(".publishedSwitch");
+  if(published!=undefined) templateFields.published = published.is(":checked");
+  else templateFields.published = false;
+
+  console.dir(templateFields);
+  posts.update({"_id": doc._id}, {$set: templateFields});
+}

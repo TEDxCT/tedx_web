@@ -1,14 +1,27 @@
 <template name="editor">
   <div class="container-fluid">
     {{#if layoutIs 'article'}}
-      <h3>{{this.title}}</h3>
+      <h3 contenteditable="true" class="title">{{this.title}}</h3>
+      <p contenteditable="true" class="summary">{{this.summary}}</p>
     {{/if}}
   {{#each this.sections}}
-    {{> Template.dynamic template=this.type data=this}}
+    {{> Template.dynamic template=this.type data=modifiedThis}}
     <hr class="dashed" />
   {{/each}}
   {{> chooseSection}}
   {{> actions}}
+  </div>
+</template>
+
+<template name="viewer">
+  <div class="container-fluid">
+    {{#if layoutIs 'article'}}
+      <h3 class="title">{{this.title}}</h3>
+      <p class="summary">{{this.summary}}</p>
+    {{/if}}
+  {{#each this.sections}}
+    {{> Template.dynamic template=this.type data=modifiedThis}}
+  {{/each}}
   </div>
 </template>
 
@@ -46,6 +59,7 @@
 </template>
 
 <template name="text">
+  {{#if this.editable}}
   <div class="row">
     <div class="col-md-11">
       <section class="text padded forSaving editable">
@@ -56,7 +70,9 @@
       <i class="icon-cross remove"></i>
     </div>
   </div>
-
+  {{else}}
+   {{{this.content}}}
+ {{/if}}
 </template>
 
 <template name="image">

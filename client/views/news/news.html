@@ -72,12 +72,13 @@
   </div>
     <article class="animated fadeIn reader">
     <div class="clear"></div>
-          <h2 >{{this.title}}</h2>
+          <!-- <h2 >{{this.title}}</h2>
           <hr class="space extra-space-top">
           <hr class="dashed">
           <img src="{{this.cover}}" class="full-width">
           {{{this.body}}}
-          <hr class="space">
+          <hr class="space"> -->
+          {{> viewer this}}
           <h4>Share this</h4>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
