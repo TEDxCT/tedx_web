@@ -8,6 +8,11 @@ Template.talk.helpers({
   "datatest": function() {
     console.dir(this);
     return "adasd";
+  },
+  'talk': function() {
+    var modifiedVideoObject = this;
+    modifiedVideoObject._id = formattedId(this._id);
+    return modifiedVideoObject;
   }
 });
 
@@ -19,9 +24,6 @@ Template.talks.events({
 });
 
 Template.talk.events({
-  'click .back': function(event, template) {
-    Router.go("/talks");
-  },
   'click .delete': function() {
     videos.update(this._id, {$set: {"archive":true}});
     Router.go("talks");

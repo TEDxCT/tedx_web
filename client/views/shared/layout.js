@@ -29,7 +29,7 @@ Template.adminMenu.events({
 	'click .voteLink': function() {
 		Router.go("manage.speakers");
 	},
-	'click .logout': function(even, template) {
+	'click .logout': function(event, template) {
 		Meteor.logout();
 	},
 	'click .resendVerificationEmail': function(event, template) {
@@ -50,22 +50,16 @@ Template.default.events({
 	'click .link.home': function() {
 		Router.go("/");
 	},
-	'click .link.talks': function() {
-		Router.go("talks");
-	},
 	'click .link.events': function() {
 		Router.go("events");
 	},
 	'click .link.about': function() {
 		Router.go("about");
 	},
-	'click .link.updates': function() {
-		Router.go("updates");
+	'click .link.news': function() {
+		Router.go("posts");
 	},
 	'click .link.profile.login': function() {
 		Router.go("login");
-	},
-	'click .link.profile.manage': function() {
-		Router.go("manage");
 	},
 })

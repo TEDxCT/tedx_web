@@ -6,6 +6,10 @@ aldeed:autoform@4.2.2
 aldeed:collection2@2.3.3
 aldeed:simple-schema@1.3.2
 autoupdate@1.2.1
+babrahams:editable-text@0.7.26
+babrahams:editable-text-wysiwyg@0.4.18
+babrahams:editable-text-wysiwyg-bootstrap-3@0.3.21
+babrahams:transactions@0.6.21
 base64@1.0.3
 binary-heap@1.0.3
 blaze@2.1.2
@@ -14,14 +18,20 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
 chuangbo:cookie@1.1.0
+citizenkevin:medium-editor@1.0.1
 coffeescript@1.0.6
+dburles:mongo-collection-instances@0.3.3
 ddp@1.1.0
 deps@1.0.7
+djedi:sanitize-html@1.6.1
 ejson@1.0.6
 email@1.0.6
 fastclick@1.0.3
 foldor:bootstrap-3@3.2.0-1
+fortawesome:fontawesome@4.3.0
 geojson-utils@1.0.3
+gwendall:body-events@0.1.6
+handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -38,11 +48,13 @@ isotope:isotope@2.1.0_1
 jquery@1.11.3_2
 jquery-waypoints@1.0.3
 json@1.0.3
+lai:collection-extensions@0.1.3
 launch-screen@1.0.2
 less@1.0.14
 livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
+mantarayar:shortid@0.0.1
 manuelschoebel:ms-seo@0.4.1
 markdown@1.0.4
 meteor@1.1.6
@@ -63,6 +75,7 @@ mrt:datatables-bootstrap3@0.1.0
 mrt:flash-messages@1.0.0
 multiply:iron-router-progress@1.0.1
 natestrauser:animate-css@3.2.6
+natestrauser:filepicker-plus@1.2.3
 npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
@@ -76,6 +89,7 @@ sergeyt:typeahead@0.10.5_14
 service-configuration@1.0.4
 session@1.1.0
 sha@1.0.3
+socialize:server-time@0.1.1
 spacebars@1.0.6
 spacebars-compiler@1.0.6
 spiderable@1.0.7
@@ -88,3 +102,4 @@ underscore@1.0.3
 url@1.0.4
 webapp@1.2.0
 webapp-hashing@1.0.3
+yogiben:mixpanel@0.0.7

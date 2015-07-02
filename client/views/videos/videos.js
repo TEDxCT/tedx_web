@@ -1,4 +1,4 @@
-Template['videos'].helpers({
+Template.watch.helpers({
   "videos" : function() {
     return videos.find({});
   },
@@ -12,21 +12,16 @@ Template['videos'].helpers({
   },
 });
 
-Template.videos.events({
+Template.watch.events({
   'click .talk': function(event, template) {
     Router.go("talk");
   },
 });
 
-Template.video.events({
-
-    'click .favorite': function(event, template) {
-      var videoFav = favorites.findOne({"doc":this._id});
-      if(videoFav){
-        favorites.update({"_id":videoFav._id}, {$set: {"archived":true}});
-      }
-      else {
-        var favorite = favorites.insert({"owner": Meteor.userId(), "type": "video", "doc": this._id});
-      }
-    },
+Template.talkTile.helpers({
+  'videoId': function() {
+    var modifiedVideoObject = this;
+    modifiedVideoObject._id = formattedId(this._id);
+    return modifiedVideoObject;
+  }
 });

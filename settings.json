@@ -1,0 +1,10 @@
+{
+  "public": {
+    "filepicker" : {
+      "key":"A3zo8DgItQxiOLaCAjmwUz"
+    },
+    "mixpanel": {
+     "token": "9976e885df4bcd8d87deb6285612820c"
+   }
+  }
+}

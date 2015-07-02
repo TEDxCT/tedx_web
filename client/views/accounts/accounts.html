@@ -32,9 +32,15 @@
 
 <template name="manage">
   <div class="container-fluid red centered">
+    {{#if userIsVerified}}
+    <ul class="toolbar">
+      <li class="logout">
+        <i class="icon-tags"></i>
+        Log out
+      </li>
+    </ul>
+    {{/if}}
     <h1>Logged in as {{username}}</h1>
-    <button type="button" class="btn logout">Log Out</button>
-    <br/>
   </div>
 
   <div class="container-fluid centered">
@@ -42,10 +48,12 @@
     <h1>What would you like to do?</h1>
     <div class="row">
         <div class=".col-xs-6 col-md-4">
-          <div class="manage_tile">
-            <i class="icon-profile"></i>
-            <div><a href="/manage/speakers">Manage Speakers</a></div>
-          </div>
+          <a href="{{pathFor route='speakers'}}" class="noLink">
+            <div class="manage_tile">
+              <i class="icon-profile"></i>
+              <div>Manage Speakers</div>
+            </div>
+          </a>
         </div>
         <div class=".col-xs-6 col-md-4">
           <div class="manage_tile">
@@ -54,10 +62,12 @@
             </div>
           </div>
         <div class=".col-xs-6 col-md-4">
-          <div class="manage_tile">
-            <i class="icon-profile"></i>
-            <div><a href="/manage/talks/new">Add Talk</a></div>
-          </div>
+          <a href="{{pathFor route='posts.new'}}" class="noLink">
+            <div class="manage_tile">
+              <i class="icon-profile"></i>
+              <div>Add Talk</div>
+            </div>
+          </a>
         </div>
       </div>
       {{else}}

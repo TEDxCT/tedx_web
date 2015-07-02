@@ -58,17 +58,16 @@ Handlebars.registerHelper('isEqual', function(string1, string2) {
 });
 
 Handlebars.registerHelper('userIsVerified', function(){
-  if(Meteor.user()!=undefined) {
-    if(Meteor.user().emails[0].verified==true) {
-      return Meteor.user().emails[0].verified;
-    }
-  }
-
+  return isAdminUser();
 });
 
 Handlebars.registerHelper('formatId', function(data) {
     return (data && data._str) || data;
 });
+
+formattedId = function(data) {
+  return (data && data._str) || data;
+}
 
 Handlebars.registerHelper('objectsWithIndex', function(objects) {
   // check(objects, Array);

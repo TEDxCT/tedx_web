@@ -45,6 +45,18 @@
 
 <template name="editTalk">
   <div class="container-fluid">
+      <div class="pageHeader">
+        <div class="back-button back">
+          <a href="{{pathFor route='talks.show'}}" class="noLink">
+            <i class="icon-thumbnails-1"></i>
+            <span class="text">
+              Back to talk
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
     <h1>Edit <i>{{this.title}}</i><br /><small> by <i>{{this.speaker.name}}</i></small></h1>
     <hr class="extra-space-top dashed">
     <form>
@@ -114,6 +126,18 @@
 </template>
 
 <template name="tagTalk">
+  <div class="container-fluid">
+      <div class="pageHeader">
+        <div class="back-button back">
+          <a href="{{pathFor route='talks.show'}}" class="noLink">
+            <i class="icon-thumbnails-1"></i>
+            <span class="text">
+              Back to talk
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
   <div class="container-fluid">
     <hr class="space extra-space-top">
     <div class="row">
