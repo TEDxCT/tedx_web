@@ -45,16 +45,54 @@ Template.editTalk.events({
   },
   'click .add_url': function() {
     var talk = this;
+    var urls = Session.get("weburls");
+
+    if(urls==undefined) {
+      urls = [];
+    }
     var newURL = new Object();
     newURL.url = "";
     newURL.title = "";
-    if(talk.speaker.webURLs==undefined) {
-      talk.speaker.webURLs = [];
-    }
-    newURL.index = talk.speaker.webURLs.length
-    talk.speaker.webURLs.push(newURL);
+    newURL.index = urls.length
+    urls.push(newURL);
+    Session.set("weburls", urls);
+
     // videos.update({"_id":this._id}, {$set: talk})
     return false;
+  },
+  'click .delete_url': function() {
+    var urls = Session.get("weburls");
+    console.log(this.index);
+
+    var index = this.index;
+    console.log("Index " + index)
+    if (index > -1) {
+      console.log("splicing");
+
+      urls.splice(index, 1);
+    }
+
+    console.log(urls);
+
+    Session.set("weburls", urls);
+
+    return false;
+
+    // var talk = this;
+    // var urls = Session.get("weburls");
+    //
+    // if(urls==undefined) {
+    //   urls = [];
+    // }
+    // var newURL = new Object();
+    // newURL.url = "";
+    // newURL.title = "";
+    // newURL.index = urls.length
+    // urls.push(newURL);
+    // Session.set("weburls", urls);
+    //
+    // // videos.update({"_id":this._id}, {$set: talk})
+    // return false;
   },
   'click .cancel': function() {
     Router.go("/talk/" + this._id);
@@ -105,6 +143,20 @@ Template.registerHelper("isCategoryChecked", function (categoryType, categoryVal
         return false;
       }
   }
+});
+
+Template.registerHelper('speakerWebURLs', function() {
+  var objects = Session.get("weburls");
+  if(objects==undefined && this.speaker!=undefined && this.speaker.webURLs!=undefined) {
+    objects = this.speaker.webURLs;
+    Session.set("weburls", objects);
+  }
+
+  for(var i = 0; i<objects.length; i++) {
+      objects[i].index = i;
+  }
+
+  return objects;
 });
 
 
