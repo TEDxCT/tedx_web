@@ -16,7 +16,7 @@ Template.tags.helpers({
     var configCategories = config.find({"name":"top"}).fetch();
     var index;
 
-    if(configCategories.length>0) {      
+    if(configCategories.length>0) {
       if (typeof configCategories[0] != 'undefined') {
         var cats = categories.find({"_id": {$not: {$in: configCategories}}});
         return cats;
