@@ -26,6 +26,7 @@ Template.editor.helpers({
     // Return a modified data object with edtiable set to true
     var modifiedThis = this;
     modifiedThis.editable = true;
+    modifiedThis.unique = ShortId.generate();
     return modifiedThis;
   }
 });
@@ -39,6 +40,7 @@ Template.viewer.helpers({
     // Return a modified data object with edtiable set to false
     var modifiedThis = this;
     modifiedThis.edtiable = false;
+    modifiedThis.unique = ShortId.generate();
     return modifiedThis;
   }
 })
@@ -49,19 +51,46 @@ Template.text.events({
     editor = new MediumEditor(elements);
     if(!event.isDefaultPrevented()) Session.set("unsavedChanges", true);
   },
+})
+
+Template.sectionQuickEdits.events({
   'click .remove': function(event, template) {
     $(template.find(".row")).remove();
     Session.set("unsavedChanges", true);
+  },
+  'click .order-up': function(event, template) {
+    var allSections = $(".forMoving");
+    var self = this;
+
+    allSections.each(function( index ) {
+      // If section is a text section
+      if($(this).is("#" + self.unique)){
+        $('#' + allSections[index-1].id).before(this.outerHTML);
+        $(this).remove();
+      }
+    })
+  },
+  'click .order-down': function(event, template) {
+    console.log("Going Down");
+    var allSections = $(".forMoving");
+    var self = this;
+
+    allSections.each(function( index ) {
+      // If section is a text section
+      if($(this).is("#" + self.unique)){
+        $('#' + allSections[index+1].id).after(this.outerHTML);
+        $(this).remove();
+      }
+    })
   }
 })
 
 Template.image.events({
   'click .upload': function(event, template) {
     var uniqueImageIdentifier = event.currentTarget.attributes.unique.textContent;
-    var selector = 'img[unique="' +uniqueImageIdentifier + '"]';
     var self = this;
     filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
-      $(selector).attr("src", Blob.url);
+      $('#' + uniqueImageIdentifier + " img").attr("src", Blob.url);
     });
   },
 })

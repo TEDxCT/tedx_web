@@ -41,7 +41,7 @@ Template.editTalk.events({
     talk.description = $(".talkDescription").val();
     talk.published = $("#publishSwitch").is(":checked");
     videos.update(this._id, {$set: talk});
-    Router.go("/talk/" + this._id);
+    Router.go("/talks/" + this._id);
   },
   'click .add_url': function() {
     var talk = this;
@@ -95,7 +95,7 @@ Template.editTalk.events({
     // return false;
   },
   'click .cancel': function() {
-    Router.go("/talk/" + this._id);
+    Router.go("/talks/" + this._id);
   }
 })
 
@@ -124,11 +124,11 @@ Template.tagTalk.events({
     categories.subjects = subject;
     categories.industries = industry;
     videos.update(this._id, {$set: {categories: categories}});
-    Router.go("/talk/" + this._id);
+    Router.go("/talks/" + this._id);
 
   },
   'click .cancel': function() {
-    Router.go("/talk/" + this._id);
+    Router.go("/talks/" + this._id);
   }
 })
 
