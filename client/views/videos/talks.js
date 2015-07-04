@@ -1,6 +1,23 @@
 Template.talks.helpers({
   "allvideos": function() {
-    return videos.find({"published": true});
+    var searchString = Session.get("search-term");
+    if(searchString) {
+
+      var someCursor = videos.find({ $or: [ { "title": searchString }, { "speaker.name": searchString } ] });
+      if(someCursor.count() == 0)
+      {
+          var search = ".*" + searchString + ".*";
+          return videos.find({ $or: [ {"title" : {$regex : search}}, { "speaker.name": {$regex : search} } ] });
+      }
+      else return someCursor.fetch();
+    }
+    else return videos.find({"published": true});;
+  },
+  "searchTerm": function() {
+    var searchTerm = Session.get("search-term");
+    if(searchTerm!=$(".search").val()) {
+      return Session.get("search-term");
+    }
   }
 });
 
@@ -17,9 +34,8 @@ Template.talk.helpers({
 });
 
 Template.talks.events({
-  'click .filter-category': function(event, template) {
-    console.dir(event);
-    event.preventDefault();
+  'keyup .search': function(event, template) {
+    Session.set("search-term", $(".search").val());
   }
 });
 
