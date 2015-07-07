@@ -89,8 +89,38 @@
           background: #f84c2e;
           color: white;
         }
-
       }
     }
+  }
+}
+
+.remove {
+  cursor: pointer;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+.order-down, .order-up {
+  cursor: pointer;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+.order-down {
+  &:hover {
+    position: relative;
+    bottom: -3px;
+  }
+}
+.order-up {
+  &:hover {
+    position: relative;
+    top: -3px;
   }
 }

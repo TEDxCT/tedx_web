@@ -3,27 +3,26 @@
   <div class="filters">
     <nav class="animated fadeIn navbar navbar-default" role="navigation">
       <div class="container-fluid">
-          <ul class="nav navbar-nav">
+        <input type="text" class="search" placeholder="Search by talk title or speakers name..." value={{searchTerm}}>
+        <p><small>Currently search is case sensitive. So if you're not getting results try lowecase or uppercase - <i class="icon-heart-1"></i> Tech team</small></p>
+          <!-- <ul class="nav navbar-nav">
             <li class="icon-nav "><a href="/"><i class="icon-filter"></i></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapter <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-title">TEDxCT Chapters</li>
-                <!-- <li><a href="{{ pathFor 'categories'}}">Manage categories</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href=""><input type="checkbox" class="filter-category"> Women</a></li>
-                <!-- <li><a href="{{ pathFor 'categories'}}">Technology</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Social <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-title">TEDxCT Chapters</li>
-                <!-- <li><a href="{{ pathFor 'categories'}}">Manage categories</a></li> -->
               </ul>
             </li>
           </ul>
@@ -34,7 +33,7 @@
             {{/if}}
             <li class="feedback"><a href="#feedback">Share</a></li>
 
-          </ul>
+          </ul> -->
       </div><!-- /.container-fluid -->
     </nav>
   </div>
@@ -46,7 +45,7 @@
 <template name="talk">
   <article class="talk__content content__item content__item--show animated fadeIn">
     <div class="back-button back">
-      <a href="{{pathFor route='watch'}}">
+      <a href="{{pathFor route='watch'}}" class="noLink">
         <i class="icon-thumbnails-1"></i>
         <span class="text">
           Back to talks

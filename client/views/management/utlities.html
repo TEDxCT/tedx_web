@@ -4,6 +4,16 @@
       <h3 contenteditable="true" class="title">{{this.title}}</h3>
       <p contenteditable="true" class="summary">{{this.summary}}</p>
     {{/if}}
+    <!-- <div class="section-organiser">
+      <div class="dropdown-arrow">
+        Organise
+      </div>
+      <div class="dropdown">
+        {{#each this.sections}}
+
+        {{/each}}
+      </div>
+    </div> -->
   {{#each this.sections}}
     {{> Template.dynamic template=this.type data=modifiedThis}}
     <hr class="dashed" />
@@ -60,14 +70,14 @@
 
 <template name="text">
   {{#if this.editable}}
-  <div class="row">
+  <div class="row forMoving" id={{this.unique}}>
     <div class="col-md-11">
-      <section class="text padded forSaving editable">
+      <section class="text padded forSaving editable" >
           {{{this.content}}}
       </section>
     </div>
     <div class="col-md-1">
-      <i class="icon-cross remove"></i>
+      {{> sectionQuickEdits this}}
     </div>
   </div>
   {{else}}
@@ -76,9 +86,21 @@
 </template>
 
 <template name="image">
-  <section class="image forSaving">
+  <section class="image forSaving forMoving" id={{unique}}>
     <img src="{{this.source}}" class="full-width upload" unique={{unique}}>
   </section>
+</template>
+
+<template name="sectionQuickEdits">
+  <div class="order-up">
+    <i class="icon-arrow-66"></i>
+  </div>
+  <div class="order-down">
+    <i class="icon-arrow-65"></i>
+  </div>
+  <hr class="more-space">
+  <i class="icon-cross remove"></i>
+
 </template>
 
 <template name="chooseSection">
