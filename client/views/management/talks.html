@@ -154,7 +154,7 @@
     <p>Select as many categories as required to add context and meaning to this video. If you need to add a category please contact the meta data team.</p>
     <div class="row stages">
       <div class="col-md-6 stage first-stage">
-        <h4>Level<br><small>Choose a level</small></h4>
+        <h4>Spatial Level<br><small>Choose a level</small></h4>
         <ul class="tags-manager tags-layout-list level">
           <li class="tag"><input type="checkbox" value="planetary" checked="{{isCategoryChecked 'levels' 'planetary'}}"> Planetary</li>
           <li class="tag"><input type="checkbox" value="global" checked="{{isCategoryChecked 'levels' 'global'}}"> Global</li>
@@ -162,7 +162,7 @@
           <li class="tag"><input type="checkbox" value="regional" checked="{{isCategoryChecked 'levels' 'regional'}}"> Regional</li>
           <li class="tag"><input type="checkbox" value="national" checked="{{isCategoryChecked 'levels' 'national'}}"> National</li>
           <li class="tag"><input type="checkbox" value="institutional" checked="{{isCategoryChecked 'levels' 'institutional'}}"> Institutional</li>
-          <li class="tag"><input type="checkbox" value="organisational" checked="{{isCategoryChecked 'levels' 'organisational'}}"> Organisational (NGO/Business/Etc)</li>
+          <li class="tag"><input type="checkbox" value="organisational" checked="{{isCategoryChecked 'levels' 'organisational'}}"> Organisational (NGO, Private Company, etc)</li>
           <li class="tag"><input type="checkbox" value="community" checked="{{isCategoryChecked 'levels' 'community'}}"> Community</li>
           <li class="tag"><input type="checkbox" value="tribe" checked="{{isCategoryChecked 'levels' 'tribe'}}"> Tribe</li>
           <li class="tag"><input type="checkbox" value="family" checked="{{isCategoryChecked 'levels' 'family'}}"> Family</li>
@@ -190,7 +190,8 @@
     </div>
       <h4>Industry</h4>
       <ul class="tags-manager tags-layout-grid industry">
-        <li class="tag"><input type="checkbox" value="arts_and_culture" checked="{{isCategoryChecked 'industries' 'arts_and_culture'}}"> Arts & Culture</li>
+        <li class="tag"><input type="checkbox" value="arts" checked="{{isCategoryChecked 'industries' 'arts'}}"> Arts</li>
+        <li class="tag"><input type="checkbox" value="culture" checked="{{isCategoryChecked 'industries' 'culture'}}"> Culture</li>
         <li class="tag"><input type="checkbox" value="engineering" checked="{{isCategoryChecked 'industries' 'engineering'}}"> Engineering</li>
         <li class="tag"><input type="checkbox" value="education" checked="{{isCategoryChecked 'industries' 'education'}}"> Education</li>
         <li class="tag"><input type="checkbox" value="health_care" checked="{{isCategoryChecked 'industries' 'health_care'}}"> Health Care</li>
@@ -199,7 +200,8 @@
         <li class="tag"><input type="checkbox" value="travel" checked="{{isCategoryChecked 'industries' 'travel'}}"> Travel</li>
         <li class="tag"><input type="checkbox" value="public_service" checked="{{isCategoryChecked 'industries' 'public_service'}}"> Public Service</li>
         <li class="tag"><input type="checkbox" value="agriculture" checked="{{isCategoryChecked 'industries' 'agriculture'}}"> Agriculture</li>
-        <li class="tag"><input type="checkbox" value="advertising" checked="{{isCategoryChecked 'industries' 'advertising'}}"> Advertising & Communications</li>
+        <li class="tag"><input type="checkbox" value="advertising" checked="{{isCategoryChecked 'industries' 'advertising'}}"> Advertising</li>
+        <li class="tag"><input type="checkbox" value="communication" checked="{{isCategoryChecked 'industries' 'communication'}}"> Communication</li>
         <li class="tag"><input type="checkbox" value="space_travel" checked="{{isCategoryChecked 'industries' 'space_travel'}}"> Space Travel</li>
         <li class="tag"><input type="checkbox" value="legal" checked="{{isCategoryChecked 'industries' 'legal'}}"> Legal</li>
         <li class="tag"><input type="checkbox" value="manufacturing" checked="{{isCategoryChecked 'industries' 'manufacturing'}}"> Manufacturing</li>
@@ -214,11 +216,18 @@
         <li class="tag"><input type="checkbox" value="defense" checked="{{isCategoryChecked 'industries' 'defense'}}"> Defense</li>
         <li class="tag"><input type="checkbox" value="telecommunications" checked="{{isCategoryChecked 'industries' 'telecommunications'}}"> Telecommunications</li>
         <li class="tag"><input type="checkbox" value="energy" checked="{{isCategoryChecked 'industries' 'energy'}}"> Energy</li>
-        <li class="tag"><input type="checkbox" value="entertainment" checked="{{isCategoryChecked 'industries' 'entertainment'}}"> Entertainment & Leisure</li>
+        <li class="tag"><input type="checkbox" value="entertainment" checked="{{isCategoryChecked 'industries' 'entertainment'}}"> Entertainment</li>
+        <li class="tag"><input type="checkbox" value="leisure" checked="{{isCategoryChecked 'industries' 'leisure'}}"> Leisure</li>
         <li class="tag"><input type="checkbox" value="transportation" checked="{{isCategoryChecked 'industries' 'transportation'}}"> Transportation</li>
         <li class="tag"><input type="checkbox" value="research" checked="{{isCategoryChecked 'industries' 'research'}}"> Research</li>
         <li class="tag"><input type="checkbox" value="food_and_beverage" checked="{{isCategoryChecked 'industries' 'food_and_beverage'}}"> Food & Beverage</li>
       </ul>
+      <!-- <h4>Keywords</h4>
+      <ul>
+        <li><input type="text" name="keyword1" placeholder="Add keyword..."></li>
+        <li><input type="text" name="keyword2" placeholder="Add keyword..."></li>
+        <li><input type="text" name="keyword3" placeholder="Add keyword..."></li>
+      </ul> -->
       <button type="button" class="btn btn-secondary cancel">Cancel</button>
       <button type="button" class="btn btn-primary update">Update</button>
     </form>
