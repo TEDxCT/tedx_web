@@ -222,12 +222,19 @@
         <li class="tag"><input type="checkbox" value="research" checked="{{isCategoryChecked 'industries' 'research'}}"> Research</li>
         <li class="tag"><input type="checkbox" value="food_and_beverage" checked="{{isCategoryChecked 'industries' 'food_and_beverage'}}"> Food & Beverage</li>
       </ul>
-      <!-- <h4>Keywords</h4>
-      <ul>
-        <li><input type="text" name="keyword1" placeholder="Add keyword..."></li>
-        <li><input type="text" name="keyword2" placeholder="Add keyword..."></li>
-        <li><input type="text" name="keyword3" placeholder="Add keyword..."></li>
-      </ul> -->
+
+      <h2>Keywords</h2>
+      <div class="form-group">
+        <label for="keywords">You can add keywords seperated by comma e.g. education, fun</label>
+        <input type="text" id="keywords" class="form-control" placeholder="Keywords..." value="{{this.keywords}}">
+      </div>
+      <h2>Short blurb</h2>
+      <div class="form-group">
+        <label for="keywords">Short sentences for marketing purposes e.g. Revolutionary new education technique!</label>
+        <input type="text" id="blurb1" class="form-control" placeholder="Blurb 1..." value="{{this.blurb1}}">
+        <input type="text" id="blurb2" class="form-control" placeholder="Blurb 2..." value="{{this.blurb2}}">
+        <input type="text" id="blurb3" class="form-control" placeholder="Blurb 3..." value="{{this.blurb3}}">
+      </div>
       <button type="button" class="btn btn-secondary cancel">Cancel</button>
       <button type="button" class="btn btn-primary update">Update</button>
     </form>
