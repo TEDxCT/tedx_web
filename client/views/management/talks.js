@@ -125,14 +125,11 @@ Template.tagTalk.events({
     categories.industries = industry;
 
     var commaSeparatedKeywords = $('#keywords').val();
-    console.log(commaSeparatedKeywords);
     keywords = commaSeparatedKeywords.split(',');
-    console.log(keywords);
 
     var blurb1 = $('#blurb1').val();
     var blurb2 = $('#blurb2').val();
     var blurb3 = $('#blurb3').val();
-    console.log(blurb1);
 
     videos.update(this._id, {$set: {categories: categories, keywords: keywords, blurb1: blurb1, blurb2:blurb2, blurb3:blurb3 }});
     Router.go("/talks/" + this._id);
