@@ -58,6 +58,7 @@ Handlebars.registerHelper('isEqual', function(string1, string2) {
 });
 
 Handlebars.registerHelper('userIsVerified', function(){
+  console.log("asadsads");
   return isAdminUser();
 });
 
