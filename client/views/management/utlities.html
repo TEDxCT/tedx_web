@@ -14,10 +14,12 @@
         {{/each}}
       </div>
     </div> -->
-  {{#each this.sections}}
-    {{> Template.dynamic template=this.type data=modifiedThis}}
-    <hr class="dashed" />
-  {{/each}}
+    <!-- {{#if renderActive}} -->
+      {{#each sections}}
+        {{> Template.dynamic template=this.type data=modifiedThis}}
+        <hr class="dashed" />
+      {{/each}}
+    <!-- {{/if}} -->
   {{> chooseSection}}
   {{> actions}}
   </div>
@@ -86,9 +88,20 @@
 </template>
 
 <template name="image">
-  <section class="image forSaving forMoving" id={{unique}}>
-    <img src="{{this.source}}" class="full-width upload" unique={{unique}}>
-  </section>
+  {{#if this.editable}}
+  <div class="row forMoving" id={{this.unique}}>
+    <div class="col-md-11">
+      <section class="image forSaving">
+        <img src="{{this.source}}" class="full-width upload" unique={{unique}}>
+      </section>
+    </div>
+    <div class="col-md-1">
+      {{> sectionQuickEdits this}}
+    </div>
+  </div>
+  {{else}}
+      <img src="{{this.source}}" class="full-width upload" unique={{unique}}>
+ {{/if}}
 </template>
 
 <template name="sectionQuickEdits">
@@ -100,7 +113,6 @@
   </div>
   <hr class="more-space">
   <i class="icon-cross remove"></i>
-
 </template>
 
 <template name="chooseSection">

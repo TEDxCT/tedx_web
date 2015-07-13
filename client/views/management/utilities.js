@@ -11,6 +11,9 @@ Template.editor.rendered = function(){
       return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
     }
   });
+
+  Session.set("sections", this.data.sections);
+  console.log(this.data);
 }
 
 Template.editor.helpers({
@@ -28,7 +31,10 @@ Template.editor.helpers({
     modifiedThis.editable = true;
     modifiedThis.unique = ShortId.generate();
     return modifiedThis;
-  }
+  },
+  'sections': function() {
+    return Session.get("sections");
+  },
 });
 
 Template.viewer.helpers({
@@ -59,29 +65,40 @@ Template.sectionQuickEdits.events({
     Session.set("unsavedChanges", true);
   },
   'click .order-up': function(event, template) {
-    var allSections = $(".forMoving");
-    var self = this;
-
-    allSections.each(function( index ) {
-      // If section is a text section
-      if($(this).is("#" + self.unique)){
-        $('#' + allSections[index-1].id).before(this.outerHTML);
-        $(this).remove();
-      }
-    })
+    // console.log("Going up");
+    // var allSections = $(".forMoving");
+    // var self = this;
+    //
+    // allSections.each(function( index ) {
+    //   // If section is a text section
+    //   if($(this).is("#" + self.unique)){
+    //     $('#' + allSections[index-1].id).before(this.outerHTML);
+    //     $(this).remove();
+    //   }
+    // })
+    var sections = Session.get("sections");
+    var b = sections[0];
+    sections[0] = sections[1];
+    sections[1] = b;
+    Session.set("sections", sections);
   },
   'click .order-down': function(event, template) {
-    console.log("Going Down");
-    var allSections = $(".forMoving");
-    var self = this;
-
-    allSections.each(function( index ) {
-      // If section is a text section
-      if($(this).is("#" + self.unique)){
-        $('#' + allSections[index+1].id).after(this.outerHTML);
-        $(this).remove();
-      }
-    })
+    // console.log("Going Down");
+    // var allSections = $(".forMoving");
+    // var self = this;
+    //
+    // allSections.each(function( index ) {
+    //   // If section is a text section
+    //   if($(this).is("#" + self.unique)){
+    //     $('#' + allSections[index+1].id).after(this.outerHTML);
+    //     $(this).remove();
+    //   }
+    // })
+    var sections = Session.get("sections");
+    var b = sections[1];
+    sections[1] = sections[0];
+    sections[0] = b;
+    Session.set("sections", sections);
   }
 })
 
