@@ -1,3 +1,16 @@
 <template name="watch">
     {{> talks this}}
 </template>
+
+<template name="live">
+  <div class="container-fluid">
+    <h2>Watch TEDx Simulcast</h2>
+    <p>Watch live streams of TEDx Cape Town events.</p>
+    <div class="map-actions">
+      <input type="text" class="search" placeholder="Search for a place..." id="autocomplete">
+    </div>
+    <div class="map-container">
+    {{> googleMap name="simulcastMap" options=simulcastMapOptions}}
+  </div>
+  </div>
+</template>

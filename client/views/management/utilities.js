@@ -10,14 +10,14 @@ Template.editor.rendered = function(){
       (e || window.event).returnValue = confirmationMessage; //Gecko + IE
       return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
     }
-  });  
+  });
 
   var modifiedSections = this.data.sections;
   for(var i = 0; i<modifiedSections.length; i++) {
     modifiedSections[i].index = i;
-  }  
+  }
 
-  Session.set("sections", modifiedSections);  
+  Session.set("sections", modifiedSections);
 }
 
 Template.editor.helpers({
@@ -64,34 +64,34 @@ Template.text.events({
 })
 
 Template.sectionQuickEdits.events({
-  'click .remove': function(event, template) {    
+  'click .remove': function(event, template) {
     var sectionsWithRemovedElement = Session.get("sections");
-    sectionsWithRemovedElement.splice(this.index,1);  
+    sectionsWithRemovedElement.splice(this.index,1);
     $(template.find(".row")).remove();
     Session.set("sections", sectionsWithRemovedElement);
     Session.set("unsavedChanges", true);
   },
   'click .order-up': function(event, template) {
-    var sections = Session.get("sections");    
-    
+    var sections = Session.get("sections");
+
     if(this.index!=0) {
-      var targetSection = sections[this.index];      
-      var switchSection = sections[this.index-1];      
+      var targetSection = sections[this.index];
+      var switchSection = sections[this.index-1];
       targetSection.index = this.index-1;
       switchSection.index = this.index;
 
       sections[targetSection.index] = targetSection;
       sections[switchSection.index] = switchSection;
 
-      Session.set("sections", sections);  
+      Session.set("sections", sections);
       Session.set("unsavedChanges", true);
-    } else FlashMessages.sendError("Aiming too high?");    
+    } else FlashMessages.sendError("Aiming too high?");
   },
   'click .order-down': function(event, template) {
-    var sections = Session.get("sections");    
-    
+    var sections = Session.get("sections");
+
     if(this.index!=sections.length-1) {
-      var targetSection = sections[this.index];      
+      var targetSection = sections[this.index];
       var switchSection = sections[this.index+1];
 
       targetSection.index = this.index+1;
@@ -99,7 +99,7 @@ Template.sectionQuickEdits.events({
 
       sections[targetSection.index] = targetSection;
       sections[switchSection.index] = switchSection;
-      Session.set("sections", sections);  
+      Session.set("sections", sections);
       Session.set("unsavedChanges", true);
     } else FlashMessages.sendError("Aiming too low?");
   }
@@ -107,10 +107,9 @@ Template.sectionQuickEdits.events({
 
 Template.image.events({
   'click .upload': function(event, template) {
-    var uniqueImageIdentifier = event.currentTarget.attributes.unique.textContent;
     var self = this;
     filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
-      $('#' + uniqueImageIdentifier + " img").attr("src", Blob.url);
+      $('#' + self.unique + ' img').attr("src", Blob.url);
     });
   },
 })
@@ -129,21 +128,21 @@ Template.chooseSection.helpers({
 })
 
 Template.chooseSection.events({
-  'click .sectionType.text':function() {    
+  'click .sectionType.text':function() {
     var newSection = {"type": "text", "content":"Click this text to edit it"};
-    posts.update({"_id": this._id}, {$push: {"sections":  newSection}});    
+    posts.update({"_id": this._id}, {$push: {"sections":  newSection}});
     var sections = Session.get("sections");
     newSection.index = sections.length;
     sections.push(newSection)
-    Session.set("sections", sections);  
+    Session.set("sections", sections);
   },
-  'click .sectionType.image':function() {    
+  'click .sectionType.image':function() {
     var newSection = {"type": "image", "source": "/images/default/image.png"};
-    posts.update({"_id": this._id}, {$push: {"sections":  newSection}});    
+    posts.update({"_id": this._id}, {$push: {"sections":  newSection}});
     var sections = Session.get("sections");
     newSection.index = sections.length;
     sections.push(newSection)
-    Session.set("sections", sections);  
+    Session.set("sections", sections);
   },
 })
 
@@ -176,7 +175,7 @@ Template.actions.events({
       }
     });
     Session.set("unsavedChanges", false);
-    posts.update({"_id": this._id}, {$set: {"sections":  formattedSections}});    
+    posts.update({"_id": this._id}, {$set: {"sections":  formattedSections}});
 
     saveTemplateSpecificData(this, template);
     // Router.go("posts.show", this);

@@ -6,6 +6,10 @@ Meteor.publish('votes', function () {
   return votes.find({});
 });
 
+Meteor.publish('live', function () {
+  return live.find({});
+});
+
 Meteor.publish('posts', function () {
   return posts.find({"archive": {$ne: true}});
 });
