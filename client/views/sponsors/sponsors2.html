@@ -1,14 +1,7 @@
-
 <template name="sponsors">
-  {{#if currentUser}}
-    <a href="" class="Add">
-      <i class="icon-pencil-2"></i>
-      Edit
-    </a>
-  {{/if}}
 </template>
 
-<template name="newSponsor">
+<template name="newSponsor2">
   <div class="container-fluid">
     <h1>Add a Sponsor</h1>
     <hr class="extra-space-top dashed">
@@ -23,14 +16,11 @@
       </div>
       <div class="form-group">
         <label for="descriptionText">Sponsor Description</label>
-        <textarea class="form-control talkDescription"></textarea>
-        <span class="help-block">Even a short description aids SEO for this website.</span>
+        <textarea class="form-control descriptionText"></textarea>
       </div>
       <div class="form-group">
         <label for="sponsorLogo">Sponsor Logo</label>
-        <section class="image forSaving">
           <img src="images/default/image.png" class="full-width upload" id="imageUpload">
-        </section>
       </div>
       <div class="form-group">
         <label for="descriptionText">Publish Sponsor?</label>

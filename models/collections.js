@@ -6,3 +6,4 @@ chapters = new Mongo.Collection('chapters');
 speakers = new Mongo.Collection('speakers');
 votes = new Mongo.Collection('votes');
 posts = new Mongo.Collection('posts');
+sponsors = new Mongo.Collection('sponsors');
