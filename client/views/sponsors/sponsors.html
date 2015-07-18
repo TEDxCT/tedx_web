@@ -1,10 +1,51 @@
 
 <template name="sponsors">
-
+  {{#if currentUser}}
+    <a href="" class="Add">
+      <i class="icon-pencil-2"></i>
+      Edit
+    </a>
+  {{/if}}
 </template>
 
 <template name="newSponsor">
   <div class="container-fluid">
-    <button type="button" class="btn test_button">Upload Image</button>
+    <h1>Add a Sponsor</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="nameText">Name</label>
+        <input type="text" class="form-control nameText" placeholder="Sponsor name...">
+      </div>
+      <div class="form-group">
+        <label for="websiteURL">Website URL</label>
+        <input type="text" class="form-control websiteURL" placeholder="Website URL...">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Sponsor Description</label>
+        <textarea class="form-control talkDescription"></textarea>
+        <span class="help-block">Even a short description aids SEO for this website.</span>
+      </div>
+      <div class="form-group">
+        <label for="sponsorLogo">Sponsor Logo</label>
+        <section class="image forSaving">
+          <img src="images/default/image.png" class="full-width upload" id="imageUpload">
+        </section>
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Sponsor?</label>
+        <p>Published sponsors will appear in the "home" screen</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary save_sponsor">Save</button>
+    </form>
   </div>
 </template>
