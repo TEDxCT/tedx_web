@@ -1,0 +1,104 @@
+<template name="host">
+  <div class="container-fluid">
+    <hr class="extra-space-top no-line">
+    <h2>Host your own Simulcast</h2>
+    <p>Hosting your own viewing party can be really fun and entertaining for you and your guests. Fill in this simple form and we will contact you to arrange a welcome pack.</p>
+    <hr class="extra-space-top no-line">
+    <form>
+      <h4><i class="icon-ticket-1"></i> Party details</h4>
+      <div class="form-group">
+        <label for="partyName">Party name</label>
+        <input type="text" class="form-control partyName" placeholder="Party name..." value="{{party.title}}">
+        <span class="help-block">Give your party an descriptive name (E.g ThoughtWorks hosts TEDxCT 2015)</span>
+      </div>
+      <div class="form-group">
+        <label for="entryFee">Entry fee</label>
+        <input type="text" class="form-control entryFee" placeholder="Entry fee..." value="{{party.entry}}">
+        <span class="help-block">Should your guests bring something? (E.g. R50 or a pizza)</span>
+      </div>
+      <div class="form-group">
+        <label for="whoCanCome">Who can come?</label>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox private" id="private" checked="{{this.private}}">
+          <label class="onoffswitch-label" for="private">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+        <span class="help-block">Share your event with everyone or just invite your friends.</span>
+      </div>
+      <hr class="dashed">
+      <h4><i class="icon-profile-id"></i> Contact details</h4>
+      <p>We take your privacy very seriously. Your contact information will only be shared when you explicitly allow us to. Even then it will only be shared in the forum of your simulcast an we will not access it for any other reason unless otherwise specified by you.</p>
+      <div class="form-group">
+        <label for="fullName">Your full name</label>
+        <input type="text" class="form-control fullName" placeholder="First & last name..." value="{{party.fullName}}">
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="phoneNumber">Phone number</label>
+            <input type="text" class="form-control phoneNumber" placeholder="Phone number..." value="{{party.phone}}">
+          </div>
+          <div class="col-md-6">
+            <label for="phoneIsShared">Share your number</label>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="phoneIsShared" checked="{{this.phoneIsShared}}">
+              <label class="onoffswitch-label" for="phoneIsShared">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+            <span class="help-block">Should we share your phone number with your guests?</span>
+          </div>
+        </div>
+        <hr class="dashed">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="emailIsShared">Email address</label>
+            <input type="text" class="form-control categoryText" placeholder="Category name..." value="{{party.email}}">
+          </div>
+          <div class="col-md-6">
+            <label for="descriptionText">Share your email</label>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="emailIsShared" checked="{{this.emailIsShared}}">
+              <label class="onoffswitch-label" for="emailIsShared">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+            <span class="help-block">Should we share your email with your guests?</span>
+          </div>
+        </div>
+      </div>
+      <hr class="dashed">
+      <a href="{{pathFor route='hostlocation'}}" class="btn btn-primary noLink">NEXT: Choose a location</a>
+    </form>
+  </div>
+</template>
+
+<template name="hostLocation">
+  <form>
+    <h4>Venue details</h4>
+    <div class="form-group">
+      <label for="search">Search address or place</label>
+      <div class="row">
+        <div class="col-md-10">
+          <input type="text" class="search" placeholder="Search for a place..." id="autocomplete">
+        </div>
+        <div class="col-md-2">
+          <div class="btn btn-primary btn-icon submit-search">
+            <i class="icon-magnifier"></i>
+          </div>
+        </div>
+      </div>
+        <span class="help-block">Please ensure your location is correct.</span>
+    </div>
+  <div class="map-container">
+    {{> googleMap name="simulcastMap" options=simulcastMapOptions}}
+  </div>
+  <hr class="dashed">
+  <a href="{{pathFor route='host'}}" class="btn btn-secondary noLink">Back</a>
+  <a href="{{pathFor route='hostlocation'}}" class="btn btn-primary noLink">Complete signup</a>
+  </form>
+</template>

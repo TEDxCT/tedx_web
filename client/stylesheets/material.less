@@ -308,11 +308,22 @@ label {
 
 .btn {
   border: 0;
+  border-radius: 0;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .btn-primary.btn-flat:not(.btn-link) {
-  color: @primaryColor;
+  color: white;
   border: 0;
+}
+
+.btn-icon {
+  padding: 10px 20px 5px 20px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -331,6 +342,17 @@ label {
 
 .btn.btn-primary:not(.btn-link):not(.btn-flat) {
   background-color: @primaryColor;
+  color: white;
+
+  &:hover {
+    background: lighten(@primaryColor, 2%);
+  }
+  &:active {
+    background: darken(@primaryColor, 5%);
+  }
+  &:focus {
+    outline: 0;
+  }
 }
 
 
@@ -341,7 +363,7 @@ label {
   min-width: 56px;
   border: 0px;
   font-size: 20px;
-  
+
   span {
     line-height: 56px;
   }
@@ -359,30 +381,28 @@ label {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
   0 1px 2px 0 rgba(0, 0, 0, .24);
     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
-  0 1px 2px 0 rgba(0, 0, 0, .24); 
+  0 1px 2px 0 rgba(0, 0, 0, .24);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
-  0 1px 2px 0 rgba(0, 0, 0, .24); 
-   
+  0 1px 2px 0 rgba(0, 0, 0, .24);
+
   &:active, &.active, &:active:focus, &.active:focus {
     // shadow depth 2
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
-  0 3px 6px rgba(0, 0, 0, .23); 
+  0 3px 6px rgba(0, 0, 0, .23);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
-  0 3px 6px rgba(0, 0, 0, .23); 
+  0 3px 6px rgba(0, 0, 0, .23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
   0 3px 6px rgba(0, 0, 0, .23);
   }
-  
+
   &:focus {
     // shadow depth 2
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
-  0 3px 6px rgba(0, 0, 0, .23); 
+  0 3px 6px rgba(0, 0, 0, .23);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
-  0 3px 6px rgba(0, 0, 0, .23); 
+  0 3px 6px rgba(0, 0, 0, .23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
   0 3px 6px rgba(0, 0, 0, .23);
   }
-  
+
 }
-
-
