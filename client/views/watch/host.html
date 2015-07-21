@@ -4,6 +4,35 @@
     <h2>Host your own Simulcast</h2>
     <p>Hosting your own viewing party can be really fun and entertaining for you and your guests. Fill in this simple form and we will contact you to arrange a welcome pack.</p>
     <hr class="extra-space-top no-line">
+    <div class="row">
+      <div class="col-md-7">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/23z4lZawiQc?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-5">
+        <h4>Download the official guide</h4>
+        <p>We've put together a kit which you can use to make your Simulcast a total success.</p>
+        <div class="download-tile">
+          <div class="row">
+            <div class="col-md-8">
+              TEDxCT 2015 Simulcast Guide
+            </div>
+            <div class="col-md-4">
+              <i class="icon-link"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="{{pathFor route='hostDetails'}}" class="btn btn-primary">I'm ready</a>
+  </div>
+</template>
+
+<template name="hostDetails">
+  <div class="container-fluid">
+    <hr class="extra-space-top no-line">
+    <h2>Host your own Simulcast</h2>
+    <p>Hosting your own viewing party can be really fun and entertaining for you and your guests. Fill in this simple form and we will contact you to arrange a welcome pack.</p>
+    <hr class="extra-space-top no-line">
     <form>
       <h4><i class="icon-ticket-1"></i> Party details</h4>
       <div class="form-group">
@@ -78,6 +107,7 @@
 </template>
 
 <template name="hostLocation">
+  <div class="container-fluid">
   <form>
     <h4>Venue details</h4>
     <div class="form-group">
@@ -98,7 +128,15 @@
     {{> googleMap name="simulcastMap" options=simulcastMapOptions}}
   </div>
   <hr class="dashed">
-  <a href="{{pathFor route='host'}}" class="btn btn-secondary noLink">Back</a>
-  <a href="{{pathFor route='hostlocation'}}" class="btn btn-primary noLink">Complete signup</a>
+  <a href="{{pathFor route='hostDetails'}}" class="btn btn-secondary noLink">Back</a>
+  <button class="btn btn-primary save">Complete signup</button>
   </form>
+</div>
+</template>
+
+<template name="hosted">
+  <div class="container-fluid">
+    <h1>{{this.title}}</h1>
+    <p>hosted by {{this.fullName}}</p>
+  </div>
 </template>

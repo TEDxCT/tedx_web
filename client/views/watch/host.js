@@ -1,4 +1,4 @@
-Template.host.onCreated(function() {
+Template.hostDetails.onCreated(function() {
   if(Session.get("draftViewingParty") == undefined) {
     var newViewingParty = new Object();
     newViewingParty.private = false;
@@ -6,13 +6,13 @@ Template.host.onCreated(function() {
   }
 });
 
-Template.host.helpers({
+Template.hostDetails.helpers({
   "party": function() {
     return Session.get("draftViewingParty");
   }
 })
 
-Template.host.events({
+Template.hostDetails.events({
   "keyup .partyName": function() {
     setFieldOnSessionObject("draftViewingParty", "title", $(".partyName").val());
   },
@@ -28,9 +28,15 @@ Template.host.events({
   "keyup .phoneNumber": function() {
     setFieldOnSessionObject("draftViewingParty", "phone", $(".phoneNumber").val());
   },
+  "click #showPhone": function() {
+    setFieldOnSessionObject("draftViewingParty", "private", $("#showPhone").is(":checked"));
+  },
   "keyup .emailAddress": function() {
     setFieldOnSessionObject("draftViewingParty", "email", $(".emailAddress").val());
-  }
+  },
+  "click #showEmail": function() {
+    setFieldOnSessionObject("draftViewingParty", "private", $("#showEmail").is(":checked"));
+  },
 })
 
 function setFieldOnSessionObject(objectName, fieldName, fieldValue) {
@@ -71,9 +77,9 @@ Template.hostLocation.helpers({
 Template.hostLocation.events({
   'click .submit-search': function(event, template) {
     var searchTerm = $(template.find(".search")).val();
-    console.log(searchTerm);
     var GeoCoder = new google.maps.Geocoder();
     var map = GoogleMaps.maps.simulcastMap.instance;
+
     GeoCoder.geocode({'address':searchTerm}, function(results, status) {
       if(status==google.maps.GeocoderStatus.OK) {
         var mostLikelyLocation = results[0].geometry.location;
@@ -89,5 +95,11 @@ Template.hostLocation.events({
         }
       }
     });
+  },
+  'click .save': function() {
+    var viewingPartyForSaving = Session.get("draftViewingParty");
+    var savedViewingParty = live.insert(viewingPartyForSaving);
+    console.log(savedViewingParty);
+    Router.go("hosted", {"_id": savedViewingParty});
   }
 });
