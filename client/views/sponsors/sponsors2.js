@@ -1,3 +1,27 @@
+Meteor.subscribe('sponsors');
+
+
+Template.sponsors.rendered = function() {
+  var owl = $("#owl-demo");
+  owl.owlCarousel({
+      autoPlay: 1000, //Set AutoPlay to 3 seconds
+      items : 4,
+      autoplay: true,
+      loop : true,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
+  });
+};
+
+Template.sponsors.helpers({
+  'sponsors': function() {
+    var s = sponsors.find();
+    console.log(sponsors.find().fetch())
+    return s;
+  },
+})
+
 
 Template.newSponsor2.events({
   'click .upload': function() {

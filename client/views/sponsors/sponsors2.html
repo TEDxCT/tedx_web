@@ -1,4 +1,12 @@
 <template name="sponsors">
+  <div id="owl-demo">
+    {{#each sponsors}}
+      <div class="item">
+        <img src="images/default/image.png" alt="{{this.name}}">
+        <p>{{this.name}}</p>
+      </div>
+    {{/each}}
+  </div>
 </template>
 
 <template name="newSponsor2">
