@@ -117,34 +117,24 @@
         <textarea class="form-control descriptionText" value="{{this.description}}"></textarea>
       </div>
       <div class="form-group">
-        <label for="sponsorLogoURL">Sponsor Logo</label>
-        <p>Add an web URL or tap the icon to upload from disk</p>
-        <input type="text" class="form-control logoURL" placeholder="Image URL..." value="{{this.imageURL}}">
-        <a href="" class="btn btn-primary btn-upload-from-web">Upload</a>
-        {{#if this.imageURL}}
-          <img src="{{this.imageURL}}" class="upload" id="imageUpload">
-        {{else}}
-            <img src="images/default/image.png" class="full-width upload" id="imageUpload">
-        {{/if}}
+            <label>Sponsor Logo</label>
+            <p>Add a web URL or tap the icon to upload from disk</p>
+
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control logoURL" placeholder="Url...">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-secondary btn-upload-from-web">Add</button>
+              </div>
+            </div>
+            <br/>
+            {{#if this.imageURL}}
+              <img src="{{this.imageURL}}" class="upload" id="imageUpload">
+            {{else}}
+                <img src="images/default/image.png" style="max-width:100%" class="upload" id="imageUpload">
+            {{/if}}
       </div>
-      <!-- <div class="form-group">
-        <label for="sponsorLogoURL">Image URL</label>
-        <br/>
-        {{#if this.imageURL}}
-          <input type="text" placeholder="Image URL..." value="{{this.imageURL}}">
-        {{else}}
-        <input type="text" placeholder="Image URL...">
-        {{/if}}
-      </div>
-      <div class="form-group">
-        <label for="sponsorLogo">Sponsor Logo</label>
-        <br/>
-        {{#if this.imageURL}}
-          <img src="{{this.imageURL}}" class="upload" id="imageUpload">
-        {{else}}
-          <img src="images/default/image.png" class="full-width upload" id="imageUpload">
-        {{/if}}
-      </div> -->
       <div class="form-group">
         <label for="descriptionText">Publish Sponsor?</label>
         <p>Published sponsors will appear in the "home" screen</p>

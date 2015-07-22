@@ -39,7 +39,7 @@ Template.newSponsor2.events({
     console.log(newSponsor)
     sponsors.insert(newSponsor)
     // FlashMessages.showSuccess("Sponsor saved");
-    Router.go('/')
+    Router.go('/sponsors/show/' + this._id)
   },
 });
 
@@ -69,7 +69,7 @@ Template.editSponsor.events({
       "imageURL" : $('#imageUpload').attr("src")
 
     }});
-    // sponsors.update({"_id": this._id}, {$set: { newSponsor }});
-    // FlashMessages.showSuccess("Updated Sponsor");
+    Router.go('/sponsors/show/' + this._id)
+
   },
 });
