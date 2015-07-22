@@ -43,7 +43,9 @@ function setFieldOnSessionObject(objectName, fieldName, fieldValue) {
   var sessionObject = Session.get(objectName);
   check(sessionObject, Object);
   sessionObject[fieldName] = fieldValue;
-
+  if (Meteor.userId()) {
+    sessionObject.userId = Meteor.userId();
+  }
   Session.set(objectName, sessionObject);
 }
 
@@ -99,7 +101,6 @@ Template.hostLocation.events({
   'click .save': function() {
     var viewingPartyForSaving = Session.get("draftViewingParty");
     var savedViewingParty = live.insert(viewingPartyForSaving);
-    console.log(savedViewingParty);
     Router.go("hosted", {"_id": savedViewingParty});
   }
 });
