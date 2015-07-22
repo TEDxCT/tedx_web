@@ -13,11 +13,6 @@
 
 
 <template name="showSponsor">
-  <!-- <div class="container-fluid">
-    <h1>{{this.name}}</h1>
-    <img src="{{this.imageURL}}" href="{{this.imageURL}}">
-    <p>{{this.description}}</p>
-  </div> -->
   <article class="talk__content content__item content__item--show animated fadeIn">
     <!-- <div class="back-button back">
       <a href="{{pathFor route='watch'}}" class="noLink">
@@ -46,16 +41,11 @@
     <h1 class="tile-title">TEDxCapeTown is sponsored by</h1>
     <h2 class="tile-title title--full">{{this.name}}</h2>
     <div class="meta meta--full">
-      <!-- <img class="meta__avatar" src="img/authors/1.png" alt="author01" /> -->
-      <!-- <span class="meta__author">{{this.speaker.name}}</span> -->
     </div>
     <hr class="space extra-space-top">
-    <!-- <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        <!-- <div text-align="center"> -->
         <div class="row text-center">
           <img class="center-align" src="{{this.imageURL}}" href="{{this.imageURL}}">
         </div>
-        <!-- </div> -->
     <hr class="space">
     <ul class="share-buttons">
       <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
@@ -103,9 +93,71 @@
           </label>
         </div>
       </div>
-
       <hr class="dashed">
       <button type="button" class="btn btn-primary save_sponsor">Save</button>
+    </form>
+  </div>
+</template>
+
+<template name="editSponsor">
+  <div class="container-fluid">
+    <h1>Edit {{this.name}}</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="nameText">Name</label>
+        <input type="text" class="form-control nameText" placeholder="Sponsor name..." value="{{this.name}}">
+      </div>
+      <div class="form-group">
+        <label for="websiteURL">Website URL</label>
+        <input type="text" class="form-control websiteURL" placeholder="Website URL..." value="{{this.webURL}}">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Sponsor Description</label>
+        <textarea class="form-control descriptionText" value="{{this.description}}"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="sponsorLogoURL">Sponsor Logo</label>
+        <p>Add an web URL or tap the icon to upload from disk</p>
+        <input type="text" class="form-control logoURL" placeholder="Image URL..." value="{{this.imageURL}}">
+        <a href="" class="btn btn-primary btn-upload-from-web">Upload</a>
+        {{#if this.imageURL}}
+          <img src="{{this.imageURL}}" class="upload" id="imageUpload">
+        {{else}}
+            <img src="images/default/image.png" class="full-width upload" id="imageUpload">
+        {{/if}}
+      </div>
+      <!-- <div class="form-group">
+        <label for="sponsorLogoURL">Image URL</label>
+        <br/>
+        {{#if this.imageURL}}
+          <input type="text" placeholder="Image URL..." value="{{this.imageURL}}">
+        {{else}}
+        <input type="text" placeholder="Image URL...">
+        {{/if}}
+      </div>
+      <div class="form-group">
+        <label for="sponsorLogo">Sponsor Logo</label>
+        <br/>
+        {{#if this.imageURL}}
+          <img src="{{this.imageURL}}" class="upload" id="imageUpload">
+        {{else}}
+          <img src="images/default/image.png" class="full-width upload" id="imageUpload">
+        {{/if}}
+      </div> -->
+      <div class="form-group">
+        <label for="descriptionText">Publish Sponsor?</label>
+        <p>Published sponsors will appear in the "home" screen</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary update_sponsor">Update</button>
     </form>
   </div>
 </template>
