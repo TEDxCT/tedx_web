@@ -7,3 +7,4 @@ speakers = new Mongo.Collection('speakers');
 votes = new Mongo.Collection('votes');
 posts = new Mongo.Collection('posts');
 live = new Mongo.Collection('live');
+sponsors = new Mongo.Collection('sponsors');

@@ -18,6 +18,10 @@ Meteor.publish('categories', function () {
   return categories.find({"archived": {$ne : true}});
 });
 
+Meteor.publish('sponsors', function () {
+  return sponsors.find({"archived": {$ne : true}});
+});
+
 Meteor.publish('config', function () {
   return config.find({"archived": {$ne : true}});
 });

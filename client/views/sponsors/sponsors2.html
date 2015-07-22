@@ -1,0 +1,177 @@
+<template name="sponsors">
+  <div id="owl-demo">
+    {{#each sponsors}}
+      <div class="item">
+        <a href="/sponsors/show/{{this._id}}">
+          <img src="{{this.imageURL}}" alt="{{this.name}}">
+          <h4>{{this.name}}</h4>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
+
+<template name="showSponsor">
+  <article class="talk__content content__item content__item--show animated fadeIn">
+    <!-- <div class="back-button back">
+      <a href="{{pathFor route='watch'}}" class="noLink">
+        <i class="icon-thumbnails-1"></i>
+        <span class="text">
+          Back to talks
+        </span>
+      </a>
+    </div> -->
+    {{#if currentUser}}
+    <ul class="toolbar">
+      <li>
+        <a href="{{pathFor route='sponsors.edit' data=sponsor}}" class="edit">
+          <i class="icon-pencil-2"></i>
+          Edit
+        </a>
+      </li>
+      <li>
+        <a href="#" class="delete">
+          <i class="icon-bin-2"></i>
+          Delete
+        </a>
+      </li>
+    </ul>
+    {{/if}}
+    <h1 class="tile-title">TEDxCapeTown is sponsored by</h1>
+    <h2 class="tile-title title--full">{{this.name}}</h2>
+    <div class="meta meta--full">
+    </div>
+    <hr class="space extra-space-top">
+        <div class="row text-center">
+          <img class="center-align" src="{{this.imageURL}}" href="{{this.imageURL}}">
+        </div>
+    <hr class="space">
+    <ul class="share-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&text=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&via=tedxcapetown" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Twitter.png"></a></li>
+      <li><a href="https://plus.google.com/share?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Google+.png"></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/Pinterest.png"></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&title=&summary=&source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/LinkedIn.png"></a></li>
+      <li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Email.png"></a></li>
+    </ul>
+    <hr class="space extra-space-top">
+    <hr class="dashed">
+    {{#markdown}}{{this.description}}{{/markdown}}
+  </article>
+</template>
+
+<template name="newSponsor2">
+  <div class="container-fluid">
+    <h1>Add a Sponsor</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="nameText">Name</label>
+        <input type="text" class="form-control nameText" placeholder="Sponsor name...">
+      </div>
+      <div class="form-group">
+        <label for="typeText">Type</label>
+        <input type="text" class="form-control typeText" placeholder="e.g. Communication partner">
+      </div>
+      <div class="form-group">
+        <label for="typeText">Years</label>
+        <ul class="unstyled list-unstyled">
+          <li><label><input type="checkbox" name="2010" value="value"> 2010</label></li>
+          <li><label><input type="checkbox" name="2011" value="value"> 2011</label></li>
+          <li><label><input type="checkbox" name="2012" value="value"> 2012</label></li>
+          <li><label><input type="checkbox" name="2013" value="value"> 2013</label></li>
+          <li><label><input type="checkbox" name="2014" value="value"> 2014</label></li>
+          <li><label><input type="checkbox" name="2015" value="value"> 2015</label></li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <label for="websiteURL">Website URL</label>
+        <input type="text" class="form-control websiteURL" placeholder="Website URL...">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Sponsor Description</label>
+        <textarea class="form-control descriptionText"></textarea>
+      </div>
+      <div class="form-group">
+            <label>Sponsor Logo</label>
+            <p>Add a web URL or tap the icon to upload from disk</p>
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control logoURL" placeholder="Url...">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-secondary btn-upload-from-web">Add</button>
+              </div>
+            </div>
+            <br/>
+            <img src="images/default/image.png" style="max-width:100%" class="upload" id="imageUpload">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Sponsor?</label>
+        <p>Published sponsors will appear in the "home" screen</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary save_sponsor">Save</button>
+    </form>
+  </div>
+</template>
+
+<template name="editSponsor">
+  <div class="container-fluid">
+    <h1>Edit {{this.name}}</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="nameText">Name</label>
+        <input type="text" class="form-control nameText" placeholder="Sponsor name..." value="{{this.name}}">
+      </div>
+      <div class="form-group">
+        <label for="websiteURL">Website URL</label>
+        <input type="text" class="form-control websiteURL" placeholder="Website URL..." value="{{this.webURL}}">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Sponsor Description</label>
+        <textarea class="form-control descriptionText" value="{{this.description}}"></textarea>
+      </div>
+      <div class="form-group">
+            <label>Sponsor Logo</label>
+            <p>Add a web URL or tap the icon to upload from disk</p>
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control logoURL" placeholder="Url..." value="{{this.imageURL}}">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-secondary btn-upload-from-web">Add</button>
+              </div>
+            </div>
+            <br/>
+            {{#if this.imageURL}}
+              <img src="{{this.imageURL}}" class="upload" id="imageUpload">
+            {{else}}
+                <img src="images/default/image.png" style="max-width:100%" class="upload" id="imageUpload">
+            {{/if}}
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Sponsor?</label>
+        <p>Published sponsors will appear in the "home" screen</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary update_sponsor">Update</button>
+    </form>
+  </div>
+</template>
