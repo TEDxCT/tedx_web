@@ -47,8 +47,8 @@
       </div>
       <div class="form-group">
         <label for="whoCanCome">Who can come?</label>
-        <div class="onoffswitch">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox private" id="private" checked="{{this.private}}">
+        <div class="privatePublicSwitch" id="privateSwitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox private" id="private" checked={{checked party.privateParty}}>
           <label class="onoffswitch-label" for="private">
               <span class="onoffswitch-inner"></span>
               <span class="onoffswitch-switch"></span>
@@ -71,8 +71,8 @@
           </div>
           <div class="col-md-6">
             <label for="phoneIsShared">Share your number</label>
-            <div class="onoffswitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="phoneIsShared" checked="{{this.phoneIsShared}}">
+            <div class="privatePublicSwitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox showPhone" id="phoneIsShared" checked="{{this.phoneIsShared}}">
               <label class="onoffswitch-label" for="phoneIsShared">
                   <span class="onoffswitch-inner"></span>
                   <span class="onoffswitch-switch"></span>
@@ -85,12 +85,12 @@
         <div class="row">
           <div class="col-md-6">
             <label for="emailIsShared">Email address</label>
-            <input type="text" class="form-control categoryText" placeholder="Category name..." value="{{party.email}}">
+            <input type="text" class="form-control categoryText" placeholder="Email address..." value="{{party.email}}">
           </div>
           <div class="col-md-6">
             <label for="descriptionText">Share your email</label>
-            <div class="onoffswitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="emailIsShared" checked="{{this.emailIsShared}}">
+            <div class="privatePublicSwitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox showEmail" id="emailIsShared" checked="{{this.emailIsShared}}">
               <label class="onoffswitch-label" for="emailIsShared">
                   <span class="onoffswitch-inner"></span>
                   <span class="onoffswitch-switch"></span>
@@ -118,7 +118,7 @@
         </div>
         <div class="col-md-2">
           <div class="btn btn-primary btn-icon submit-search">
-            <i class="icon-magnifier"></i>
+            Search <i class="icon-magnifier"></i>
           </div>
         </div>
       </div>

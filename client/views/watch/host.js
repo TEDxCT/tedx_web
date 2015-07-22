@@ -1,7 +1,7 @@
 Template.hostDetails.onCreated(function() {
   if(Session.get("draftViewingParty") == undefined) {
     var newViewingParty = new Object();
-    newViewingParty.private = false;
+    newViewingParty.privateParty = false;
     Session.set("draftViewingParty", newViewingParty);
   }
 });
@@ -9,6 +9,9 @@ Template.hostDetails.onCreated(function() {
 Template.hostDetails.helpers({
   "party": function() {
     return Session.get("draftViewingParty");
+  },
+  "checked": function(fieldValue) {
+    if(fieldValue) return "checked";
   }
 })
 
@@ -20,7 +23,7 @@ Template.hostDetails.events({
     setFieldOnSessionObject("draftViewingParty", "entry", $(".entryFee").val());
   },
   "click #private": function() {
-    setFieldOnSessionObject("draftViewingParty", "private", $("#private").is(":checked"));
+    setFieldOnSessionObject("draftViewingParty", "privateParty", $("#private").is(":checked"));
   },
   "keyup .fullName": function() {
     setFieldOnSessionObject("draftViewingParty", "fullName", $(".fullName").val());
@@ -28,14 +31,14 @@ Template.hostDetails.events({
   "keyup .phoneNumber": function() {
     setFieldOnSessionObject("draftViewingParty", "phone", $(".phoneNumber").val());
   },
-  "click #showPhone": function() {
-    setFieldOnSessionObject("draftViewingParty", "private", $("#showPhone").is(":checked"));
+  "click .showPhone": function() {
+    setFieldOnSessionObject("draftViewingParty", "privatePhone", $(".showPhone").is(":checked"));
   },
   "keyup .emailAddress": function() {
     setFieldOnSessionObject("draftViewingParty", "email", $(".emailAddress").val());
   },
-  "click #showEmail": function() {
-    setFieldOnSessionObject("draftViewingParty", "private", $("#showEmail").is(":checked"));
+  "click .showEmail": function() {
+    setFieldOnSessionObject("draftViewingParty", "privateEmail", $(".showEmail").is(":checked"));
   },
 })
 
@@ -92,6 +95,7 @@ Template.hostLocation.events({
           title: 'Hello World!',
           icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
         });
+        setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
         if (results[0].geometry.viewport) {
           map.fitBounds(results[0].geometry.viewport);
         }
