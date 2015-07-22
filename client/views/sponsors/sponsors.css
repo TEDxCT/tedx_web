@@ -1,7 +1,7 @@
 #owl-demo .item{
   margin: 3px;
 }
-#owl-demo .item img{
+#owl-demo .item a img{
   display: block;
   width: 100%;
   height: auto;

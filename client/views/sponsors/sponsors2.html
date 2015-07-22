@@ -2,10 +2,19 @@
   <div id="owl-demo">
     {{#each sponsors}}
       <div class="item">
-        <img src="images/default/image.png" alt="{{this.name}}">
-        <p>{{this.name}}</p>
+        <a href="/sponsors/show/{{this._id}}">
+          <img src="{{this.imageURL}}" alt="{{this.name}}">
+          <h4>{{this.name}}</h4>
+        </a>
       </div>
     {{/each}}
+  </div>
+</template>
+
+
+<template name="showSponsor">
+  <div class="container-fluid">
+    <h1>{{this.name}}</h1>
   </div>
 </template>
 
