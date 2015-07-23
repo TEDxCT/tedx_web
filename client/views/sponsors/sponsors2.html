@@ -11,7 +11,6 @@
   </div>
 </template>
 
-
 <template name="showSponsor">
   <article class="talk__content content__item content__item--show animated fadeIn">
     <!-- <div class="back-button back">
@@ -38,24 +37,23 @@
       </li>
     </ul>
     {{/if}}
-    <h1 class="tile-title">TEDxCapeTown is sponsored by</h1>
     <h2 class="tile-title title--full">{{this.name}}</h2>
+    <h4 class="sponsor-type">{{this.type}}</h4>
+    <span>
+      <h4 class="sponsor-type">
+      {{#each this.years}}
+          {{this}}
+      {{/each}}
+      </h4>
+    </span>
     <div class="meta meta--full">
     </div>
     <hr class="space extra-space-top">
         <div class="row text-center">
-          <img class="center-align" src="{{this.imageURL}}" href="{{this.imageURL}}">
+          <img style="max-width:100%" src="{{this.imageURL}}" href="{{this.imageURL}}">
         </div>
-    <hr class="space">
-    <ul class="share-buttons">
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
-      <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&text=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&via=tedxcapetown" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Twitter.png"></a></li>
-      <li><a href="https://plus.google.com/share?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Google+.png"></a></li>
-      <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/Pinterest.png"></a></li>
-      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&title=&summary=&source=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/images/flat_web_icon_set/black/LinkedIn.png"></a></li>
-      <li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Email.png"></a></li>
-    </ul>
     <hr class="space extra-space-top">
+    <h1 class="text-center"><a href="{{this.webURL}}">{{this.webURL}}</a></h1>
     <hr class="dashed">
     {{#markdown}}{{this.description}}{{/markdown}}
   </article>
@@ -77,12 +75,12 @@
       <div class="form-group">
         <label for="typeText">Years</label>
         <ul class="unstyled list-unstyled">
-          <li><label><input type="checkbox" name="2010" value="value"> 2010</label></li>
-          <li><label><input type="checkbox" name="2011" value="value"> 2011</label></li>
-          <li><label><input type="checkbox" name="2012" value="value"> 2012</label></li>
-          <li><label><input type="checkbox" name="2013" value="value"> 2013</label></li>
-          <li><label><input type="checkbox" name="2014" value="value"> 2014</label></li>
-          <li><label><input type="checkbox" name="2015" value="value"> 2015</label></li>
+          <li><label><input type="checkbox" name="year" value="2010"> 2010</label></li>
+          <li><label><input type="checkbox" name="year" value="2011"> 2011</label></li>
+          <li><label><input type="checkbox" name="year" value="2012"> 2012</label></li>
+          <li><label><input type="checkbox" name="year" value="2013"> 2013</label></li>
+          <li><label><input type="checkbox" name="year" value="2014"> 2014</label></li>
+          <li><label><input type="checkbox" name="year" value="2015"> 2015</label></li>
         </ul>
       </div>
       <div class="form-group">
@@ -132,6 +130,21 @@
       <div class="form-group">
         <label for="nameText">Name</label>
         <input type="text" class="form-control nameText" placeholder="Sponsor name..." value="{{this.name}}">
+      </div>
+      <div class="form-group">
+        <label for="typeText">Type</label>
+        <input type="text" class="form-control typeText" placeholder="e.g. Communication partner" value="{{this.type}}">
+      </div>
+      <div class="form-group">
+        <label for="typeText">Years</label>
+        <ul class="unstyled list-unstyled">
+          <li><label><input type="checkbox" name="year" value="2010" checked="{{isInYear this.years '2010'}}"> 2010</label></li>
+          <li><label><input type="checkbox" name="year" value="2011" checked="{{isInYear this.years '2011'}}"> 2011</label></li>
+          <li><label><input type="checkbox" name="year" value="2012" checked="{{isInYear this.years '2012'}}"> 2012</label></li>
+          <li><label><input type="checkbox" name="year" value="2013" checked="{{isInYear this.years '2013'}}"> 2013</label></li>
+          <li><label><input type="checkbox" name="year" value="2014" checked="{{isInYear this.years '2014'}}"> 2014</label></li>
+          <li><label><input type="checkbox" name="year" value="2015" checked="{{isInYear this.years '2015'}}"> 2015</label></li>
+        </ul>
       </div>
       <div class="form-group">
         <label for="websiteURL">Website URL</label>
