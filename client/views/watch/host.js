@@ -105,6 +105,7 @@ Template.hostLocation.events({
   'click .save': function() {
     var viewingPartyForSaving = Session.get("draftViewingParty");
     var savedViewingParty = live.insert(viewingPartyForSaving);
+    Session.set("draftViewingParty", undefined);
     Router.go("hosted", {"_id": savedViewingParty});
   }
 });
