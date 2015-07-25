@@ -73,6 +73,9 @@
         <input type="text" class="form-control typeText" placeholder="e.g. Communication partner">
       </div>
       <div class="form-group">
+        <label><input type="checkbox" id="isHeadlineSponsor"> Is this a headline sponsor?</label>
+      </div>
+      <div class="form-group">
         <label for="typeText">Years</label>
         <ul class="unstyled list-unstyled">
           <li><label><input type="checkbox" name="year" value="2010"> 2010</label></li>
@@ -136,6 +139,9 @@
         <input type="text" class="form-control typeText" placeholder="e.g. Communication partner" value="{{this.type}}">
       </div>
       <div class="form-group">
+        <label><input type="checkbox" id="isHeadlineSponsor" checked="{{this.isHeadlineSponsor}}"> Is this a headline sponsor?</label>
+      </div>
+      <div class="form-group">
         <label for="typeText">Years</label>
         <ul class="unstyled list-unstyled">
           <li><label><input type="checkbox" name="year" value="2010" checked="{{isInYear this.years '2010'}}"> 2010</label></li>
@@ -167,7 +173,7 @@
             </div>
             <br/>
             {{#if this.imageURL}}
-              <img src="{{this.imageURL}}" class="upload" id="imageUpload">
+              <img src="{{this.imageURL}}" style="max-width:100%" class="upload" id="imageUpload">
             {{else}}
                 <img src="images/default/image.png" style="max-width:100%" class="upload" id="imageUpload">
             {{/if}}
