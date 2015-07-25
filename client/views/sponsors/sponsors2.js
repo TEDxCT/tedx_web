@@ -37,14 +37,14 @@ Template.newSponsor2.events({
     $("input:checkbox[name=year]:checked").each(function(){
       years.push($(this).val());
     });
+
     newSponsor.years = years;
+    newSponsor.isHeadlineSponsor = $("#isHeadlineSponsor").is(":checked");
     newSponsor.name = $(template.find(".nameText")).val();
     newSponsor.type = $(template.find(".typeText")).val();
     newSponsor.description = $(template.find(".descriptionText")).val();
     newSponsor.webURL = $(template.find(".websiteURL")).val();
-    newSponsor.logoImage = $(template.find("#imageUpload")).val();
     newSponsor.imageURL = $('#imageUpload').attr("src");
-    newSponsor.type = $(template.find(".typeText")).val();
     console.log(newSponsor);
     var newId = sponsors.insert(newSponsor)
     Router.go('/sponsors/show/' + newId)
@@ -60,11 +60,20 @@ Template.editSponsor.events({
     uploadFromWebURL(template);
   },
   'click .update_sponsor': function(event, template) {
+    var years = []
+    $("input:checkbox[name=year]:checked").each(function(){
+      years.push($(this).val());
+    });
+
     sponsors.update({"_id": this._id}, {$set: {
       "name":  $(template.find(".nameText")).val(),
       "description" : $(template.find(".descriptionText")).val(),
       "webURL" : $(template.find(".websiteURL")).val(),
-      "imageURL" : $('#imageUpload').attr("src")
+      "imageURL" : $('#imageUpload').attr("src"),
+      "isHeadlineSponsor" : $(template.find("#isHeadlineSponsor")).is(":checked"),
+      "years" : years,
+      "type" : $(template.find(".typeText")).val()
+
     }});
     Router.go('/sponsors/show/' + this._id)
   },
