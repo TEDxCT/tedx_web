@@ -41,6 +41,11 @@
         <span class="help-block">Give your party an descriptive name (E.g ThoughtWorks hosts TEDxCT 2015)</span>
       </div>
       <div class="form-group">
+        <label for="partyDescription">Party description</label>
+        <textarea class="form-control partyDescription">{{party.description}}</textarea>
+        <span class="help-block">Give a quick description of your event.</span>
+      </div>
+      <div class="form-group">
         <label for="entryFee">Entry fee</label>
         <input type="text" class="form-control entryFee" placeholder="Entry fee..." value="{{party.entry}}">
         <span class="help-block">Should your guests bring something? (E.g. R50 or a pizza)</span>
@@ -84,8 +89,8 @@
         <hr class="dashed">
         <div class="row">
           <div class="col-md-6">
-            <label for="emailIsShared">Email address</label>
-            <input type="text" class="form-control categoryText" placeholder="Email address..." value="{{party.email}}">
+            <label for="emailAddress">Email address</label>
+            <input type="text" class="form-control emailAddress" placeholder="Email address..." value="{{party.email}}">
           </div>
           <div class="col-md-6">
             <label for="descriptionText">Share your email</label>
@@ -136,7 +141,36 @@
 
 <template name="hosted">
   <div class="container-fluid">
+      <div class="pageHeader">
+        <div class="back-button back">
+          <a href="{{pathFor route='live'}}" class="noLink">
+            <i class="icon-thumbnails-1"></i>
+            <span class="text">
+              Back to map
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
     <h1>{{this.title}}</h1>
     <p>hosted by {{this.fullName}}</p>
+    <p>{{this.description}}</p>
+    <h4>Entry</h4>
+    <p>{{this.entry}}</p>
+    <h4>Contact information</h4>
+    {{#if currentUser}}
+      {{this.phone}}
+      {{this.email}}
+    {{else}}
+      <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
+    {{/if}}
+    <h4>Given location</h4>
+    {{this.givenAddress}}
+    <h4>Map</h4>
+    <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
+    <div class="map-container">
+      {{> googleMap name="singlePartyMap" options=singlePartyMapOptions}}
+    </div>
   </div>
 </template>

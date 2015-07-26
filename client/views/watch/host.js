@@ -19,6 +19,9 @@ Template.hostDetails.events({
   "keyup .partyName": function() {
     setFieldOnSessionObject("draftViewingParty", "title", $(".partyName").val());
   },
+  "keyup .partyDescription": function() {
+    setFieldOnSessionObject("draftViewingParty", "description", $(".partyDescription").val());
+  },
   "keyup .entryFee": function() {
     setFieldOnSessionObject("draftViewingParty", "entry", $(".entryFee").val());
   },
@@ -79,6 +82,39 @@ Template.hostLocation.helpers({
   }
 });
 
+Template.hosted.onCreated(function() {
+  // We can use the `ready` callback to interact with the map API once the map is ready.
+
+  GoogleMaps.ready('singlePartyMap', function(map) {    
+    // Add a marker to the map once it's ready
+    var marker = new google.maps.Marker({
+      position: map.options.center,
+      map: map.instance
+    });
+  });
+});
+
+Template.hosted.helpers({
+  singlePartyMapOptions: function() {
+    var self = this;
+    // Make sure the maps API has loaded
+    if (GoogleMaps.loaded()) {
+      // Map initialization options
+      return {
+        center: new google.maps.LatLng(this.location.A,this.location.F),
+        libraries: 'places',
+        zoom: 16
+      };
+    }
+  }
+});
+
+Template.hosted.events({
+  'click .seeContactInfo': function() {
+    Session.set()
+  }
+})
+
 Template.hostLocation.events({
   'click .submit-search': function(event, template) {
     var searchTerm = $(template.find(".search")).val();
@@ -96,6 +132,7 @@ Template.hostLocation.events({
           icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
         });
         setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
+        setFieldOnSessionObject("draftViewingParty", "givenAddress", searchTerm);
         if (results[0].geometry.viewport) {
           map.fitBounds(results[0].geometry.viewport);
         }
