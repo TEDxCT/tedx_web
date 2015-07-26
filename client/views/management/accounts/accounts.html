@@ -30,79 +30,9 @@
   </div>
 </template>
 
-<template name="manage">
-  <div class="container-fluid red centered">
-    <!-- {{#if userIsVerified}} -->
-    <ul class="toolbar">
-      <li class="logout">
-        <i class="icon-tags"></i>
-        Log out
-      </li>
-    </ul>
-    <!-- {{/if}} -->
-    <h1>Logged in as {{username}}</h1>
-  </div>
-
-  <div class="container-fluid centered">
-    {{#if userIsVerified}}
-    <h1>What would you like to do?</h1>
-    <div class="row">
-        <div class="col-xs-6 col-md-4">
-          <a href="{{pathFor route='speakers'}}" class="noLink">
-            <div class="manage_tile">
-              <i class="icon-profile"></i>
-              <div>Manage Speakers</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="manage_tile">
-            <i class="icon-business-chart-2"></i>
-            <div><a href="/manage/categories">Analyse Categories</a></div>
-            </div>
-          </div>
-        <div class="col-xs-6 col-md-4">
-          <a href="{{pathFor route='posts.new'}}" class="noLink">
-            <div class="manage_tile">
-              <i class="icon-profile"></i>
-              <div>Add Talk</div>
-            </div>
-          </a>
-        </div>
-      </div>
-        <div class="row">
-          <div class=".col-xs-6 col-md-4">
-            <a href="{{pathFor route='live'}}" class="noLink">
-              <div class="manage_tile">
-                <i class="icon-television"></i>
-                <div>Live Streaming</div>
-              </div>
-            </a>
-          </div>
-          <div class=".col-xs-6 col-md-4">
-            <a href="{{pathFor route='sponsors.new'}}" class="noLink">
-              <div class="manage_tile">
-                <i class="icon-organization"></i>
-                <div>Add Sponsor</div>
-              </div>
-            </a>
-          </div>
-      </div>
-      {{else}}
-      <h1>You need to verify your email address before you can administer this website.</h1>
-        <div>
-          <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
-        </div>
-
-      {{/if}}
-      <br/>
-
-</div>
-</template>
-
 
 <template name="createUser">
-  <div class="container-fluid">    
+  <div class="container-fluid">
     <h1>Create your account</h1>
     <p>Enter your sign in details to access your TEDxCapeTown account. If you're part of the team please make sure you log in with your TEDx email address. </p>
     <div class="loginForm">
