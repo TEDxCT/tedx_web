@@ -18,8 +18,10 @@ Template.live.onCreated(function() {
       google.maps.event.addListener(marker, 'click', function() {
         contentWindow.open(map.instance,marker);
       });
-    });    
+    });
   });
+
+
 });
 
 function contentFromParty(partyFromDB) {
@@ -59,7 +61,7 @@ Template.live.helpers({
       return {
         center: new google.maps.LatLng(-33.9248685,18.424055299999963),
         libraries: 'places',
-        zoom: 16
+        zoom: 10
       };
     }
   }

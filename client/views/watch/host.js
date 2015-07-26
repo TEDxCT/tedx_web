@@ -85,7 +85,7 @@ Template.hostLocation.helpers({
 Template.hosted.onCreated(function() {
   // We can use the `ready` callback to interact with the map API once the map is ready.
 
-  GoogleMaps.ready('singlePartyMap', function(map) {    
+  GoogleMaps.ready('singlePartyMap', function(map) {
     // Add a marker to the map once it's ready
     var marker = new google.maps.Marker({
       position: map.options.center,
@@ -106,7 +106,23 @@ Template.hosted.helpers({
         zoom: 16
       };
     }
-  }
+  },
+  email: function() {
+    if ( ( this.email != "" ) || ( this.email != undefined ) ) {
+      if(!this.privateEmail) {
+        return true;
+      }
+    }
+    return false;
+  },
+  phone: function() {
+    if ( ( this.phone != "" ) || ( this.phone != undefined ) ) {
+      if(!this.privatePhone) {
+        return true;
+      }
+    }
+    return false;
+  },
 });
 
 Template.hosted.events({
