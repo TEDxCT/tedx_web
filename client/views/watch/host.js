@@ -108,7 +108,7 @@ Template.hosted.helpers({
     }
   },
   email: function() {
-    if ( ( this.email != "" ) || ( this.email != undefined ) ) {
+    if ( ( this.email != "" ) && ( this.email != undefined ) ) {
       if(!this.privateEmail) {
         return true;
       }
@@ -116,13 +116,19 @@ Template.hosted.helpers({
     return false;
   },
   phone: function() {
-    if ( ( this.phone != "" ) || ( this.phone != undefined ) ) {
+    if ( ( this.phone != "" ) && ( this.phone != undefined ) ) {
       if(!this.privatePhone) {
         return true;
       }
     }
     return false;
   },
+  ownsEvent: function () {
+    console.dir(this.userId);
+    console.dir(Meteor.userId());
+    if(this.userId==Meteor.userId()) return true;
+    else return false;
+  }
 });
 
 Template.hosted.events({
@@ -157,7 +163,17 @@ Template.hostLocation.events({
   },
   'click .save': function() {
     var viewingPartyForSaving = Session.get("draftViewingParty");
-    var savedViewingParty = live.insert(viewingPartyForSaving);
+
+    var savedViewingParty;
+    if(viewingPartyForSaving._id != undefined) {
+      // saving and then removing ID off the object for saving because it would try change the documents ID
+      var idForSaving = viewingPartyForSaving._id;
+      delete viewingPartyForSaving._id;
+      savedViewingParty = live.update({"_id": idForSaving}, {$set: viewingPartyForSaving});
+    }
+    else {      
+      savedViewingParty = live.insert(viewingPartyForSaving);
+    }
     Session.set("draftViewingParty", undefined);
     Router.go("hosted", {"_id": savedViewingParty});
   }

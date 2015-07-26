@@ -28,6 +28,7 @@ if (Meteor.isServer) {
       return true;
     },
     update : function (doc) {
+      console.log();
       return true;
     },
     remove : function () {
