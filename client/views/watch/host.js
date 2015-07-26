@@ -123,9 +123,7 @@ Template.hosted.helpers({
     }
     return false;
   },
-  ownsEvent: function () {
-    console.dir(this.userId);
-    console.dir(Meteor.userId());
+  ownsEvent: function () {    
     if(this.userId==Meteor.userId()) return true;
     else return false;
   }
@@ -134,6 +132,9 @@ Template.hosted.helpers({
 Template.hosted.events({
   'click .seeContactInfo': function() {
     Session.set()
+  },
+  'click .delete': function() {
+    live.update({"_id": this._id}, {$set: {"archived": true}});
   }
 })
 
@@ -171,7 +172,7 @@ Template.hostLocation.events({
       delete viewingPartyForSaving._id;
       savedViewingParty = live.update({"_id": idForSaving}, {$set: viewingPartyForSaving});
     }
-    else {      
+    else {
       savedViewingParty = live.insert(viewingPartyForSaving);
     }
     Session.set("draftViewingParty", undefined);

@@ -32,7 +32,7 @@ function contentFromParty(partyFromDB) {
   // Add content heading
   contentForMapMarker += '<h1 id="firstHeading" class="firstHeading">' + partyFromDB.title + '</h1>';
   contentForMapMarker += '<div id="bodyContent">';
-  if ( ( partyFromDB.description != undefined ) || (partyFromDB.description != "" )) {
+  if ( ( partyFromDB.description != undefined ) && (partyFromDB.description != "" )) {
      contentForMapMarker += '<p>' + partyFromDB.description + '</p>';
   }
   contentForMapMarker += '<a href="/live/host/' + partyFromDB._id + '" class="btn btn-primary">View the event</a>';

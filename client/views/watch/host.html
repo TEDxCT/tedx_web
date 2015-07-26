@@ -95,7 +95,7 @@
           <div class="col-md-6">
             <label for="descriptionText">Share your email</label>
             <div class="privatePublicSwitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox showEmail" id="emailIsShared" checked="{{this.emailIsShared}}">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox showEmail" id="emailIsShared" checked="{{this.privateEmail}}">
               <label class="onoffswitch-label" for="emailIsShared">
                   <span class="onoffswitch-inner"></span>
                   <span class="onoffswitch-switch"></span>
@@ -119,7 +119,7 @@
       <label for="search">Search address or place</label>
       <div class="row">
         <div class="col-md-10">
-          <input type="text" class="search" placeholder="Search for a place..." id="autocomplete">
+          <input type="text" class="search" placeholder="Search for a place..." id="autocomplete" value="{{this.givenAddress}}">
         </div>
         <div class="col-md-2">
           <div class="btn btn-primary btn-icon submit-search">
@@ -154,9 +154,9 @@
     {{#if currentUser}}
     <ul class="toolbar">
       <li>
-        <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
+        <a href="" class="tag">
           <i class="icon-tags"></i>
-          Tag
+          RSVP (Coming soon)
         </a>
       </li>
       {{#if ownsEvent}}
