@@ -123,7 +123,7 @@ Template.hosted.helpers({
     }
     return false;
   },
-  ownsEvent: function () {    
+  ownsEvent: function () {
     if(this.userId==Meteor.userId()) return true;
     else return false;
   }
@@ -171,11 +171,14 @@ Template.hostLocation.events({
       var idForSaving = viewingPartyForSaving._id;
       delete viewingPartyForSaving._id;
       savedViewingParty = live.update({"_id": idForSaving}, {$set: viewingPartyForSaving});
+      Session.set("draftViewingParty", undefined);
+      Router.go("hosted", {"_id": idForSaving});
     }
     else {
       savedViewingParty = live.insert(viewingPartyForSaving);
+      Session.set("draftViewingParty", undefined);
+      Router.go("hosted", {"_id": savedViewingParty});
     }
-    Session.set("draftViewingParty", undefined);
-    Router.go("hosted", {"_id": savedViewingParty});
+
   }
 });
