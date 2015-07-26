@@ -69,7 +69,5 @@ Template.users.events({
     } else {
       updatedUsers.push(this);
     }
-
-    console.log(updatedUsers);
   }
 })
