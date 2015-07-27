@@ -25,9 +25,9 @@ Template.hostDetails.events({
   "keyup .entryFee": function() {
     setFieldOnSessionObject("draftViewingParty", "entry", $(".entryFee").val());
   },
-  "click #private": function() {
-    setFieldOnSessionObject("draftViewingParty", "privateParty", $("#private").is(":checked"));
-  },
+  // "click #private": function() {
+  //   setFieldOnSessionObject("draftViewingParty", "privateParty", $("#private").is(":checked"));
+  // },
   "keyup .fullName": function() {
     setFieldOnSessionObject("draftViewingParty", "fullName", $(".fullName").val());
   },
@@ -43,6 +43,11 @@ Template.hostDetails.events({
   "click .showEmail": function() {
     setFieldOnSessionObject("draftViewingParty", "privateEmail", $(".showEmail").is(":checked"));
   },
+  "click .chooseLocationLink": function() {
+    if(validateForm("partyDetailsForm", {})) {
+
+    }
+  }
 })
 
 function setFieldOnSessionObject(objectName, fieldName, fieldValue) {
@@ -138,47 +143,67 @@ Template.hosted.events({
   }
 })
 
+function searchLocation(searchTerm) {
+  var GeoCoder = new google.maps.Geocoder();
+  var map = GoogleMaps.maps.simulcastMap.instance;
+
+  GeoCoder.geocode({'address':searchTerm}, function(results, status) {
+    if(status==google.maps.GeocoderStatus.OK) {
+      var mostLikelyLocation = results[0].geometry.location;
+      map.setCenter(mostLikelyLocation);
+      var marker = new google.maps.Marker({
+        position: mostLikelyLocation,
+        map: map,
+        title: 'Hello World!',
+        icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
+      });
+      setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
+      setFieldOnSessionObject("draftViewingParty", "givenAddress", searchTerm);
+      if (results[0].geometry.viewport) {
+        map.fitBounds(results[0].geometry.viewport);
+      }
+    }
+  });
+}
+
 Template.hostLocation.events({
   'click .submit-search': function(event, template) {
     var searchTerm = $(template.find(".search")).val();
-    var GeoCoder = new google.maps.Geocoder();
-    var map = GoogleMaps.maps.simulcastMap.instance;
-
-    GeoCoder.geocode({'address':searchTerm}, function(results, status) {
-      if(status==google.maps.GeocoderStatus.OK) {
-        var mostLikelyLocation = results[0].geometry.location;
-        map.setCenter(mostLikelyLocation);
-        var marker = new google.maps.Marker({
-          position: mostLikelyLocation,
-          map: map,
-          title: 'Hello World!',
-          icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
-        });
-        setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
-        setFieldOnSessionObject("draftViewingParty", "givenAddress", searchTerm);
-        if (results[0].geometry.viewport) {
-          map.fitBounds(results[0].geometry.viewport);
-        }
-      }
-    });
+    searchLocation(searchTerm);
+  },
+  'keypress .search': function (event, template) {
+    if (event.which === 13) {
+      var searchTerm = $(template.find(".search")).val();
+      searchLocation(searchTerm);
+    }
   },
   'click .save': function() {
     var viewingPartyForSaving = Session.get("draftViewingParty");
 
     var savedViewingParty;
-    if(viewingPartyForSaving._id != undefined) {
-      // saving and then removing ID off the object for saving because it would try change the documents ID
-      var idForSaving = viewingPartyForSaving._id;
-      delete viewingPartyForSaving._id;
-      savedViewingParty = live.update({"_id": idForSaving}, {$set: viewingPartyForSaving});
-      Session.set("draftViewingParty", undefined);
-      Router.go("hosted", {"_id": idForSaving});
-    }
-    else {
-      savedViewingParty = live.insert(viewingPartyForSaving);
-      Session.set("draftViewingParty", undefined);
-      Router.go("hosted", {"_id": savedViewingParty});
-    }
 
+      if(viewingPartyForSaving._id != undefined) {
+        // saving and then removing ID off the object for saving because it would try change the documents ID
+        var idForSaving = viewingPartyForSaving._id;
+        delete viewingPartyForSaving._id;
+        savedViewingParty = live.update({"_id": idForSaving}, {$set: viewingPartyForSaving});
+        Session.set("draftViewingParty", undefined);
+        Router.go("hosted", {"_id": idForSaving});
+      }
+      else {
+        savedViewingParty = live.insert(viewingPartyForSaving);
+        Session.set("draftViewingParty", undefined);
+        Router.go("hosted", {"_id": savedViewingParty});
+      }
   }
 });
+
+function validateForm(formID, fieldsToExclude) {
+  console.dir($('#formID'));
+  $('#' + formID + ' *').filter(':input').each(function(index, value){
+    // $('#' + formID + ' *').filter(':input')[index].attr("class", "error");
+    console.log(value.value.toString());
+    if(value.value.toString()=="") $('#' + formID + ' *').filter(':input')[index].attributes.class.value += " error";
+  });
+  return false;
+}
