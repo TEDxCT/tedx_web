@@ -1,75 +1,93 @@
 <template name="manage">
   <div class="container-fluid red centered">
-    <!-- {{#if userIsVerified}} -->
+    {{#if currentUser}}
     <ul class="toolbar">
       <li class="logout">
         <i class="icon-tags"></i>
         Log out
       </li>
     </ul>
-    <!-- {{/if}} -->
     <h1>Logged in as {{username}}</h1>
+    {{/if}}
   </div>
 
   <div class="container-fluid centered">
-    {{#if userIsVerified}}
-    <h1>What would you like to do?</h1>
-    <div class="row">
-        <div class="col-xs-6 col-md-4">
-          <a href="{{pathFor route='speakers'}}" class="noLink">
-            <div class="manage_tile">
-              <i class="icon-profile"></i>
-              <div>Manage Speakers</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="manage_tile">
-            <i class="icon-business-chart-2"></i>
-            <div><a href="/manage/categories">Analyse Categories</a></div>
-            </div>
-          </div>
-        <div class="col-xs-6 col-md-4">
-          <a href="{{pathFor route='posts.new'}}" class="noLink">
-            <div class="manage_tile">
-              <i class="icon-profile"></i>
-              <div>Add Talk</div>
-            </div>
-          </a>
-        </div>
-      </div>
-        <div class="row">
-          <div class=".col-xs-6 col-md-4">
-            <a href="{{pathFor route='live'}}" class="noLink">
-              <div class="manage_tile">
-                <i class="icon-television"></i>
-                <div>Live Streaming</div>
-              </div>
-            </a>
-          </div>
-          <div class=".col-xs-6 col-md-4">
-            <a href="{{pathFor route='sponsors.new'}}" class="noLink">
-              <div class="manage_tile">
-                <i class="icon-organization"></i>
-                <div>Add Sponsor</div>
-              </div>
-            </a>
-          </div>
-          <div class=".col-xs-6 col-md-4">
-            <a href="{{pathFor route='users'}}" class="noLink">
-              <div class="manage_tile">
-                <i class="icon-organization"></i>
-                <div>Manage Users</div>
-              </div>
-            </a>
-          </div>
-      </div>
+  {{#if userIsVerified}}
+    {{#if userIsInRole 'admin'}}
+      {{> admin}}
+    {{else}}
+      {{#if userIsInRole 'simulcast'}}
+        <h1>You only have permissions to edit your simulcast event.</h1>
       {{else}}
-      <h1>You need to verify your email address before you can administer this website.</h1>
-        <div>
-          <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
-        </div>
+        {{#if userIsInRole 'speaker'}}
+          <h1>You only have permissions to edit your speaker profile.</h1>
+        {{else}}
+          {{#if userIsInRole 'member'}}
+            <h1>You are logged in as a TEDxCT member.</h1>
+          {{/if}}
+        {{/if}}
       {{/if}}
+    {{/if}}
+  {{else}}
+    <h1>You need to verify your email address before you can view this page.</h1>
+    <div>
+      <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
+    </div>
+  {{/if}}
       <br/>
 </div>
+</template>
+
+<template name="admin">
+  <h1>What would you like to do?</h1>
+  <div class="row">
+      <div class="col-xs-6 col-md-4">
+        <a href="{{pathFor route='speakers'}}" class="noLink">
+          <div class="manage_tile">
+            <i class="icon-profile"></i>
+            <div>Manage Speakers</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="manage_tile">
+          <i class="icon-business-chart-2"></i>
+          <div><a href="/manage/categories">Analyse Categories</a></div>
+          </div>
+        </div>
+      <div class="col-xs-6 col-md-4">
+        <a href="{{pathFor route='posts.new'}}" class="noLink">
+          <div class="manage_tile">
+            <i class="icon-profile"></i>
+            <div>Add Talk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+      <div class="row">
+        <div class=".col-xs-6 col-md-4">
+          <a href="{{pathFor route='live'}}" class="noLink">
+            <div class="manage_tile">
+              <i class="icon-television"></i>
+              <div>Live Streaming</div>
+            </div>
+          </a>
+        </div>
+        <div class=".col-xs-6 col-md-4">
+          <a href="{{pathFor route='sponsors.new'}}" class="noLink">
+            <div class="manage_tile">
+              <i class="icon-organization"></i>
+              <div>Add Sponsor</div>
+            </div>
+          </a>
+        </div>
+        <div class=".col-xs-6 col-md-4">
+          <a href="{{pathFor route='users'}}" class="noLink">
+            <div class="manage_tile">
+              <i class="icon-organization"></i>
+              <div>Manage Users</div>
+            </div>
+          </a>
+        </div>
+    </div>
 </template>
