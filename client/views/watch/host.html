@@ -153,12 +153,6 @@
     </div>
     {{#if currentUser}}
     <ul class="toolbar">
-      <li>
-        <a href="" class="tag">
-          <i class="icon-tags"></i>
-          RSVP (Coming soon)
-        </a>
-      </li>
       {{#if ownsEvent}}
       <li>
         <a href="{{pathFor route='editHosted' data=this}}" class="edit">
@@ -188,6 +182,7 @@
       </div>
       <div class="col-md-6">
         <h3>Contact information</h3>
+        <p>Contact the organiser to RSVP</p>
         {{#if currentUser}}
           {{#if phone}}
             <strong><i class="icon-message"></i> Phone number</strong>
@@ -203,10 +198,17 @@
       </div>
     </div>
     <hr class="dashed">
-    <h3>Given location</h3>
-    {{this.givenAddress}}
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Given location</h3>
+        {{this.givenAddress}}
+      </div>
+      <div class="col-md-6">
+        <hr class="no-line extra-space-top ">
+        <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
+      </div>
+    </div>
     <h3>Map</h3>
-    <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
     <div class="map-container">
       {{> googleMap name="singlePartyMap" options=singlePartyMapOptions}}
     </div>
