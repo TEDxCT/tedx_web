@@ -1,4 +1,4 @@
-<template name="host">  
+<template name="host">
   <div class="container-fluid">
     <hr class="extra-space-top no-line">
     <h2>Host your own Simulcast</h2>
@@ -193,7 +193,7 @@
             <p>{{this.email}}</p>
           {{/if}}
         {{else}}
-          <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
+          <a href="/register/?nextPage=live" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
         {{/if}}
       </div>
     </div>
@@ -205,7 +205,7 @@
       </div>
       <div class="col-md-6">
         <hr class="no-line extra-space-top ">
-        <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
+        <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z"><i class="icon-map-pin"></i> See on Google Maps</a>
       </div>
     </div>
     <h3>Map</h3>
