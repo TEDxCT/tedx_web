@@ -73,6 +73,7 @@ function loginWithPassword(email, password) {
       }
       else {
         if(Session.get("nextPage")) {
+          console.log(Session.get("nextPage"));
           Router.go(Session.get("nextPage"));
           Session.set("nextPage", undefined);
         }
