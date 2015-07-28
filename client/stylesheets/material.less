@@ -355,6 +355,24 @@ label {
   }
 }
 
+.btn.btn-outline:not(.btn-link):not(.btn-flat) {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+
+  &:hover {
+    background: white;
+    color: inherit;
+  }
+  &:active {
+    background: darken(@primaryColor, 5%);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
 
 //ACTION BUTTON
 .btn-circle {
