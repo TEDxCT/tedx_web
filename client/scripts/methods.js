@@ -14,7 +14,7 @@ userIsInRole = function(role) {
   // }
 
   var userIsInRole = false;
-  if (Roles.userIsInRole(Meteor.user(), [role])) {
+  if (Roles.userIsInRole(Meteor.user(), ['admin', role])) {
     userIsInRole = true;
   }
 
