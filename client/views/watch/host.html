@@ -179,22 +179,30 @@
   <div class="container-fluid">
     <h1>{{this.title}}</h1>
     <p>hosted by {{this.fullName}}</p>
-    <p>{{this.description}}</p>
-    <h3>Entry</h3>
-    <p>{{this.entry}}</p>
-    <h3>Contact information</h3>
-    {{#if currentUser}}
-      {{#if phone}}
-        <h4>Phone number</h4>
-        <p>{{this.phone}}</p>
-      {{/if}}
-      {{#if email}}
-        <h4>Email</h4>
-        <p>{{this.email}}</p>
-      {{/if}}
-    {{else}}
-      <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
-    {{/if}}
+    <div class="row">
+      <div class="col-md-6">
+        <p>{{this.description}}</p>
+        <hr class="dashed">
+        <h3>Entry</h3>
+        <p>{{this.entry}}</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Contact information</h3>
+        {{#if currentUser}}
+          {{#if phone}}
+            <strong><i class="icon-message"></i> Phone number</strong>
+            <p>{{this.phone}}</p>
+          {{/if}}
+          {{#if email}}
+            <strong><i class="icon-email"></i> Email</strong>
+            <p>{{this.email}}</p>
+          {{/if}}
+        {{else}}
+          <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
+        {{/if}}
+      </div>
+    </div>
+    <hr class="dashed">
     <h3>Given location</h3>
     {{this.givenAddress}}
     <h3>Map</h3>
