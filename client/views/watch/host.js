@@ -16,6 +16,9 @@ Template.hostDetails.helpers({
 })
 
 Template.hostDetails.events({
+  'submit form': function(event){
+    event.preventDefault();
+  },
   "keyup .partyName": function() {
     setFieldOnSessionObject("draftViewingParty", "title", $(".partyName").val());
   },
@@ -167,6 +170,13 @@ function searchLocation(searchTerm) {
 }
 
 Template.hostLocation.events({
+  'submit form': function(event){
+    event.preventDefault();
+    if (event.which === 13) {
+      var searchTerm = $(template.find(".search")).val();
+      searchLocation(searchTerm);
+    }
+  },
   'click .submit-search': function(event, template) {
     var searchTerm = $(template.find(".search")).val();
     searchLocation(searchTerm);
