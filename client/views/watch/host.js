@@ -193,6 +193,11 @@ Template.hostLocation.events({
       else {
         savedViewingParty = live.insert(viewingPartyForSaving);
         Session.set("draftViewingParty", undefined);
+        Meteor.call('sendEmail',
+            Meteor.user().emails[0].address,
+            'bob@example.com',
+            'Your event is set up!',
+            'Thanks for setting up your event. Find it here http://live.tedxcapetown.org/live/host/' + savedViewingParty);
         Router.go("hosted", {"_id": savedViewingParty});
       }
     }
