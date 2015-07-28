@@ -1,4 +1,4 @@
-.onoffswitch {
+.onoffswitch, .privatePublicSwitch {
     position: relative; width: 96px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
@@ -28,6 +28,17 @@
 }
 .onoffswitch-inner:after {
     content: "Draft";
+    padding-right: 10px;
+    background-color: #CCCCCC; color: #333333;
+    text-align: right;
+}
+.privatePublicSwitch .onoffswitch-inner:before {
+    content: "Private";
+    padding-left: 10px;
+    background-color: #FF2600; color: #FFFFFF;
+}
+.privatePublicSwitch .onoffswitch-inner:after {
+    content: "Public";
     padding-right: 10px;
     background-color: #CCCCCC; color: #333333;
     text-align: right;

@@ -1,3 +1,35 @@
 <template name="watch">
     {{> talks this}}
 </template>
+
+<template name="live">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Watch TEDx Simulcast</h2>
+        <p>Watch live streams of TEDx Cape Town events.</p>
+      </div>
+      <div class="col-md-4">
+        <a href="{{pathFor route='host'}}" class="btn btn-primary spacing no-link">Want to host your own Simulcast?</a>
+      </div>
+    </div>
+    <img src="/images/default/stream.png">
+    <h3>Find a live stream simulcast in your city</h3>
+    <p>The TEDx community around the world host viewing parties in their offices, homes and public spaces.</p><p> Join in to not only see the event live stream but also meet the amazing people in our community.</p>
+    <div class="map-actions">
+      <div class="row">
+        <div class="col-md-10">
+          <input type="text" class="search" placeholder="Search for a place..." id="autocomplete">
+        </div>
+        <div class="col-md-2">
+          <div class="btn submit-search btn-secondary">
+            <i class="icon-magnifier"></i> Search
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-container">
+    {{> googleMap name="simulcastMap" options=simulcastMapOptions}}
+  </div>
+  </div>
+</template>

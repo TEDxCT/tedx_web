@@ -107,10 +107,9 @@ Template.sectionQuickEdits.events({
 
 Template.image.events({
   'click .upload': function(event, template) {
-    var uniqueImageIdentifier = event.currentTarget.attributes.unique.textContent;
     var self = this;
     filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
-      $('#' + uniqueImageIdentifier + " img").attr("src", Blob.url);
+      $('#' + self.unique + ' img').attr("src", Blob.url);
     });
   },
 })

@@ -1,4 +1,22 @@
 Meteor.methods({
+  setAdmin: function(ids) {
+    var loggedInUser = Meteor.user();
+
+    if (!loggedInUser || !loggedInUser.isAdmin) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+    var didUpdate = Meteor.users.update({"_id": {$in: ids}},  { $set: { 'isAdmin': true }}, {multi: true});
+    return didUpdate;
+  },
+  removeAdmin: function(ids) {
+    var loggedInUser = Meteor.user();
+
+    if (!loggedInUser || !loggedInUser.isAdmin) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+    var didUpdate = Meteor.users.update({"_id": {$in: ids}},  { $set: { 'isAdmin': false }}, {multi: true});
+    return didUpdate;
+  },
   resendVerificationEmail: function () {
     var currentUser = Meteor.user();
     if(currentUser) {

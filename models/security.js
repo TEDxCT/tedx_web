@@ -23,6 +23,18 @@ if (Meteor.isServer) {
       return true;
     }
   });
+  live.allow({
+    insert : function () {
+      return true;
+    },
+    update : function (doc) {
+      console.log();
+      return true;
+    },
+    remove : function () {
+      return true;
+    }
+  });
   chapters.allow({
     insert : function () {
       return true;

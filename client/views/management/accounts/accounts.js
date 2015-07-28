@@ -71,7 +71,13 @@ function loginWithPassword(email, password) {
       if(error) {
         $(".help-block").removeClass("hidden");
       }
-      else Router.go("/");
+      else {
+        if(Session.get("nextPage")) {
+          Router.go(Session.get("nextPage"));
+          Session.set("nextPage", undefined);
+        }
+        else Router.go("/");
+      }
     });
   }
   else {
@@ -90,7 +96,13 @@ function createNewAccount(options) {
           if(error) {
             FlashMessages.sendError("There was an error creating your account, please check all fields are complete and correct.");
           }
-          else Router.go("/");
+          else {
+            if(Session.get("nextPage")) {
+              Router.go(Session.get("nextPage"));
+              Session.set("nextPage", undefined);
+            }
+            else Router.go("/");
+          }
         });
       }
       else {

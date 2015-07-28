@@ -12,8 +12,7 @@
 </template> -->
 
 <template name="users">
-	 <page class="manage_users">
-	 	{{#if userIsVerified}}
+	 <div class="container-fluid">
 				<table class="table">
 			    <thead>
 			      <tr>
@@ -25,16 +24,12 @@
 			   {{#each users}}
 				 <tr>
 				    <td>{{emails.[0].address}}</td>
-				    <td>
-						<input type="checkbox" checked="{{this.checked}}" class="toggle-checked" />
-					</td>
+
+				    <td><input type="checkbox" value="{{this._id}}" checked="{{this.isAdmin}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
 				  </tr>
   			    {{/each}}
 			    </tbody>
   			</table>
-		{{else}}
-				<h1>You do not have permission to view this page</h1>
-		{{/if}}
-			
-  	</page>
+				<button type="button" class="btn btn-primary btn-save">Save</button>
+  	</div>
 </template>
