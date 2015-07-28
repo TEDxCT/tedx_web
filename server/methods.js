@@ -1,18 +1,27 @@
 Meteor.methods({
-  setRoleForUser: function(userId, roleToUpdate){
-    var loggedInUser = Meteor.user();
 
-    if (!loggedInUser || !loggedInUser.isAdmin) {
-      throw new Meteor.Error(403, "Access denied");
+  toggleUserRole: function (targetUserId, role) {
+    var loggedInUser = Meteor.user()
+
+    if (!loggedInUser ||
+        !Roles.userIsInRole(loggedInUser,
+                            ['admin'])) {
+      throw new Meteor.Error(403, "Access denied")
     }
-    var user = Meteor.users.findOne({"_id" : userId, "roles": {$in: [roleToUpdate]}});
-    var didUpdate;
-    if (user != undefined) {
-      didUpdate = Meteor.users.update({"_id": userId},  { $pull: { 'roles':roleToUpdate}});
+
+    var roles = [];
+    var targetUser = Meteor.users.findOne({"_id" : targetUserId});
+    if (targetUser != undefined && targetUser.roles != undefined) {
+      roles = targetUser.roles;
+    }
+    if (Roles.userIsInRole(targetUserId, role)) {
+      console.log('Removing role')
+      return Roles.removeUsersFromRoles(targetUserId, role);
     } else {
-      didUpdate = Meteor.users.update({"_id": userId},  { $push: { 'roles':roleToUpdate}});
+      console.log('Adding role')
+      roles.push(role);
+      return Roles.setUserRoles(targetUserId, roles)
     }
-    return didUpdate;
   },
   setAdmin: function(ids) {
     var loggedInUser = Meteor.user();

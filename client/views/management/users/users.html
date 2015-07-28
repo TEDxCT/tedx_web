@@ -33,10 +33,9 @@
 				 <tr>
 				    <td>{{emails.[0].address}}</td>
 				    <td><input type="checkbox" value="admin" checked="{{checkRole this._id 'admin'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
+						<td><input type="checkbox" value="member" checked="{{checkRole this._id 'member'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
 						<td><input type="checkbox" value="simulcast" checked="{{checkRole this._id 'simulcast'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
 						<td><input type="checkbox" value="speaker" checked="{{checkRole this._id 'speaker'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
-						<td><input type="checkbox" value="member" checked="{{checkRole this._id 'member'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
-
 				  </tr>
   			    {{/each}}
 			    </tbody>

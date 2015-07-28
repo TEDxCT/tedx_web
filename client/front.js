@@ -57,8 +57,12 @@ Handlebars.registerHelper('isEqual', function(string1, string2) {
     return string1 === string2;
 });
 
-Handlebars.registerHelper('userIsVerified', function(){
-  return isAdminUser();
+Handlebars.registerHelper('userIsInRole', function(role){
+  return userIsInRole(role);
+});
+
+Handlebars.registerHelper('userIsVerified', function(role){
+ return userIsVerified();
 });
 
 Handlebars.registerHelper('formatId', function(data) {
@@ -75,15 +79,4 @@ Handlebars.registerHelper('objectsWithIndex', function(objects) {
       objects[i].index = i;
   }
   return objects;
-});
-
-Handlebars.registerHelper('checkRoleOnServer', function(userId, roleToCheck) {
- return Meteor.call("checkRoleOnServer", userId, roleToCheck, function(error, result) {
-   console.log(result);
-   if (error) {
-     return false;
-   } else {
-     return true;
-   }
- });
 });
