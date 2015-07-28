@@ -1,4 +1,4 @@
-<template name="host">
+<template name="host">  
   <div class="container-fluid">
     <hr class="extra-space-top no-line">
     <h2>Host your own Simulcast</h2>
@@ -6,7 +6,7 @@
     <hr class="extra-space-top no-line">
     <div class="row">
       <div class="col-md-7">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/23z4lZawiQc?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vSMpDXQPRFc?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="col-md-5">
         <h4>Download the official guide</h4>
@@ -113,7 +113,7 @@
 
 <template name="hostLocation">
   <div class="container-fluid">
-  <form>
+  <form id="partyLocationForm">
     <h4>Venue details</h4>
     <div class="form-group">
       <label for="search">Search address or place</label>
@@ -153,12 +153,6 @@
     </div>
     {{#if currentUser}}
     <ul class="toolbar">
-      <li>
-        <a href="" class="tag">
-          <i class="icon-tags"></i>
-          RSVP (Coming soon)
-        </a>
-      </li>
       {{#if ownsEvent}}
       <li>
         <a href="{{pathFor route='editHosted' data=this}}" class="edit">
@@ -179,26 +173,42 @@
   <div class="container-fluid">
     <h1>{{this.title}}</h1>
     <p>hosted by {{this.fullName}}</p>
-    <p>{{this.description}}</p>
-    <h3>Entry</h3>
-    <p>{{this.entry}}</p>
-    <h3>Contact information</h3>
-    {{#if currentUser}}
-      {{#if phone}}
-        <h4>Phone number</h4>
-        <p>{{this.phone}}</p>
-      {{/if}}
-      {{#if email}}
-        <h4>Email</h4>
-        <p>{{this.email}}</p>
-      {{/if}}
-    {{else}}
-      <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
-    {{/if}}
-    <h3>Given location</h3>
-    {{this.givenAddress}}
+    <div class="row">
+      <div class="col-md-6">
+        <p>{{this.description}}</p>
+        <hr class="dashed">
+        <h3>Entry</h3>
+        <p>{{this.entry}}</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Contact information</h3>
+        <p>Contact the organiser to RSVP</p>
+        {{#if currentUser}}
+          {{#if phone}}
+            <strong><i class="icon-message"></i> Phone number</strong>
+            <p>{{this.phone}}</p>
+          {{/if}}
+          {{#if email}}
+            <strong><i class="icon-email"></i> Email</strong>
+            <p>{{this.email}}</p>
+          {{/if}}
+        {{else}}
+          <a href="/register/?nextPage=live/host/{{this._id}}" class="seeContactInfo"><i class="icon-lock-2"></i> Sign up / login to view</a>
+        {{/if}}
+      </div>
+    </div>
+    <hr class="dashed">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Given location</h3>
+        {{this.givenAddress}}
+      </div>
+      <div class="col-md-6">
+        <hr class="no-line extra-space-top ">
+        <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
+      </div>
+    </div>
     <h3>Map</h3>
-    <a class="btn btn-primary" href="https://www.google.com/maps/preview/@{{this.location.A}},{{this.location.F}},16z">See on Google Maps</a>
     <div class="map-container">
       {{> googleMap name="singlePartyMap" options=singlePartyMapOptions}}
     </div>

@@ -45,7 +45,7 @@ Template.hostDetails.events({
   },
   "click .chooseLocationLink": function() {
     if(validateForm("partyDetailsForm", {})) {
-
+      Router.go('hostlocation');
     }
   }
 })
@@ -181,7 +181,7 @@ Template.hostLocation.events({
     var viewingPartyForSaving = Session.get("draftViewingParty");
 
     var savedViewingParty;
-
+    if(validateForm("partyLocationForm")) {
       if(viewingPartyForSaving._id != undefined) {
         // saving and then removing ID off the object for saving because it would try change the documents ID
         var idForSaving = viewingPartyForSaving._id;
@@ -193,17 +193,25 @@ Template.hostLocation.events({
       else {
         savedViewingParty = live.insert(viewingPartyForSaving);
         Session.set("draftViewingParty", undefined);
+        Meteor.call('sendEmail',
+            Meteor.user().emails[0].address,
+            'bob@example.com',
+            'Your event is set up!',
+            'Thanks for setting up your event. Find it here http://live.tedxcapetown.org/live/host/' + savedViewingParty);
         Router.go("hosted", {"_id": savedViewingParty});
       }
+    }
   }
 });
 
 function validateForm(formID, fieldsToExclude) {
-  console.dir($('#formID'));
+  var numberOfInvalidFields = 0;
   $('#' + formID + ' *').filter(':input').each(function(index, value){
-    // $('#' + formID + ' *').filter(':input')[index].attr("class", "error");
-    console.log(value.value.toString());
-    if(value.value.toString()=="") $('#' + formID + ' *').filter(':input')[index].attributes.class.value += " error";
+    if(value.value.toString()=="") {
+      $('#' + formID + ' *').filter(':input')[index].attributes.class.value += " error";
+      numberOfInvalidFields++;
+    }
   });
-  return false;
+  if(numberOfInvalidFields==0) return true;
+  else return false;
 }
