@@ -30,12 +30,14 @@
         <img src="/images/logo_white.png" class="logo link home" >
       </div>
       <div class="nav-links">
+        {{#if userIsInRole "member"}}
         <div class="link watch">
           <a href="{{pathFor route='watch'}}" class="noLink">Watch</a>
         </div>
         <div class="link events">Events</div>
         <div class="link about">Connect</div>
         <div class="link news">News</div>
+        {{/if}}
         <!-- <div class="link search">
           <i class="icon-magnifier"></i>
         </div> -->

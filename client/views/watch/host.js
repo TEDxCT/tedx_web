@@ -218,7 +218,7 @@ function validateForm(formID, fieldsToExclude) {
   var numberOfInvalidFields = 0;
   $('#' + formID + ' *').filter(':input').each(function(index, value){
     if(value.value.toString()=="") {
-      $('#' + formID + ' *').filter(':input')[index].attributes.class.value += " error";
+      $('#' + formID + ' *').find(':input')[index].attributes.class.value += " error";      
       numberOfInvalidFields++;
     }
   });
