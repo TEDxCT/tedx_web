@@ -13,23 +13,34 @@
 
 <template name="users">
 	 <div class="container-fluid">
+		 <div class="notice">
+		 	<h3>Please Note!</h3>
+		 	<h4>User roles are saved immediately to the server.</h4>
+		 	<h4>You cannot update the currently logged in user.</h4>
+	 	</div>
 				<table class="table">
 			    <thead>
 			      <tr>
 			        <th>User Email Address</th>
 			        <th>Admin</th>
+							<th>TEDxCT Member</th>
+							<th>Simulcast</th>
+							<th>Speaker</th>
 			      </tr>
 			    </thead>
 			    <tbody>
 			   {{#each users}}
 				 <tr>
 				    <td>{{emails.[0].address}}</td>
+				    <td><input type="checkbox" value="admin" checked="{{checkRole this._id 'admin'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
+						<td><input type="checkbox" value="simulcast" checked="{{checkRole this._id 'simulcast'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
+						<td><input type="checkbox" value="speaker" checked="{{checkRole this._id 'speaker'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
+						<td><input type="checkbox" value="member" checked="{{checkRole this._id 'member'}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
 
-				    <td><input type="checkbox" value="{{this._id}}" checked="{{this.isAdmin}}" id="checkbox" disabled="{{compareUserIds this._id}}"/></td>
 				  </tr>
   			    {{/each}}
 			    </tbody>
   			</table>
-				<button type="button" class="btn btn-primary btn-save">Save</button>
+				<!-- <button type="button" class="btn btn-primary btn-save">Save</button> -->
   	</div>
 </template>

@@ -1,4 +1,19 @@
 Meteor.methods({
+  setRoleForUser: function(userId, roleToUpdate){
+    var loggedInUser = Meteor.user();
+
+    if (!loggedInUser || !loggedInUser.isAdmin) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+    var user = Meteor.users.findOne({"_id" : userId, "roles": {$in: [roleToUpdate]}});
+    var didUpdate;
+    if (user != undefined) {
+      didUpdate = Meteor.users.update({"_id": userId},  { $pull: { 'roles':roleToUpdate}});
+    } else {
+      didUpdate = Meteor.users.update({"_id": userId},  { $push: { 'roles':roleToUpdate}});
+    }
+    return didUpdate;
+  },
   setAdmin: function(ids) {
     var loggedInUser = Meteor.user();
 
@@ -16,6 +31,28 @@ Meteor.methods({
     }
     var didUpdate = Meteor.users.update({"_id": {$in: ids}},  { $set: { 'isAdmin': false }}, {multi: true});
     return didUpdate;
+  },
+  userHasAdminRole: function() {
+    var loggedInUser = Meteor.user();
+    return loggedInUser.isAdmin;
+  },
+  checkRoleOnServer: function(userId, roleToCheck) {
+    var loggedInUser = Meteor.user();
+
+    if (!loggedInUser || !loggedInUser.isAdmin) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+
+    var userWithRoles = Meteor.users.findOne({"_id" : userId}, {"roles" : 1});
+    var hasRole = false;
+    if (userWithRoles.roles != undefined) {
+      var index = userWithRoles.roles.indexOf(roleToCheck);
+      if (index > -1) {
+        hasRole = true;
+      }
+    }
+    return hasRole;
+
   },
   resendVerificationEmail: function () {
     var currentUser = Meteor.user();

@@ -76,3 +76,14 @@ Handlebars.registerHelper('objectsWithIndex', function(objects) {
   }
   return objects;
 });
+
+Handlebars.registerHelper('checkRoleOnServer', function(userId, roleToCheck) {
+ return Meteor.call("checkRoleOnServer", userId, roleToCheck, function(error, result) {
+   console.log(result);
+   if (error) {
+     return false;
+   } else {
+     return true;
+   }
+ });
+});
