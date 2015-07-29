@@ -1,3 +1,8 @@
+Template.talks.onRendered(function() {
+  console.log("Thing thing ran");
+  VideosSearch.search();
+})
+
 Template.talks.helpers({
   "allvideos": function() {
     var searchString = Session.get("search-term");
@@ -18,6 +23,18 @@ Template.talks.helpers({
     if(searchTerm!=$(".search").val()) {
       return Session.get("search-term");
     }
+  },
+  getVideos: function() {
+    return VideosSearch.getData({
+      transform: function(matchText, regExp) {
+        return matchText.replace(regExp, "<b>$&</b>")
+      },
+      sort: {isoScore: -1}
+    });
+  },
+
+  isLoading: function() {
+    return PackageSearch.getStatus().loading;
   }
 });
 
@@ -34,9 +51,13 @@ Template.talk.helpers({
 });
 
 Template.talks.events({
-  'keyup .search': function(event, template) {
-    Session.set("search-term", $(".search").val());
-  }
+  // 'keyup .search': function(event, template) {
+  //   Session.set("search-term", $(".search").val());
+  // }
+  "keyup .search": _.throttle(function(e) {
+    var text = $(e.target).val().trim();
+    VideosSearch.search(text);
+  }, 200)
 });
 
 Template.talk.events({

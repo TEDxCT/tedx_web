@@ -2,12 +2,21 @@
   <!-- <img class="full-width banner animated fadeIn" src="/images/banners/talks.jpg"> -->
   <div class="filters container-fluid dark">
     <input type="text" class="search" placeholder="Search by talk title or speakers name..." value={{searchTerm}}>
-    <p><small>Currently search is case sensitive. So if you're not getting results try lowecase or uppercase - <i class="icon-heart-1"></i> Tech team</small></p>
+    <hr class="no-line">
+  </div>
+  <div class="container-fluid dark">
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+        {{#each getVideos}}
+            {{> talkTile this}}
+          {{/each}}
+      </section>
+    </div>
   </div>
 
-  <div class="container-fluid dark">
+  <!-- <div class="container-fluid dark">
     {{> videos allvideos}}
-  </div>
+  </div> -->
 </template>
 
 <template name="talk">
