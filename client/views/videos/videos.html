@@ -21,16 +21,13 @@
 </template>
 
 <template name="talkTile">
-  <a class="talk-tile" href="{{pathFor route='talks.show' data=videoId}}" >
-    <div class="top">
-      <span class="tile-category">{{this.category}}</span>
-      <h2 class="tile-title title--preview">{{this.title}}</h2>
+  <a class="talk-tile animated fadeInUp" href="{{pathFor route='talks.show' data=videoId}}"  style="background: url(https://img.youtube.com/vi/{{this.videoId}}/0.jpg); background-size: cover;">
+    <div class="bottom">
+      <h1>{{this.title}}</h1>
+      <span>{{this.speaker.name}}</span>
     </div>
     <div class="play">
       <img src="/images/play_triangle.png">
     </div>
-    <!-- <div class="bottom" style="background: url(http://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg); background-size: cover">
-
-    </div> -->
   </a>
 </template>

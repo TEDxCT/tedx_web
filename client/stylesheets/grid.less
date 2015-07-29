@@ -68,7 +68,8 @@
   position: relative;
   color: inherit;
   background: #fff;
-  min-height: 300px;
+  min-height: 290px;
+  border: 3px solid white;
   cursor: pointer;
   text-align: center;
   display: -webkit-box;
@@ -85,21 +86,26 @@
   overflow: hidden;
 
   .bottom {
+    background: @primaryColor;
+    color: white;
     position: absolute;
-    bottom: 10px;
+    padding: 10px 20px;
+    bottom: 0px;
     left: 0px;
     height: 120px;
-    width: 95%;
+    width: 100%;
+
+    h1 {
+      font-size: 22px;
+      margin-top: 5px;
+      padding-top: 0;
+    }
   }
 
   .play {
-    width: 80px;
-    height: 45px;
-    margin: 0 auto;
-    background: @secondaryColor;
-    padding-top: 10px;
-    padding-left: 5px;
-    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -645,7 +651,6 @@
   /* 2 columns */
   .talk-tile {
     width: 50%;
-    border: none;
   }
 
   .talk-tile::before {
