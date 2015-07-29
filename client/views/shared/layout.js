@@ -53,9 +53,6 @@ Template.default.events({
 	'click .link.events': function() {
 		Router.go("events");
 	},
-	'click .link.about': function() {
-		Router.go("about");
-	},
 	'click .link.news': function() {
 		Router.go("posts");
 	},
