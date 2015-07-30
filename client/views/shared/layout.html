@@ -24,7 +24,7 @@
 
   {{> metaData}}
   <div class="background"></div>
-  <div class="page">
+  <div class="page-wrapper">
     <section class="top {{color}} padded">
       <div class="branding">
         <img src="/images/logo_white.png" class="logo link home" >
@@ -55,7 +55,8 @@
       </div>
 
     </section>
-    <div class="animated fadeIn">
+    <div class="animated fadeIn page">
+    {{> authenticate}}
     {{> yield}}
     </div>
     {{> footer}}
