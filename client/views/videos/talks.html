@@ -1,49 +1,50 @@
 <template name="talks">
   <!-- <img class="full-width banner animated fadeIn" src="/images/banners/talks.jpg"> -->
-  <div class="filters">
-    <nav class="animated fadeIn navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <input type="text" class="search" placeholder="Search by talk title or speakers name..." value={{searchTerm}}>
-        <p><small>Currently search is case sensitive. So if you're not getting results try lowecase or uppercase - <i class="icon-heart-1"></i> Tech team</small></p>
-          <!-- <ul class="nav navbar-nav">
-            <li class="icon-nav "><a href="/"><i class="icon-filter"></i></a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapter <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-title">TEDxCT Chapters</li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href=""><input type="checkbox" class="filter-category"> Women</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Social <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-title">TEDxCT Chapters</li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            {{#if currentUser}}
-              <li class="favorites"><a href="#feedback"><i class="icon-star"></i> My Favorites</a></li>
-            {{/if}}
-            <li class="feedback"><a href="#feedback">Share</a></li>
-
-          </ul> -->
-      </div><!-- /.container-fluid -->
-    </nav>
+  <div class="filters container-fluid dark">
+    <input type="text" class="search" placeholder="Search by talk title or speakers name..." value={{searchTerm}}>
+    <hr class="no-line">
   </div>
-  <div class="container-fluid talks">
-    {{> videos allvideos}}
+  <div class="container-fluid dark">
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+        {{#each getVideos}}
+            {{> talkTile this}}
+          {{/each}}
+      </section>
+    </div>
   </div>
 </template>
 
+<template name="videos">
+  <div id="theGrid" class="main animated fadeIn">
+    <section class="grid">
+      {{#each this}}
+        {{> talkTile this}}
+      {{/each}}
+    </section>
+  </div>
+</template>
+
+<template name="talkTile">
+  <a class="talk-tile animated fadeInUp" href="{{pathFor route='talks.show' data=videoId}}">
+  <div class="top" style="background: url(https://img.youtube.com/vi/{{this.videoId}}/0.jpg); background-size: 110%; background-repeat: no-repeat">
+
+  </div>
+    <div class="talk-title">{{{this.title}}}</div>
+    <div class="talk-speaker">by {{this.speaker.name}}</div>
+    <div class="bottom">
+      <!-- <span>{{this.speaker.name}}</span> -->
+      {{#markdown}}{{description}}{{/markdown}}
+    </div>
+    <div class="actions">
+      <button class="btn"><i class="icon-play"></i> <span>View talk</span></button>
+      <!-- <span class="pull-right like"><i class="icon-heart-1-1"></i></span> -->
+    </div>
+  </a>
+</template>
+
 <template name="talk">
-  <article class="talk__content content__item content__item--show animated fadeIn">
+  <div class="container-fluid animated fadeIn">
     <div class="back-button back">
       <a href="{{pathFor route='watch'}}" class="noLink">
         <i class="icon-thumbnails-1"></i>
@@ -52,8 +53,17 @@
         </span>
       </a>
     </div>
-    {{#if userIsInRole 'member'}}
+    {{#if userIsInRole 'admin'}}
     <ul class="toolbar">
+      <li class="no-padding">
+        <div class="featured-switch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.featured}}">
+          <label class="onoffswitch-label" for="favoriteSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </li>
       <li>
         <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
           <i class="icon-tags"></i>
@@ -74,14 +84,12 @@
       </li>
     </ul>
     {{/if}}
-    <span class="tile-category category--full">{{this.category}}</span>
-    <h2 class="tile-title title--full">{{this.title}}</h2>
-    <div class="meta meta--full">
-      <!-- <img class="meta__avatar" src="img/authors/1.png" alt="author01" /> -->
-      <span class="meta__author">{{this.speaker.name}}</span>
-    </div>
     <hr class="space extra-space-top">
-    <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <h1 class="tile-title">{{this.title}}</h1>
+    <hr class="space extra-space-top">
+  </div>
+  <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/{{this.videoId}}?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <div class="container-fluid">
     <hr class="space">
     <ul class="share-buttons">
       <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
@@ -93,6 +101,8 @@
     </ul>
     <hr class="space extra-space-top">
     <hr class="dashed">
-    {{#markdown}}{{this.description}}{{/markdown}}
-  </article>
+    <article class="reader">
+      {{#markdown}}{{this.description}}{{/markdown}}
+    </article>
+  </div>
 </template>

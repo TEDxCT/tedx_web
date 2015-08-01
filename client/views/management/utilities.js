@@ -39,6 +39,14 @@ Template.editor.helpers({
   'sections': function() {
     return Session.get("sections");
   },
+  'summary': function() {
+    if((this.summary=="")||(this.summary==undefined)) {
+      return "Enter a summary line here";
+    }
+    else if(this.summary!=$(".summary").innerText) {
+      $(".summary").innerText(this.summary);
+    }
+  }
 });
 
 Template.viewer.helpers({
@@ -52,7 +60,7 @@ Template.viewer.helpers({
     modifiedThis.edtiable = false;
     modifiedThis.unique = ShortId.generate();
     return modifiedThis;
-  }
+  },
 })
 
 Template.text.events({

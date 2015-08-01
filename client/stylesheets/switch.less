@@ -1,4 +1,4 @@
-.onoffswitch, .privatePublicSwitch {
+.onoffswitch, .privatePublicSwitch, .featured-switch {
     position: relative; width: 96px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
@@ -39,6 +39,17 @@
 }
 .privatePublicSwitch .onoffswitch-inner:after {
     content: "Public";
+    padding-right: 10px;
+    background-color: #CCCCCC; color: #333333;
+    text-align: right;
+}
+.featured-switch .onoffswitch-inner:before {
+    content: "Featured";
+    padding-left: 10px;
+    background-color: #FF2600; color: #FFFFFF;
+}
+.featured-switch .onoffswitch-inner:after {
+    content: "Feature";
     padding-right: 10px;
     background-color: #CCCCCC; color: #333333;
     text-align: right;

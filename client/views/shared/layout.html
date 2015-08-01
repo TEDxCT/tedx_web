@@ -24,7 +24,7 @@
 
   {{> metaData}}
   <div class="background"></div>
-  <div class="page">
+  <div class="page-wrapper">
     <section class="top {{color}} padded">
       <div class="branding">
         <img src="/images/logo_white.png" class="logo link home" >
@@ -55,7 +55,10 @@
       </div>
 
     </section>
+    <div class="animated fadeIn page">
+    <!-- {{> authenticate}} -->
     {{> yield}}
+    </div>
     {{> footer}}
   </div>
 </template>
@@ -84,6 +87,20 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="fragment" content="!">
     <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fetonj2b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+    <script>
+      ChatraID = 'KvcYsyXSBbANETK6M';
+      (function(d, w, c) {
+          var n = d.getElementsByTagName('script')[0],
+              s = d.createElement('script');
+          w[c] = w[c] || function() {
+              (w[c].q = w[c].q || []).push(arguments);
+          };
+          s.async = true;
+          s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+              + '//chat.chatra.io/chatra.js';
+          n.parentNode.insertBefore(s, n);
+      })(document, window, 'Chatra');
+  </script>
 </template>
 
 <template name="adminMenu">
