@@ -270,6 +270,8 @@ animation-delay: -0.16s;
 			color: white;
 			border-color: white;
 		}
+
+		border: 0;
 	}
 }
 article {
@@ -292,6 +294,12 @@ article {
 			border-bottom: 1px dashed @secondaryColor;
 			height: 40px;
 		}
+	}
+
+	@media screen and (max-width: 600px) {
+			&.inList {
+					padding: 20px;
+			}
 	}
 
 	h3 {
