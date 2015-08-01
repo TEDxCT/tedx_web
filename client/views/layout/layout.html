@@ -36,24 +36,33 @@
         <i class="icon-menu"></i>
       </div>
       <div class="nav-links">
-        <div class="link">
-          <a href="https://www.quicket.co.za/events/10587-tedx-cape-town-2015-open-access-control/#/preregistration" target="_blank" class="noLink">
+        <a href="https://www.quicket.co.za/events/10587-tedx-cape-town-2015-open-access-control/#/preregistration" target="_blank" class="noLink">
+          <div class="link">
             <strong>Get tickets</strong>
-          </a>
         </div>
-        <div class="link">
-          <a href="{{pathFor route='live'}}" class="noLink">Simulcast</a>
+        </a>
+        <a href="{{pathFor route='live'}}" class="noLink">
+          <div class="link">
+            Simulcast
         </div>
-        <div class="link">
-          <a href="{{pathFor route='watch'}}" class="noLink">Watch Talks</a>
+        </a>
+        <a href="{{pathFor route='watch'}}" class="noLink">
+          <div class="link">
+            Watch Talks
         </div>
+        </a>
         {{#if userIsInRole "member"}}
-        <div class="link">
-          <a href="{{pathFor route='events'}}" class="noLink">Events</a>
-        </div>
-        <div class="link">
-          <a href="{{pathFor route='news'}}" class="noLink">News</a>
-        </div>
+
+        <a href="{{pathFor route='events'}}" class="noLink">
+          <div class="link">
+            Events
+          </div>
+        </a>
+        <a href="{{pathFor route='news'}}" class="noLink">
+          <div class="link">
+            News
+          </div>
+        </a>
         {{/if}}
         <!-- <div class="link search">
           <i class="icon-magnifier"></i>
