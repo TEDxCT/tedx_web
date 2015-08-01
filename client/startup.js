@@ -1,8 +1,3 @@
-Meteor.AppCache.config({
-  chromeMobileIOS: false,
-  mobileSafari: false
-});
-
 Meteor.startup(function() {
   if(Meteor.isClient){
     loadFilePicker('A3zo8DgItQxiOLaCAjmwUz');
