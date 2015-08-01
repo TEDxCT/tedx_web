@@ -38,13 +38,16 @@
             <strong>Get tickets</strong>
           </a>
         </div>
-        {{#if userIsInRole "member"}}
-        <div class="link watch">
-          <a href="{{pathFor route='watch'}}" class="noLink">Watch</a>
+        <div class="link">
+          <a href="{{pathFor route='live'}}" class="noLink">Simulcast</a>
         </div>
-        <div class="link events">Events</div>
-        <div class="link about">Connect</div>
-        <div class="link news">News</div>
+        <div class="link watch">
+          <a href="{{pathFor route='watch'}}" class="noLink">Watch Talks</a>
+        </div>
+        {{#if userIsInRole "member"}}
+          <div class="link events">Events</div>
+          <div class="link about">Connect</div>
+          <div class="link news">News</div>
         {{/if}}
         <!-- <div class="link search">
           <i class="icon-magnifier"></i>

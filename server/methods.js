@@ -14,11 +14,9 @@ Meteor.methods({
     if (targetUser != undefined && targetUser.roles != undefined) {
       roles = targetUser.roles;
     }
-    if (Roles.userIsInRole(targetUserId, role)) {
-      console.log('Removing role')
+    if (Roles.userIsInRole(targetUserId, role)) {      
       return Roles.removeUsersFromRoles(targetUserId, role);
     } else {
-      console.log('Adding role')
       roles.push(role);
       return Roles.setUserRoles(targetUserId, roles)
     }

@@ -79,8 +79,7 @@ Template.talk.events({
     videos.update(this._id, {$set: {"archive":true}});
     Router.go("talks");
   },
-  "click .featured-switch": function() {
-    console.log("Featuring");
+  "click .featured-switch": function() {    
     var oid = new Meteor.Collection.ObjectID(this._id);
     videos.update(oid, {$set: {"featured":$(".featured-switch").is(":checked")}});
   },
