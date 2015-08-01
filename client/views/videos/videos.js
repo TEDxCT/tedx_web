@@ -23,5 +23,8 @@ Template.talkTile.helpers({
     var modifiedVideoObject = this;
     modifiedVideoObject._id = formattedId(this._id);
     return modifiedVideoObject;
+  },
+  'description': function() {
+    return this.description.substring(0,70) + "...";
   }
 });
