@@ -29,8 +29,17 @@
         </span>
       </a>
     </div>
-    {{#if userIsInRole 'member'}}
+    {{#if userIsInRole 'admin'}}
     <ul class="toolbar">
+      <li class="no-padding">
+        <div class="featured-switch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.featured}}">
+          <label class="onoffswitch-label" for="favoriteSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </li>
       <li>
         <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
           <i class="icon-tags"></i>

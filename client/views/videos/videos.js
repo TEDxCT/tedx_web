@@ -25,6 +25,8 @@ Template.talkTile.helpers({
     return modifiedVideoObject;
   },
   'description': function() {
-    return this.description.substring(0,70) + "...";
+    if(this.description) {
+      return this.description.substring(0,70) + "...";
+    }    
   }
 });

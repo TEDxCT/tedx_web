@@ -39,10 +39,6 @@ Template.talks.helpers({
 });
 
 Template.talk.helpers({
-  "datatest": function() {
-    console.dir(this);
-    return "adasd";
-  },
   'talk': function() {
     var modifiedVideoObject = this;
     modifiedVideoObject._id = formattedId(this._id);
@@ -64,5 +60,10 @@ Template.talk.events({
   'click .delete': function() {
     videos.update(this._id, {$set: {"archive":true}});
     Router.go("talks");
+  },
+  "click .featured-switch": function() {
+    console.log("Featuring");
+    var oid = new Meteor.Collection.ObjectID(this._id);
+    videos.update(oid, {$set: {"featured":$(".featured-switch").is(":checked")}});
   },
 });
