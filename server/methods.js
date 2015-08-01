@@ -135,8 +135,8 @@ SearchSource.defineSource('videos', function(searchText, options) {
     ]};
 
     return videos.find(selector, options).fetch();
-  } else {    
-    return videos.find({}, options).fetch();
+  } else {
+    return videos.find({}).fetch();
   }
 });
 
