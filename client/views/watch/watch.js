@@ -84,3 +84,23 @@ Template.live.events({
     });
   }
 });
+
+Template.watch.helpers({
+  "videos" : function() {
+    return videos.find({});
+  },
+  "videosLoaded" : function () {
+    return Session.get('videosLoaded');
+  },
+  "favorited" : function() {
+    var videoFav = favorites.findOne({"doc":this._id});
+    if(videoFav) return true;
+    return false;
+  },
+});
+
+Template.watch.events({
+  'click .talk': function(event, template) {
+    Router.go("talk");
+  },
+});

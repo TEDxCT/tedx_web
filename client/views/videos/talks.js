@@ -1,5 +1,6 @@
+// --------------------------- TALKS LIST -------------------------------------
+
 Template.talks.onRendered(function() {
-  console.log("Thing thing ran");
   VideosSearch.search();
 })
 
@@ -37,6 +38,23 @@ Template.talks.helpers({
     return PackageSearch.getStatus().loading;
   }
 });
+
+// --------------------------- TALK TILE -------------------------------------
+
+Template.talkTile.helpers({
+  'videoId': function() {
+    var modifiedVideoObject = this;
+    modifiedVideoObject._id = formattedId(this._id);
+    return modifiedVideoObject;
+  },
+  'description': function() {
+    if(this.description) {
+      return this.description.substring(0,70) + "...";
+    }
+  }
+});
+
+// --------------------------- TALK PAGE -------------------------------------
 
 Template.talk.helpers({
   'talk': function() {
