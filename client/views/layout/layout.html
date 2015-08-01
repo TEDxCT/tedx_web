@@ -22,35 +22,35 @@
         </div>
         </a>
         <a href="{{pathFor route='live'}}" class="noLink">
-          <div class="link">
+          <div class="link {{#if selected 'Simulcast'}}active{{/if}}">
             Simulcast
         </div>
         </a>
         <a href="{{pathFor route='watch'}}" class="noLink">
-          <div class="link">
+          <div class="link {{#if selected 'Watch'}}active{{/if}}">
             Watch
         </div>
         </a>
         {{#if userIsInRole "member"}}
         <a href="{{pathFor route='events'}}" class="noLink">
-          <div class="link">
+          <div class="link {{#if selected 'Events'}}active{{/if}}">
             Events
           </div>
         </a>
         <a href="{{pathFor route='news'}}" class="noLink">
-          <div class="link">
+          <div class="link {{#if selected 'News'}}active{{/if}}">
             News
           </div>
         </a>
         {{/if}}
         {{#if currentUser}}
         <a href="{{pathFor route='account'}}" class="noLink">
-          <div class="link profile manage">
+          <div class="link profile manage {{#if selected 'Profile'}}active{{/if}}">
             <i class="icon-profile"></i>
           </div>
         </a>
         {{else}}
-        <div class="link profile login">
+        <div class="link profile login {{#if selected 'Profile'}}active{{/if}}">
           <a href="{{pathFor route='login'}}" class="noLink"><i class="icon-profile"></i> Login</a>
         </div>
         {{/if}}

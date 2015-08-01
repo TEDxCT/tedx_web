@@ -8,6 +8,10 @@ Template.default.helpers({
 	"color": function() {
 		return "red";
 	},
+	"selected": function(navLink) {
+		if(navLink==Session.get("navSelected")) return true;
+		else return false;
+	}
 });
 
 Template.default.events({
