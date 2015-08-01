@@ -26,32 +26,6 @@ Meteor.subscribe('favorites', function onReady() {
   Session.set('favoritesLoaded', true);
 });
 
-Template.basicLayout.created = function() {
- Router.configure({
-   progressSpinner: false
- });
-}
-
-Template.basicLayout.helpers({
-  searching: function() {
-    if(Session.get("searching")) {
-      return true;
-    }
-    else return false;
-  },
-  feedbacking: function() {
-    if(Session.get("feedbacking")) {
-      return true;
-    }
-    else return false;
-  },
-  addingvideo: function() {
-    if(Session.get("addingvideo")) {
-      return true;
-    }
-    else return false;
-  },
-});
 
 Handlebars.registerHelper('isEqual', function(string1, string2) {
     return string1 === string2;

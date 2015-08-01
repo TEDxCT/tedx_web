@@ -1,34 +1,14 @@
-<template name="basicLayout">
-  {{> metaData}}
-  {{> toolbar}}
-  <div id="page" class="animated">
-    {{> yield}}
-  </div>
-  {{> footer}}
-  {{#if searching}}
-    {{> search}}
-  {{/if}}
-  {{#if feedbacking}}
-    {{> feedback}}
-  {{/if}}
-  {{#if addingvideo}}
-    {{> addVideo}}
-  {{/if}}
-</template>
-
 <template name="default">
-  <!-- {{#if currentUser}}
-    {{> adminMenu}}
-  {{/if}} -->
   {{> flashMessages}}
-
   {{> metaData}}
   <div class="background"></div>
   <div class="page-wrapper">
     <section class="top {{color}} padded">
+      <a href="{{pathFor route='home'}}" class="noLink">
       <div class="branding">
-        <img src="/images/logo_white.png" class="logo link home" >
+        <img src="/images/logo_white.png" class="logo" >
       </div>
+      </A>
       <div class="old-website-link">
         <a class="noLink" href="http://old.tedxcapetown.org" target="_blank">Looking for the old website?</a>
       </div>
@@ -52,7 +32,6 @@
         </div>
         </a>
         {{#if userIsInRole "member"}}
-
         <a href="{{pathFor route='events'}}" class="noLink">
           <div class="link">
             Events
@@ -64,9 +43,6 @@
           </div>
         </a>
         {{/if}}
-        <!-- <div class="link search">
-          <i class="icon-magnifier"></i>
-        </div> -->
         {{#if currentUser}}
         <a href="{{pathFor route='account'}}" class="noLink">
           <div class="link profile manage">
