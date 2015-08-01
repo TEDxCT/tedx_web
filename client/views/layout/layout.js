@@ -47,18 +47,6 @@ Template.default.helpers({
 });
 
 Template.default.events({
-	'click .link.home': function() {
-		Router.go("/");
-	},
-	'click .link.events': function() {
-		Router.go("events");
-	},
-	'click .link.news': function() {
-		Router.go("posts");
-	},
-	'click .link.profile.login': function() {
-		Router.go("login");
-	},
 	'click .mobile-menu-toggle': function() {
 		$(".nav-links").toggleClass("visible-mobile");
 	}

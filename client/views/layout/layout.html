@@ -44,13 +44,16 @@
         <div class="link">
           <a href="{{pathFor route='live'}}" class="noLink">Simulcast</a>
         </div>
-        <div class="link watch">
+        <div class="link">
           <a href="{{pathFor route='watch'}}" class="noLink">Watch Talks</a>
         </div>
         {{#if userIsInRole "member"}}
-          <div class="link events">Events</div>
-          <div class="link about">Connect</div>
-          <div class="link news">News</div>
+        <div class="link">
+          <a href="{{pathFor route='events'}}" class="noLink">Events</a>
+        </div>
+        <div class="link">
+          <a href="{{pathFor route='news'}}" class="noLink">News</a>
+        </div>
         {{/if}}
         <!-- <div class="link search">
           <i class="icon-magnifier"></i>
@@ -63,7 +66,7 @@
         </a>
         {{else}}
         <div class="link profile login">
-          <i class="icon-profile"></i> Login
+          <a href="{{pathFor route='login'}}" class="noLink"><i class="icon-profile"></i> Login</a>
         </div>
         {{/if}}
       </div>
