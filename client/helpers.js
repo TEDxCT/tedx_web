@@ -1,32 +1,3 @@
-Meteor.subscribe('categories', function onReady() {
-  Session.set('categoriesLoaded', true);
-});
-
-Meteor.subscribe('config', function onReady() {
-  Session.set('configLoaded', true);
-});
-
-Meteor.subscribe('chapters', function onReady() {
-  Session.set('chapters', true);
-});
-
-Template.home.helpers({
-  "topvideos": function() {
-    var topConfig = config.findOne({"name":"top"});
-    check(topConfig, Object);
-    if(topConfig.tags) {
-      return videos.find({"categories": {$in: topConfig.tags}});
-    }
-    else return videos.find({});
-  }
-});
-
-
-Meteor.subscribe('favorites', function onReady() {
-  Session.set('favoritesLoaded', true);
-});
-
-
 Handlebars.registerHelper('isEqual', function(string1, string2) {
     return string1 === string2;
 });
