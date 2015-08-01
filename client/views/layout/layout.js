@@ -59,4 +59,7 @@ Template.default.events({
 	'click .link.profile.login': function() {
 		Router.go("login");
 	},
+	'click .mobile-menu-toggle': function() {
+		$(".nav-links").toggleClass("visible-mobile");
+	}
 })
