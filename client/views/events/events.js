@@ -12,7 +12,7 @@ Template.events.helpers({
 
 Template.events.events({
   'click .newEvent': function(event, template) {
-    // event.preventDefault();
+    event.preventDefault();
     var newPost = posts.insert({
       "type": "event",
       "title": "New Event",
