@@ -15,6 +15,7 @@ Template.editSpeaker.events({
 			"firstName":  $(template.find(".firstNameText")).val(),
 			"lastName":  $(template.find(".lastNameText")).val(),
 			"description":  $(template.find(".descriptionText")).val(),
+      "topic":  $(template.find(".topicText")).val(),
 			"imageURL":   $('#imageUpload').attr("src"),
       "selectedEventId" : selectedEventId,
       // "selectedTalkId" : selectedTalkId

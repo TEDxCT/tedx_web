@@ -12,6 +12,7 @@ Template.newSpeaker.events({
 
     newSpeaker.firstName = $(template.find(".firstNameText")).val();
     newSpeaker.lastName = $(template.find(".lastNameText")).val();
+    newSpeaker.topic = $(template.find(".topicText")).val();
     newSpeaker.description = $(template.find(".descriptionText")).val();
     newSpeaker.imageURL = $('#imageUpload').attr("src");
     var selectedEventId = template.find('#eventSelector :selected').value
