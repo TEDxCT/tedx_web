@@ -25,14 +25,16 @@
 <!--lots of temp logic here....just copied from talks grid view-->
 <template name="speakerTile">
     <a class="talk-tile animated fadeInUp" href="/speakers/show/{{this._id}}">
-    <div class="top" style="background: url({{this.imageURL}}); background-size: 110%; background-repeat: no-repeat">
-
+    <div class="top" style="background: url({{this.imageURL}}); background-size: 100%; background-repeat: no-repeat">
     </div>
-      <div class="talk-title">{{{this.firstName}}}</div>
-      <div class="talk-speaker">{{this.lastName}}</div>
+      <!-- <div class="talk-title"></div> -->
+      <div class="talk-speaker">{{this.firstName}} {{this.lastName}}</div>
       <div class="bottom">
-
-        {{#markdown}}{{this.firstName}}{{/markdown}}
+        {{#markdown}}{{this.description}}{{/markdown}}
+      </div>
+      <div class="actions">
+        <button class="btn"><i class="icon-play"></i> <span>View talk</span></button>
+        <!-- <span class="pull-right like"><i class="icon-heart-1-1"></i></span> -->
       </div>
     </a>
 </template>
@@ -62,9 +64,14 @@
     </li>
   </ul>
   {{/if}}
-  <div class="container-fluid">
+  <br />
+  <div class="container-fluid centered">
     <h1 class="title">{{this.firstName}} {{this.lastName}}</h1>
-    <img src="{{this.imageURL}}">
+    <hr class="space extra-space-top">
+        <div class="row text-center">
+          <img style="max-width:60%" src="{{this.imageURL}}" href="{{this.imageURL}}">
+        </div>
+    <hr class="space extra-space-top">
     <p>{{this.description}}</p>
   </div>
 
