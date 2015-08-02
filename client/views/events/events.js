@@ -31,6 +31,16 @@ Template.eventTile.helpers({
       // return this.body.substring(0,200) + "...";
     }
     return this.summary;
+  },
+  'eventImage': function() {
+    var imageSource;
+    this.sections.forEach(function(section) {
+      if (section.type == "image") {
+        console.log(section.source)
+        imageSource =  section.source;
+      }
+    });
+    return imageSource;
   }
 });
 

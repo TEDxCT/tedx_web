@@ -28,12 +28,20 @@
 
 <template name="eventTile">
   <a href="{{pathFor route='posts.show' data=this}}" class="noLink">
-    <article class="inList">
-      <h3 class="title">{{this.title}}</h3>
-      {{#markdown}}{{{summary}}}{{/markdown}}
-      <div class="cta">Read this</div>
-    </article>
-  </a>
+    <div class="eventItem">
+      <div class="row">
+        <div class="col-xs-3">
+          <img class="eventThumbnail" src="{{eventImage}}">
+        </div>
+        <div class="col-xs-9">
+          <h3 class="title">{{this.title}}</h3>
+          {{#markdown}}{{{summary}}}{{/markdown}}
+
+        </div>
+      <!-- <div class="cta">Read this</div> -->
+      </div>
+    </div>
+    </a>
 </template>
 
 <template name="showEvent">

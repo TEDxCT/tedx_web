@@ -24,6 +24,9 @@
     {{#if layoutIs 'article'}}
       <h3 class="title">{{this.title}}</h3>
     {{/if}}
+    {{#if layoutIs 'event'}}
+      <h3 class="title">{{this.title}}</h3>
+    {{/if}}
   {{#each this.sections}}
     {{> Template.dynamic template=this.type data=modifiedThis}}
   {{/each}}
