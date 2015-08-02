@@ -1,0 +1,71 @@
+<template name="speakers">
+  <div class="container-fluid">
+    <ul class="toolbar">
+      <li>
+        <a href="{{ pathFor 'speakers.new'}}" class="tag">
+          <i class="icon-tags"></i>
+          New Speaker
+        </a>
+      </li>
+    </ul>
+  </div>
+  <br />
+  <br />
+  <div class="container-fluid ">
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+        {{#each allSpeakers}}
+            {{> speakerTile this}}
+          {{/each}}
+      </section>
+    </div>
+  </div>
+</template>
+
+<!--lots of temp logic here....just copied from talks grid view-->
+<template name="speakerTile">
+    <a class="talk-tile animated fadeInUp" href="/speakers/show/{{this._id}}">
+    <div class="top" style="background: url({{this.imageURL}}); background-size: 110%; background-repeat: no-repeat">
+
+    </div>
+      <div class="talk-title">{{{this.firstName}}}</div>
+      <div class="talk-speaker">{{this.lastName}}</div>
+      <div class="bottom">
+
+        {{#markdown}}{{this.firstName}}{{/markdown}}
+      </div>
+    </a>
+</template>
+
+<template name="speaker">
+  <div class="back-button back">
+    <a href="\speakers" class="noLink">
+      <i class="icon-thumbnails-1"></i>
+      <span class="text">
+        Back to speakers
+      </span>
+    </a>
+  </div>
+  {{#if userIsInRole 'member'}}
+  <ul class="toolbar">
+    <li>
+      <a href="{{pathFor route='speakers.edit' data=speaker}}" class="edit">
+        <i class="icon-pencil-2"></i>
+        Edit
+      </a>
+    </li>
+    <li>
+      <a href="#" class="delete">
+        <i class="icon-bin-2"></i>
+        Delete
+      </a>
+    </li>
+  </ul>
+  {{/if}}
+  <div class="container-fluid">
+    <h1 class="title">{{this.firstName}} {{this.lastName}}</h1>
+    <img src="{{this.imageURL}}">
+    <p>{{this.description}}</p>
+  </div>
+
+</template>
