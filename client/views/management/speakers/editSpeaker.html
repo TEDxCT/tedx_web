@@ -16,7 +16,7 @@
         <select id="eventSelector">
           <option value="">Select...</option>
           {{#each events}}
-            <option value="{{this._id}}">{{this.title}}</option>
+            <option value="{{this._id}}" id="{{this._id}}">{{this.title}}</option>
           {{/each}}
         </select>
       </div>

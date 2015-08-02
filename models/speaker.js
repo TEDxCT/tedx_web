@@ -217,10 +217,10 @@
 //         //    objects[i] = {name: etc};
 //         // }
 //         var count = 0;
-//         cat.forEach(function(item) {
-//             ret[count] = {label: item.name, value: item._id};
-//             count++;
-//         });
+        // cat.forEach(function(item) {
+        //     ret[count] = {label: item.name, value: item._id};
+        //     count++;
+        // });
 //         return ret;
 //       }
 //     }

@@ -1,3 +1,7 @@
+Template.editSpeaker.onRendered(function() {
+  $("#"+this.data.selectedEventId).attr("selected", true);
+})
+
 Template.editSpeaker.events({
   'click .upload': function(event, template) {
     uploadWithFilePicker(template)
