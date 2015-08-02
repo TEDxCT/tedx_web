@@ -7,7 +7,21 @@
       {{#if layoutIs 'event'}}
       <h3 contenteditable="true" class="title">{{this.title}}</h3>
       <p contenteditable="true" class="summary">{{summary}}</p>
-      <div class="event-date">{{date}}</div>
+      <label for="date">Date:</label>
+      <input type="date" id="date" class="date" value="{{this.date}}">
+      <br/>
+      <label for="starttime">Time:</label>
+      <input type="time" id="starttime" class="starttime" value="{{this.starttime}}"> to
+      <input type="time" id="endtime" class="endtime" value="{{this.endtime}}">
+      <br/>
+      <label>Venue:&nbsp; </label><span contenteditable="true" class="venue">{{this.venue}}</span>
+      <br/>
+      <label>Price:&nbsp;</label><span contenteditable="true" class="price">{{this.price}}</span>
+      <br/>
+      <label>After Party:&nbsp; </label><span contenteditable="true" class="afterparty">{{this.afterparty}}</span>
+      <br/>
+
+      <!-- <div class="event-date">{{date}}</div> -->
       {{/if}}
     {{/if}}
     {{#each sections}}
@@ -23,6 +37,22 @@
   <div class="container-fluid">
     {{#if layoutIs 'article'}}
       <h3 class="title">{{this.title}}</h3>
+    {{/if}}
+    {{#if layoutIs 'event'}}
+      <h3 class="title">{{this.title}}</h3>
+      <h4>{{this.summary}}</h4>
+      <label>Date:</label>
+      <span>{{this.date}}</span>
+      <br/>
+      <label>Time:</label>
+      <span>{{this.starttime}} to {{this.endtime}}</span>
+      <br/>
+      <label>Venue:&nbsp; </label><span>{{this.venue}}</span>
+      <br/>
+      <label>Price:&nbsp;</label><span>{{this.price}}</span>
+      <br/>
+      <label>After Party:&nbsp; </label><span>{{this.afterparty}}</span>
+      <br/>
     {{/if}}
   {{#each this.sections}}
     {{> Template.dynamic template=this.type data=modifiedThis}}
