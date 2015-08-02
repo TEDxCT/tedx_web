@@ -33,16 +33,22 @@ Template.eventTile.helpers({
     return this.summary;
   },
   'eventImage': function() {
-    var imageSource;
-    this.sections.forEach(function(section) {
-      if (section.type == "image") {
-        console.log(section.source)
-        imageSource =  section.source;
-      }
-    });
-    return imageSource;
+    return getImageURL(this.sections);
   }
 });
+
+Template.featuredEventTile.helpers({
+  'summary': function() {
+    if((this.summary==undefined)||(this.summary=="")) {
+      // return this.body.substring(0,200) + "...";
+    }
+    return this.summary;
+  },
+  'eventImage': function() {
+    return getImageURL(this.sections);
+  }
+});
+
 
 Template.showEvent.events({
   'click .delete': function() {
@@ -50,3 +56,14 @@ Template.showEvent.events({
     Router.go("/News");
   }
 })
+
+function getImageURL(sections) {
+  var imageSource;
+  sections.forEach(function(section) {
+    if (section.type == "image") {
+      console.log(section.source)
+      imageSource =  section.source;
+    }
+  });
+  return imageSource;
+}

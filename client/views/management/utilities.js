@@ -252,7 +252,6 @@ function saveTemplateSpecificData(doc, template) {
     templateFields.date = $(".date")[0].value;
     templateFields.starttime = $(".starttime")[0].value;
     templateFields.endtime = $(".endtime")[0].value;
-
   }
 
 

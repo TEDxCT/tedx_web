@@ -1,5 +1,5 @@
 <template name="events">
-  <div class="container-fluid red centered">
+  <div class="container-fluid">
     {{#if userIsInRole 'member'}}
     <ul class="toolbar">
       <li>
@@ -11,9 +11,9 @@
     </ul>
     {{/if}}
   </div>
-  <div class="container-fluid red centered">
-    <h4>Featured Event</h4>
-    {{> eventTile mostRecent}}
+  <div class="container-fluid centered">
+    <h2 class="title">Featured Event</h2>
+    {{> featuredEventTile mostRecent}}
   </div>
     <div class="container-fluid centered">
     {{#each latest}}
@@ -42,6 +42,24 @@
     </div>
     </a>
 </template>
+
+<template name="featuredEventTile">
+  <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">
+    <div class="featuredEventItem">
+      <div class="row">
+        <div class="col-xs-3">
+          <img class="eventThumbnail" src="{{eventImage}}">
+        </div>
+        <div class="col-xs-9">
+          <h3 class="title">{{this.title}}</h3>
+          <label>{{this.date}}</label>
+          {{#markdown}}{{{summary}}}{{/markdown}}
+        </div>
+      </div>
+    </div>
+    </a>
+</template>
+
 
 <template name="showEvent">
   <div class="container-fluid">
