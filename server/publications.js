@@ -30,6 +30,10 @@ Meteor.publish('chapters', function () {
   return chapters.find({"archived": {$ne : true}});
 });
 
+Meteor.publish('speakers', function () {
+  return speakers.find({"archived": {$ne : true}});
+});
+
 Meteor.publish('topvideos', function () {
   var topConfig = config.find({"name":"top"});
   if(topConfig.tags) {
@@ -44,15 +48,7 @@ Meteor.publish('favorites', function () {
   }
 });
 
-Meteor.publish('speakers', function () {
-  var currentUser = Meteor.users.findOne({"_id": this.userId});
 
-  if(currentUser!=undefined) {
-    if(currentUser.emails[0].verified==true) {
-      return speakers.find({});
-    }
-  }
-});
 
 // Meteor.users.allow({
 //     update: function(userId, docs, fields, modifier) {

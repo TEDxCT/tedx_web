@@ -1,6 +1,4 @@
 
-
-
 Template.register.events({
 	'click .cta' : function() {
 		Router.go('speakers.register.apply');
@@ -10,49 +8,49 @@ Template.register.events({
 
 SimpleSchema.debug = true;
 
-AutoForm.hooks({
-  insertSpeakerApplicationForm: {
-    	onSuccess: function(operation, result, template) {
-			Router.go('speakers.register.complete');
-		},
-		onError: function(formType, error) {
-			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-		},
-	},
-	updateSpeakerApplicationForm: {
-    	onSuccess: function(operation, result, template) {
-			// Router.go('speakers.register.complete');
-			FlashMessages.sendSuccess("Update successful");
-		},
-		onError: function(formType, error) {
-			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-		},
-	},
-	insertSpeakerNominationForm: {
-    	onSuccess: function(operation, result, template) {
-			Router.go('speakers.register.complete');
-		},
-		onError: function(formType, error) {
-			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-		},
-	},
-	updateSpeakerNominationForm: {
-    	onSuccess: function(operation, result, template) {
-			// Router.go('speakers.register.complete');
-			FlashMessages.sendSuccess("Update successful");
-		},
-		onError: function(formType, error) {
-			FlashMessages.sendError("There was a problem saving your nomination. Please see below for errors.");
-		},
-	},
-});
+// AutoForm.hooks({
+//   insertSpeakerApplicationForm: {
+//     	onSuccess: function(operation, result, template) {
+// 			Router.go('speakers.register.complete');
+// 		},
+// 		onError: function(formType, error) {
+// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+// 		},
+// 	},
+// 	updateSpeakerApplicationForm: {
+//     	onSuccess: function(operation, result, template) {
+// 			// Router.go('speakers.register.complete');
+// 			FlashMessages.sendSuccess("Update successful");
+// 		},
+// 		onError: function(formType, error) {
+// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+// 		},
+// 	},
+// 	insertSpeakerNominationForm: {
+//     	onSuccess: function(operation, result, template) {
+// 			Router.go('speakers.register.complete');
+// 		},
+// 		onError: function(formType, error) {
+// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+// 		},
+// 	},
+// 	updateSpeakerNominationForm: {
+//     	onSuccess: function(operation, result, template) {
+// 			// Router.go('speakers.register.complete');
+// 			FlashMessages.sendSuccess("Update successful");
+// 		},
+// 		onError: function(formType, error) {
+// 			FlashMessages.sendError("There was a problem saving your nomination. Please see below for errors.");
+// 		},
+// 	},
+// });
 
 function votesForSpeaker(speakerId) {
 	var voteCount = votes.find({"speaker":speakerId}).count();
 	console.log(speakerId);
 	console.log(voteCount);
     return voteCount;
-db
+
 }
 
 Template.votes.events({
@@ -241,15 +239,16 @@ Template.newSpeaker.events({
     uploadFromWebURL(template);
   },
   'click .save_speaker': function(event, template) {
+		console.log("SAVING SPEAKER")
     var newSpeaker = new Object();
- 
+
     newSpeaker.firstName = $(template.find(".firstNameText")).val();
     newSpeaker.lastName = $(template.find(".lastNameText")).val();
     newSpeaker.description = $(template.find(".descriptionText")).val();
     newSpeaker.imageURL = $('#imageUpload').attr("src");
-    
+
     var newId = speakers.insert(newSpeaker);
-    Router.go('/speakers/show/' + newId);
+		Router.go('speakers.show', {"_id": newId});
   },
 });
 
