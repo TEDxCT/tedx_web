@@ -4,20 +4,53 @@
     <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
     <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
     <li><a href="{{ pathFor 'speakers.register.nominate'}}"> Nominate</a></li>
+
     {{#if userIsVerified}}
-      <li class="active"><a href="{{ pathFor 'manage.speakers'}}"> Manage speakers</a></li>
+    <li><a href="{{ pathFor 'speakers.new'}}"> Add Speaker</a></li>
+    {{/if}}
+
+    {{#if userIsVerified}}
+      <!--li class="active"><a href="{{ pathFor 'manage.speakers'}}"> Manage speakers</a></li-->
     {{/if}}
   </ul>
-    <h1>Applied</h1>
+
+    
+  <div class="container-fluid dark">
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+        {{#each applied}}
+            {{> speakerTile this}}
+          {{/each}}
+      </section>
+    </div>
+  </div>
+
+    <!--h1>Applied</h1>
     {{#each applied}}
       {{> appliedSpeaker this}}
     {{/each}}
     <h1>Nominated</h1>
     {{#each nominated}}
       {{> nominatedSpeaker this}}
-    {{/each}}
+    {{/each}}-->
   </div>
 </template>
+
+<!--lots of temp logic here....just copied from talks grid view-->
+<template name="speakerTile">
+    <a class="talk-tile animated fadeInUp" href="/speakers/show/{{this._id}}">
+    <div class="top" style="background: url(); background-size: 110%; background-repeat: no-repeat">
+
+    </div>
+      <div class="talk-title">{{{this.firstName}}}</div>
+      <div class="talk-speaker">{{this.lastName}}</div>
+      <div class="bottom">
+        
+        {{#markdown}}{{this.firstName}}{{/markdown}}
+      </div>
+    </a>
+</template>
+
 
 
 <template name="appliedSpeaker">
@@ -36,16 +69,18 @@
 </template>
 
 
-<template name="speakerTile">
+<!--template name="speakerTile">
     <div class="speaker tile {{#if voted}}voted{{/if}}">
       <i class="icon-profile-id"></i>
       <div class="name">
         {{this.firstName}} {{this.lastName}}
       </div>
     </div>
-</template>
+</template-->
 
-<template name="speaker">
+
+
+<template name="applicant">
   <ul class="navigation">
     <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
     <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
@@ -257,4 +292,61 @@
     </tbody>
   </table>
 </page>
+</template>
+
+<template name="speaker">
+
+</template>
+
+
+<template name="newSpeaker">
+  <div class="container-fluid">
+    <h1>Add a Speaker</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="firstNameText">First Name</label>
+        <input type="text" class="form-control firstNameText" placeholder="Speaker First name...">
+      </div>
+      <div class="form-group">
+        <label for="lastNameText">Last Name</label>
+        <input type="text" class="form-control lastNameText" placeholder="Speaker Last name...">
+      </div>
+    
+      <!--add contact urls here-->
+
+
+      <div class="form-group">
+        <label for="descriptionText">Speaker Description</label>
+        <textarea class="form-control descriptionText"></textarea>
+      </div>
+      <div class="form-group">
+            <label>Speaker Image</label>
+            <p>Add a web URL or tap the icon to upload from disk</p>
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control logoURL" placeholder="Url...">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-secondary btn-upload-from-web">Add</button>
+              </div>
+            </div>
+            <br/>
+            <img src="images/default/image.png" style="max-width:100%" class="upload" id="imageUpload">
+      </div>
+      <div class="form-group">
+        <label for="descriptionText">Publish Speaker?</label>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="publishSwitch" checked="{{this.published}}">
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary save_speaker">Save</button>
+    </form>
+  </div>
+
 </template>
