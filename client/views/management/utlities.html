@@ -3,10 +3,12 @@
     {{#if layoutIs 'article'}}
       <h3 contenteditable="true" class="title">{{this.title}}</h3>
       <p contenteditable="true" class="summary">{{summary}}</p>
-    {{elseif layoutId 'event'}}
+    {{else}}
+      {{#if layoutIs 'event'}}
       <h3 contenteditable="true" class="title">{{this.title}}</h3>
       <p contenteditable="true" class="summary">{{summary}}</p>
       <div class="event-date">{{date}}</div>
+      {{/if}}
     {{/if}}
     {{#each sections}}
       {{> Template.dynamic template=this.type data=modifiedThis}}

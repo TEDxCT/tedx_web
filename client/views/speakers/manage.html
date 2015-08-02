@@ -1,4 +1,5 @@
 <template name="speakers">
+  <div class="container-fluid">
   <ul class="navigation">
     <li><a href="{{ pathFor 'speakers.register'}}"> About</a></li>
     <li><a href="{{ pathFor 'speakers.register.apply'}}"> Apply to speak</a></li>
@@ -7,7 +8,6 @@
       <li class="active"><a href="{{ pathFor 'manage.speakers'}}"> Manage speakers</a></li>
     {{/if}}
   </ul>
-  <page>
     <h1>Applied</h1>
     {{#each applied}}
       {{> appliedSpeaker this}}
@@ -16,7 +16,7 @@
     {{#each nominated}}
       {{> nominatedSpeaker this}}
     {{/each}}
-  </page>
+  </div>
 </template>
 
 
