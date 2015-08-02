@@ -72,6 +72,20 @@ Template.showEvent.events({
   }
 })
 
+Template.showEvent.helpers({
+  'shouldShowSession' :  function(sessionsArray) {
+    var shouldShowSession = false;
+    sessionsArray.forEach(function(session) {
+      if (session != null && session != "") {
+        console.log(session);
+        shouldShowSession  = true;
+      }
+    })
+
+    return shouldShowSession;
+  }
+})
+
 function getImageURL(sections) {
   var imageSource;
   sections.forEach(function(section) {
