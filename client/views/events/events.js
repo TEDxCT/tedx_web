@@ -3,7 +3,7 @@ Template.events.helpers({
     return posts.findOne({});
   },
   'latest': function() {
-    return posts.find({}, {sort: {count:-1}, limit:10});
+    return posts.find({'type':'event'}, {sort: {count:-1}, limit:10});
   },
   'interesting': function() {
     return posts.find({"pinned": true});
@@ -52,14 +52,17 @@ Template.featuredEventTile.helpers({
 Template.session.helpers({
   'speakerName': function(speakerId) {
     var speaker = speakers.findOne(speakerId);
-    return speaker.firstName + ' ' + speaker.lastName + ':'
+    if (speaker != undefined) {
+      return speaker.firstName + ' ' + speaker.lastName + ':'
+    }
   },
   'speakerTopic': function(speakerId) {
     var speaker = speakers.findOne(speakerId);
-    return speaker.topic;
+    if (speaker != undefined) {
+      return speaker.topic;
+    }    
   },
   'speakers': function() {
-    console.log(this);
     return speakers.find({"_id": {$in: this }});
   }
 })
@@ -69,6 +72,20 @@ Template.showEvent.events({
   'click .delete': function() {
     posts.update({"_id": this._id}, {$set: {"archive":  true}});
     Router.go("/News");
+  }
+})
+
+Template.showEvent.helpers({
+  'shouldShowSession' :  function(sessionsArray) {
+    var shouldShowSession = false;
+    sessionsArray.forEach(function(session) {
+      if (session != null && session != "") {
+        console.log(session);
+        shouldShowSession  = true;
+      }
+    })
+
+    return shouldShowSession;
   }
 })
 
