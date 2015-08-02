@@ -57,6 +57,10 @@ Template.session.helpers({
   'speakerTopic': function(speakerId) {
     var speaker = speakers.findOne(speakerId);
     return speaker.topic;
+  },
+  'speakers': function() {
+    console.log(this);
+    return speakers.find({"_id": {$in: this }});
   }
 })
 

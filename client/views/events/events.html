@@ -65,7 +65,7 @@
   <div class="container-fluid">
     <div class="pageHeader">
       <div class="back-button back">
-        <a href="{{pathFor route='posts'}}" class="noLink">
+        <a href="{{pathFor route='events'}}" class="noLink">
           <i class="icon-thumbnails-1"></i>
           <span class="text">
             Back to events
@@ -89,8 +89,9 @@
     </ul>
     {{/if}}
   </div>
-    <article class="animated fadeIn reader">
+    </div>
     <div class="clear"></div>
+    <div class="container-fluid">
           {{> viewer this}}
           <h2>Session 1</h2>
           {{> session this.session1}}
@@ -112,16 +113,15 @@
           <hr class="space extra-space-top">
           <hr class="dashed">
 
-    </article>
-  </div>
+    </div>
 </template>
 
 <template name="session">
-  <ul>
-  {{#each this}}
-    <li>
-      <a href="{{pathFor route='speakers.show' data=this}}"><p>{{speakerName this}} {{speakerTopic this}}</p></a>
-    </li>
-  {{/each}}
-</ul>
+  <div id="theGrid" class="main animated fadeIn">
+    <section class="grid speakers">
+      {{#each speakers}}
+        {{> speakerTile this}}
+      {{/each}}
+    </section>
+  </div>
 </template>
