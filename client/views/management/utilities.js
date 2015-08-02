@@ -252,6 +252,26 @@ function saveTemplateSpecificData(doc, template) {
     templateFields.date = $(".date")[0].value;
     templateFields.starttime = $(".starttime")[0].value;
     templateFields.endtime = $(".endtime")[0].value;
+    templateFields.session1 = [
+      $("#s1p1 :selected")[0].value,
+      $("#s1p2 :selected")[0].value,
+      $("#s1p3 :selected")[0].value,
+      $("#s1p4 :selected")[0].value]
+      templateFields.session2 = [
+        $("#s2p1 :selected")[0].value,
+        $("#s2p2 :selected")[0].value,
+        $("#s2p3 :selected")[0].value,
+        $("#s2p4 :selected")[0].value]
+        templateFields.session3 = [
+          $("#s3p1 :selected")[0].value,
+          $("#s3p2 :selected")[0].value,
+          $("#s3p3 :selected")[0].value,
+          $("#s3p4 :selected")[0].value]
+          templateFields.session4 = [
+            $("#s4p1 :selected")[0].value,
+            $("#s4p2 :selected")[0].value,
+            $("#s4p3 :selected")[0].value,
+            $("#s4p4 :selected")[0].value]
   }
 
 

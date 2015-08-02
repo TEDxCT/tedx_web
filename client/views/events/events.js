@@ -49,6 +49,16 @@ Template.featuredEventTile.helpers({
   }
 });
 
+Template.session.helpers({
+  'speakerName': function(speakerId) {
+    var speaker = speakers.findOne(speakerId);
+    return speaker.firstName + ' ' + speaker.lastName
+  },
+  'speakerTopic': function(speakerId) {
+    return 'topic';
+  }
+})
+
 
 Template.showEvent.events({
   'click .delete': function() {

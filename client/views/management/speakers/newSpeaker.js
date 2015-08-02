@@ -14,8 +14,19 @@ Template.newSpeaker.events({
     newSpeaker.lastName = $(template.find(".lastNameText")).val();
     newSpeaker.description = $(template.find(".descriptionText")).val();
     newSpeaker.imageURL = $('#imageUpload').attr("src");
+    var selectedEventId = template.find('#eventSelector :selected').value
+    // var selectedTalkId = template.find('#talkSelector :selected').value
+    newSpeaker.selectedEventId = selectedEventId;
+    // newSpeaker.selectedTalkId = selectedTalkId;
 
     var newId = speakers.insert(newSpeaker);
+    var speaker = speakers.findOne(newId);
+
+    // var postUpdate = posts.update({'_id' : selectedEventId}, { $push: { 'speakers':  speaker}})
+    // console.log('UPDATED POST: ' + postUpdate)
+    // var talkUpdate = talk.update({'_id' : selectedTalkId}, { $push: { 'speakers':  speaker}})
+    // console.log('UPDATED TALK: ' + talkUpdate)
+
 		Router.go('speakers.show', {"_id": newId});
   },
 });

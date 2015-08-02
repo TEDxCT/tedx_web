@@ -75,7 +75,7 @@
     {{#if currentUser}}
     <ul class="toolbar">
       <li>
-        <a href="{{pathFor route='posts.edit.article' data=this}}" class="edit">
+        <a href="{{pathFor route='posts.edit.event' data=this}}" class="edit">
           <i class="icon-pencil-2"></i>
           Edit
         </a>
@@ -92,6 +92,14 @@
     <article class="animated fadeIn reader">
     <div class="clear"></div>
           {{> viewer this}}
+          <h2>Session 1</h2>
+          {{> session this.session1}}
+          <h2>Session 2</h2>
+          {{> session this.session2}}
+          <h2>Session 3</h2>
+          {{> session this.session3}}
+          <h2>Session 4</h2>
+          {{> session this.session4}}
           <h4>Share this</h4>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaging-tedxct.herokuapp.com%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/images/flat_web_icon_set/black/Facebook.png"></a></li>
@@ -106,4 +114,14 @@
 
     </article>
   </div>
+</template>
+
+<template name="session">
+  <ul>
+  {{#each this}}
+    <li>
+      <a href="{{pathFor route='speakers.show' data=this}}"><p>{{speakerName this}}: {{speakerTopic this}}<p></a>
+    </li>
+  {{/each}}
+</ul>
 </template>

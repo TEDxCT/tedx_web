@@ -9,6 +9,18 @@ Template.speaker.events({
 	}
 })
 
+Template.speaker.helpers({
+	'titleForEvent': function(eventId) {
+		return posts.findOne({'_id' : eventId}, {'_id':0, 'title':1}).title;
+	},
+	// 'titleForTalk': function(talkId) {
+	// 	// console.log(data);
+	// 	// var oid = (data && data._str) || data;
+	// 	// console.log(oid);
+	// 	 return videos.findOne({'_id': talkId}).title;
+	// 	},
+})
+
 
 // Template.register.events({
 // 	'click .cta' : function() {

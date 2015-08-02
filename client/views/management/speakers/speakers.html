@@ -67,6 +67,9 @@
   <br />
   <div class="container-fluid centered">
     <h1 class="title">{{this.firstName}} {{this.lastName}}</h1>
+    <a href="{{pathFor route='posts.show.event' _id=this.selectedEventId}}"><h2>Speaker at {{titleForEvent this.selectedEventId}}</h2></a>
+    <!-- <a href="{{pathFor route='talks.show' _id=this.selectedTalkId}}"><h2>{{titleForTalk this.selectedTalkId}}</h2></a> -->
+    <!-- {{this.selectedTalkId}} -->
     <hr class="space extra-space-top">
         <div class="row text-center">
           <img style="max-width:60%" src="{{this.imageURL}}" href="{{this.imageURL}}">

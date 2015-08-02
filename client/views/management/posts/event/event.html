@@ -1,3 +1,132 @@
 <template name="editEvent">
   {{> editor this layout='event'}}
+  {{> editEventSessions}}
+
+
+</template>
+
+<template name="editEventSessions">
+  <div class="container-fluid">
+  <h1>Speaker Lineup</h1>
+  <h2>Session 1</h2>
+  <select id="s1p1">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s1p2">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s1p3">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s1p4">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+
+
+
+  <h2>Session 2</h2>
+  <select id="s2p1">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s2p2">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s2p3">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+  <br/>
+  <select id="s2p4">
+    <option value="">Select...</option>
+    {{#each speakerInEvent}}
+      <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+    {{/each}}
+  </select>
+
+
+<h2>Session 3</h2>
+<select id="s3p1">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s3p2">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s3p3">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s3p4">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+
+
+
+<h2>Session 4</h2>
+<select id="s4p1">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s4p2">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s4p3">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+<br/>
+<select id="s4p4">
+  <option value="">Select...</option>
+  {{#each speakerInEvent}}
+    <option value="{{this._id}}">{{this.firstName}} {{this.lastName}}</option>
+  {{/each}}
+</select>
+</div>
 </template>

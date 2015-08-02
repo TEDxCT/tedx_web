@@ -14,19 +14,21 @@
       <div class="form-group">
         <label for="eventSelector">Event</label>
         <select id="eventSelector">
+          <option value="">Select...</option>
           {{#each events}}
             <option value="{{this._id}}">{{this.title}}</option>
           {{/each}}
         </select>
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="talkSelector">Talk</label>
         <select id="talkSelector">
+          <option value="">Select...</option>
           {{#each talks}}
             <option value="{{this._id}}">{{this.title}}</option>
           {{/each}}
         </select>
-      </div>
+      </div> -->
       <!--add contact urls here-->
 
 

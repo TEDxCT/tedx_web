@@ -8,13 +8,23 @@ Template.editSpeaker.events({
   },
   'click .update': function(event, template) {
 
+    var selectedEventId = template.find('#eventSelector :selected').value
+    // var selectedTalkId = template.find('#talkSelector :selected').value
 
 		speakers.update({"_id": this._id}, {$set: {
 			"firstName":  $(template.find(".firstNameText")).val(),
 			"lastName":  $(template.find(".lastNameText")).val(),
 			"description":  $(template.find(".descriptionText")).val(),
-			"imageURL":   $('#imageUpload').attr("src")
+			"imageURL":   $('#imageUpload').attr("src"),
+      "selectedEventId" : selectedEventId,
+      // "selectedTalkId" : selectedTalkId
 		}})
+
+    var speaker = speakers.findOne(this._id);
+
+    // posts.update({'_id' : selectedEventId}, { $push: { 'speakers':  speaker}})
+    // talk.update({'_id' : selectedTalkId}, { $push: { 'speakers':  speaker}})
+
 
 		Router.go('/speakers/show/' + this._id)
 
