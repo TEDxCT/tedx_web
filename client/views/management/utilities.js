@@ -46,6 +46,9 @@ Template.editor.helpers({
     else if(this.summary!=$(".summary").innerText) {
       $(".summary").innerText(this.summary);
     }
+  },
+  'data' : function() {
+
   }
 });
 
@@ -181,6 +184,14 @@ Template.actions.events({
           "source": $(this)[0].lastElementChild.src
         }
       }
+      // If section is a date section
+      else if($(this).hasClass("start-date")) {
+        console.log('START DATE')
+        formattedSections[index] = {
+          "type": "start-date",
+          "date": $(this)[0].lastElementChild
+        }
+      }
     });
     Session.set("unsavedChanges", false);
     posts.update({"_id": this._id}, {$set: {"sections":  formattedSections}});
@@ -227,15 +238,34 @@ function saveTemplateSpecificData(doc, template) {
   console.log(doc);
   var templateFields = new Object();
 
-  if(doc.type="article") {
+  if(doc.type=="article") {
     templateFields.title = $(".title")[0].innerText;
     templateFields.summary = $(".summary")[0].innerText;
   }
+
+  if(doc.type=="event") {
+    templateFields.title = $(".title")[0].innerText;
+    templateFields.summary = $(".summary")[0].innerText;
+    templateFields.venue = $(".venue")[0].innerText;
+    templateFields.price = $(".price")[0].innerText;
+    templateFields.afterparty = $(".afterparty")[0].innerText;
+    templateFields.date = $(".date")[0].value;
+    templateFields.starttime = $(".starttime")[0].value;
+    templateFields.endtime = $(".endtime")[0].value;
+
+  }
+
 
   var published = $(".publishedSwitch");
   if(published!=undefined) templateFields.published = published.is(":checked");
   else templateFields.published = false;
 
   console.dir(templateFields);
-  posts.update({"_id": doc._id}, {$set: templateFields});
+  var update = posts.update({"_id": doc._id}, {$set: templateFields});
+  if (update > 0) {
+    FlashMessages.sendSuccess("Successfully updated event");
+  } else {
+    FlashMessages.sendError("Failed to update event");
+  }
+
 }

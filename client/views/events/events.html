@@ -27,7 +27,7 @@
 </template>
 
 <template name="eventTile">
-  <a href="{{pathFor route='posts.show' data=this}}" class="noLink">
+  <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">
     <div class="eventItem">
       <div class="row">
         <div class="col-xs-3">
@@ -35,10 +35,9 @@
         </div>
         <div class="col-xs-9">
           <h3 class="title">{{this.title}}</h3>
+          <label>{{this.date}}</label>
           {{#markdown}}{{{summary}}}{{/markdown}}
-
         </div>
-      <!-- <div class="cta">Read this</div> -->
       </div>
     </div>
     </a>
