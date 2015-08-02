@@ -11,7 +11,22 @@
         <label for="lastNameText">Last Name</label>
         <input type="text" class="form-control lastNameText" placeholder="Speaker Last name...">
       </div>
-
+      <div class="form-group">
+        <label for="eventSelector">Event</label>
+        <select id="eventSelector">
+          {{#each events}}
+            <option value="{{this._id}}">{{this.title}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="talkSelector">Talk</label>
+        <select id="talkSelector">
+          {{#each talks}}
+            <option value="{{this._id}}">{{this.title}}</option>
+          {{/each}}
+        </select>
+      </div>
       <!--add contact urls here-->
 
 

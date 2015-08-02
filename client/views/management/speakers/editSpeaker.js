@@ -21,6 +21,15 @@ Template.editSpeaker.events({
   },
 });
 
+Template.editSpeaker.helpers({
+  'events': function(){
+    return posts.find({'type':'event'}, {sort: {'title' : 1}});
+  },
+  'talks': function(){
+    return videos.find({}, {sort: {'title' : 1}});
+  }
+})
+
 function uploadWithFilePicker(template) {
   filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
     $('#imageUpload').attr("src", Blob.url);
