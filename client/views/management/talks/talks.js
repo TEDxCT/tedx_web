@@ -160,11 +160,14 @@ Template.registerHelper('speakerWebURLs', function() {
     Session.set("weburls", objects);
   }
 
-  for(var i = 0; i<objects.length; i++) {
-      objects[i].index = i;
+  if(objects) {
+    for(var i = 0; i<objects.length; i++) {
+        objects[i].index = i;
+    }
+
+    return objects;
   }
 
-  return objects;
 });
 
 
