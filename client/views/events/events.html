@@ -117,8 +117,7 @@
           </ul>
           <hr class="space extra-space-top">
           <hr class="dashed">
-<<<<<<< HEAD
-
+          {{> sponsors}}
     </div>
 </template>
 
@@ -130,19 +129,4 @@
       {{/each}}
     </section>
   </div>
-=======
-    </article>
-    {{> sponsors}}
-  </div>
-</template>
-
-<template name="session">
-  <ul>
-  {{#each this}}
-    <li>
-      <a href="{{pathFor route='speakers.show' _id=this}}"><p>{{speakerName this}} {{speakerTopic this}}</p></a>
-    </li>
-  {{/each}}
-</ul>
->>>>>>> ec3d342a56c64eb9a0fcc678e792a4e73aedb153
 </template>
