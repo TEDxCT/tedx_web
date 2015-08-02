@@ -3,7 +3,7 @@ Template.events.helpers({
     return posts.findOne({});
   },
   'latest': function() {
-    return posts.find({}, {sort: {count:-1}, limit:10});
+    return posts.find({'type':'event'}, {sort: {count:-1}, limit:10});
   },
   'interesting': function() {
     return posts.find({"pinned": true});
@@ -52,11 +52,15 @@ Template.featuredEventTile.helpers({
 Template.session.helpers({
   'speakerName': function(speakerId) {
     var speaker = speakers.findOne(speakerId);
-    return speaker.firstName + ' ' + speaker.lastName + ':'
+    if (speaker != undefined) {
+      return speaker.firstName + ' ' + speaker.lastName + ':'
+    }
   },
   'speakerTopic': function(speakerId) {
     var speaker = speakers.findOne(speakerId);
-    return speaker.topic;
+    if (speaker != undefined) {
+      return speaker.topic;
+    }
   }
 })
 

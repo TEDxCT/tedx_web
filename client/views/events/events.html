@@ -19,10 +19,7 @@
     {{#each latest}}
       {{> eventTile this}}
     {{/each}}
-    <!-- <h4>Interesting Reads</h4>
-    {{#each interesting}}
-      {{> articleTile this}}
-    {{/each}} -->
+    {{> sponsors}}
   </div>
 </template>
 
@@ -111,8 +108,8 @@
           </ul>
           <hr class="space extra-space-top">
           <hr class="dashed">
-
     </article>
+    {{> sponsors}}
   </div>
 </template>
 
@@ -120,7 +117,7 @@
   <ul>
   {{#each this}}
     <li>
-      <a href="{{pathFor route='speakers.show' data=this}}"><p>{{speakerName this}} {{speakerTopic this}}</p></a>
+      <a href="{{pathFor route='speakers.show' _id=this}}"><p>{{speakerName this}} {{speakerTopic this}}</p></a>
     </li>
   {{/each}}
 </ul>
