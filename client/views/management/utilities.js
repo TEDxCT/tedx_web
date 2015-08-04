@@ -64,6 +64,9 @@ Template.viewer.helpers({
     modifiedThis.unique = ShortId.generate();
     return modifiedThis;
   },
+  'moment': function() {
+    return moment(this.date).format("MMM Do YYYY");
+  }
 })
 
 Template.text.events({

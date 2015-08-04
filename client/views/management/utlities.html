@@ -38,23 +38,31 @@
 <template name="viewer">
   <div class="container-fluid">
     {{#if layoutIs 'article'}}
-      <h3 class="title">{{this.title}}</h3>
+      <h1 class="title">{{this.title}}</h1>
+      <hr class="dashed">
     {{/if}}
     {{#if layoutIs 'event'}}
-      <h3 class="title">{{this.title}}</h3>
+      <h1 class="title">{{this.title}}</h1>
+      <hr class="dashed">
       <h4>{{this.summary}}</h4>
       <label>Date:</label>
-      <span>{{this.date}}</span>
+      <span>{{moment}}</span>
       <br/>
       <label>Time:</label>
       <span>{{this.starttime}} to {{this.endtime}}</span>
+      {{#if isNotBlank this.venue}}
       <br/>
       <label>Venue:&nbsp; </label><span>{{this.venue}}</span>
+      {{/if}}
+      {{#if isNotBlank this.price}}
       <br/>
       <label>Price:&nbsp;</label><span>{{this.price}}</span>
+      {{/if}}
+      {{#if isNotBlank this.venue}}
       <br/>
       <label>After Party:&nbsp; </label><span>{{this.afterparty}}</span>
-      <br/>
+      {{/if}}
+      <hr class="dashed"/>
     {{/if}}
   {{#each this.sections}}
     {{> Template.dynamic template=this.type data=modifiedThis}}

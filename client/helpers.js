@@ -26,6 +26,11 @@ Handlebars.registerHelper('objectsWithIndex', function(objects) {
   return objects;
 });
 
+Handlebars.registerHelper('isNotBlank', function(field) {
+  if((field==undefined)||(field=="")||(field=="Select this text to edit")) return false;
+  else return true;
+});
+
 setHighLevelNav = function(highLevelNavSelection) {
   Session.set("navSelected", highLevelNavSelection);
 }
