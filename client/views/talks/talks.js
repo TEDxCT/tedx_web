@@ -80,7 +80,13 @@ Template.talk.events({
     Router.go("talks");
   },
   "click .featured-switch": function() {
-    var oid = new Meteor.Collection.ObjectID(this._id);
-    videos.update(oid, {$set: {"featured":$(".featured-switch").is(":checked")}});
+    try {
+      var oid = new Meteor.Collection.ObjectID(this._id);
+      videos.update(oid, {$set: {"featured":$(".featured-switch").is(":checked")}});
+    }
+    catch(err) {
+      videos.update(this._id, {$set: {"featured":$(".featured-switch").is(":checked")}});
+    }
+
   },
 });
