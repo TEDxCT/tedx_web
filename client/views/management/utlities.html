@@ -14,11 +14,11 @@
       <input type="time" id="starttime" class="starttime" value="{{this.starttime}}"> to
       <input type="time" id="endtime" class="endtime" value="{{this.endtime}}">
       <br/>
-      <label>Venue:&nbsp; </label><span contenteditable="true" class="venue">Select this text to edit</span>
+      <label>Venue:&nbsp; </label><span contenteditable="true" class="venue">{{stringOrPlaceholder this.venue}}</span>
       <br/>
-      <label>Price:&nbsp;</label><span contenteditable="true" class="price">Select this text to edit</span>
+      <label>Price:&nbsp;</label><span contenteditable="true" class="price">{{stringOrPlaceholder this.price}}</span>
       <br/>
-      <label>After Party:&nbsp; </label><span contenteditable="true" class="afterparty">Select this text to edit</span>
+      <label>After Party:&nbsp; </label><span contenteditable="true" class="afterparty">{{stringOrPlaceholder this.afterparty}}</span>
       <br/>
       {{/if}}
     {{/if}}
@@ -46,7 +46,7 @@
       <hr class="dashed">
       <h4>{{this.summary}}</h4>
       <label>Date:</label>
-      <span>{{moment}}</span>
+      <span>{{this.date}}</span>
       <br/>
       <label>Time:</label>
       <span>{{this.starttime}} to {{this.endtime}}</span>

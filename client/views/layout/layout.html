@@ -10,7 +10,7 @@
       </div>
       </A>
       <div class="old-website-link">
-        <a class="noLink" href="http://tedxcapetown.org" target="_blank">Looking for the old website?</a>
+        <a class="noLink" href="http://old.tedxcapetown.org" target="_blank">Looking for the old website?</a>
       </div>
       <div class="mobile-menu-toggle">
         <i class="icon-menu"></i>
@@ -23,7 +23,7 @@
         </a>
         <a href="{{pathFor route='live'}}" class="noLink">
           <div class="link {{#if selected 'Simulcast'}}active{{/if}}">
-            Simulcast
+            Viewing Party
         </div>
         </a>
         <a href="{{pathFor route='watch'}}" class="noLink">
@@ -31,12 +31,12 @@
             Watch
         </div>
         </a>
-        {{#if userIsInRole "member"}}
         <a href="{{pathFor route='events'}}" class="noLink">
           <div class="link {{#if selected 'Events'}}active{{/if}}">
             Events
           </div>
         </a>
+        {{#if userIsInRole "member"}}
         <a href="{{pathFor route='news'}}" class="noLink">
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News

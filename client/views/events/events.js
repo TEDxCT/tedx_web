@@ -60,7 +60,7 @@ Template.session.helpers({
     var speaker = speakers.findOne(speakerId);
     if (speaker != undefined) {
       return speaker.topic;
-    }    
+    }
   },
   'speakers': function() {
     return speakers.find({"_id": {$in: this }});

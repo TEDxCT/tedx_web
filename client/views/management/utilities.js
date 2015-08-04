@@ -47,6 +47,15 @@ Template.editor.helpers({
       $(".summary").innerText(this.summary);
     }
   },
+  'stringOrPlaceholder': function(string) {
+    if((string=="")||(string==undefined)) {
+      return "Select this text to edit it";
+    }
+    else {
+      return string;
+    }
+  },
+
   'data' : function() {
 
   }
@@ -64,9 +73,6 @@ Template.viewer.helpers({
     modifiedThis.unique = ShortId.generate();
     return modifiedThis;
   },
-  'moment': function() {
-    return moment(this.date).format("MMM Do YYYY");
-  }
 })
 
 Template.text.events({
