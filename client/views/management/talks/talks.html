@@ -241,3 +241,15 @@
   </div>
 
 </template>
+
+<template name="talksMissingInfo">
+  <div class="container-fluid dark">
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+        {{#each this}}
+            {{> talkTile this}}
+          {{/each}}
+      </section>
+    </div>
+  </div>
+</template>

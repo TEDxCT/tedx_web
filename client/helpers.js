@@ -25,3 +25,7 @@ Handlebars.registerHelper('objectsWithIndex', function(objects) {
   }
   return objects;
 });
+
+setHighLevelNav = function(highLevelNavSelection) {
+  Session.set("navSelected", highLevelNavSelection);
+}

@@ -167,9 +167,7 @@ Template.registerHelper('speakerWebURLs', function() {
 
     return objects;
   }
-
 });
-
 
 // Template.tagTalk.rendered = function() {
 //   // console.log("Levels");
