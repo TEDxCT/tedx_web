@@ -20,6 +20,14 @@ Template.editor.rendered = function(){
   Session.set("sections", modifiedSections);
 }
 
+// Template.editor.events({
+//   "click .featured-switch": function(event, template) {
+//     console.log($(".onoffswitch-checkbox")[0].value);
+//       videos.update(this._id, {$set: {"featured":$(".onoffswitch-checkbox").is(":checked")}});
+//
+//   },
+// });
+
 Template.editor.helpers({
   'layoutIs': function(layoutType) {
     if(layoutType==this.type) return true;
@@ -261,6 +269,7 @@ function saveTemplateSpecificData(doc, template) {
     templateFields.date = $(".date")[0].value;
     templateFields.starttime = $(".starttime")[0].value;
     templateFields.endtime = $(".endtime")[0].value;
+    templateFields.featured = $(".onoffswitch-checkbox")[0].value;
     templateFields.session1 = [
       $("#s1p1 :selected")[0].value,
       $("#s1p2 :selected")[0].value,

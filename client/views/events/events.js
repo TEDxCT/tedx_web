@@ -2,8 +2,11 @@ Template.events.helpers({
   'mostRecent': function() {
     return posts.findOne({});
   },
+  'featured': function() {
+    return posts.findOne({'type':'event', 'featured' : 'on'}, {limit:1});
+  },
   'latest': function() {
-    return posts.find({'type':'event'}, {sort: {count:-1}, limit:10});
+    return posts.find({'type':'event', 'featured': {$not : 'on'}}, {sort: {count:-1}, limit:10});
   },
   'interesting': function() {
     return posts.find({"pinned": true});

@@ -13,7 +13,7 @@
   </div>
   <div class="container-fluid centered">
     <h2 class="title">Featured Event</h2>
-    {{> featuredEventTile mostRecent}}
+    {{> featuredEventTile featured}}
   </div>
     <div class="container-fluid centered">
     {{#each latest}}
@@ -28,10 +28,10 @@
   <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">
     <div class="eventItem">
       <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-5">
           <img class="eventThumbnail" src="{{eventImage}}">
         </div>
-        <div class="col-xs-9">
+        <div class="col-xs-7">
           <h3 class="title">{{this.title}}</h3>
           <label>{{this.date}}</label>
           {{#markdown}}{{{summary}}}{{/markdown}}
@@ -45,10 +45,10 @@
   <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">
     <div class="featuredEventItem">
       <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-5">
           <img class="eventThumbnail" src="{{eventImage}}">
         </div>
-        <div class="col-xs-9">
+        <div class="col-xs-7">
           <h3 class="title">{{this.title}}</h3>
           <label>{{this.date}}</label>
           {{#markdown}}{{{summary}}}{{/markdown}}
