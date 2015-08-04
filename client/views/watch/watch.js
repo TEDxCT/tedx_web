@@ -85,7 +85,7 @@ Template.live.events({
   }
 });
 
-Template.watch.helpers({
+Template.watchTalks.helpers({
   "videos" : function() {
     return videos.find({});
   },
@@ -99,7 +99,7 @@ Template.watch.helpers({
   },
 });
 
-Template.watch.events({
+Template.watchTalks.events({
   'click .talk': function(event, template) {
     Router.go("talk");
   },
