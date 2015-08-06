@@ -36,13 +36,11 @@
             Events
           </div>
         </a>
-        {{#if userIsInRole "member"}}
         <a href="{{pathFor route='news'}}" class="noLink">
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News
           </div>
         </a>
-        {{/if}}
         {{#if currentUser}}
         <a href="{{pathFor route='account'}}" class="noLink">
           <div class="link profile manage {{#if selected 'Profile'}}active{{/if}}">
@@ -50,9 +48,11 @@
           </div>
         </a>
         {{else}}
-        <div class="link profile login {{#if selected 'Profile'}}active{{/if}}">
-          <a href="{{pathFor route='login'}}" class="noLink"><i class="icon-profile"></i> Login</a>
-        </div>
+        <a href="{{pathFor route='login'}}" class="noLink">
+          <div class="link {{#if selected 'Profile'}}active{{/if}}">
+            Login
+          </div>
+        </a>
         {{/if}}
       </div>
 
