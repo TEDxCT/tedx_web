@@ -6,7 +6,8 @@ Template.live.onCreated(function() {
     var allparties = live.find().fetch();
 
     allparties.forEach(function(party) {
-      var partyLatlng = new google.maps.LatLng(party.location.A, party.location.F);
+
+      var partyLatlng = new google.maps.LatLng(party.location.G, party.location.K);
 
       var marker = new google.maps.Marker({
         position: partyLatlng,
