@@ -3,7 +3,7 @@ Template.events.helpers({
     return posts.findOne({});
   },
   'featured': function() {
-    return posts.findOne({'type':'event', 'featured' : 'on'}, {limit:1});
+    return posts.find({'type':'event', 'featured' : 'on'});
   },
   'latest': function() {
     return posts.find({'type':'event', 'featured': {$not : 'on'}}, {sort: {count:-1}, limit:10});
