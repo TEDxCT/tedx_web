@@ -3,10 +3,10 @@ Template.events.helpers({
     return posts.findOne({});
   },
   'featured': function() {
-    return posts.find({'type':'event', 'featured' : 'on'});
+    return posts.find({'type':'event', 'featured' : true});
   },
   'latest': function() {
-    return posts.find({'type':'event', 'featured': {$not : 'on'}}, {sort: {count:-1}, limit:10});
+    return posts.find({'type':'event', 'featured': {$not : true}}, {sort: {count:-1}, limit:10});
   },
   'interesting': function() {
     return posts.find({"pinned": true});
@@ -20,6 +20,7 @@ Template.events.events({
       "type": "event",
       "title": "New Event",
       "published": false,
+      "featured" : false,
       "author": Meteor.userId(),
       "created_at": $.now(),
       "sections": [{"type": "text", "content": "Click here to edit this text"}, {"type": "image", "source": "/images/default/image.png"}]
