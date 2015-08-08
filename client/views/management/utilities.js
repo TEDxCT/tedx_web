@@ -23,8 +23,7 @@ Template.editor.rendered = function(){
 // Template.editor.events({
 //   "click .featured-switch": function(event, template) {
 //     console.log($(".onoffswitch-checkbox")[0].value);
-//       videos.update(this._id, {$set: {"featured":$(".onoffswitch-checkbox").is(":checked")}});
-//
+//      posts.update(this._id, {$set: {"featured":$(".onoffswitch-checkbox").is(":checked")}});
 //   },
 // });
 
@@ -252,7 +251,6 @@ Template.actions.events({
 });
 
 function saveTemplateSpecificData(doc, template) {
-  console.log(doc);
   var templateFields = new Object();
 
   if(doc.type=="article") {
@@ -269,7 +267,10 @@ function saveTemplateSpecificData(doc, template) {
     templateFields.date = $(".date")[0].value;
     templateFields.starttime = $(".starttime")[0].value;
     templateFields.endtime = $(".endtime")[0].value;
-    templateFields.featured = $(".onoffswitch-checkbox")[0].value;
+    var featured = $(".onoffswitch-checkbox").is(":checked")
+    console.log("FEAUTURED: " + featured)
+    templateFields.featured = featured;
+
     templateFields.session1 = [
       $("#s1p1 :selected")[0].value,
       $("#s1p2 :selected")[0].value,
