@@ -10,12 +10,16 @@
   {{/if}}
   <div class="container-fluid centered">
     <h2 class="title">Events</h2>
-    {{#each featured}}
-      {{> eventTile this}}
-    {{/each}}
-    {{#each latest}}
-      {{> eventTile this}}
-    {{/each}}
+    <div id="theGrid" class="main animated fadeIn">
+      <section class="grid">
+      {{#each featured}}
+        {{> eventTile this}}
+      {{/each}}
+      {{#each latest}}
+        {{> eventTile this}}
+      {{/each}}
+      </section>
+    </div>
     <hr class="dashed">
     <h1>Our Sponsors</h1>
     {{> sponsors}}
