@@ -1,17 +1,14 @@
 <template name="events">
-  <div class="container-fluid">
-    {{#if userIsInRole 'member'}}
-    <ul class="toolbar">
-      <li>
-        <a href="" class="tag newEvent">
-          <i class="icon-tags"></i>
-          New Event
-        </a>
-      </li>
-    </ul>
-    {{/if}}
+  {{#if userIsInRole 'member'}}
+  <div class="container-fluid red toolbar">
+      <a href="" class="tag newEvent">
+        <i class="icon-tags"></i>
+        New Event
+      </a>
+      <h1 class="pull-left">Tools</h1>      
   </div>
-  <div class="container-fluid centered">
+  {{/if}}
+  <div class="container-fluid centered red">
     <h2 class="title">Featured Events</h2>
     {{#each featured}}
       {{> featuredEventTile this}}
@@ -62,6 +59,19 @@
 
 
 <template name="showEvent">
+  {{#if currentUser}}
+    <div class="container-fluid red toolbar">
+        <a href="{{pathFor route='posts.edit.event' data=this}}" class="edit">
+          <i class="icon-pencil-2"></i>
+          Edit
+        </a>
+        <a href="#" class="delete danger">
+          <i class="icon-bin-2"></i>
+          Archive
+        </a>
+        <h1 class="pull-left">Tools</h1>
+    </div>
+  {{/if}}
   <div class="container-fluid">
     <div class="pageHeader">
       <div class="back-button back">
@@ -72,22 +82,6 @@
           </span>
         </a>
       </div>
-    {{#if currentUser}}
-    <ul class="toolbar">
-      <li>
-        <a href="{{pathFor route='posts.edit.event' data=this}}" class="edit">
-          <i class="icon-pencil-2"></i>
-          Edit
-        </a>
-      </li>
-      <li>
-        <a href="#" class="delete">
-          <i class="icon-bin-2"></i>
-          Delete
-        </a>
-      </li>
-    </ul>
-    {{/if}}
   </div>
     </div>
     <div class="clear"></div>
