@@ -8,9 +8,13 @@
       <h1 class="pull-left">Tools</h1>
   </div>
   {{/if}}
-  <div class="container-fluid centered">
-    <h2 class="title">Events</h2>
-    <div id="theGrid" class="main animated fadeIn">
+  <div class="container-fluid centered red">
+    <h2 class="title">What's on?</h2>
+    <p>Catch up with the latest events hosted by TEDxCapeTown and surrounding TEDx chapters.</p>
+  </div>
+  <hr class="no-line extra-space-top">
+  <div class="container-fluid">
+    <div id="theGrid" class="main">
       <section class="grid">
       {{#each featured}}
         {{> eventTile this}}
@@ -44,7 +48,7 @@
 </template> -->
 
 <template name="eventTile">
-  <a class="talk-tile animated fadeInUp" href="{{pathFor route='posts.show.event' data=this}}">
+  <a class="talk-tile animated fadeIn" href="{{pathFor route='posts.show.event' data=this}}">
     {{#if this.featured}}
     <div class="corner-ribbon top-right black shadow"><i class="icon-heart-1"></i> Featured</div>
     {{/if}}

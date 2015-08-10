@@ -1,46 +1,52 @@
 <template name="manage">
-  <div class="container-fluid red centered">
-    {{#if currentUser}}
-    <ul class="toolbar">
-      <li class="logout">
-        <i class="icon-tags"></i>
-        Log out
-      </li>
-    </ul>
-    <h1>Logged in as {{username}}</h1>
-    {{/if}}
-  </div>
+  {{#if currentUser}}
+    <div class="container-fluid red toolbar">
+
+        <div class="logout action">
+          <i class="icon-tags"></i>
+          Log out
+        </div>
+      <h1 class="pull-left">Logged in as {{username}}
+        {{#if userIsVerified}}
+          <i class="icon-check-1"></i> Account verified
+          {{/if}}
+      </h1>
+    </div>
+  {{/if}}
 
   <div class="container-fluid centered">
-  {{#if userIsVerified}}
+    {{#if userIsVerified}}
+
+    {{else}}
+      <h1>You need to verify your email address before you can view this page.</h1>
+      <div>
+        <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
+      </div>
+    {{/if}}
     {{#if userIsInRole 'admin'}}
-    <h1>You are logged in as a TEDxCT admin.</h1>
+    <h4 class="pull-left">You are logged in as a TEDxCT admin.</h4>
       {{> admin}}
     {{else}}
       {{#if userIsInRole 'simulcast'}}
-        <h1>You only have permissions to edit your simulcast event.</h1>
+        <h4 class="pull-left">You only have permissions to edit your simulcast event.</h4>
       {{else}}
         {{#if userIsInRole 'speaker'}}
-          <h1>You only have permissions to edit your speaker profile.</h1>
+          <h4 class="pull-left">You only have permissions to edit your speaker profile.</h4>
         {{else}}
           {{#if userIsInRole 'member'}}
-            <h1>You are logged in as a TEDxCT member.</h1>
+            <h4 class="pull-left">You are logged in as a TEDxCT member.</h4>
             {{> admin}}
           {{/if}}
         {{/if}}
       {{/if}}
     {{/if}}
-  {{else}}
-    <h1>You need to verify your email address before you can view this page.</h1>
-    <div>
-      <button type="button" class="btn btn-primary resendVerificationEmail">Resend verification email</button>
-    </div>
-  {{/if}}
+
       <br/>
 </div>
 </template>
 
 <template name="admin">
+  <hr class="no-line extra-space-top">
   <h1>What would you like to do?</h1>
   <div class="row">
       <div class="col-xs-6 col-md-4">
