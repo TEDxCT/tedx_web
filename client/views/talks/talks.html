@@ -44,6 +44,29 @@
 </template>
 
 <template name="talk">
+  {{#if userIsInRole 'admin'}}
+  <div class="container-fluid red toolbar">
+    <div class="featured-switch action">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.featured}}">
+      <label class="onoffswitch-label" for="favoriteSwitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
+      <i class="icon-tags"></i>
+      Tag
+    </a>
+    <a href="{{pathFor route='talks.edit' data=talk}}" class="edit">
+      <i class="icon-pencil-2"></i>
+      Edit
+    </a>
+    <a href="#" class="delete">
+      <i class="icon-bin-2"></i>
+      Delete
+    </a>
+  </div>
+  {{/if}}
   <div class="container-fluid animated fadeIn">
     <div class="back-button back">
       <a href="{{pathFor route='watch'}}" class="noLink">
@@ -53,37 +76,6 @@
         </span>
       </a>
     </div>
-    {{#if userIsInRole 'admin'}}
-    <ul class="toolbar">
-      <li class="no-padding">
-        <div class="featured-switch">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.featured}}">
-          <label class="onoffswitch-label" for="favoriteSwitch">
-              <span class="onoffswitch-inner"></span>
-              <span class="onoffswitch-switch"></span>
-          </label>
-        </div>
-      </li>
-      <li>
-        <a href="{{pathFor route='talks.tag' data=talk}}" class="tag">
-          <i class="icon-tags"></i>
-          Tag
-        </a>
-      </li>
-      <li>
-        <a href="{{pathFor route='talks.edit' data=talk}}" class="edit">
-          <i class="icon-pencil-2"></i>
-          Edit
-        </a>
-      </li>
-      <li>
-        <a href="#" class="delete">
-          <i class="icon-bin-2"></i>
-          Delete
-        </a>
-      </li>
-    </ul>
-    {{/if}}
     <hr class="space extra-space-top">
     <h1 class="tile-title">{{this.title}}</h1>
     <hr class="space extra-space-top">
