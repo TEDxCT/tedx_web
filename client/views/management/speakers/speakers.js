@@ -11,7 +11,10 @@ Template.speaker.events({
 
 Template.speaker.helpers({
 	'titleForEvent': function(eventId) {
-		return posts.findOne({'_id' : eventId}, {'_id':0, 'title':1}).title;
+		var post = posts.findOne({'_id' : eventId}, {'_id':0, 'title':1})
+		if(post!=undefined) {
+			return post.title;
+		}
 	},
 	// 'titleForTalk': function(talkId) {
 	// 	// console.log(data);
