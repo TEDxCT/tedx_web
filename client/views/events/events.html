@@ -5,25 +5,24 @@
         <i class="icon-tags"></i>
         New Event
       </a>
-      <h1 class="pull-left">Tools</h1>      
+      <h1 class="pull-left">Tools</h1>
   </div>
   {{/if}}
-  <div class="container-fluid centered red">
-    <h2 class="title">Featured Events</h2>
+  <div class="container-fluid centered">
+    <h2 class="title">Events</h2>
     {{#each featured}}
-      {{> featuredEventTile this}}
+      {{> eventTile this}}
     {{/each}}
-  </div>
-    <div class="container-fluid centered">
     {{#each latest}}
       {{> eventTile this}}
     {{/each}}
+    <hr class="dashed">
     <h1>Our Sponsors</h1>
     {{> sponsors}}
   </div>
 </template>
 
-<template name="eventTile">
+<!-- <template name="eventTile">
   <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">
     <div class="eventItem">
       <div class="row">
@@ -38,7 +37,26 @@
       </div>
     </div>
     </a>
+</template> -->
+
+<template name="eventTile">
+  <a class="talk-tile animated fadeInUp" href="{{pathFor route='posts.show.event' data=this}}">
+  <div class="top" style="background: url({{eventImage}}); background-size: cover;">
+
+  </div>
+    <div class="talk-title">{{{this.title}}}</div>
+    <div class="talk-speaker">{{this.date}}</div>
+    <div class="bottom">
+      <!-- <span>{{this.speaker.name}}</span> -->
+      {{{summary}}}
+    </div>
+    <div class="actions">
+      <button class="btn"><i class="icon-calendar-2"></i> <span>View event</span></button>
+      <!-- <span class="pull-right action"><i class="icon-ticket-1"></i></span> -->
+    </div>
+  </a>
 </template>
+
 
 <template name="featuredEventTile">
   <a href="{{pathFor route='posts.show.event' data=this}}" class="noLink">

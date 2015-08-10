@@ -34,19 +34,7 @@ Template.eventTile.helpers({
     if((this.summary==undefined)||(this.summary=="")) {
       // return this.body.substring(0,200) + "...";
     }
-    return this.summary;
-  },
-  'eventImage': function() {
-    return getImageURL(this.sections);
-  }
-});
-
-Template.featuredEventTile.helpers({
-  'summary': function() {
-    if((this.summary==undefined)||(this.summary=="")) {
-      // return this.body.substring(0,200) + "...";
-    }
-    return this.summary;
+    return this.summary.substring(0,100) + "...";
   },
   'eventImage': function() {
     return getImageURL(this.sections);
