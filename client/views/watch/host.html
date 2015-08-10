@@ -142,6 +142,23 @@
 </template>
 
 <template name="hosted">
+  {{#if currentUser}}
+    {{#if ownsEvent}}
+    <div class="toolbar container-fluid red">
+      <a href="{{pathFor route='editHosted' data=this}}" class="edit">
+        <i class="icon-pencil-2"></i>
+        Edit
+      </a>
+      <a href="#" class="delete danger">
+        <i class="icon-bin-2"></i>
+        Delete
+      </a>
+      <h1 class="pull-left">Tools
+      <em> - <i class="icon-lock-2"></i> You're seeing this because you created this event.</em>
+      </h1>
+    </div>
+    {{/if}}
+  {{/if}}
   <div class="container-fluid">
       <div class="pageHeader">
         <div class="back-button back">
@@ -153,24 +170,6 @@
           </a>
         </div>
     </div>
-    {{#if currentUser}}
-    <ul class="toolbar">
-      {{#if ownsEvent}}
-      <li>
-        <a href="{{pathFor route='editHosted' data=this}}" class="edit">
-          <i class="icon-pencil-2"></i>
-          Edit
-        </a>
-      </li>
-      <li>
-        <a href="#" class="delete">
-          <i class="icon-bin-2"></i>
-          Delete
-        </a>
-      </li>
-      {{/if}}
-    </ul>
-    {{/if}}
   </div>
   <div class="container-fluid">
     <h1>{{this.title}}</h1>
