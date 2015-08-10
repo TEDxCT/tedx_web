@@ -45,9 +45,9 @@
 
 <template name="eventTile">
   <a class="talk-tile animated fadeInUp" href="{{pathFor route='posts.show.event' data=this}}">
-    <!-- {{#if this.featured}} -->
+    {{#if this.featured}}
     <div class="corner-ribbon bottom-right sticky black shadow"><i class="icon-heart-1"></i> Featured</div>
-    <!-- {{/if}} -->
+    {{/if}}
   <div class="top" style="background: url({{eventImage}}); background-size: cover;">
 
   </div>
