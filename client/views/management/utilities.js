@@ -51,7 +51,7 @@ Template.editor.helpers({
       return "Enter a summary line here";
     }
     else if(this.summary!=$(".summary").innerText) {
-      $(".summary").innerText(this.summary);
+      $(".summary").innerHTML(this.summary);
     }
   },
   'stringOrPlaceholder': function(string) {
