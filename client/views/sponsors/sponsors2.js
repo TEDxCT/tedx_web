@@ -45,11 +45,15 @@ Template.newSponsor2.events({
     newSponsor.description = $(template.find(".descriptionText")).val();
     newSponsor.webURL = $(template.find(".websiteURL")).val();
     newSponsor.imageURL = $('#imageUpload').attr("src");
-    console.log(newSponsor);
+    newSponsor.priority = $(template.find(".prioritySelect"))[0].selectedIndex;
     var newId = sponsors.insert(newSponsor)
     Router.go('/sponsors/show/' + newId)
   },
 });
+
+Template.editSponsor.onRendered(function() {
+  $("#"+this.data.priority).attr("selected", true);
+})
 
 Template.editSponsor.events({
   'click .upload': function(event, template) {
@@ -72,7 +76,8 @@ Template.editSponsor.events({
       "imageURL" : $('#imageUpload').attr("src"),
       "isHeadlineSponsor" : $(template.find("#isHeadlineSponsor")).is(":checked"),
       "years" : years,
-      "type" : $(template.find(".typeText")).val()
+      "type" : $(template.find(".typeText")).val(),
+      "priority" : $(template.find(".prioritySelect"))[0].selectedIndex
 
     }});
     Router.go('/sponsors/show/' + this._id)
@@ -99,4 +104,14 @@ Template.registerHelper("isInYear", function (selectedYears, year) {
       return true;
     }
     return false;
+});
+
+Template.registerHelper("numberOfSponsors", function () {
+    var numberOfSponsors =  sponsors.find({}).count()
+    console.log(numberOfSponsors);
+    var availableSponsorPositions = [];
+    for (i = 0; i < numberOfSponsors; i++) {
+       availableSponsorPositions[i] = i;
+    }
+    return availableSponsorPositions;
 });
