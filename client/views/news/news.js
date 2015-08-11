@@ -3,7 +3,7 @@ Template.news.helpers({
     return posts.findOne({});
   },
   'latest': function() {
-    return posts.find({}, {sort: {count:-1}, limit:10});
+    return posts.find({}, {sort: {count:-1}});
   },
   'interesting': function() {
     return posts.find({"pinned": true});
