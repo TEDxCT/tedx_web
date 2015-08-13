@@ -2,7 +2,7 @@
   <div class="container-fluid">
     {{#if layoutIs 'article'}}
       <h3 contenteditable="true" class="title">{{this.title}}</h3>
-      <p contenteditable="true" class="summary">{{summary}}</p>
+      <p contenteditable="true" class="summary">{{this.summary}}</p>
     {{else}}
       {{#if layoutIs 'event'}}
 
@@ -20,7 +20,7 @@
           </div>
         </div>
     </div>
-      <p contenteditable="true" class="summary">{{summary}}</p>
+      <p contenteditable="true" class="summary">{{this.summary}}</p>
       <label for="date">Date:</label>
       <input type="date" id="date" class="date" value="{{this.date}}">
       <br/>

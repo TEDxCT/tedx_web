@@ -45,15 +45,7 @@ Template.editor.helpers({
   },
   'sections': function() {
     return Session.get("sections");
-  },
-  'summary': function() {
-    if((this.summary=="")||(this.summary==undefined)) {
-      return "Enter a summary line here";
-    }
-    else if(this.summary!=$(".summary").innerText) {
-      $(".summary").innerHTML(this.summary);
-    }
-  },
+  },  
   'stringOrPlaceholder': function(string) {
     if((string=="")||(string==undefined)) {
       return "Select this text to edit it";
@@ -254,13 +246,14 @@ function saveTemplateSpecificData(doc, template) {
   var templateFields = new Object();
 
   if(doc.type=="article") {
-    templateFields.title = $(".title")[0].innerText;
-    templateFields.summary = $(".summary")[0].innerText;
+    templateFields.title = $(".title")[0].text();
+    templateFields.summary = $(".summary")[0].text();
   }
 
   if(doc.type=="event") {
     templateFields.title = $(".title")[0].innerText;
     templateFields.summary = $(".summary")[0].innerText;
+    console.log(templateFields.summary);
     templateFields.venue = $(".venue")[0].innerText;
     templateFields.price = $(".price")[0].innerText;
     templateFields.afterparty = $(".afterparty")[0].innerText;
