@@ -246,7 +246,7 @@ function saveTemplateSpecificData(doc, template) {
   var templateFields = new Object();
 
   if(doc.type=="article") {
-    templateFields.title = $(".title")[0].text();
+    templateFields.title = $(".title")[0].innerText;
     templateFields.summary = $(".summary")[0].value;
   }
 
