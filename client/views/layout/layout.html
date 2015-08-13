@@ -18,7 +18,7 @@
       <div class="nav-links">
         <a href="https://www.quicket.co.za/events/10587-tedx-cape-town-2015-open-access-control/#/preregistration" target="_blank" class="noLink">
           <div class="link">
-            <strong>Get tickets</strong>
+            <strong>TICKETS</strong>
         </div>
         </a>
         <a href="{{pathFor route='live'}}" class="noLink">
@@ -39,6 +39,11 @@
         <a href="{{pathFor route='news'}}" class="noLink">
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News
+          </div>
+        </a>
+        <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
+          <div class="link {{#if selected 'Media'}}active{{/if}}">
+            Media
           </div>
         </a>
         {{#if currentUser}}
