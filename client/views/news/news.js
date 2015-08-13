@@ -3,7 +3,7 @@ Template.news.helpers({
     return posts.findOne({"featured": true});
   },
   'latest': function() {
-    return posts.find({"featured": {$ne: true}});
+    return posts.find({"featured": {$ne: true}}, {sort: {"created_at": -1}});
   }
 });
 
@@ -19,6 +19,10 @@ Template.articleTile.helpers({
 Template.showArticle.events({
   'click .delete': function() {
     posts.update({"_id": this._id}, {$set: {"archive":  true}});
+    Router.go("/News");
+  },
+  'click .bump': function() {
+    posts.update({"_id": this._id}, {$set: {"created_at":  Date.now()}});
     Router.go("/News");
   },
   "click .featured-switch": function() {

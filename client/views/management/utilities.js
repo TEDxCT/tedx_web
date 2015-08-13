@@ -289,7 +289,13 @@ function saveTemplateSpecificData(doc, template) {
   if(published!=undefined) templateFields.published = published.is(":checked");
   else templateFields.published = false;
 
-  console.dir(templateFields);
+  if(posts.findOne({"_id": doc._id}).updated_at) {
+    templateFields.updated_at = Date.now();
+  }
+  else {
+    templateFields.created_at = Date.now();
+  }
+
   var update = posts.update({"_id": doc._id}, {$set: templateFields});
   if (update > 0) {
     FlashMessages.sendSuccess("Successfully updated event");
