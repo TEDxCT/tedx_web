@@ -87,6 +87,5 @@ Template.talk.events({
     catch(err) {
       videos.update(this._id, {$set: {"featured":$(".featured-switch").is(":checked")}});
     }
-
   },
 });

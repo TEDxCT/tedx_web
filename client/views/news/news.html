@@ -10,7 +10,7 @@
   {{/if}}
   <div class="container-fluid red centered">
     <h4>HOT OFF THE PRESS</h4>
-    {{> articleTile mostRecent}}
+    {{> articleTile featured}}
   </div>
     <div class="container-fluid centered">
     {{#each latest}}
@@ -36,6 +36,13 @@
 <template name="showArticle">
   {{#if userIsInRole 'admin'}}
   <div class="container-fluid red toolbar">
+    <div class="featured-switch action">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.featured}}">
+      <label class="onoffswitch-label" for="favoriteSwitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
       <a href="{{pathFor route='posts.edit.article' data=this}}" class="edit">
         <i class="icon-pencil-2"></i>
         Edit
