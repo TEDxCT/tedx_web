@@ -17,7 +17,7 @@ Template.sponsors.rendered = function() {
 
 Template.sponsors.helpers({
   'sponsors': function() {
-    var s = sponsors.find();
+    var s = sponsors.find({"published": {$ne: false}});
     return s;
   },
 })
@@ -46,6 +46,7 @@ Template.newSponsor2.events({
     newSponsor.webURL = $(template.find(".websiteURL")).val();
     newSponsor.imageURL = $('#imageUpload').attr("src");
     newSponsor.priority = $(template.find(".prioritySelect"))[0].selectedIndex;
+    newSponsor.published = $("#publishSwitch").is(":checked");
     var newId = sponsors.insert(newSponsor)
     Router.go('/sponsors/show/' + newId)
   },
@@ -77,6 +78,7 @@ Template.editSponsor.events({
       "isHeadlineSponsor" : $(template.find("#isHeadlineSponsor")).is(":checked"),
       "years" : years,
       "type" : $(template.find(".typeText")).val(),
+      "published" : $("#publishSwitch").is(":checked"),
       "priority" : $(template.find(".prioritySelect"))[0].selectedIndex
 
     }});

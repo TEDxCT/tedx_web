@@ -26,6 +26,19 @@
               </div>
             </div>
         {{/each}}
+        {{#if userIsInRole 'admin'}}
+         <h2>Draft sponsors</h2>
+         {{#each draftSponsors}}
+             <div class="col-md-4 col-xs-6">
+               <div class="sponsor_tile">
+                 <h4 class="sponsor-type">{{this.type}}</h4>
+                 <a href="/sponsors/show/{{this._id}}">
+                   <img src="{{this.imageURL}}" alt="{{this.name}}">
+                 </a>
+               </div>
+             </div>
+         {{/each}}
+        {{/if}}
       </div>
       <br/>
       <!-- <h1>Previous Sponsors</h1>
