@@ -45,7 +45,7 @@ Template.editor.helpers({
   },
   'sections': function() {
     return Session.get("sections");
-  },  
+  },
   'stringOrPlaceholder': function(string) {
     if((string=="")||(string==undefined)) {
       return "Select this text to edit it";
@@ -247,13 +247,12 @@ function saveTemplateSpecificData(doc, template) {
 
   if(doc.type=="article") {
     templateFields.title = $(".title")[0].text();
-    templateFields.summary = $(".summary")[0].text();
+    templateFields.summary = $(".summary")[0].value;
   }
 
   if(doc.type=="event") {
     templateFields.title = $(".title")[0].innerText;
-    templateFields.summary = $(".summary")[0].innerText;
-    console.log(templateFields.summary);
+    templateFields.summary = $(".summary")[0].value;
     templateFields.venue = $(".venue")[0].innerText;
     templateFields.price = $(".price")[0].innerText;
     templateFields.afterparty = $(".afterparty")[0].innerText;
@@ -261,7 +260,6 @@ function saveTemplateSpecificData(doc, template) {
     templateFields.starttime = $(".starttime")[0].value;
     templateFields.endtime = $(".endtime")[0].value;
     var featured = $(".onoffswitch-checkbox").is(":checked")
-    console.log("FEAUTURED: " + featured)
     templateFields.featured = featured;
 
     templateFields.session1 = [
