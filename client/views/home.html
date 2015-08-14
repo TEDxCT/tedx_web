@@ -1,14 +1,18 @@
 <template name="home">
-  <a class="ticketLink" href="https://www.quicket.co.za/events/10587-tedx-cape-town-2015-open-access-control/#/preregistration" target="_blank"><img class="full-width banner red animated fadeIn" src="https://d15h8y58yhffbd.cloudfront.net/api/file/5qIXehoTRTWeAk6miQYE"></a>
+  <div class="container-fluid centered red">
+    <h4>Tickets available at the door, watch live <a href="{{pathFor route='live'}}" class="link">here</a>.</h4>
+    <p>Pay for your tickets with SnapScan, cash or card.</p>
+  </div>
+  <a href="{{pathFor route='posts.show.event' _id='wELwWASoZkneCjj6E'}}"><img class="full-width banner red animated fadeIn" src="https://d15h8y58yhffbd.cloudfront.net/api/file/5qIXehoTRTWeAk6miQYE"></a>
   <div class="container-fluid">
     <hr class="space">
     <div class="row">
       <div class="col-md-4">
-        <a href="https://www.quicket.co.za/events/10587-tedx-cape-town-2015-open-access-control/#/preregistration" target="_blank" class="noLink">
+        <a href="{{pathFor route='live'}}" class="noLink">
         <div class="featured-cta">
           <div class="row">
             <div class="col-md-10">
-              <h4>Get <strong>tickets</strong> to TEDx2015</h4>
+              <h4>Watch <strong>live</strong> now</h4>
               <p>Tickets now available. Get yours before they run out!</p>
             </div>
             <div class="col-md-2">
@@ -23,7 +27,7 @@
         <div class="featured-cta">
           <div class="row">
             <div class="col-md-10">
-              <h4>Get Updates</h4>
+              <h4>Latest News</h4>
               <p>See our latest news articles to catch up on what we're up to.</p>
             </div>
             <div class="col-md-2">
