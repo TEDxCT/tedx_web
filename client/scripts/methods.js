@@ -33,7 +33,7 @@ userIsVerified = function() {
 // Track page views with Mixpanel
 trackPageView = function(page_type, page_name) {
   var mixpixel = new Object();
-  // 
+  //
   // if(Session.get("user")) {
   //   var currentUser = Session.get("user");
   //   // Check if this is a first time load for this user
@@ -44,4 +44,5 @@ trackPageView = function(page_type, page_name) {
   mixpixel.page_name = page_name;
   mixpixel.user_type = userType();
   mixpanel.track('View', mixpixel);
+  GAnalytics.pageview(page_name);
 }

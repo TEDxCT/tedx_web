@@ -1,5 +1,8 @@
 {
   "public": {
+    "ga": {
+      "account":"UA-20984899-2"
+    },
     "filepicker" : {
       "key":"A3zo8DgItQxiOLaCAjmwUz"
     },
