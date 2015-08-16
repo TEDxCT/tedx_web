@@ -16,12 +16,6 @@
         <i class="icon-menu"></i>
       </div>
       <div class="nav-links">
-
-        <a href="{{pathFor route='live'}}" class="noLink">
-          <div class="link {{#if selected 'Simulcast'}}active{{/if}}">
-            Viewing Party
-        </div>
-        </a>
         <a href="{{pathFor route='watch'}}" class="noLink">
           <div class="link {{#if selected 'Watch'}}active{{/if}}">
             Watch
@@ -35,6 +29,11 @@
         <a href="{{pathFor route='news'}}" class="noLink">
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News
+          </div>
+        </a>
+        <a href="{{pathFor route='sponsors'}}" class="noLink">
+          <div class="link {{#if selected 'Sponsors'}}active{{/if}}">
+            Sponsors
           </div>
         </a>
         <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
