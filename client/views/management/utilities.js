@@ -163,6 +163,14 @@ Template.chooseSection.events({
     sections.push(newSection)
     Session.set("sections", sections);
   },
+  'click .sectionType.video':function() {
+    var newSection = {"type": "video", "source": "https://www.youtube.com/embed/d0NHOpeczUU"};
+    posts.update({"_id": this._id}, {$push: {"sections":  newSection}});
+    var sections = Session.get("sections");
+    newSection.index = sections.length;
+    sections.push(newSection)
+    Session.set("sections", sections);
+  },
 })
 
 Template.actions.helpers({
@@ -192,9 +200,15 @@ Template.actions.events({
           "source": $(this)[0].lastElementChild.src
         }
       }
+      // If section is a video section
+      else if($(this).hasClass("video")) {
+        formattedSections[index] = {
+          "type": "video",
+          "source": $(this)[0].lastElementChild.src
+        }
+      }
       // If section is a date section
       else if($(this).hasClass("start-date")) {
-        console.log('START DATE')
         formattedSections[index] = {
           "type": "start-date",
           "date": $(this)[0].lastElementChild

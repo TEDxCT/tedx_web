@@ -121,9 +121,7 @@
   {{#if this.editable}}
   <div class="row forMoving" id={{this.unique}}>
     <div class="col-md-11">
-      <section class="text padded forSaving editable" >
-          {{{this.content}}}
-      </section>
+      <section class="text padded forSaving editable" >{{{this.content}}}</section>
     </div>
     <div class="col-md-1">
       {{> sectionQuickEdits this}}
@@ -148,6 +146,23 @@
   </div>
   {{else}}
       <img src="{{this.source}}" class="full-width" unique={{unique}}>
+ {{/if}}
+</template>
+
+<template name="video">
+  {{#if this.editable}}
+  <div class="row forMoving" id={{this.unique}}>
+    <div class="col-md-11">
+      <section class="video forSaving">
+      <iframe width="560" height="315" src="{{this.source}}" class="full-width" unique={{unique}} frameborder="0" allowfullscreen></iframe>
+      </section>
+    </div>
+    <div class="col-md-1">
+      {{> sectionQuickEdits this}}
+    </div>
+  </div>
+  {{else}}
+      <iframe width="560" height="315" src="{{this.source}}" class="full-width videoFrame" unique={{unique}} frameborder="0" allowfullscreen></iframe>
  {{/if}}
 </template>
 
@@ -195,9 +210,9 @@
         <h4>Viewing Party Map (Coming soon)</h4>
         <p>Include a map with viewing parties.</p>
       </div>
-      <div class="col-md-3 sectionType article talk">
+      <div class="col-md-3 sectionType video">
         <i class="icon-camera-symbol-1"></i>
-        <h4>Talk (Coming soon)</h4>
+        <h4>Talk</h4>
         <p>Let users watch a talk right from your page.</p>
       </div>
       <div class="col-md-3 sectionType speaker">
