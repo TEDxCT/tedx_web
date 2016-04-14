@@ -20,12 +20,15 @@ Template.editor.rendered = function(){
   Session.set("sections", modifiedSections);
 }
 
-// Template.editor.events({
-//   "click .featured-switch": function(event, template) {
-//     console.log($(".onoffswitch-checkbox")[0].value);
-//      posts.update(this._id, {$set: {"featured":$(".onoffswitch-checkbox").is(":checked")}});
-//   },
-// });
+Template.editor.events({
+  // "click .featured-switch": function(event, template) {
+  //   console.log($(".onoffswitch-checkbox")[0].value);
+  //    posts.update(this._id, {$set: {"featured":$(".onoffswitch-checkbox").is(":checked")}});
+  // },
+  "keyup .title": function() {
+    Session.set("unsavedChanges", true)
+  }
+});
 
 Template.editor.helpers({
   'layoutIs': function(layoutType) {
@@ -145,6 +148,14 @@ Template.chooseSection.helpers({
     else return !Session.get("unsavedChanges");
   }
 })
+
+Template.video.events({
+  "keyup #videoSrcInput": function(event, template){
+    Session.set("unsavedChanges", true);
+    console.log(this.unique);
+    $("#"+this.unique + " iframe").attr("src", template.$("#videoSrcInput").val());
+  }
+});
 
 Template.chooseSection.events({
   'click .sectionType.text':function() {
