@@ -9,8 +9,8 @@ Template.default.helpers({
 		return "red";
 	},
 	"selected": function(navLink) {
-		if(navLink==Session.get("navSelected")) return true;
-		else return false;
+		if(navLink==Session.get("navSelected")) return "active";
+		else return "";
 	}
 });
 

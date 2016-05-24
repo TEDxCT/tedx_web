@@ -9,14 +9,12 @@
         <img src="/images/logo_white.png" class="logo" >
       </div>
       </A>
-      <div class="old-website-link">
-        <a class="noLink" href="http://old.tedxcapetown.org" target="_blank">Looking for the old website?</a>
-      </div>
+
       <div class="mobile-menu-toggle">
         <i class="icon-menu"></i>
       </div>
       <div class="nav-links">
-        <a href="{{pathFor route='watch'}}" class="noLink">
+        <!-- <a href="{{pathFor route='watch'}}" class="noLink">
           <div class="link {{#if selected 'Watch'}}active{{/if}}">
             Watch
         </div>
@@ -30,17 +28,33 @@
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News
           </div>
+        </a> -->
+
+        <a href="{{pathFor route='live'}}" class="noLink">
+          <div class="link {{selected 'live'}}">
+            Viewing Parties
+          </div>
+        </a>
+        <a href="{{pathFor route='stream'}}" class="noLink">
+          <div class="link {{selected 'stream'}}">
+            Live Steam
+          </div>
+        </a>
+        <a href="http://www.tedxtablemountain.org/" class="noLink" target="_blank">
+          <div class="link">
+            Website
+          </div>
         </a>
         <a href="{{pathFor route='sponsors'}}" class="noLink">
-          <div class="link {{#if selected 'Sponsors'}}active{{/if}}">
+          <div class="link {{selected 'Sponsors'}}">
             Sponsors
           </div>
         </a>
-        <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
+        <!-- <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
           <div class="link {{#if selected 'Media'}}active{{/if}}">
             Media
           </div>
-        </a>
+        </a> -->
         {{#if currentUser}}
         <a href="{{pathFor route='account'}}" class="noLink">
           <div class="link profile manage {{#if selected 'Profile'}}active{{/if}}">
