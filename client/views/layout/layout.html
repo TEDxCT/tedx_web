@@ -19,30 +19,30 @@
             Watch
         </div>
         </a>
-        <a href="{{pathFor route='events'}}" class="noLink">
-          <div class="link {{#if selected 'Events'}}active{{/if}}">
-            Events
-          </div>
-        </a>
+
         <a href="{{pathFor route='news'}}" class="noLink">
           <div class="link {{#if selected 'News'}}active{{/if}}">
             News
           </div>
         </a> -->
-
+        <a href="{{pathFor route='stream'}}" class="noLink">
+          <div class="link {{selected 'stream'}}">
+            Live
+          </div>
+        </a>
         <a href="{{pathFor route='live'}}" class="noLink">
           <div class="link {{selected 'live'}}">
             Viewing Parties
           </div>
         </a>
-        <a href="{{pathFor route='stream'}}" class="noLink">
-          <div class="link {{selected 'stream'}}">
-            Live Steam
+        <a href="/posts/show/event/TFAQhK6HFLpKrPtk6" class="noLink">
+          <div class="link {{#if selected 'Events'}}active{{/if}}">
+            Event
           </div>
         </a>
-        <a href="http://www.tedxtablemountain.org/" class="noLink" target="_blank">
-          <div class="link">
-            Website
+        <a href="{{pathFor route='speakers'}}" class="noLink">
+          <div class="link {{selected 'speakers'}}">
+            Speakers
           </div>
         </a>
         <a href="{{pathFor route='sponsors'}}" class="noLink">
@@ -50,6 +50,12 @@
             Sponsors
           </div>
         </a>
+        <a href="http://web.tedxtablemountain.org/" class="noLink" target="_blank">
+          <div class="link">
+            Website
+          </div>
+        </a>
+
         <!-- <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
           <div class="link {{#if selected 'Media'}}active{{/if}}">
             Media
