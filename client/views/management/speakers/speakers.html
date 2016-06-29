@@ -7,9 +7,14 @@
     <h1 class="pull-left">Tools</h1>
   </div>
   <div class="container-fluid ">
+    {{#if userIsInRole 'admin'}}
+    <a href="{{pathFor route='speakers'}}" class="btn">Live speakers</a>
+      <a href="{{pathFor route='speakers.nominated'}}" class="btn">All nominated</a>
+      <a href="{{pathFor route='speakers.applied'}}" class="btn">All applied</a>
+    {{/if}}
     <div id="theGrid" class="main animated fadeIn">
       <section class="grid">
-        {{#each allSpeakers}}
+        {{#each this}}
             {{> speakerTile this}}
           {{/each}}
       </section>
