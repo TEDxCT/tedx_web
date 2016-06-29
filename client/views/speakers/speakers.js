@@ -1,51 +1,77 @@
 
-// SimpleSchema.debug = true;
+SimpleSchema.debug = true;
 
-// AutoForm.hooks({
-//   insertSpeakerApplicationForm: {
-//     	onSuccess: function(operation, result, template) {
-// 			Router.go('speakers.register.complete');
-// 		},
-// 		onError: function(formType, error) {
-// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-// 		},
-// 	},
-// 	updateSpeakerApplicationForm: {
-//     	onSuccess: function(operation, result, template) {
-// 			// Router.go('speakers.register.complete');
-// 			FlashMessages.sendSuccess("Update successful");
-// 		},
-// 		onError: function(formType, error) {
-// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-// 		},
-// 	},
-// 	insertSpeakerNominationForm: {
-//     	onSuccess: function(operation, result, template) {
-// 			Router.go('speakers.register.complete');
-// 		},
-// 		onError: function(formType, error) {
-// 			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
-// 		},
-// 	},
-// 	updateSpeakerNominationForm: {
-//     	onSuccess: function(operation, result, template) {
-// 			// Router.go('speakers.register.complete');
-// 			FlashMessages.sendSuccess("Update successful");
-// 		},
-// 		onError: function(formType, error) {
-// 			FlashMessages.sendError("There was a problem saving your nomination. Please see below for errors.");
-// 		},
-// 	},
-// });
-//
-// function votesForSpeaker(speakerId) {
-// 	var voteCount = votes.find({"speaker":speakerId}).count();
-// 	console.log(speakerId);
-// 	console.log(voteCount);
-//     return voteCount;
-//
-// }
+AutoForm.hooks({
+  insertSpeakerApplicationForm: {
+		before: {
+	    // Replace `formType` with the form `type` attribute to which this hook applies
+	    insert: function(doc) {
+	      doc.application = true;
+	      return doc;
+	    }
+	  },
+		onSuccess: function(formType, result) {
+				Router.go('speakers.register.complete');
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+		}
+	},
+	updateSpeakerApplicationForm: {
+		onSuccess: function(formType, result) {
+					FlashMessages.sendSuccess("Update successful");
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+		}
+	},
+	insertSpeakerNominationForm: {
+		before: {
+			// Replace `formType` with the form `type` attribute to which this hook applies
+			insert: function(doc) {
+				console.log("message");
 
+				doc.nomination = true;
+				return doc;
+			}
+		},
+    onSuccess: function(operation, result, template) {
+			Router.go('speakers.register.complete');
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your application. Please see below for errors.");
+		},
+	},
+	updateSpeakerNominationForm: {
+    	onSuccess: function(operation, result, template) {
+			// Router.go('speakers.register.complete');
+			FlashMessages.sendSuccess("Update successful");
+		},
+		onError: function(formType, error) {
+			FlashMessages.sendError("There was a problem saving your nomination. Please see below for errors.");
+		},
+	},
+});
+
+function votesForSpeaker(speakerId) {
+	var voteCount = votes.find({"speaker":speakerId}).count();
+	console.log(speakerId);
+	console.log(voteCount);
+    return voteCount;
+
+}
+
+Template.register.helpers({
+	shareContext: function(){
+		let shareContext = {};
+		shareContext.title = "TEDxCapeTown 2016 Call For Speakers";
+		shareContext.description = "TEDx is not just a conference, it is a filmed production, and speaking at TEDxCapeTown is about much more than your appearance on stage. We are building a community; people engaging in meaningful change. Your attitude towards creating community and paying it forward is as important as your idea worth spreading.";
+		shareContext.imgage = "http://www.tedxcapetown.org/images/header.png";
+
+		return shareContext;
+
+	}
+});
 // Template.votes.events({
 // 	'click #count_votes_btn' : function() {
 // 		var items = speakers.find().fetch();
@@ -65,23 +91,23 @@
 //         "sLengthMenu": "_MENU_ records per page"
 //     }
 // 	});
-	// $('#nominated').dataTable({
- //    "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
- //    , "sPaginationType": "bootstrap"
- //    , "oLanguage": {
- //        "sLengthMenu": "_MENU_ records per page"
- //    }
-	// });
+// 	$('#nominated').dataTable({
+//     "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
+//     , "sPaginationType": "bootstrap"
+//     , "oLanguage": {
+//         "sLengthMenu": "_MENU_ records per page"
+//     }
+// 	});
 // }
 
 
-// Handlebars.registerHelper('setSpeakerRegistrationType', function (type) {
-//       Session.set("speakerRegistrationType", type);
-// });
-//
-// Handlebars.registerHelper('categoryName', function (identifier) {
-// 	return categories.findOne({'_id' : identifier}, {'_id' : 0 , 'name' : 1}).name;
-// });
+Template.registerHelper('setSpeakerRegistrationType', function (type) {
+      Session.set("speakerRegistrationType", type);
+});
+
+Template.registerHelper('categoryName', function (identifier) {
+	return categories.findOne({'_id' : identifier}, {'_id' : 0 , 'name' : 1}).name;
+});
 
 
 
@@ -91,7 +117,7 @@
 // 		return this;
 // 	},
 // });
-//
+
 // Template.nominatedSpeaker.helpers({
 // 	'speakerdata': function() {
 // 		// return this.speakerNomination;
@@ -127,15 +153,15 @@
 // 		return false
 // 	}
 // });
-
-
+//
+//
 // Template.edit_speaker_nominee.events({
 // 	'click .btn-cancel': function() {
 // 		console.log(this._id);
 // 		Router.go('/speaker/nomination/' + this._id);
 // 	}
 // })
-
+//
 // Template.edit_speaker_application.events({
 // 		'click .btn-cancel': function() {
 // 		console.log(this._id);
@@ -145,29 +171,29 @@
 // })
 
 
-// Handlebars.registerHelper('nominated', function() {
-// 		return speakers.find({"speakerNomination": {$exists: true}});
-// });
-//
-// Handlebars.registerHelper('applied', function() {
-// 		return speakers.find({"speakerApplication": {$exists: true}});
-// });
-//
-// Handlebars.registerHelper('nominated_ordered', function() {
-// 		return speakers.find({"speakerNomination": {$exists: true}}, {sort: {'numberOfVotes': -1}});
-// });
-//
-// Handlebars.registerHelper('applied_ordered', function() {
-// 		return speakers.find({"speakerApplication": {$exists: true}}, {sort: {'numberOfVotes': -1}});
-// });
+Handlebars.registerHelper('nominated', function() {
+		return speakers.find({"speakerNomination": {$exists: true}});
+});
 
-// Handlebars.registerHelper('totalNumberOfVotes', function() {
-// 	var voteCount = votes.find().count();
-//     return voteCount;
-// });
+Handlebars.registerHelper('applied', function() {
+		return speakers.find({"speakerApplication": {$exists: true}});
+});
 
-// Template.speakers.helpers({
-// 	'speakers': function() {
-// 		return speakers.find({"speakerApplication": {$exists: false}});
-// 	},
-// });
+Handlebars.registerHelper('nominated_ordered', function() {
+		return speakers.find({"speakerNomination": {$exists: true}}, {sort: {'numberOfVotes': -1}});
+});
+
+Handlebars.registerHelper('applied_ordered', function() {
+		return speakers.find({"speakerApplication": {$exists: true}}, {sort: {'numberOfVotes': -1}});
+});
+
+Handlebars.registerHelper('totalNumberOfVotes', function() {
+	var voteCount = votes.find().count();
+    return voteCount;
+});
+
+Template.speakers.helpers({
+	'speakers': function() {
+		return speakers.find({"speakerApplication": {$exists: false}});
+	},
+});

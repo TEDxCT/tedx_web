@@ -31,7 +31,17 @@ Meteor.publish('chapters', function () {
 });
 
 Meteor.publish('speakers', function () {
-  return speakers.find({"archived": {$ne : true}});
+  if(Match.test(this.userId, String)) {
+    let user = Meteor.users.findOne(this.userId);
+    if(Match.test(user.roles, Array)) {
+      if(user.roles.indexOf("admin")>-1) {
+        return speakers.find({"archived": {$ne : true}});
+      }
+    }
+  }
+
+  return speakers.find({"archived": {$ne : true}, "application": {$ne: true}, "nomination": {$ne: true}});
+
 });
 
 Meteor.publish('topvideos', function () {
