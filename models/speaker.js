@@ -145,6 +145,10 @@ nominatorFirstName: {
 
 
 SpeakerSchema = new SimpleSchema({
+  year: {
+    type: String,
+    optional: true
+  },
   nomination: {
     type: Boolean,
     optional: true

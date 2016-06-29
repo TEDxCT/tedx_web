@@ -7,6 +7,7 @@ AutoForm.hooks({
 	    // Replace `formType` with the form `type` attribute to which this hook applies
 	    insert: function(doc) {
 	      doc.application = true;
+				doc.year = new Date().getFullYear();
 	      return doc;
 	    }
 	  },
@@ -29,9 +30,8 @@ AutoForm.hooks({
 		before: {
 			// Replace `formType` with the form `type` attribute to which this hook applies
 			insert: function(doc) {
-				console.log("message");
-
 				doc.nomination = true;
+				doc.year = new Date().getFullYear();
 				return doc;
 			}
 		},

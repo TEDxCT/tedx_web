@@ -144,7 +144,10 @@
 
         {{#if isEqual this "speakerNomination.nomination"}}
         {{else}}
-          {{> afQuickField name=this options="auto"}}
+          {{#if isEqual this "speakerNomination.year"}}
+          {{else}}
+            {{> afQuickField name=this options="auto"}}
+          {{/if}}
         {{/if}}
       {{/each}}
 
@@ -184,7 +187,10 @@
         {{else}}
           {{#if isEqual this "speakerApplication.application"}}
           {{else}}
-            {{> afQuickField name=this options="auto"}}
+            {{#if isEqual this "speakerNomination.year"}}
+            {{else}}
+              {{> afQuickField name=this options="auto"}}
+            {{/if}}
           {{/if}}
         {{/if}}
       {{/each}}
