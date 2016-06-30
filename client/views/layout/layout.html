@@ -21,6 +21,11 @@
             Watch
         </div>
         </a>
+        <a href="{{pathFor route='speakers.register'}}" class="noLink">
+          <div class="link {{#if selected 'Events'}}active{{/if}}">
+            Apply
+          </div>
+        </a>
         <a href="{{pathFor route='events'}}" class="noLink">
           <div class="link {{#if selected 'Events'}}active{{/if}}">
             Events
