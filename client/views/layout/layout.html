@@ -8,10 +8,7 @@
       <div class="branding">
         <img src="/images/logo_white.png" class="logo" >
       </div>
-      </A>
-      <div class="old-website-link">
-        <a class="noLink" href="http://old.tedxcapetown.org" target="_blank">Looking for the old website?</a>
-      </div>
+    </a>
       <div class="mobile-menu-toggle">
         <i class="icon-menu"></i>
       </div>
@@ -23,7 +20,7 @@
         </a>
         <a href="{{pathFor route='speakers.register'}}" class="noLink">
           <div class="link {{#if selected 'Events'}}active{{/if}}">
-            Apply
+            Apply to Speak
           </div>
         </a>
         <a href="{{pathFor route='events'}}" class="noLink">
@@ -179,7 +176,14 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      <p class="copyright">TEDxCT © 2016. This independent TEDx event is operated under license from TED.</p>
+      <div class="row copyright">
+        <div class="col-md-8">
+          <p>TEDxCT © 2016. This independent TEDx event is operated under license from TED.</p>
+        </div>
+        <div class="col-md-4">
+          <a href="http://old.tedxcapetown.org" class="link" target="_blank">Looking for the old website?</a>
+        </div>
+      </div>
       <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
   </div>
 
