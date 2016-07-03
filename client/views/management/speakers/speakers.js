@@ -56,6 +56,19 @@ Template.speakerTile.helpers({
 			return true;
 		}
 		return false
+	},
+	'link': function() {
+		if(Match.test(this.application, Boolean)) {
+			if(this.application===true) {
+				return '/speakers/application/' + this._id;
+			}
+		}
+		if(Match.test(this.nomination, Boolean)) {
+			if(this.nomination===true) {
+				return '/speakers/nomination/' + this._id;		
+			}
+		}
+		return '/speakers/show/' + this._id;
 	}
 })
 

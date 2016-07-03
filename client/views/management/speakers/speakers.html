@@ -1,4 +1,5 @@
 <template name="speakers">
+  {{#if userIsInRole 'admin'}}
   <div class="container-fluid red toolbar">
     <a href="{{ pathFor 'speakers.new'}}" class="tag">
       <i class="icon-tags"></i>
@@ -6,6 +7,7 @@
     </a>
     <h1 class="pull-left">Tools</h1>
   </div>
+  {{/if}}
   <div class="container-fluid ">
     {{#if userIsInRole 'admin'}}
     <a href="{{pathFor route='speakers'}}" class="btn">Live speakers</a>
@@ -24,7 +26,7 @@
 
 <!--lots of temp logic here....just copied from talks grid view-->
 <template name="speakerTile">
-    <a class="talk-tile animated fadeInUp" href="/speakers/show/{{this._id}}">
+    <a class="talk-tile animated fadeInUp" href="{{link}}">
     <div class="top" style="background: url({{this.imageURL}}); background-size: 100%; background-repeat: no-repeat"></div>
       <!-- <div class="talk-title"></div> -->
       <div class="talk-speaker">{{this.firstName}} {{this.lastName}}</div>
