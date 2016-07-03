@@ -193,10 +193,21 @@
           {{/if}}
         {{/if}}
       {{/each}}
-
-
-
     </fieldset>
+    <h4>Subject Level<br><small>Choose a subject</small></h4>
+    <ul class="tags-manager tags-layout-list subject">
+      <li class="tag"><input type="checkbox" value="political" checked="{{isCategoryChecked 'subjects' 'political'}}"> Political</li>
+      <li class="tag"><input type="checkbox" value="legal" checked="{{isCategoryChecked 'subjects' 'legal'}}"> Legal</li>
+      <li class="tag"><input type="checkbox" value="physiological_biological" checked="{{isCategoryChecked 'subjects' 'physiological_biological'}}"> Physiological/Biological</li>
+      <li class="tag"><input type="checkbox" value="psychological" checked="{{isCategoryChecked 'subjects' 'psychological'}}"> Psychological</li>
+      <li class="tag"><input type="checkbox" value="economic" checked="{{isCategoryChecked 'subjects' 'economic'}}"> Economic</li>
+      <li class="tag"><input type="checkbox" value="cultural" checked="{{isCategoryChecked 'subjects' 'cultural'}}"> Cultural</li>
+      <li class="tag"><input type="checkbox" value="social" checked="{{isCategoryChecked 'subjects' 'social'}}"> Social</li>
+      <li class="tag"><input type="checkbox" value="environmental" checked="{{isCategoryChecked 'subjects' 'environmental'}}"> Environmental</li>
+      <li class="tag"><input type="checkbox" value="technological" checked="{{isCategoryChecked 'subjects' 'technological'}}"> Technological</li>
+      <li class="tag"><input type="checkbox" value="spiritual" checked="{{isCategoryChecked 'subjects' 'spiritual'}}"> Spiritual</li>
+
+    </ul>
     <button type="submit" class="btn btn-primary">Submit</button>
     {{/autoForm}}
   </div>

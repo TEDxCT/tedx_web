@@ -8,6 +8,16 @@ AutoForm.hooks({
 	    insert: function(doc) {
 	      doc.application = true;
 				doc.year = new Date().getFullYear();
+
+        var subject = [];
+        $('.subject input:checked').each(function() {
+          subject.push($(this).attr('value'));
+        });
+
+        categories = subject;
+
+        doc.categories = categories;
+
 	      return doc;
 	    }
 	  },
