@@ -205,7 +205,7 @@ Template.hostLocation.events({
         Session.set("draftViewingParty", undefined);
         Meteor.call('sendEmail',
             Meteor.user().emails[0].address,
-            'info@tedxcapetown.org',
+            'hello@tedxcapetown.org',
             "You've successfully registered a viewing party!",
             emailBodyHtml(savedViewingParty,  viewingPartyForSaving.fullName));
         Router.go("hosted", {"_id": savedViewingParty});
