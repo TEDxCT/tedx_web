@@ -71,12 +71,33 @@ function votesForSpeaker(speakerId) {
 
 }
 
+Template.register.onCreated(function() {
+  ShareIt.configure({
+    sites: {                // nested object for extra configurations
+        'facebook': {
+            'appId': '540068012764039'	// use sharer.php when it's null, otherwise use share dialog
+        },
+        'twitter': {},
+        'googleplus': {},
+        'pinterest': {}
+    },
+    classes: "large btn", // string (default: 'large btn')
+                          // The classes that will be placed on the sharing buttons, bootstrap by default.
+    iconOnly: false,      // boolean (default: false)
+                          // Don't put text on the sharing buttons
+    applyColors: true,     // boolean (default: true)
+                          // apply classes to inherit each social networks background color
+    faSize: '',            // font awesome size
+    faClass: ''		  // font awesome classes like square
+  });
+});
+
 Template.register.helpers({
 	shareContext: function(){
 		let shareContext = {};
 		shareContext.title = "TEDxCapeTown 2016 Call For Speakers";
 		shareContext.description = "TEDx is not just a conference, it is a filmed production, and speaking at TEDxCapeTown is about much more than your appearance on stage. We are building a community; people engaging in meaningful change. Your attitude towards creating community and paying it forward is as important as your idea worth spreading.";
-		shareContext.imgage = "http://www.tedxcapetown.org/images/header.png";
+		shareContext.image = "http://www.tedxcapetown.org/images/header.png";
 
 		return shareContext;
 
