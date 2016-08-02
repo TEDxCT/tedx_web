@@ -9,7 +9,7 @@ Template.registerHelper('compareUserIds',function(checkboxId){
   var currentUserId = Meteor.userId();
   var admin = Meteor.users.findOne({'emails.address' : {$in: ['admin@tedxcapetown.org']}});
 
-  if((Match.test(currentUserId, String)&&(Match.test(admin, Object))) {
+  if((Match.test(currentUserId, String))&&(Match.test(admin, Object))) {
     if (currentUserId == checkboxId || admin._id == checkboxId) {
       return true;
     }
