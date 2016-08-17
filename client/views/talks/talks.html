@@ -7,9 +7,10 @@
   <div class="container-fluid dark">
     <div id="theGrid" class="main animated fadeIn">
       <section class="grid">
-        {{#each getVideos}}
+        {{#each getVideos2}}
             {{> talkTile this}}
           {{/each}}
+          {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass="text-center"}}
       </section>
     </div>
   </div>
@@ -21,6 +22,7 @@
       {{#each this}}
         {{> talkTile this}}
       {{/each}}
+      {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass="text-center"}}
     </section>
   </div>
 </template>

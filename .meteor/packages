@@ -54,3 +54,6 @@ standard-minifier-js@1.1.8
 dfischer:prerenderio
 joshowens:shareit
 ecmascript@0.5.7
+houston:admin
+kurounin:pagination
+kurounin:pagination-blaze

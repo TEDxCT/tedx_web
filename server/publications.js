@@ -2,6 +2,10 @@ Meteor.publish('videos', function () {
   return videos.find({"archived": {$ne : true}});
 });
 
+new Meteor.Pagination(videosPag,{
+        perPage: 2});
+
+
 Meteor.publish('votes', function () {
   return votes.find({});
 });

@@ -53,6 +53,7 @@ geojson-utils@1.0.9
 gwendall:body-events@0.1.6
 handlebars@1.0.7
 hot-code-push@1.0.4
+houston:admin@2.0.7
 html-tools@1.0.10
 htmljs@1.0.10
 http@1.2.8
@@ -69,6 +70,8 @@ isotope:isotope@2.1.0_1
 jeremy:geocomplete@1.7.0
 joshowens:shareit@1.0.2
 jquery@1.11.9
+kurounin:pagination@1.0.9
+kurounin:pagination-blaze@1.0.1
 lai:collection-extensions@0.2.1_1
 launch-screen@1.0.12
 less@2.7.4
@@ -129,6 +132,8 @@ standard-minifier-css@1.1.8
 standard-minifier-js@1.1.8
 templating@1.1.14
 templating-tools@1.0.4
+tmeasday:paginated-subscription@0.2.4
+tmeasday:publish-counts@0.7.3
 tracker@1.1.0
 twbs:bootstrap@3.3.6
 ui@1.0.11

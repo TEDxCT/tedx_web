@@ -33,6 +33,11 @@ Template.talks.helpers({
       sort: {isoScore: -1}
     });
   },
+  getVideos2: function() {
+    return new Meteor.Pagination(videos, {
+          perPage: 2
+      });
+  },
 
   isLoading: function() {
     return PackageSearch.getStatus().loading;
@@ -88,4 +93,19 @@ Template.talk.events({
       videos.update(this._id, {$set: {"featured":$(".featured-switch").is(":checked")}});
     }
   },
+});
+
+Template.talks.created = function () {
+	this.pagination = new Meteor.Pagination(videos, {
+        perPage: 2
+    });
+}
+
+Template.talks.helpers({
+    templatePagination: function () {
+        return Template.instance().pagination;
+    },
+	documents: function () {
+		return Template.instance().pagination.getPage();
+	}
 });
