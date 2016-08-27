@@ -2,6 +2,7 @@ Template.hostDetails.onCreated(function() {
   if(Session.get("draftViewingParty") == undefined) {
     var newViewingParty = new Object();
     newViewingParty.privateParty = false;
+    newViewingParty.year = "2016";
     Session.set("draftViewingParty", newViewingParty);
   }
 });
@@ -64,6 +65,7 @@ function setFieldOnSessionObject(objectName, fieldName, fieldValue) {
 }
 
 Template.hostLocation.onCreated(function() {
+
   // We can use the `ready` callback to interact with the map API once the map is ready.
   GoogleMaps.ready('simulcastMap', function(map) {
     // Add a marker to the map once it's ready
@@ -105,11 +107,12 @@ Template.hosted.onCreated(function() {
 Template.hosted.helpers({
   singlePartyMapOptions: function() {
     var self = this;
+    console.log(this);
     // Make sure the maps API has loaded
     if (GoogleMaps.loaded()) {
       // Map initialization options
       return {
-        center: new google.maps.LatLng(this.location.A,this.location.F),
+        center: new google.maps.LatLng(self.location.A,self.location.F),
         libraries: 'places',
         zoom: 16
       };
@@ -154,13 +157,15 @@ function searchLocation(searchTerm) {
     if(status==google.maps.GeocoderStatus.OK) {
       var mostLikelyLocation = results[0].geometry.location;
       map.setCenter(mostLikelyLocation);
+      console.log(mostLikelyLocation);
       var marker = new google.maps.Marker({
         position: mostLikelyLocation,
         map: map,
         title: 'Hello World!',
         icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
       });
-      setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
+      let location = {"A": mostLikelyLocation.lat(), "F": mostLikelyLocation.lng()};
+      setFieldOnSessionObject("draftViewingParty", "location", location);
       setFieldOnSessionObject("draftViewingParty", "givenAddress", searchTerm);
       if (results[0].geometry.viewport) {
         map.fitBounds(results[0].geometry.viewport);
