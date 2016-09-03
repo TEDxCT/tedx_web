@@ -11,7 +11,7 @@ Meteor.publish('votes', function () {
 });
 
 Meteor.publish('live', function () {
-  return live.find({"archived": {$ne : true}});
+  return live.find({"year": "2016", "archived": {$ne : true}});
 });
 
 Meteor.publish('posts', function () {

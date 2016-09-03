@@ -6,19 +6,22 @@ Template.live.onCreated(function() {
     var allparties = live.find().fetch();
 
     allparties.forEach(function(party) {
+      console.log(party);
+      if(Match.test(party.location, Object)) {
+        var partyLatlng = new google.maps.LatLng(party.location.A, party.location.F);
 
-      var partyLatlng = new google.maps.LatLng(party.location.G, party.location.K);
+        var marker = new google.maps.Marker({
+          position: partyLatlng,
+          map: map.instance
+        });
 
-      var marker = new google.maps.Marker({
-        position: partyLatlng,
-        map: map.instance
-      });
+        var contentWindow = createContentWindow(party);
 
-      var contentWindow = createContentWindow(party);
+        google.maps.event.addListener(marker, 'click', function() {
+          contentWindow.open(map.instance,marker);
+        });  
+      }
 
-      google.maps.event.addListener(marker, 'click', function() {
-        contentWindow.open(map.instance,marker);
-      });
     });
   });
 

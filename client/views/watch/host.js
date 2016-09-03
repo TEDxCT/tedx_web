@@ -2,6 +2,7 @@ Template.hostDetails.onCreated(function() {
   if(Session.get("draftViewingParty") == undefined) {
     var newViewingParty = new Object();
     newViewingParty.privateParty = false;
+    newViewingParty.year = "2016";
     Session.set("draftViewingParty", newViewingParty);
   }
 });
@@ -64,6 +65,7 @@ function setFieldOnSessionObject(objectName, fieldName, fieldValue) {
 }
 
 Template.hostLocation.onCreated(function() {
+
   // We can use the `ready` callback to interact with the map API once the map is ready.
   GoogleMaps.ready('simulcastMap', function(map) {
     // Add a marker to the map once it's ready
@@ -105,11 +107,12 @@ Template.hosted.onCreated(function() {
 Template.hosted.helpers({
   singlePartyMapOptions: function() {
     var self = this;
+    console.log(this);
     // Make sure the maps API has loaded
     if (GoogleMaps.loaded()) {
       // Map initialization options
       return {
-        center: new google.maps.LatLng(this.location.A,this.location.F),
+        center: new google.maps.LatLng(self.location.A,self.location.F),
         libraries: 'places',
         zoom: 16
       };
@@ -154,13 +157,15 @@ function searchLocation(searchTerm) {
     if(status==google.maps.GeocoderStatus.OK) {
       var mostLikelyLocation = results[0].geometry.location;
       map.setCenter(mostLikelyLocation);
+      console.log(mostLikelyLocation);
       var marker = new google.maps.Marker({
         position: mostLikelyLocation,
         map: map,
         title: 'Hello World!',
         icon: 'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
       });
-      setFieldOnSessionObject("draftViewingParty", "location", mostLikelyLocation);
+      let location = {"A": mostLikelyLocation.lat(), "F": mostLikelyLocation.lng()};
+      setFieldOnSessionObject("draftViewingParty", "location", location);
       setFieldOnSessionObject("draftViewingParty", "givenAddress", searchTerm);
       if (results[0].geometry.viewport) {
         map.fitBounds(results[0].geometry.viewport);
@@ -227,7 +232,7 @@ function validateForm(formID, fieldsToExclude) {
 }
 
 function emailBodyHtml(savedViewingParty, firstName)  {
-  var emailBody = "<p>Dear " + firstName + ",</p><p>Congratulations! You've successfully registered a viewing party for TEDxCapeTown2015. We're thrilled to have you taking part.</p><p>Here's the link to your viewing party: http://live.tedxcapetown.org/live/host/" + savedViewingParty + "</p><p><strong>Please note:</strong></p><p>Your TEDxCapeTown viewing party  must be free to attendees. You may ask attendees to bring a plate of food or charge 'a hug' for entry, (for example) but you may not sell tickets to your viewing party. There's no limit on audience size, if you're showing the livestream only. However, if you're inviting local speakers, the normal TEDx rules regarding event size apply.</p><p>Event: TEDxCapeTownLive<br>Event date: Saturday 15th August 2015<br>Event type: TEDxLive<br></p><p><strong>Your next steps</strong></p><ol><li>Download the Viewing Party Toolkit: We've put together some helpful suggestions to make sure your viewing party is a TED success. You can download the toolkit from our website or <a href='http://www.tedxcapetown.org/Viewing%20party%20toolkit.pdf' target='_blank'>click here</a>.</li><li>In the meantime, please review the minimum hardware requirements to ensure your system can handle the livestream. If you have any further questions related to registration or to streaming/technical requirements, please contact us at Support@tedxcapetown.org</li><li>Confirm that the information on your TEDxCapeTown viewing party page is correct. As a licensee, you can access and edit your event page (login required). Please keep this page updated with all relevant information on your TEDxCapeTown viewing party: venue, time and a short description about what attendees can expect.</li><li>Invite your friends and let people know you are hosting a TEDxCapeTown viewing party. Share your viewing party on Facebook and Twitter using the tag #TEDxCT</li><li>Let us know you're hosting a viewing party and engage with us on the event day. Post your event on our Facebook page and tweet us @TedxCapeTown and use the tag #TEDxCT. Send us pics of your viewing party (even if it ends up being just you in your pajamas) via email (hello@tedxcapetown.org) or on twitter (@TEDxCapeTown) and we might send you a shout out live from our TED stage.</li><li>Read through the TEDx rules.</li><p>We're so excited to have you with us on this amazing journey.</p><p>Best,</p><p>The TEDxCapeTown Team</p>"
+  var emailBody = "<p>Dear " + firstName + ",</p><p>Congratulations! You've successfully registered a viewing party for TEDxCapeTown2016. We're thrilled to have you taking part.</p><p>Here's the link to your viewing party: http://live.tedxcapetown.org/live/host/" + savedViewingParty + "</p><p><strong>Please note:</strong></p><p>Your TEDxCapeTown viewing party  must be free to attendees. You may ask attendees to bring a plate of food or charge 'a hug' for entry, (for example) but you may not sell tickets to your viewing party. There's no limit on audience size, if you're showing the livestream only. However, if you're inviting local speakers, the normal TEDx rules regarding event size apply.</p><p>Event: TEDxCapeTownLive<br>Event date: Saturday 15th October 2016<br>Event type: TEDxLive<br></p><p><strong>Your next steps</strong></p><ol><li>Download the Viewing Party Toolkit: We've put together some helpful suggestions to make sure your viewing party is a TED success. You can download the toolkit from our website or <a href='https://drive.google.com/file/d/0B5Oh9mOHF2d4OWJYNVdMQ0JURFk/view' target='_blank'>click here</a>.</li><li>In the meantime, please review the minimum hardware requirements to ensure your system can handle the livestream. If you have any further questions related to registration or to streaming/technical requirements, please contact us at support@tedxcapetown.org</li><li>Confirm that the information on your TEDxCapeTown viewing party page is correct. As a licensee, you can access and edit your event page (login required). Please keep this page updated with all relevant information on your TEDxCapeTown viewing party: venue, time and a short description about what attendees can expect.</li><li>Invite your friends and let people know you are hosting a TEDxCapeTown viewing party. Share your viewing party on Facebook and Twitter using the tag #TEDxCT</li><li>Let us know you're hosting a viewing party and engage with us on the event day. Post your event on our Facebook page and tweet us @TedxCapeTown and use the tag #TEDxCT. Send us pics of your viewing party (even if it ends up being just you in your pajamas) via email (hello@tedxcapetown.org) or on twitter (@TEDxCapeTown) and we might send you a shout out live from our TED stage.</li><li>Read through the TEDx rules.</li><p>We're so excited to have you with us on this amazing journey.</p><p>Best,</p><p>The TEDxCapeTown Team</p>"
 
   return emailBody;
 }
