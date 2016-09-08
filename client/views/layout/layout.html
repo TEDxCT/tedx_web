@@ -48,6 +48,11 @@
             Media
           </div>
         </a>
+        <a href="{{pathFor route='contact'}}" class="noLink">
+          <div class="link {{#if selected 'Contact'}}active{{/if}}">
+            Contact
+          </div>
+        </a>
         {{#if currentUser}}
         <a href="{{pathFor route='account'}}" class="noLink">
           <div class="link profile manage {{#if selected 'Profile'}}active{{/if}}">
