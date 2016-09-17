@@ -1,24 +1,15 @@
 // --------------------------- TALKS LIST -------------------------------------
+var client;
+var index;
 
 Template.talks.onRendered(function() {
   VideosSearch.search();
+
+  client = AlgoliaSearch("ZBQG58E3FM", "688a8f5409f5054e1b66029fdfae0826");
+  index = client.initIndex("talks");  
 })
 
 Template.talks.helpers({
-  "allvideos": function() {
-    var searchString = Session.get("search-term");
-    if(searchString) {
-
-      var someCursor = videos.find({ $or: [ { "title": searchString }, { "speaker.name": searchString } ] });
-      if(someCursor.count() == 0)
-      {
-          var search = ".*" + searchString + ".*";
-          return videos.find({ $or: [ {"title" : {$regex : search}}, { "speaker.name": {$regex : search} } ] });
-      }
-      else return someCursor.fetch();
-    }
-    else return videos.find({"published": true});;
-  },
   "searchTerm": function() {
     var searchTerm = Session.get("search-term");
     if(searchTerm!=$(".search").val()) {
@@ -26,12 +17,18 @@ Template.talks.helpers({
     }
   },
   getVideos: function() {
-    return VideosSearch.getData({
-      transform: function(matchText, regExp) {
-        return matchText.replace(regExp, "<b>$&</b>")
-      },
-      sort: {isoScore: -1}
-    });
+    var searchString = Session.get("search-term");
+    if(searchString) {
+      let hits = Session.get("hits");
+      let hitIds = [];
+      
+      hits.forEach(function(doc, index) {        
+        hitIds.push(doc._id);
+      });
+      console.log(hitIds);
+      return videos.find({"_id": {$in: hitIds}});
+    }
+    else return videos.find({"published": true});
   },
 
   isLoading: function() {
@@ -69,8 +66,17 @@ Template.talks.events({
   //   Session.set("search-term", $(".search").val());
   // }
   "keyup .search": _.throttle(function(e) {
-    var text = $(e.target).val().trim();
-    VideosSearch.search(text);
+    var text = $(e.target).val().trim();    
+    Session.set("search-term", text);
+  
+    // search 'hello' in the index
+    index.search(text, function (error, content) {
+      if (error) console.error('Error:', error);
+      else {
+        console.log(content);
+        Session.set("hits", content.hits);
+      }
+    });
   }, 200)
 });
 
