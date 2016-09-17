@@ -22,8 +22,11 @@ Template.talks.helpers({
       let hits = Session.get("hits");
       let hitIds = [];
       
-      hits.forEach(function(doc, index) {        
-        hitIds.push(doc._id);
+      hits.forEach(function(doc, index) {    
+        if(!Match.test(doc._id, String)) {
+          hitIds.push(doc._id._str);
+        }    
+        else hitIds.push(doc._id);
       });
       console.log(hitIds);
       return videos.find({"_id": {$in: hitIds}});
