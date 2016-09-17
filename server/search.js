@@ -7,7 +7,10 @@ Meteor.startup(function() {
     var videosIndex = videos.find({}).fetch();
 
     videosIndex.forEach(function(doc, index) {
-        doc.objectID = doc._id;
+        if(Match.test(doc._id, Object)) {
+            doc.objectID = doc._id._str;
+        }
+        else doc.objectID = doc._id;
         videosIndex[index] = doc;
     });
 
