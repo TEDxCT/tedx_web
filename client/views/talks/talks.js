@@ -3,19 +3,19 @@ var client;
 var index;
 
 Template.talks.onRendered(function() {
-  VideosSearch.search();
+  // VideosSearch.search();
 
   client = AlgoliaSearch("ZBQG58E3FM", "688a8f5409f5054e1b66029fdfae0826");
   index = client.initIndex("talks");  
 })
 
 Template.talks.helpers({
-  "searchTerm": function() {
-    var searchTerm = Session.get("search-term");
-    if(searchTerm!=$(".search").val()) {
-      return Session.get("search-term");
-    }
-  },
+  // "searchTerm": function() {
+  //   var searchTerm = Session.get("search-term");
+  //   if(searchTerm!=$(".search").val()) {
+  //     return Session.get("search-term");
+  //   }
+  // },
   getVideos: function() {
     var searchString = Session.get("search-term");
     if(searchString) {
@@ -28,10 +28,10 @@ Template.talks.helpers({
         }    
         else hitIds.push(doc._id);
       });
-      console.log(hitIds);
+      
       return videos.find({"_id": {$in: hitIds}});
     }
-    else return videos.find({"published": true});
+    else return videos.find({"published": true}, {limit: 50});
   },
 
   isLoading: function() {

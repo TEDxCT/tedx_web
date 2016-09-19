@@ -34,3 +34,4 @@ Handlebars.registerHelper('isNotBlank', function(field) {
 setHighLevelNav = function(highLevelNavSelection) {
   Session.set("navSelected", highLevelNavSelection);
 }
+
