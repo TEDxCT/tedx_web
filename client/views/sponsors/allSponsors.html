@@ -1,59 +1,68 @@
 <template name="allSponsors">
-  <a href="{{pathFor route='sponsors.show' _id='WiGyggWbQ3nC88sDr'}}"><img class="full-width red animated fadeIn" src="https://d15h8y58yhffbd.cloudfront.net/api/file/288LV61CRUVQ2EugCb0b"></a>
-<div class="container-fluid centered">
-  <h1>Headline Sponsor 2015</h1>
-    {{#each headlineSponsors}}
-      <div class="row">
-        <div class="col-md-12 col-xs-18">
-          <div class="headline_sponsor_tile">
+  <a href="{{pathFor route='sponsors.show' _id='WiGyggWbQ3nC88sDr'}}">
+    <img class="full-width red animated fadeIn" src="https://d15h8y58yhffbd.cloudfront.net/api/file/288LV61CRUVQ2EugCb0b"></a>
+
+  <div class="container-fluid centered">
+
+    <section class="sponsors-headline row">
+      <h2>Headline Sponsor</h2>
+      {{#each headlineSponsors}}
+        <div class="row">
+          <div class="col-md-12 col-xs-18">
+            <div class="headline_sponsor_tile">
+              <h4 class="sponsor-type">{{this.type}}</h4>
+              <a href="/sponsors/show/{{this._id}}">
+                <img src="{{this.imageURL}}" alt="{{this.name}}">
+              </a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </section>
+
+    <section class="sponsors-regular row">
+      <h2>Sponsors</h2>
+      {{#each sponsors}}
+        <div class="col-md-4 col-xs-6">
+          <div class="sponsor_tile">
             <h4 class="sponsor-type">{{this.type}}</h4>
             <a href="/sponsors/show/{{this._id}}">
               <img src="{{this.imageURL}}" alt="{{this.name}}">
             </a>
           </div>
         </div>
-      </div>
-    {{/each}}
-    <br/>
-    <h1>Sponsors 2015</h1>
-      <div class="row">
-        {{#each sponsors}}
-            <div class="col-md-4 col-xs-6">
-              <div class="sponsor_tile">
-                <h4 class="sponsor-type">{{this.type}}</h4>
-                <a href="/sponsors/show/{{this._id}}">
-                  <img src="{{this.imageURL}}" alt="{{this.name}}">
-                </a>
-              </div>
-            </div>
-        {{/each}}
-        {{#if userIsInRole 'admin'}}
-         <h2>Draft sponsors</h2>
-         {{#each draftSponsors}}
-             <div class="col-md-4 col-xs-6">
-               <div class="sponsor_tile">
-                 <h4 class="sponsor-type">{{this.type}}</h4>
-                 <a href="/sponsors/show/{{this._id}}">
-                   <img src="{{this.imageURL}}" alt="{{this.name}}">
-                 </a>
-               </div>
+      {{/each}}
+    </section>
+
+    <section class="sponsors-draft row">
+      {{#if userIsInRole 'admin'}}
+        <h2>Draft sponsors</h2>
+        {{#each draftSponsors}}
+           <div class="col-md-4 col-xs-6">
+             <div class="sponsor_tile">
+               <h4 class="sponsor-type">{{this.type}}</h4>
+               <a href="/sponsors/show/{{this._id}}">
+                 <img src="{{this.imageURL}}" alt="{{this.name}}">
+               </a>
              </div>
-         {{/each}}
-        {{/if}}
-      </div>
-      <br/>
-      <!-- <h1>Previous Sponsors</h1>
-      <div class="row">
-        {{#each previousSponsors}}
-            <div class="col-md-4 col-xs-6">
-              <div class="sponsor_tile">
-                <h4 class="sponsor-type">{{this.type}}</h4>
-                <a href="/sponsors/show/{{this._id}}">
-                  <img src="{{this.imageURL}}" alt="{{this.name}}">
-                </a>
-              </div>
-            </div>
+           </div>
         {{/each}}
-      </div> -->
-</div>
+      {{/if}}
+    </section>
+
+    <section class="sponsors-previous row">
+      <h2>Previous Sponsors</h2>
+      {{#each previousSponsors}}
+          <div class="col-md-4 col-xs-6">
+            <div class="sponsor_tile">
+              <h4 class="sponsor-type">{{this.type}}</h4>
+              <a href="/sponsors/show/{{this._id}}">
+                <img src="{{this.imageURL}}" alt="{{this.name}}">
+              </a>
+            </div>
+          </div>
+      {{/each}}
+    </section>
+
+  </div>
 </template>
