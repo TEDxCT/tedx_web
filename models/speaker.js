@@ -179,6 +179,29 @@ SpeakerSchema = new SimpleSchema({
         }
       }
   },
+  description: {
+    type: String,
+    label: "Speaker Description",
+    optional: true,
+    autoform: {
+      rows: 3,
+    },
+  },
+  topic: {
+    type: String,
+    label: "Topic",
+    optional: true
+  },
+  selectedEventId: {
+    type: String,
+    label: "Event",
+    optional: true
+  },
+  imageURL: {
+    type: String,
+    label: "Image URL",
+    optional: true
+  },
   // Force value to be current date (on server) upon update
   // and don't allow it to be set upon insert.
   updatedAt: {
