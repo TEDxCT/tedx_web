@@ -33,6 +33,16 @@
             News
           </div>
         </a>
+
+        <a href="{{pathFor route='news'}}" class="noLink">
+          <div class="link {{#if selected 'News'}}active{{/if}}">
+            News
+          </div>
+        </a>
+        <a href="{{pathFor route='toasted'}}" class="noLink">
+          ToastED
+        </a>
+
         <a href="{{pathFor route='sponsors'}}" class="noLink">
           <div class="link {{#if selected 'Sponsors'}}active{{/if}}">
             Sponsors
