@@ -13,69 +13,7 @@
         <i class="icon-menu"></i>
       </div>
       <div class="nav-links">
-        <a href="{{pathFor route='watch'}}" class="noLink">
-          <div class="link {{#if selected 'Watch'}}active{{/if}}">
-            Watch
-        </div>
-        </a>
-        <!-- <a href="{{pathFor route='speakers.register'}}" class="noLink">
-          <div class="link {{#if selected 'Events'}}active{{/if}}">
-            Apply to Speak
-          </div>
-        </a> -->
-        <a href="{{pathFor route='events'}}" class="noLink">
-          <div class="link {{#if selected 'Events'}}active{{/if}}">
-            Events
-          </div>
-        </a>
-        <a href="{{pathFor route='news'}}" class="noLink">
-          <div class="link {{#if selected 'News'}}active{{/if}}">
-            News
-          </div>
-        </a>
-
-        <a href="{{pathFor route='news'}}" class="noLink">
-          <div class="link {{#if selected 'News'}}active{{/if}}">
-            News
-          </div>
-        </a>
-        <a href="{{pathFor route='toasted'}}" class="noLink">
-          ToastED
-        </a>
-
-        <a href="{{pathFor route='sponsors'}}" class="noLink">
-          <div class="link {{#if selected 'Sponsors'}}active{{/if}}">
-            Sponsors
-          </div>
-        </a>
-        <!-- <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink">
-          <div class="link {{#if selected 'Media'}}active{{/if}}">
-            Media
-          </div>
-        </a> -->
-        <a href="{{pathFor route='media'}}" class="noLink">
-          <div class="link {{#if selected 'Media'}}active{{/if}}">
-            Media
-          </div>
-        </a>
-        <a href="{{pathFor route='contact'}}" class="noLink">
-          <div class="link {{#if selected 'Contact'}}active{{/if}}">
-            Contact
-          </div>
-        </a>
-        {{#if currentUser}}
-        <a href="{{pathFor route='account'}}" class="noLink">
-          <div class="link profile manage {{#if selected 'Profile'}}active{{/if}}">
-            <i class="icon-profile"></i>
-          </div>
-        </a>
-        {{else}}
-        <a href="{{pathFor route='login'}}" class="noLink">
-          <div class="link {{#if selected 'Profile'}}active{{/if}}">
-            Login
-          </div>
-        </a>
-        {{/if}}
+        {{> mainMenu}}
       </div>
 
     </section>
@@ -86,6 +24,63 @@
     {{> footer}}
     {{> scriptsLoadAfter}}
   </div>
+</template>
+
+<template name="mainMenu">
+  <ul>
+    <li>
+      <a href="{{pathFor route='watch'}}" class="noLink {{#if selected 'Watch'}}active{{/if}}">
+        Watch
+      </a>
+    </li>
+    <!-- <li>
+      <a href="{{pathFor route='speakers.register'}}" class="noLink {{#if selected 'Events'}}active{{/if}}">
+        Apply to Speak
+      </a>
+    </li> -->
+    <li>
+      <a href="{{pathFor route='events'}}" class="noLink {{#if selected 'Events'}}active{{/if}}">
+        Events
+      </a>
+    </li>
+
+    <li>
+      <a href="{{pathFor route='news'}}" class="noLink {{#if selected 'News'}}active{{/if}}">
+        News
+      </a>
+      <ul>
+        <li><a href="{{pathFor route='media'}}" class="noLink {{#if selected 'Media'}}active{{/if}}">
+          Media
+        </a></li>
+      </ul>
+    </li>
+    <!-- <li>
+      <a href="{{pathFor route='posts.show' _id='GKnjDaetPPvBjotLk'}}" class="noLink {{#if selected 'Media'}}active{{/if}}">
+        Media
+      </a>
+    </li> -->
+    <li>
+      <span>Initiatives</span>
+      <ul>
+        <li><a href="{{pathFor route='toasted'}}" class="noLink {{#if selected 'Toasted'}}active{{/if}}">
+          ToastED
+        </a></li>
+      </ul>
+    </li>
+    <li>
+      <span>About</span>
+      <ul>
+        <li><a href="{{pathFor route='sponsors'}}" class="noLink {{#if selected 'Sponsors'}}active{{/if}}">
+          Sponsors
+        </a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="{{pathFor route='contact'}}" class="noLink {{#if selected 'Contact'}}active{{/if}}">
+        Contact
+      </a>
+    </li>
+  </ul>
 </template>
 
 <template name="singlePage">
@@ -197,6 +192,17 @@
         </div>
       </div>
       <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+
+
+  {{#if currentUser}}
+    <a href="{{pathFor route='account'}}" class="noLink {{#if selected 'Profile'}}active{{/if}}">
+      <i class="icon-profile"></i>
+    </a>
+  {{else}}
+    <a href="{{pathFor route='login'}}" class="noLink {{#if selected 'Profile'}}active{{/if}}">
+      Login
+    </a>
+  {{/if}}
   </div>
 
 </template>

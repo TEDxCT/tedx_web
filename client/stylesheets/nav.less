@@ -245,19 +245,29 @@
 	color: white;
 	top: 30px;
 
-	.link {
-		cursor: pointer;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+  }
+
+	a,
+  span {
 		display: inline-block;
 		min-width: 30px;
 		vertical-align: top;
 		text-transform: UPPERCASE;
 		padding: 10px 15px;
+    color: white;
+    border-bottom: 1px solid transparent;
+  }
 
-		a {
-			color: white;
-		}
-
-		&:hover {
+  a {
+		&:hover,
+    &:focus {
 			border-bottom: 1px dashed white;
 		}
 
@@ -268,6 +278,7 @@
 
     &.active {
       border-bottom: 1px solid white;
+      font-weight: bold;
     }
 
 		i {
@@ -281,10 +292,40 @@
 			     margin-right: 20px;
       }
 		}
-	}
+  }
+  span {
+    cursor: default;
+  }
+	
+  li {
+    ul {
+      position: absolute;
+      z-index: 1000;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: white;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.19);
+
+      a {
+        color: red;
+        padding: 0.2em 1em;
+
+        &:hover,
+        &:focus {
+          color: black;
+        }
+      }
+    }
+    &:hover ul {
+      display: block;
+    }
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .old-website-link {
     display: none;
   }
