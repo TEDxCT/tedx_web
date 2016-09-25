@@ -6,34 +6,42 @@
     {{else}}
       {{#if layoutIs 'event'}}
 
-      <div class="row">
-        <div class='col-md-10'>
-          <h3 contenteditable="true" class="title">{{this.title}}</h3>
-        </div>
-        <div class='col-md-2' style="margin-top: 10px;">
-          <div class="featured-switch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.isFeatured}}">
-            <label class="onoffswitch-label" for="favoriteSwitch">
-              <span class="onoffswitch-inner"></span>
-              <span class="onoffswitch-switch"></span>
-            </label>
+        <div class="row">
+          <div class='col-md-10'>
+            <h3 contenteditable="true" class="title">{{this.title}}</h3>
+          </div>
+          <div class='col-md-2' style="margin-top: 10px;">
+            <div class="featured-switch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox featured-switch" id="favoriteSwitch" checked="{{this.isFeatured}}">
+              <label class="onoffswitch-label" for="favoriteSwitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
           </div>
         </div>
-    </div>
-      <input input="text" class="summary" value="{{this.summary}}" placeholder="Short summary..."><hr class="dashed">
-      <label for="date">Date:</label>
-      <input type="date" id="date" class="date" value="{{this.date}}">
-      <br/>
-      <label for="starttime">Time:</label>
-      <input type="time" id="starttime" class="starttime" value="{{this.starttime}}"> to
-      <input type="time" id="endtime" class="endtime" value="{{this.endtime}}">
-      <br/>
-      <label>Venue:&nbsp; </label><span contenteditable="true" class="venue">{{stringOrPlaceholder this.venue}}</span>
-      <br/>
-      <label>Price:&nbsp;</label><span contenteditable="true" class="price">{{stringOrPlaceholder this.price}}</span>
-      <br/>
-      <label>After Party:&nbsp; </label><span contenteditable="true" class="afterparty">{{stringOrPlaceholder this.afterparty}}</span>
-      <br/>
+
+        <input input="text" class="summary" value="{{this.summary}}" placeholder="Short summary...">
+        <hr class="dashed">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" class="date" value="{{this.date}}">
+        <br/>
+
+        <label for="starttime">Time:</label>
+        <input type="time" id="starttime" class="starttime" value="{{this.starttime}}"> to
+        <input type="time" id="endtime" class="endtime" value="{{this.endtime}}">
+        <br/>
+
+        <label>Venue:&nbsp; </label><span contenteditable="true" class="venue">{{stringOrPlaceholder this.venue}}</span>
+        <br/>
+
+        <label>Price:&nbsp;</label><span contenteditable="true" class="price">{{stringOrPlaceholder this.price}}</span>
+        <br/>
+
+        <label>After Party:&nbsp; </label><span contenteditable="true" class="afterparty">{{stringOrPlaceholder this.afterparty}}</span>
+        <br/>
+
       {{/if}}
     {{/if}}
     {{#each sections}}
@@ -43,7 +51,9 @@
     {{#if layoutIs 'event'}}
       {{> editEventSessions}}
     {{/if}}
+
     {{> chooseSection}}
+    
     {{> actions}}
 
   </div>

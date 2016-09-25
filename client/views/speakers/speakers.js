@@ -239,3 +239,15 @@ Template.speakers.helpers({
     return posts.find({'type':'event'});;
   }
 });
+
+
+
+Template.speakersCurrent.helpers({
+  'speakers': function() {
+
+    var featuredEvent = posts.findOne({'type':'event', 'featured' : true});
+    console.log('featuredEvent: ', featuredEvent);
+
+    return speakers.find({"selectedEventId": featuredEvent._id});
+  }
+});

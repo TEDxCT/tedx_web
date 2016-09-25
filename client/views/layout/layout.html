@@ -28,16 +28,30 @@
 
 <template name="mainMenu">
   <ul>
-    <li>
-      <a href="{{pathFor route='watch'}}" class="noLink {{#if selected 'Watch'}}active{{/if}}">
-        Watch
-      </a>
-    </li>
+    <!-- Slot for one featured link. -->
     <!-- <li>
       <a href="{{pathFor route='speakers.register'}}" class="noLink {{#if selected 'Events'}}active{{/if}}">
         Apply to Speak
       </a>
     </li> -->
+    <li>
+      <span>TEDxCT 2016</span>
+      <ul>
+        <li><a href="{{pathFor route='speakersFeatured'}}" class="noLink {{#if selected 'speakersFeatured'}}active{{/if}}">
+          Speakers
+        </a></li>
+        <!-- <li><a href="{{pathFor route=''}}" class="noLink {{#if selected ''}}active{{/if}}">
+          Team
+        </a></li> -->
+      </ul>
+    </li>
+
+
+    <li>
+      <a href="{{pathFor route='watch'}}" class="noLink {{#if selected 'Watch'}}active{{/if}}">
+        Watch
+      </a>
+    </li>
     <li>
       <a href="{{pathFor route='events'}}" class="noLink {{#if selected 'Events'}}active{{/if}}">
         Events
