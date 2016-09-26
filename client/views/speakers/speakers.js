@@ -140,6 +140,10 @@ Template.registerHelper('categoryName', function (identifier) {
 	return categories.findOne({'_id' : identifier}, {'_id' : 0 , 'name' : 1}).name;
 });
 
+Template.registerHelper('equals', function (a, b) {
+  return a === b;
+});
+
 
 
 Template.appliedSpeaker.helpers({
@@ -223,8 +227,27 @@ Handlebars.registerHelper('totalNumberOfVotes', function() {
     return voteCount;
 });
 
+
+
 Template.speakers.helpers({
 	'speakers': function() {
 		return speakers.find({"speakerApplication": {$exists: false}});
 	},
+  'events': function() {
+    // var events = posts.find({'type':'event'});
+    // console.log('events: ', events);
+    return posts.find({'type':'event'});;
+  }
+});
+
+
+
+Template.speakersCurrent.helpers({
+  'speakers': function() {
+
+    var featuredEvent = posts.findOne({'type':'event', 'featured' : true});
+    console.log('featuredEvent: ', featuredEvent);
+
+    return speakers.find({"selectedEventId": featuredEvent._id});
+  }
 });

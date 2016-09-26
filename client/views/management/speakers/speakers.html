@@ -14,13 +14,27 @@
       <a href="{{pathFor route='speakers.nominated'}}" class="btn">All nominated</a>
       <a href="{{pathFor route='speakers.applied'}}" class="btn">All applied</a>
     {{/if}}
-    <div id="theGrid" class="main animated fadeIn">
+
+    {{#each events}}
+      <h2>{{title}}</h2>
+      <div id="theGrid" class="main animated fadeIn">
+        <section class="grid">
+          {{#each speakers}}
+            {{#if equals this.selectedEventId ../_id}} <!-- If speaker is part of this event -->
+              {{> speakerTile this}}
+            {{/if}}
+          {{/each}}
+        </section>
+      </div>
+    {{/each}}
+
+    <!-- <div id="theGrid" class="main animated fadeIn">
       <section class="grid">
         {{#each this}}
-            {{> speakerTile this}}
-          {{/each}}
+          {{> speakerTile this}}
+        {{/each}}
       </section>
-    </div>
+    </div> -->
   </div>
 </template>
 
