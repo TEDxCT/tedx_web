@@ -86,14 +86,14 @@ Template.editSponsor.events({
   },
 });
 
-function uploadWithFilePicker(template) {
+uploadWithFilePicker = function(template) {
   filepicker.pick({maxSize: 4*1024*1024}, function onSuccess(Blob){
     $('#imageUpload').attr("src", Blob.url);
     $('.logoURL').attr("value", Blob.url);
   });
 }
 
-function uploadFromWebURL(template) {
+uploadFromWebURL = function(template) {
   var imageURL = $(template.find(".logoURL")).val();
   if (imageURL != undefined && imageURL != "") {
     $('#imageUpload').attr("src", imageURL);

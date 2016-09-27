@@ -14,6 +14,10 @@ Meteor.publish('posts', function () {
   return posts.find({"archive": {$ne: true}});
 });
 
+Meteor.publish('team', function () {
+  return team.find({"archive": {$ne: true}});
+});
+
 Meteor.publish('categories', function () {
   return categories.find({"archived": {$ne : true}});
 });
