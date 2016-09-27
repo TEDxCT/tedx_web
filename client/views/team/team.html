@@ -16,7 +16,9 @@
             </div>
             <div class="title">{{this.firstName}} {{this.lastName}}</div>
             <strong>{{this.portfolio}}</strong>
-            <a href="{{pathFor route='team.show' id=this._id }}" class="link">MORE</a>
+            <p>
+              <a href="{{pathFor route='team.show' id=this._id }}" class="link">MORE</a>
+            </p>
         </div>
     {{/each}}
   </div>
