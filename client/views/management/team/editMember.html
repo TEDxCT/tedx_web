@@ -1,0 +1,61 @@
+<template name="editMember">
+ <div class="container-fluid">
+    <h1>Edit team member</h1>
+    <hr class="extra-space-top dashed">
+    <form>
+      <div class="form-group">
+        <label for="firstNameText">First Name</label>
+        <input type="text" class="form-control firstNameText" placeholder="Speaker First name..." value="{{this.firstName}}">
+      </div>
+      <div class="form-group">
+        <label for="lastNameText">Last Name</label>
+        <input type="text" class="form-control lastNameText" placeholder="Speaker Last name..." value="{{this.lastName}}">
+      </div>
+      <div class="form-group">
+        <label for="portfolioText">Portfolio</label>
+        <input type="text" class="form-control portfolioText" placeholder="Portfolio..." value="{{this.portfolio}}">
+      </div>
+      <div class="form-group">
+        <label for="bioText">Bio</label>
+        <textarea class="form-control bioText">{{this.bio}}</textarea>        
+      </div>
+      <div class="form-group">
+            <label>Profile pic</label>
+            <p>Add a web URL or tap the icon to upload from disk</p>
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control profileURL" placeholder="Url..." value="{{this.image}}">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-secondary btn-upload-from-web">Add</button>
+                <button class="btn btn-secondary btn-upload-from-file">Pick file</button>
+              </div>
+            </div>
+            <br/>
+            <img src="{{this.image}}" style="max-width:100%" class="upload" id="imageUpload">
+      </div>
+      <div class="form-group">
+        <label for="startYearText">Start year</label>
+        <input type="text" class="form-control startYearText" placeholder="2014" value="{{this.startYear}}">        
+      </div>
+      <div class="form-group">
+        <label for="endYearText">End year</label>
+        <small>Not required if team member is currently still volunteering.</small>
+        <input type="text" class="form-control endYearText" placeholder="2016" value="{{this.endYear}}">    
+      </div>
+     
+    <div class="form-group">
+        <label for="descriptionText">Publish Member?</label>
+        <div class="onoffswitch">
+          <input type="checkbox" name="publishSwitch" class="onoffswitch-checkbox" id="publishSwitch" {{published}}>
+          <label class="onoffswitch-label" for="publishSwitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <hr class="dashed">
+      <button type="button" class="btn btn-primary save_member">Update</button>
+    </form>
+</div>
+</template>

@@ -1,4 +1,4 @@
-Template.newMember.events({ 
+Template.editMember.events({ 
     'click .btn-upload-from-file': function(event, template) {
         event.preventDefault();
     uploadWithFilePicker(template)
@@ -19,8 +19,15 @@ Template.newMember.events({
          member.endYear = $(".endYearText").val();
          member.published = $('#publishSwitch').is(':checked');
 
-         let newId = team.insert(member);    
+         team.update({"_id":this._id}, {$set: member});    
 
-         Router.go('/team/show/' + newId);  
+         Router.go('/team/show/' + this._id);  
     } 
+});
+
+Template.editMember.helpers({
+  published: function() {
+    if(this.published===true) return 'checked';
+    else return '';
+  }
 });
