@@ -8,3 +8,4 @@ votes = new Mongo.Collection('votes');
 posts = new Mongo.Collection('posts');
 live = new Mongo.Collection('live');
 sponsors = new Mongo.Collection('sponsors');
+team = new Mongo.Collection('team');

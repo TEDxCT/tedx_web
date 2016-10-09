@@ -1,0 +1,58 @@
+<template name="team">
+    {{#if userIsInRole 'admin'}}
+  <div class="container-fluid red toolbar">
+    <a href="{{ pathFor 'team.new'}}" class="tag">
+      <i class="icon-tags"></i>
+      New Member
+    </a>
+    <h1 class="pull-left">Tools</h1>
+  </div>
+  {{/if}}
+  <div class="container-fluid dark">
+    <h2>Team</h2>
+    {{#each team}}
+        <div class="tile">
+            <div class="circle" style="background-image: url({{this.image}})">
+            </div>
+            <div class="title">{{this.firstName}} {{this.lastName}}</div>
+            <strong>{{this.portfolio}}</strong>
+            <p>
+              <a href="{{pathFor route='team.show' id=this._id }}" class="link">MORE</a>
+            </p>
+        </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="teamMember">
+  {{#if userIsInRole 'member'}}
+  <div class="toolbar container-fluid red">
+    <a href="{{pathFor route='team.edit' data=speaker}}" class="edit">
+      <i class="icon-pencil-2"></i>
+      Edit
+    </a>
+    <a href="#" class="delete danger">
+      <i class="icon-bin-2"></i>
+      Delete
+    </a>
+    <h1 class="pull-left">Tools</h1>
+  </div>
+  {{/if}}
+  <div class="back-button back">
+    <a href="/team" class="noLink">
+      <i class="icon-thumbnails-1"></i>
+      <span class="text">
+        Back to team
+      </span>
+    </a>
+  </div>
+  <div class="container-fluid centered">
+    <h1 class="title">{{this.firstName}} {{this.lastName}}</h1>    
+    <h3 class="title">{{this.portfolio}}</h3>
+
+    <hr class="space extra-space-top">
+        <div class="circle" style="background-image: url({{this.image}})"></div>
+    <hr class="space extra-space-top">
+    <p>{{this.bio}}</p>
+  </div>
+</template>
