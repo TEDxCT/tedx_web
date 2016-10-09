@@ -35,23 +35,31 @@
       </a>
     </li> -->
     <li>
-      <span>TED<span style="text-transform: lowercase;">x</span>CT 2016</span>
+      <a href="{{pathFor route='posts.show.event' _id='5QBcw6sj2H9dySP9L'}}" class="noLink">
+        TED<span style="text-transform: lowercase;">x</span>CT 2016
+      </a>
       <ul>
-        <li><a href="{{pathFor route='speakersFeatured'}}" class="noLink {{#if selected 'speakersFeatured'}}active{{/if}}">
+        <!-- <li><a href="{{pathFor route=''}}" class="noLink {{#if selected ''}}active{{/if}}">
+          Buy tickets
+        </a></li> -->
+        <li><a href="{{pathFor route='speakersFeatured'}}" class="noLink {{#if selected 'Speakers'}}active{{/if}}">
           Speakers
         </a></li>
-        <!-- <li><a href="{{pathFor route=''}}" class="noLink {{#if selected ''}}active{{/if}}">
-          Team
-        </a></li> -->
+        <li><a href="{{pathFor route='performers'}}" class="noLink {{#if selected 'Performers'}}active{{/if}}">
+          Performers
+        </a></li>
       </ul>
     </li>
 
 
-    <li>
+    <!-- <li>
       <a href="{{pathFor route='watch'}}" class="noLink {{#if selected 'Watch'}}active{{/if}}">
         Watch
       </a>
-    </li>
+    </li> -->
+    <li><a href="{{pathFor route='live'}}" class="noLink {{#if selected 'Simulcast'}}active{{/if}}">
+      Watch Live
+    </a></li>
     <li>
       <a href="{{pathFor route='events'}}" class="noLink {{#if selected 'Events'}}active{{/if}}">
         Events
@@ -86,6 +94,9 @@
       <ul>
         <li><a href="{{pathFor route='sponsors'}}" class="noLink {{#if selected 'Sponsors'}}active{{/if}}">
           Sponsors
+        </a></li>
+        <li><a href="{{pathFor route='team'}}" class="noLink {{#if selected 'Team'}}active{{/if}}">
+          Team
         </a></li>
       </ul>
     </li>
