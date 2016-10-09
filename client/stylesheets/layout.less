@@ -451,16 +451,24 @@ input.search {
   }
 }
 
+// Used for Team members
 .tile {
-	background: white;
+	background: #e9e9e9;
 	display: inline-block;
 	color: black;
 	width: 100%;
-	max-width: 230px;
-	height: 280px;
+	max-width: 260px;
+	// height: 280px; // Not needed
 	text-align: center;
 	padding: 20px;
 	vertical-align: top;
+	margin-bottom: 4px;
+	position: relative;
+
+	&:hover,
+	&:focus {
+		background: white;
+	}
 
 	.circle {
 		background-size: cover;
@@ -472,18 +480,24 @@ input.search {
 
 	.title {
 		padding-top: 10px;
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.link {
-		color: @primaryColor;
+		// color: @primaryColor;
+		color: transparent;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
-	.circle {
-		background-size: cover;
-		background-position: center center;
-		position: relative;
-		padding: 0px;
-		margin: 0 auto;
-	}
+.circle {
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	padding: 0px;
+	margin: 0 auto;
+}
