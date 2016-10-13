@@ -17,7 +17,14 @@ Template.sponsors.rendered = function() {
 
 Template.sponsors.helpers({
   'sponsors': function() {
-    var s = sponsors.find({"published": {$ne: false}});
+    // console.log('currentYear: ', Meteor.settings.public.currentYear);
+    var s = sponsors.find(
+      {$and: [
+        {"published": {$ne: false}},
+        {"years" : { $in: [Meteor.settings.public.currentYear]}}
+      ]},
+      {sort: {"priority" : 1}}
+    );
     return s;
   },
 })
