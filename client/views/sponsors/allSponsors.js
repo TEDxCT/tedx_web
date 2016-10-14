@@ -1,4 +1,4 @@
-const currentYear = '2016';
+const currentYear = Meteor.settings.public.currentYear;
 
 Template.allSponsors.helpers({
   'headlineSponsors': function() {
